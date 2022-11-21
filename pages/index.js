@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import HeroSection from "../components/indexPage/HeroSection";
+import SmallInfo from "../components/indexPage/SmallInfo";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="h-screen">
+      <main className="">
         <HeroSection />
+        <SmallInfo />
       </main>
     </div>
   );
