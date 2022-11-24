@@ -27,7 +27,7 @@ export default function Navigation() {
   const router = useRouter();
 
   const { heroRef, scrollData } = useContext(globalContext);
-
+  const pathname = router.pathname;
   const [menuOpen, setMenuOpen] = useState(false);
   const [isOnMain, setIsOnMain] = useState(false);
 
@@ -58,7 +58,7 @@ export default function Navigation() {
     }
   }, [scrollData]);
   useEffect(() => {
-    if (router.pathname != "/") {
+    if (pathname != "/") {
       setIsOnMain(true);
     } else {
       setIsOnMain(false);
@@ -111,21 +111,28 @@ export default function Navigation() {
               <li>
                 <Link href="/">Начало</Link>
               </li>
-              <li>
-                <a href="#services">Услуги</a>
-              </li>
-
-              <li>
-                <a href="#pricing">Цени</a>
-              </li>
-              <li>
-                <a href="#faq">Въпроси</a>
-              </li>
-              <li>
-                <Link href="/aboutUs" scroll={false}>
-                  За нас
-                </Link>
-              </li>
+              {pathname == "/" && (
+                <li>
+                  <a href="#services">Услуги</a>
+                </li>
+              )}
+              {pathname == "/" && (
+                <li>
+                  <a href="#pricing">Цени</a>
+                </li>
+              )}
+              {pathname == "/" && (
+                <li>
+                  <a href="#faq">Въпроси</a>
+                </li>
+              )}
+              {pathname == "/" && (
+                <li>
+                  <Link href="/aboutUs" scroll={false}>
+                    За нас
+                  </Link>
+                </li>
+              )}
               <a href="tel:+359895063670">
                 <li className="px-5 py-2 rounded-sm bg-orange">позвъни сега</li>
               </a>
@@ -176,20 +183,28 @@ export default function Navigation() {
                     <li onClick={handleNav.bind({}, "#index")}>
                       <Link href="/">Начало</Link>
                     </li>
-                    <li onClick={handleNav.bind({}, "#services")}>
-                      <a href="#">Услуги</a>
-                    </li>
-                    <li onClick={handleNav.bind({}, "#pricing")}>
-                      <a href="#">Цени</a>
-                    </li>
-                    <li onClick={handleNav.bind({}, "#faq")}>
-                      <a href="#">Въпроси</a>
-                    </li>
-                    <li>
-                      <Link href="/aboutUs" scroll={false}>
-                        За нас
-                      </Link>
-                    </li>
+                    {pathname == "/" && (
+                      <li onClick={handleNav.bind({}, "#services")}>
+                        <a href="#">Услуги</a>
+                      </li>
+                    )}
+                    {pathname == "/" && (
+                      <li onClick={handleNav.bind({}, "#pricing")}>
+                        <a href="#">Цени</a>
+                      </li>
+                    )}
+                    {pathname == "/" && (
+                      <li onClick={handleNav.bind({}, "#faq")}>
+                        <a href="#">Въпроси</a>
+                      </li>
+                    )}
+                    {pathname == "/" && (
+                      <li>
+                        <Link href="/aboutUs" scroll={false}>
+                          За нас
+                        </Link>
+                      </li>
+                    )}
                   </ul>
                 </section>
               </motion.section>
