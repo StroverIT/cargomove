@@ -49,7 +49,7 @@ export default function ContactUs({
       return toastError("Моля попълнете всички полета!");
     }
 
-    const data = await sendMesage(inputs, typePage);
+    const data = await sendMesage(inputs);
     if (data.message) {
       setInputs(inputsInit);
       toastSuccess(data.message);
@@ -83,7 +83,9 @@ export default function ContactUs({
               Свържи се с нас!
             </span>
           </h4>
-          <p className="pt-3 lg:max-w-[15rem]">Очакваме с нетърпение.... !</p>
+          <p className="pt-3 lg:max-w-[15rem]">
+            Очакваме с нетърпение да се свържем с вас!
+          </p>
           <form
             action=""
             className="flex flex-col mt-12 "

@@ -1,7 +1,7 @@
-export default async function sendMesage(inputs, typePage) {
+export default async function sendMesage(inputs) {
   // Message for sending
   const messageData = {
-    title: `${typePage} заявка`,
+    title: `Ново съобщение от www.movex.bg`,
     email: inputs.email,
     description: inputs.message,
     fullName: inputs.name,

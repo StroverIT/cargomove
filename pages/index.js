@@ -24,7 +24,7 @@ export default function Home() {
           <Services />
           <Pricing />
           <FaQ />
-          <section className="mt-10 lg:mt-44 pb-20">
+          <section className="pb-20 mt-10 lg:mt-36">
             <ContactUs
               color="border-orange"
               btnColor="bg-orange"

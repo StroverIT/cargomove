@@ -4,6 +4,8 @@ import { Twirl as Hamburger } from "hamburger-react";
 import { BsTelephoneForward } from "react-icons/bs";
 import { globalContext } from "../globalContext";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { useRouter } from "next/router";
 const hamburgerVariants = {
   animate: { transition: { staggerChildren: 0.1, delay: 1 } },
 };
@@ -22,6 +24,8 @@ const hamburgerList = {
   },
 };
 export default function Navigation() {
+  const router = useRouter();
+
   const { heroRef, scrollData } = useContext(globalContext);
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -47,12 +51,19 @@ export default function Navigation() {
     return () => clearTimeout(timer);
   };
   useEffect(() => {
-    if (heroRef) {
+    if (heroRef.current) {
       if (scrollData >= heroRef.current.offsetHeight - 86) {
         setIsOnMain(true);
       } else setIsOnMain(false);
     }
   }, [scrollData]);
+  useEffect(() => {
+    if (router.pathname != "/") {
+      setIsOnMain(true);
+    } else {
+      setIsOnMain(false);
+    }
+  }, [router]);
   return (
     <nav
       className={`${
@@ -98,7 +109,7 @@ export default function Navigation() {
           <section className="">
             <ul className="flex items-center justify-center text-sm gap-x-10">
               <li>
-                <a href="#">Начало</a>
+                <Link href="/">Начало</Link>
               </li>
               <li>
                 <a href="#services">Услуги</a>
@@ -111,9 +122,10 @@ export default function Navigation() {
                 <a href="#faq">Въпроси</a>
               </li>
               <li>
-                <a href="#aboutUs">За нас</a>
+                <Link href="/aboutUs" scroll={false}>
+                  За нас
+                </Link>
               </li>
-
               <a href="tel:+359895063670">
                 <li className="px-5 py-2 rounded-sm bg-orange">позвъни сега</li>
               </a>
@@ -162,7 +174,7 @@ export default function Navigation() {
                 <section className="w-screen h-screen flex-center">
                   <ul className="flex flex-col items-center justify-center text-2xl gap-y-6">
                     <li onClick={handleNav.bind({}, "#index")}>
-                      <a href="#">Начало</a>
+                      <Link href="/">Начало</Link>
                     </li>
                     <li onClick={handleNav.bind({}, "#services")}>
                       <a href="#">Услуги</a>
@@ -173,8 +185,10 @@ export default function Navigation() {
                     <li onClick={handleNav.bind({}, "#faq")}>
                       <a href="#">Въпроси</a>
                     </li>
-                    <li onClick={handleNav.bind({}, "#aboutUs")}>
-                      <a href="#">За нас</a>
+                    <li>
+                      <Link href="/aboutUs" scroll={false}>
+                        За нас
+                      </Link>
                     </li>
                   </ul>
                 </section>

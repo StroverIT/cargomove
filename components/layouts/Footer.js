@@ -6,7 +6,8 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiGlobalLine } from "react-icons/ri";
-
+import newsletterSend from "../../fetches/newsletterSend";
+import { toastError, toastSuccess } from "../../libs/Notifications";
 export default function Footer() {
   const router = useRouter();
 
@@ -47,7 +48,7 @@ export default function Footer() {
             </h5>
             <input
               type="text"
-              className="w-full px-2 py-5 text-sm text-black border-none rounded-sm h-7 placeholder:text-dark"
+              className="w-full px-2 py-5 text-sm text-black border-none rounded-sm h-7 placeholder:text-dark text-dark"
               placeholder="Email"
               value={input}
               onChange={handler}
