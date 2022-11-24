@@ -4,6 +4,16 @@ import Title from "../Title";
 
 const data = [
   {
+    title: "Преместване на жилища",
+    image: "icons8-relocation-64.png",
+    _id: "xzcz12341",
+  },
+  {
+    title: "Преместване на дома и офиса",
+    image: "icons8-relocation-64.png",
+    _id: "21asfdasd",
+  },
+  {
     title: "Изхвърляне на стари мебели",
     image: "icons8-disposal-64.png",
 
@@ -14,36 +24,27 @@ const data = [
     image: "icons8-disposal-64.png",
     _id: "1231sada",
   },
-  {
-    title: "Преместване на дома и офиса",
-    image: "icons8-relocation-64.png",
-    _id: "21asfdasd",
-  },
+
   {
     title: "Почистване на мазета и тавани",
     image: "icons8-cleaning-64.png",
     _id: "asfacxzv12",
   },
 
-  {
-    title: "Кърти, чисти, извозва",
-    image: "icons8-drill-64.png",
-    _id: "zdzxc1231",
-  },
+  // {
+  //   title: "Кърти, чисти, извозва",
+  //   image: "icons8-drill-64.png",
+  //   _id: "zdzxc1231",
+  // },
   {
     title: "Почистване на  апартаменти и жилища",
     image: "icons8-cleaning-64.png",
     _id: "xZczx1231",
   },
-  {
-    title: "Преместване на жилища",
-    image: "icons8-relocation-64.png",
-    _id: "xzcz12341",
-  },
 ];
 export default function Services() {
   return (
-    <div className="mt-10  lg:mt-28 bg-gray-550" id="services">
+    <div className="mt-10 lg:mt-28 bg-gray-550" id="services">
       <section className="container py-10">
         <div className="mb-16 text-center flex-center">
           <Title title="Какво предлагаме?" size="text-4xl lg:text-5xl" />
