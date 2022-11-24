@@ -150,7 +150,7 @@ export default function Footer() {
                     </li>
                     <li className="flex items-center">
                       <HiOutlineMail />
-                      <span className="pl-1">movex@gmail.com</span>
+                      <span className="pl-1">movexbulgaria@gmail.com</span>
                     </li>
                     <li className="flex items-center">
                       <RiGlobalLine /> <span className="pl-1">movex.bg</span>

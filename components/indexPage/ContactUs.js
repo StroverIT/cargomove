@@ -139,7 +139,7 @@ export default function ContactUs({
             <div className="text-2xl ">
               <HiOutlineMail />
             </div>
-            <div className="pl-1">movex@gmail.com</div>
+            <div className="pl-1">movexbulgaria@gmail.com</div>
           </div>
           <div className="flex items-center">
             <div className="text-xl ">
