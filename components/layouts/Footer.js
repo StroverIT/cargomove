@@ -91,29 +91,21 @@ export default function Footer() {
 
           <section className="grid-cols-[20%40%40%] justify-center xl:grid ">
             <section>
-              <h5 className="mt-5 text-lg font-semibold">Брандове</h5>
+              <h5 className="mt-5 text-lg font-semibold">Услуги</h5>
               <ul className={`list-disc  ${colors.markers} leading-8 ml-4`}>
                 <li className="cursor-default">
-                  <Link href="/web" scroll={false}>
+                  <a href="#pricing">
                     <span className="pb-1 border-b cursor-pointer border-border">
-                      Web
+                      Транспортни
                     </span>
-                  </Link>
+                  </a>
                 </li>
                 <li className="cursor-default">
-                  <Link href="/digital" scroll={false}>
+                  <a href="#pricing">
                     <span className="pb-1 border-b cursor-pointer border-border">
-                      Digital
+                      Хамалски
                     </span>
-                  </Link>
-                </li>
-
-                <li className="cursor-default">
-                  <Link href="/academy" scroll={false}>
-                    <span className="pb-1 border-b cursor-pointer border-border">
-                      Academy
-                    </span>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </section>
