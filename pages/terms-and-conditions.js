@@ -870,7 +870,7 @@ export default function TermsAndConditions() {
             <ul className="mt-4 ml-5 list-disc">
               <li>И-мейл: movexbulgaria@gmail.com</li>
 
-              <li>Телефон: 0876237725</li>
+              <li>Телефон: +359 89 506 3670</li>
             </ul>
           </section>
         </section>
