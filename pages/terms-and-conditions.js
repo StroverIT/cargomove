@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import { links } from "../components/otherPagesNav/termsAndConditionsData";
 export default function TermsAndConditions() {
   return (
     <>
