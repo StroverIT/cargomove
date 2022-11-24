@@ -1,13 +1,9 @@
 import Head from "next/head";
 import React from "react";
-import Navigation from "../components/otherPagesNav/Navigation";
-import { links } from "../components/otherPagesNav/termsAndConditionsData";
-
 export default function TermsAndConditions() {
   return (
     <>
       <Head></Head>
-      <Navigation links={links} />
       <section className="container text-black mt-36">
         <div>
           <h2 className="text-2xl font-semibold">УСЛОВИЯ ЗА ПОЛЗВАНЕ</h2>
