@@ -64,7 +64,7 @@ export default function Footer() {
             <h5 className="mt-8 font-semibold uppercase">Социални мрежи</h5>
             <div className="flex mt-2 gap-x-5">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/movexbulgaria"
                 target="_blank"
                 rel="noopener noreferrer"
               >
