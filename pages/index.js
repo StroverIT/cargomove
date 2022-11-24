@@ -1,6 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useRef } from "react";
+import ContactUs from "../components/indexPage/ContactUs";
+import FaQ from "../components/indexPage/FaQ";
 import HeroSection from "../components/indexPage/HeroSection";
+import Pricing from "../components/indexPage/Pricing";
+import Services from "../components/indexPage/Services";
 import SmallInfo from "../components/indexPage/SmallInfo";
 
 export default function Home() {
@@ -14,7 +19,23 @@ export default function Home() {
 
       <main className="">
         <HeroSection />
-        <SmallInfo />
+        <section className="bg-gray-550 ">
+          <SmallInfo />
+          <Services />
+          <Pricing />
+          <FaQ />
+          <section className="mt-10 lg:mt-44 pb-20">
+            <ContactUs
+              color="border-orange"
+              btnColor="bg-orange"
+              bgColor="bg-orange-50"
+              number="+359 89 506 3670"
+              scrollBarThumb="scrollbar-thumb-primaryBlue-150"
+              scrollBarTrack="scrollbar-track-primaryBlue-500"
+              typePage="Web"
+            />
+          </section>
+        </section>
       </main>
     </div>
   );

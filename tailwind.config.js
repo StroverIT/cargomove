@@ -15,16 +15,30 @@ const customColors = {
 
   dark: {
     DEFAULT: "hsl(0, 0%, 8%)",
+    50: "hsl(0, 0%, 8%, 60%)",
+
     100: "hsl(0, 15%, 24%)",
 
     400: "#686868",
 
     transparent: "hsl(0, 0%, 8%, 0.5)",
   },
-  white: "hsl(0, 0%, 100%)",
+  white: {
+    DEFAULT: "hsl(0, 0%, 100%)",
+    20: "hsl(0, 0%, 99%)",
+
+    50: "hsl(0, 0%, 95%)",
+  },
   "white-lighter-trans": "hsl(0, 0%, 100%, 30%)",
   blue: "hsl(203, 76%, 48%)",
-  orange: "hsl(33, 89%, 52%)",
+  orange: {
+    DEFAULT: "#FF5620",
+    100: "hsl(33, 89%, 52%)",
+    150: "#F58025",
+    200: "#FED8B1",
+    250: "#FFAE42",
+    300: "#FF9F00",
+  },
   green: "hsl(92, 50%, 54%)",
   gray: {
     DEFAULT: "hsl(0, 0%, 85%)",
@@ -34,6 +48,7 @@ const customColors = {
     300: "#f6f6f6",
     400: "#eee",
     500: "grey",
+    550: "#f8f9fc",
 
     bord: "#dfdfdf",
     darker: "hsl(0, 0%, 50%)",
@@ -49,35 +64,36 @@ module.exports = {
   ],
   theme: {
     screens: {
+      zeroToXl: { max: "1280px" },
       xs: { min: "350px" },
       sm: { min: "640px" },
+      "max-sm": {
+        max: "640px",
+      },
       // => @media (min-width: 640px) { ... }
 
       md: { min: "768px" },
+      "max-md": {
+        max: "768px",
+      },
+      smToLg: { min: "640px", max: "1024px" },
       lg: { min: "1024px" },
       "max-lg": { max: "1024px" },
+      smToXl: { min: "640px", max: "1280px" },
 
       xl: { min: "1280px" },
-
+      "max-xl": { max: "1280px" },
       "2xl": { min: "1536px" },
+      "max-2xl": { max: "1536px" },
+
+      "max-3xl": {
+        max: "1800px",
+      },
+      "3xl": { min: "1800px" },
     },
     colors: customColors,
     backgroundColor: (theme) => ({
       ...theme("colors"),
-
-      color: customColors["bg-color"],
-      primary: customColors.primary,
-      "primary-lighter": customColors["primary-lighter"],
-      "primary-trans": customColors["primary-trans"],
-      secondary: customColors.secondary,
-      dark: customColors.dark,
-      white: customColors.white,
-      blue: customColors.blue,
-      orange: customColors.orange,
-      green: customColors.green,
-      gray: customColors.gray,
-      "gray-darker": customColors["gray-darker"],
-      transparent: customColors.transparent,
     }),
     container: {
       center: true,
