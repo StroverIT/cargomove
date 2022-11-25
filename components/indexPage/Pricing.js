@@ -7,13 +7,15 @@ export default function Pricing() {
     <section className="relative pt-10  mt-10 font-sans bg-white" id="pricing">
       <section className=" ">
         <div className="flex-center mt-5">
-          <Title title="Нашите цени" size="text-6xl" />
+          <Title title="Нашите цени" size="text-5xl md:text-6xl" />
         </div>
-        <section className="grid    lg:gap-10 mt-20">
+        <section className="grid    lg:gap-10 mt-10 lg:mt-20">
           <section className="">
-            <div className="grid grid-cols-2 shadow-lg">
-              <div className="p-16 border-y border-orange-150">
-                <h3 className=" text-2xl mb-4">Хамалски и товаро-разтоварни</h3>
+            <div className="grid md:grid-cols-2  shadow-lg">
+              <div className="p-5 md:p-16 border-y border-orange-150 max-md:order-2">
+                <h3 className="max-md:text-center text-2xl md:text-2xl mb-4">
+                  Хамалски и товаро-разтоварни
+                </h3>
                 <ul className="flex flex-col max-w-xl text-lg gap-y-2 list-disc	 ml-10">
                   <li>Цени от 20 лв на час.</li>
                   <li>
@@ -25,8 +27,8 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div>
-              <div className="flex-center bg-orange-150">
-                <div className="relative w-56 h-56">
+              <div className="flex-center bg-orange-150 ">
+                <div className="relative w-20 h-20 md:w-56 md:h-56">
                   <Image
                     src="/icons/moving.png"
                     alt="хамалски услуги за вас!"
@@ -35,10 +37,12 @@ export default function Pricing() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 shadow-lg">
-              <div className="p-16  border-b border-orange-150">
-                <h3 className=" text-2xl mb-4">Транспортни услуги</h3>
-                <ul className="flex flex-col max-w-xl text-lg gap-y-2 list-disc	 ml-10">
+            <div className="grid md:grid-cols-2 shadow-lg">
+              <div className="p-5 md:p-16  border-b border-orange-150 max-md:order-2">
+                <h3 className=" max-md:text-center text-2xl mb-4">
+                  Транспортни услуги
+                </h3>
+                <ul className="flex flex-col max-w-xl text-lg gap-y-2 list-disc	 ml-10 ">
                   <li> Камион до 3.5 т 30лв/ч -35лв/ч</li>
                   <li>
                     Kамион 19куб.м 35лв/ч Транспорт с камион до 16куб 30лв
@@ -50,8 +54,8 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div>
-              <div className="flex-center bg-orange-300">
-                <div className="relative w-56 h-56">
+              <div className="flex-center bg-orange-300 ">
+                <div className="relative w-20 h-20 md:w-56 md:h-56">
                   <Image
                     src="/icons/delivery-truck (1).png"
                     alt="хамалски услуги за вас!"
