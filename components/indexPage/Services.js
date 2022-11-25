@@ -44,7 +44,7 @@ const data = [
 ];
 export default function Services() {
   return (
-    <div className="mt-10 lg:mt-28 bg-gray-550" id="services">
+    <div className="mt-10 lg:mt-20 bg-gray-550" id="services">
       <section className="container py-10">
         <div className="mb-16 text-center flex-center">
           <Title title="Какво предлагаме?" size="text-4xl lg:text-5xl" />

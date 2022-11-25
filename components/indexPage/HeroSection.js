@@ -13,7 +13,7 @@ export default function HeroSection() {
       <div className="fixed top-0 left-0 h-[90vh] bg-white w-screen -z-20"></div>
 
       <div className="">
-        <div className="h-screen lg:h-[85vh] relative lg:rounded-b-[10rem] overflow-hidden">
+        <div className="h-screen lg:h-[87vh] relative lg:rounded-b-[10rem] overflow-hidden">
           <div className="top-0 left-0 w-screen -z-20">
             <div className="relative z-10 w-full h-screen pl-20  	 bg-[url('/bgImage2.jpg')] lg:rounded-b-[10rem] paralax hidden lg:block"></div>
             <div className="fixed -z-10 ">

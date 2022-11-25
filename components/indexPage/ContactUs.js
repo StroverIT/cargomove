@@ -24,6 +24,7 @@ export default function ContactUs({
   scrollBarThumb,
   scrollBarTrack,
   typePage,
+  mx = "3xl:mx-96",
 }) {
   const [inputs, setInputs] = useState(inputsInit);
 
@@ -69,7 +70,7 @@ export default function ContactUs({
     <motion.section
       ref={box}
       animate={boxAnim}
-      className={`flex-center border-8 ${color} max-3xl:container  border border-l-8 3xl:mx-96 shadow-lg`}
+      className={`flex-center border-8 ${color} max-3xl:container  border border-l-8 ${mx} shadow-lg`}
       id="contactUs"
     >
       <section

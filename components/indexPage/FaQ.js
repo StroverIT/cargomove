@@ -10,14 +10,14 @@ export default function FaQ() {
     <AnimateSharedLayout>
       <motion.section
         layout
-        className="container relative z-10 p-5 mt-10 lg:mt-48 lg:rounded-2xl box"
+        className="container relative z-10 max-md:py-10 md:p-20 mt-10 lg:mt-20 lg:rounded-2xl box"
         id="faq"
       >
         <motion.div layout className="flex-center">
           <Title title="Често задавани въпроси" size="text-2xl lg:text-5xl" />
         </motion.div>
 
-        <motion.section layout className="mt-10">
+        <motion.section layout className="mt-4">
           {questionData.map((question, index) => {
             return (
               <Question
@@ -54,7 +54,7 @@ function Question({ title, text, isBorder = true, index }) {
   return (
     <motion.section
       layout
-      className={`p-4  ${isBorder ? "border-b-2 border-orange-200" : ""} `}
+      className={`p-7 ${isBorder ? "border-b-2 border-orange-200" : ""} `}
     >
       <motion.div
         layout
