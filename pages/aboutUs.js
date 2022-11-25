@@ -29,18 +29,18 @@ export default function AboutUs() {
             развиваме
           </p>
         </div>
-        <section className="lg:grid-cols-2 grid mt-20">
-          <div className="border-y border-orange-100 flex-center p-10">
+        <section className="lg:grid-cols-2 grid mt-20 ">
+          <div className="border-y border-orange-100 flex-center p-10 max-md:order-2">
             <div className="flex-col flex-center">
               <Title title="Как работим?" size="text-3xl" />
-              <p className="mt-2 text-center text-sm md:max-w-sm">
+              <p className="mt-2 text-center text-sm md:max-w-sm ">
                 Бързо, лесно и прецизно с цел професионално излънение на
                 услугите ни.
               </p>
             </div>
           </div>
-          <div className="flex-center bg-orange-100 py-10 hidden lg:flex">
-            <div className="relative h-44 w-44 ">
+          <div className="flex-center bg-orange-100  py-5 md:py-10 max-md:order-1">
+            <div className="relative  w-20 h-20 md:h-44 md:w-44 ">
               <Image
                 src="/about-us/professional-services.png"
                 layout="fill"
@@ -48,7 +48,7 @@ export default function AboutUs() {
               />
             </div>
           </div>
-          <div className="border-orange-100 border-b flex-center p-10">
+          <div className="border-orange-100 border-b flex-center p-10 max-md:order-4">
             <div className="flex-col flex-center">
               <Title title="Нашите ценности" size="text-3xl" />
               <ul className="max-w-md mt-2 list-disc text-sm">
@@ -61,8 +61,8 @@ export default function AboutUs() {
               </ul>
             </div>
           </div>
-          <div className="flex-center bg-orange py-10 hidden lg:flex ">
-            <div className="relative h-44 w-44 ">
+          <div className="flex-center bg-orange py-5 md:py-10 order-1 max-md:order-3">
+            <div className="relative w-20 h-20 md:h-44 md:w-44 ">
               <Image
                 src="/about-us/respect.png"
                 layout="fill"
@@ -70,7 +70,7 @@ export default function AboutUs() {
               />
             </div>
           </div>
-          <div className="border-orange-100 border-b flex-center p-10">
+          <div className="border-orange-100 border-b flex-center p-10 max-md:order-6">
             <div className="flex-col flex-center">
               <Title title="Нашата история" size="text-3xl" />
               <p className="max-w-md mt-2 text-center text-sm">
@@ -82,8 +82,8 @@ export default function AboutUs() {
               </p>
             </div>
           </div>
-          <div className="flex-center bg-orange-100 py-10 hidden lg:flex">
-            <div className="relative h-44 w-44">
+          <div className="flex-center bg-orange-100 py-5 md:py-10 order-1 max-md:order-5">
+            <div className="relative w-20 h-20 md:h-44 md:w-44">
               <Image
                 src="/about-us/business.png"
                 layout="fill"
