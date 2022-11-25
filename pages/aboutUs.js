@@ -61,7 +61,7 @@ export default function AboutUs() {
               </ul>
             </div>
           </div>
-          <div className="order-1 py-5 flex-center bg-orange md:py-10 max-md:order-3">
+          <div className="py-5 lg:order-1 flex-center bg-orange md:py-10 max-md:order-3">
             <div className="relative w-20 h-20 md:h-44 md:w-44 ">
               <Image
                 src="/about-us/respect.png"
@@ -70,7 +70,7 @@ export default function AboutUs() {
               />
             </div>
           </div>
-          <div className="p-10 border-b border-orange-100 flex-center max-md:order-6">
+          <div className="p-10 border-l border-orange-100 flex-center max-md:order-6">
             <div className="flex-col flex-center">
               <Title title="Нашата история" size="text-3xl" />
               <p className="max-w-md mt-2 text-sm text-center">
@@ -82,7 +82,7 @@ export default function AboutUs() {
               </p>
             </div>
           </div>
-          <div className="order-1 py-5 bg-orange-100 flex-center md:py-10 max-md:order-5">
+          <div className="py-5 bg-orange-100 lg:order-1 flex-center md:py-10 max-md:order-5">
             <div className="relative w-20 h-20 md:h-44 md:w-44">
               <Image
                 src="/about-us/business.png"
