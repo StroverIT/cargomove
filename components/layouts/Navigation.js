@@ -58,6 +58,7 @@ export default function Navigation() {
     }
   }, [scrollData]);
   useEffect(() => {
+    setMenuOpen(false);
     if (pathname != "/") {
       setIsOnMain(true);
     } else {
