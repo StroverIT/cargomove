@@ -19,7 +19,7 @@ export default function AboutUs() {
           <div className="absolute top-0 z-10 w-screen h-screen bg-dark-transparent"></div>
         </div>
       </div>
-      <section className="smToXl:container xl:mx-80 relative z-20 pt-16 bg-white ">
+      <section className="relative z-20 pt-16 bg-white smToXl:container xl:mx-80 ">
         <div className="flex-col flex-center">
           <Title title="Movex Bulgaria" size="text-5xl" />
           <p className="max-w-lg mt-5 text-center">
@@ -29,18 +29,18 @@ export default function AboutUs() {
             развиваме
           </p>
         </div>
-        <section className="lg:grid-cols-2 grid mt-20 ">
-          <div className="border-y border-orange-100 flex-center p-10 max-md:order-2">
+        <section className="grid mt-20 lg:grid-cols-2 ">
+          <div className="p-10 border-orange-100 border-y flex-center max-md:order-2">
             <div className="flex-col flex-center">
               <Title title="Как работим?" size="text-3xl" />
-              <p className="mt-2 text-center text-sm md:max-w-sm ">
-                Бързо, лесно и прецизно с цел професионално излънение на
+              <p className="mt-2 text-sm text-center md:max-w-sm ">
+                Бързо, лесно и прецизно с цел професионално изпълнение на
                 услугите ни.
               </p>
             </div>
           </div>
-          <div className="flex-center bg-orange-100  py-5 md:py-10 max-md:order-1">
-            <div className="relative  w-20 h-20 md:h-44 md:w-44 ">
+          <div className="py-5 bg-orange-100 flex-center md:py-10 max-md:order-1">
+            <div className="relative w-20 h-20 md:h-44 md:w-44 ">
               <Image
                 src="/about-us/professional-services.png"
                 layout="fill"
@@ -48,10 +48,10 @@ export default function AboutUs() {
               />
             </div>
           </div>
-          <div className="border-orange-100 border-b flex-center p-10 max-md:order-4">
+          <div className="p-10 border-b border-orange-100 flex-center max-md:order-4">
             <div className="flex-col flex-center">
               <Title title="Нашите ценности" size="text-3xl" />
-              <ul className="max-w-md mt-2 list-disc text-sm">
+              <ul className="max-w-md mt-2 text-sm list-disc">
                 <li>На първо място сте Вие</li>
                 <li>Уважение</li>
                 <li>Организираност</li>
@@ -61,7 +61,7 @@ export default function AboutUs() {
               </ul>
             </div>
           </div>
-          <div className="flex-center bg-orange py-5 md:py-10 order-1 max-md:order-3">
+          <div className="order-1 py-5 flex-center bg-orange md:py-10 max-md:order-3">
             <div className="relative w-20 h-20 md:h-44 md:w-44 ">
               <Image
                 src="/about-us/respect.png"
@@ -70,10 +70,10 @@ export default function AboutUs() {
               />
             </div>
           </div>
-          <div className="border-orange-100 border-b flex-center p-10 max-md:order-6">
+          <div className="p-10 border-b border-orange-100 flex-center max-md:order-6">
             <div className="flex-col flex-center">
               <Title title="Нашата история" size="text-3xl" />
-              <p className="max-w-md mt-2 text-center text-sm">
+              <p className="max-w-md mt-2 text-sm text-center">
                 Бяхме млади и амбициозни студенти с голямо желание за развитие,
                 както финансово така и физически, затова открихме най-добрият
                 вариант за нас и това е хамалогията. През 2019 година нашето
@@ -82,7 +82,7 @@ export default function AboutUs() {
               </p>
             </div>
           </div>
-          <div className="flex-center bg-orange-100 py-5 md:py-10 order-1 max-md:order-5">
+          <div className="order-1 py-5 bg-orange-100 flex-center md:py-10 max-md:order-5">
             <div className="relative w-20 h-20 md:h-44 md:w-44">
               <Image
                 src="/about-us/business.png"
@@ -97,9 +97,9 @@ export default function AboutUs() {
             <Title title="ЕКИПЪТ" size="text-4xl" />
           </div>
 
-          <section className="mt-16 grid md:grid-cols-3 gap-x-20 gap-y-10">
+          <section className="grid mt-16 md:grid-cols-3 gap-x-20 gap-y-10">
             <div className="flex-col flex-center">
-              <div className="relative w-36 h-36 transition-all border-2 rounded-full cursor-pointer hover:scale-110 border-primaryBlue-100 ">
+              <div className="relative transition-all border-2 rounded-full cursor-pointer w-36 h-36 hover:scale-110 border-primaryBlue-100 ">
                 <Image
                   src="/djulia.jpg"
                   alt="growth for you and your company"
@@ -107,11 +107,11 @@ export default function AboutUs() {
                   className="object-contain rounded-full "
                 />
               </div>
-              <h3 className="text-xl text-center mt-3">Денислав Цветков</h3>
+              <h3 className="mt-3 text-xl text-center">Денислав Цветков</h3>
               <p>Управител</p>
             </div>
             <div className="flex-col flex-center">
-              <div className="relative w-36 h-36 transition-all border-2 rounded-full cursor-pointer hover:scale-110 border-primaryBlue-100 ">
+              <div className="relative transition-all border-2 rounded-full cursor-pointer w-36 h-36 hover:scale-110 border-primaryBlue-100 ">
                 <Image
                   src="/hrisi2_durt_crop.jpg"
                   alt="growth for you and your company"
@@ -119,11 +119,11 @@ export default function AboutUs() {
                   className="rounded-full bg-blend"
                 />
               </div>
-              <h3 className="text-xl text-center mt-3">Йоана Стайкова</h3>
+              <h3 className="mt-3 text-xl text-center">Йоана Стайкова</h3>
               <p>Hr консултант</p>
             </div>
             <div className="flex-col flex-center">
-              <div className="relative w-36 h-36 transition-all border-2 rounded-full cursor-pointer hover:scale-110 border-primaryBlue-100 ">
+              <div className="relative transition-all border-2 rounded-full cursor-pointer w-36 h-36 hover:scale-110 border-primaryBlue-100 ">
                 <Image
                   src="/hrisi2_durt_crop.jpg"
                   alt="growth for you and your company"
@@ -131,7 +131,7 @@ export default function AboutUs() {
                   className="rounded-full bg-blend"
                 />
               </div>
-              <h3 className="text-xl text-center mt-3">Емил Златинов</h3>
+              <h3 className="mt-3 text-xl text-center">Емил Златинов</h3>
               <p>Ит съпорт</p>
             </div>
           </section>
