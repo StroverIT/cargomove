@@ -9,7 +9,7 @@ const data = [
     _id: "xzcz12341",
   },
   {
-    title: "Преместване на дома и офиса",
+    title: "Преместване на офиса",
     image: "icons8-relocation-64.png",
     _id: "21asfdasd",
   },
