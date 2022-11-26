@@ -1,4 +1,5 @@
 import Image from "next/legacy/image";
+import Link from "next/link";
 import React from "react";
 import Title from "../Title";
 
@@ -6,28 +7,34 @@ const data = [
   {
     title: "Преместване на дома",
     image: "icons8-relocation-64.png",
+    link: "home-moving",
     _id: "xzcz12341",
   },
   {
     title: "Преместване на офиса",
     image: "icons8-relocation-64.png",
+    link: "office-moving",
+
     _id: "21asfdasd",
   },
   {
     title: "Изхвърляне на стари мебели",
     image: "icons8-disposal-64.png",
+    link: "disposal-of-old-furniture",
 
     _id: "1231",
   },
   {
     title: "Изхвърляне на строителни отпадъци",
     image: "icons8-disposal-64.png",
+    link: "disposal-of-construction-waste",
     _id: "1231sada",
   },
 
   {
     title: "Почистване на мазета и тавани",
     image: "icons8-cleaning-64.png",
+    link: "cleaning-basements-and-attics",
     _id: "asfacxzv12",
   },
 
@@ -39,6 +46,7 @@ const data = [
   {
     title: "Почистване на  апартаменти и жилища",
     image: "icons8-cleaning-64.png",
+    link: "cleaning-of-apartments-and-houses",
     _id: "xZczx1231",
   },
 ];
@@ -57,6 +65,7 @@ export default function Services() {
                 key={service._id}
                 index={index}
                 image={service.image}
+                link={service.link}
               />
             );
           })}
@@ -74,18 +83,20 @@ export default function Services() {
   );
 }
 
-function Service({ title, index, image }) {
+function Service({ title, index, image, link }) {
   return (
-    <div className="transition-all bg-white shadow-lg text-dark hover:shadow-lg hover:scale-110 rounded-xl">
-      <section className="h-40 px-5 pt-4">
-        <section className="flex justify-between">
-          <h5 className="text-4xl text-orange">0{index + 1}</h5>
-          <div className="relative w-10 h-10">
-            <Image src={`/icons/${image}`} alt="test" layout="fill" />
-          </div>
+    <Link href={`/${link}`}>
+      <div className="transition-all bg-white shadow-lg cursor-pointer text-dark hover:shadow-lg hover:scale-110 rounded-xl">
+        <section className="h-40 px-5 pt-4">
+          <section className="flex justify-between">
+            <h5 className="text-4xl text-orange">0{index + 1}</h5>
+            <div className="relative w-10 h-10">
+              <Image src={`/icons/${image}`} alt="test" layout="fill" />
+            </div>
+          </section>
+          <h3 className="pt-2 text-xl italic">{title}</h3>
         </section>
-        <h3 className="pt-2 text-xl italic">{title}</h3>
-      </section>
-    </div>
+      </div>
+    </Link>
   );
 }

@@ -127,7 +127,7 @@ export default function Navigation() {
                   <a href="#faq">Въпроси</a>
                 </li>
               )}
-              {pathname == "/" && (
+              {pathname != "/aboutUs" && (
                 <li>
                   <Link href="/aboutUs" scroll={false}>
                     За нас
