@@ -4,7 +4,7 @@ import Title from "../Title";
 
 const data = [
   {
-    title: "Преместване на жилища",
+    title: "Преместване на дома",
     image: "icons8-relocation-64.png",
     _id: "xzcz12341",
   },
