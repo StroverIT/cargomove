@@ -33,7 +33,7 @@ export default function HeroSection() {
             <div className="absolute z-20 w-full text-white -translate-y-1/2 max-md:-translate-x-1/2 top-1/2 max-md:left-1/2 max-md:px-2">
               <div className="pt-20 max-md:flex-col max-md:text-center max-md:flex-center">
                 <h1 className="text-3xl font-semibold lg:max-w-md lg:text-6xl">
-                  Хамалски и транспортни услуги
+                  Транспортни и хамалски услуги
                 </h1>
                 <p className="max-w-sm mt-1 font-sans lg:mt-6 max-lg:max-w-xs lg:text-xl text-white-50">
                   Ние не просто преместваме вашите неща, ние преместваме вашите
