@@ -95,7 +95,7 @@ function Question({ title, text, isBorder = true, index }) {
                 exit={{
                   opacity: 0,
                 }}
-                className="mt-1 font-sans max-lg:text-sm"
+                className="mt-1 font-sans max-lg:text-sm whitespace-pre-line"
               >
                 {text}
               </motion.p>
