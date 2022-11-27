@@ -85,7 +85,7 @@ export default function Services() {
 
 function Service({ title, index, image, link }) {
   return (
-    <Link href={`/${link}`}>
+    <Link href={`/${link}`} scroll={false}>
       <div className="transition-all bg-white shadow-lg cursor-pointer text-dark hover:shadow-lg hover:scale-110 rounded-xl">
         <section className="h-40 px-5 pt-4">
           <section className="flex justify-between">
