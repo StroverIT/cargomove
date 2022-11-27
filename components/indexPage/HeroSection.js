@@ -35,14 +35,17 @@ export default function HeroSection() {
                 <h1 className="text-3xl font-semibold lg:max-w-md lg:text-6xl">
                   Транспортни и хамалски услуги
                 </h1>
-                <p className="max-w-sm mt-1 font-sans lg:mt-6 max-lg:max-w-xs lg:text-xl text-white-50">
+                {/* <p className="max-w-sm mt-1 font-sans lg:mt-6 max-lg:max-w-xs lg:text-xl text-white-50">
                   Ние не просто преместваме вашите неща, ние преместваме вашите
                   спомени
+                </p> */}
+                <p className="max-w-sm mt-1 font-sans lg:mt-6 max-lg:max-w-xs lg:text-3xl text-white-50">
+                  На правилното място в точното време
                 </p>
                 <div className="mt-8 lg:mt-9">
                   <a
                     href="tel:+359895063670"
-                    className="px-10 py-2 font-semibold uppercase rounded-sm lg:text-lg bg-orange"
+                    className="px-10 py-3 font-semibold uppercase rounded-sm lg:text-lg bg-orange"
                   >
                     позвъни сега
                   </a>
