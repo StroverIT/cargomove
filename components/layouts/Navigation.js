@@ -6,6 +6,8 @@ import { globalContext } from "../globalContext";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/legacy/image";
+import Logo from "../Logo";
 const hamburgerVariants = {
   animate: { transition: { staggerChildren: 0.1, delay: 1 } },
 };
@@ -101,8 +103,10 @@ export default function Navigation() {
           </div>
         </div>
       </section> */}
-      <section className="container justify-between hidden lg:flex">
-        <div>Логото</div>
+      <section className="container justify-between hidden lg:flex items-center">
+        <div className="h-16 w-56">
+          <Logo />
+        </div>
         <section className="flex items-center justify-center gap-x-5">
           {/* <div>
             <Hamburger toggle={setMenuOpen} toggled={menuOpen} size={20} />
@@ -142,7 +146,9 @@ export default function Navigation() {
         </section>
       </section>
       <section className="container justify-between flex-center lg:hidden ">
-        <div>Логото</div>
+        <div className="relative w-96 h-10">
+          <Logo />
+        </div>
         <section className="flex items-center justify-center gap-x-5 ">
           <div className="flex gap-x-2">
             <a

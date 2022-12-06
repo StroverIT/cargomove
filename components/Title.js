@@ -10,7 +10,7 @@ export default function Title({
 }) {
   return (
     <div className="">
-      <h3 className={`${size} text-center font-medium`}>{title}</h3>
+      <h1 className={`${size} text-center font-medium`}>{title}</h1>
 
       <div className="mt-2 flex-center">
         <div className={`h-1 w-full ${lineColor}`}></div>

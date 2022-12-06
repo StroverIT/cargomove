@@ -110,3 +110,31 @@ html::-webkit-scrollbar-thumb {
 .Toastify__toast-container--top-right {
   top: 6rem !important;
 }
+.invert {
+  filter: invert(100%);
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: red;
+  background-color: red;
+}
+
+.swiper-pagination-bullet {
+  /** Stylization of bookmarks that are not selected */
+  display: inline !important;
+  background: theme("colors.orange.DEFAULT") !important;
+
+  /* opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2); */
+}
+@media screen("lg") {
+  .swiper-pagination-bullet {
+    margin-right: 20px !important;
+  }
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 40px !important;
+}

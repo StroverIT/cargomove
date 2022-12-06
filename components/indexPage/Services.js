@@ -20,21 +20,22 @@ const data = [
   {
     title: "Международно преместване",
     image: "icons8-disposal-64.png",
-    link: "disposal-of-old-furniture",
+    link: "international-relocation",
 
     _id: "1231",
   },
   {
-    title: "Изхвърляне на стари мебели",
+    title: "Изхвърляне и извозване на стари мебели",
     image: "icons8-disposal-64.png",
-    link: "disposal-of-construction-waste",
+    link: "disposal-of-old-furniture",
     _id: "1231sada",
   },
-
+  // cleaning-of-apartments-and-houses
   {
     title: "Изхвърляне на строителни отпадъци",
     image: "icons8-cleaning-64.png",
-    link: "cleaning-basements-and-attics",
+
+    link: "disposal-of-construction-waste",
     _id: "asfacxzv12",
   },
 
@@ -46,7 +47,7 @@ const data = [
   {
     title: "Почистване на мазета и тавани",
     image: "icons8-cleaning-64.png",
-    link: "cleaning-of-apartments-and-houses",
+    link: "cleaning-basements-and-attics",
     _id: "xZczx1231",
   },
 ];
