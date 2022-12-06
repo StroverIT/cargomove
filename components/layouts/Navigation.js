@@ -25,16 +25,16 @@ const lists = [
     link: "international-relocation",
   },
   {
-    text: "Изхвърляне и извозване на стари мебели",
-    link: "disposal-of-old-furniture",
+    text: "Транспортни услуги",
+    link: "transport-services",
   },
   {
-    text: "Изхвърляне и на строителни отпадъци",
-    link: "disposal-of-construction-waste",
+    text: "Товарно-разтоварна дейност",
+    link: "loading-and-unloading-activity",
   },
   {
-    text: "Почистване на мазета и тавани",
-    link: "cleaning-basements-and-attics",
+    text: "Преместване на каси, пиана, витрини",
+    link: "moving-cash-registers-pianos-showcases",
   },
 ];
 // transition: {

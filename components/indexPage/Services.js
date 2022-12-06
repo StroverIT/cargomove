@@ -25,17 +25,18 @@ const data = [
     _id: "1231",
   },
   {
-    title: "Изхвърляне и извозване на стари мебели",
+    title: "Транспортни услуги",
     image: "icons8-disposal-64.png",
-    link: "disposal-of-old-furniture",
+    link: "transport-services",
+    // link: "disposal-of-old-furniture",
     _id: "1231sada",
   },
   // cleaning-of-apartments-and-houses
   {
-    title: "Изхвърляне на строителни отпадъци",
+    title: "Товарно-разтоварна дейност",
     image: "icons8-cleaning-64.png",
-
-    link: "disposal-of-construction-waste",
+    link: "loading-and-unloading-activity",
+    // link: "disposal-of-construction-waste",
     _id: "asfacxzv12",
   },
 
@@ -45,9 +46,10 @@ const data = [
   //   _id: "zdzxc1231",
   // },
   {
-    title: "Почистване на мазета и тавани",
+    title: "Преместване на каси, пиана, витрини",
     image: "icons8-cleaning-64.png",
-    link: "cleaning-basements-and-attics",
+    link:"moving-cash-registers-pianos-showcases",
+    // link: "cleaning-basements-and-attics",
     _id: "xZczx1231",
   },
 ];
