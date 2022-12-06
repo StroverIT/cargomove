@@ -24,7 +24,7 @@ export default function HomeMoving() {
             </p>
           </section>
           {/* Тука може да се сложи снимка!!!!! */}
-          <section className="my-14">
+          <section className="lg:mx-36 my-14">
             <ContactUs
               color="border-orange"
               btnColor="bg-orange"

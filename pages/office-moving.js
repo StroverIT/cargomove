@@ -26,7 +26,7 @@ export default function OfficeMoving() {
           мебели и вещи.
         </p>
         {/* <p>ненужни вещи изхвърляне</p> */}
-        <section className="my-14">
+        <section className="my-14 lg:mx-36">
           <ContactUs
             color="border-orange"
             btnColor="bg-orange"

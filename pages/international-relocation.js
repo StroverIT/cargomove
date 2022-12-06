@@ -66,7 +66,7 @@ export default function InternationalRelocation() {
             Ако имате запитвания, с радост ще отговорим на всички Ваши въпроси.
           </p>
         </section>
-        <section className="my-14">
+        <section className="my-14 lg:mx-36">
           <ContactUs
             color="border-orange"
             btnColor="bg-orange"

@@ -39,7 +39,7 @@ export default function DisposalOfOldFurniture() {
             мебели.
           </p>
         </section>
-        <section className="my-14">
+        <section className="my-14 lg:mx-36">
           <ContactUs
             color="border-orange"
             btnColor="bg-orange"

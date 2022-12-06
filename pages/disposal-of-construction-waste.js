@@ -34,7 +34,7 @@ export default function CleaningOfApartmentsAndHouses() {
             <li>Алтернатива за по-евтино извозване на отпадъци с контейнери</li>
           </ul>
         </section>
-        <section className="my-14">
+        <section className="my-14 lg:mx-36">
           <ContactUs
             color="border-orange"
             btnColor="bg-orange"
