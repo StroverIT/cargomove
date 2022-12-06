@@ -141,7 +141,8 @@ export default function Navigation() {
       </section> */}
       <section className="container items-center justify-between hidden lg:flex">
         <div className="w-56 h-16">
-          <Logo />
+          {/* <Logo /> */}
+          logo
         </div>
         <section className="flex items-center justify-center gap-x-5">
           {/* <div>
@@ -254,9 +255,7 @@ export default function Navigation() {
         </section>
       </section>
       <section className="container justify-between flex-center lg:hidden ">
-        <div className="relative h-10 w-96">
-          <Logo />
-        </div>
+        <div className="relative h-10 w-96">{/* <Logo /> */}Logo</div>
         <section className="flex items-center justify-center gap-x-5 ">
           <div className="flex gap-x-2">
             <a
