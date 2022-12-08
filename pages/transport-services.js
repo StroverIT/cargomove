@@ -8,17 +8,14 @@ export default function DisposalOfOldFurniture() {
     <div className="min-h-screen mt-40">
       <section className="container font-sans">
         <section className="flex-center">
-          <Title
-            title="Изхвърляне и извозване на стари мебели"
-            size="text-3xl"
-          />
+          <Title title="Транспортни услуги" size="text-3xl" />
         </section>
         {/* Много често се случва да пазим с години стари вещи, мебели и други
             предмети в мазето или на тавана. С годините те се натрупват и се стига
             до момента, в който се чудите как да се отървете от тях и да ги
             изхвърлите. Понякога, за съжаление, някои недобросъвестни съседи
             изхвърлят боклука си направо в мазето. */}
-        <section>
+        <section className="lg:px-56">
           <section className="text-center flex-center">
             <p className="mt-2 lg:max-w-3xl">
               С използването на тази услуга, oт Movex Bulgaria Ви предоставяме

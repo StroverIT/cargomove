@@ -98,7 +98,7 @@ export default function SwiperServices({
           <SwiperSlide>
             <SwiperSlideFn
               icon="icons8-cleaning-64.png"
-              title="Изхвърляне на строителни отпадъци"
+              title="Хамалски услуги и товаро-разтоварни дейности"
               link="disposal-of-construction-waste"
             />
           </SwiperSlide>
@@ -108,7 +108,7 @@ export default function SwiperServices({
           <SwiperSlide>
             <SwiperSlideFn
               icon="icons8-cleaning-64.png"
-              title="Почистване на мазета и тавани"
+              title="Преместване на пиана, каси, витрини"
               link="cleaning-basements-and-attics"
             />
           </SwiperSlide>

@@ -18,14 +18,20 @@ export default function Pricing() {
                 </h3>
                 <ul className="flex flex-col max-w-xl text-lg gap-y-2 list-disc	 ml-10">
                   <li>Цени от 20 лв на час.</li>
-                  <li>
-                    При повикване извън София - по договаряне (пътн разх и др)
-                  </li>
+                  <li>При повикване извън София - по договаряне</li>
                   <li>
                     За тежки предмети над 100кг. по договаряне. (каси, витрини,
-                    пиана, камини, камъни и др.)
+                    пиана, камини, камъни и прочие.)
                   </li>
                 </ul>
+                <section className="flex-center mt-5">
+                  <a
+                    href=""
+                    className="text-white bg-orange-150 px-5 py-2 rounded-md font-semibold "
+                  >
+                    Виж повече
+                  </a>
+                </section>
               </div>
               <div className="flex-center bg-orange-150 ">
                 <div className="relative w-20 h-20 md:w-56 md:h-56">
@@ -53,6 +59,14 @@ export default function Pricing() {
                     договаряне.
                   </li>
                 </ul>
+                <section className="flex-center mt-5">
+                  <a
+                    href=""
+                    className="text-white bg-orange-150 px-5 py-2 rounded-md font-semibold "
+                  >
+                    Виж повече
+                  </a>
+                </section>
               </div>
               <div className="flex-center bg-orange-300 ">
                 <div className="relative w-20 h-20 md:w-56 md:h-56">
@@ -67,13 +81,13 @@ export default function Pricing() {
           </section>
         </section>
         <section className="mt-10 lg:mt-10">
-          <aside className="sticky text-center flex-center top-56">
+          <section className="sticky text-center flex-center top-56">
             <ul className="flex flex-col italic gap-y-2">
               <li> Безплатен оглед в рамките на гр. София</li>
               <li> Минимално време на ангажираност 2ч.</li>
               <li>Монтаж / демонтаж, Опаковане и др по договаряне</li>
             </ul>
-          </aside>
+          </section>
         </section>
         <div className="py-10 flex-center">
           <a

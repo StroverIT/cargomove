@@ -137,16 +137,24 @@ export default function ContactUs({
         </section>
         <section className="flex flex-col mx-auto space-y-3 mt-7 focus:border-transparent">
           <div className="flex items-center">
-            <div className="text-2xl ">
-              <HiOutlineMail />
-            </div>
-            <div className="pl-1">movexbulgaria@gmail.com</div>
+            <a href="mailto:movexbulgaria@gmail.com">
+              <section className="flex-center">
+                <div className="text-2xl ">
+                  <HiOutlineMail />
+                </div>
+                <div className="pl-1">movexbulgaria@gmail.com</div>
+              </section>
+            </a>
           </div>
           <div className="flex items-center">
-            <div className="text-xl ">
-              <FiPhoneCall />
-            </div>
-            <div className="pl-1">{number}</div>
+            <a href="tel:+359895063670">
+              <section className="flex-center">
+                <div className="text-xl ">
+                  <FiPhoneCall />
+                </div>
+                <div className="pl-1">{number}</div>
+              </section>
+            </a>
           </div>
         </section>
       </section>

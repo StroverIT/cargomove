@@ -39,8 +39,9 @@ export default function HeroSection() {
                   Ние не просто преместваме вашите неща, ние преместваме вашите
                   спомени
                 </p> */}
+
                 <p className="max-w-sm mt-1 font-sans lg:mt-6 max-lg:max-w-xs lg:text-3xl text-white-50">
-                  На правилното място в точното време
+                  Плавният преход е нашата специалност.
                 </p>
                 <div className="mt-8 lg:mt-9">
                   <a

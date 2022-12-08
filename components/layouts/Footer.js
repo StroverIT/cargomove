@@ -95,7 +95,7 @@ export default function Footer() {
               <h5 className="mt-5 text-lg font-semibold">Услуги</h5>
               <ul className={`list-disc  ${colors.markers} leading-8 ml-4`}>
                 <li className="cursor-default">
-                  <Link href="#pricing">
+                  <Link href="/home-moving">
                     <span className="pb-1 border-b cursor-pointer border-border">
                       Преместване на дома
                     </span>
@@ -103,35 +103,35 @@ export default function Footer() {
                 </li>
 
                 <li className="cursor-default">
-                  <Link href="#pricing">
+                  <Link href="/office-moving">
                     <span className="pb-1 border-b cursor-pointer border-border">
                       Преместване на офиси
                     </span>
                   </Link>
                 </li>
                 <li className="cursor-default">
-                  <Link href="#pricing">
+                  <Link href="/international-relocation">
                     <span className="pb-1 border-b cursor-pointer border-border">
                       Международно преместване
                     </span>
                   </Link>
                 </li>
                 <li className="cursor-default">
-                  <Link href="#pricing">
+                  <Link href="/transport-services">
                     <span className="pb-1 border-b cursor-pointer border-border">
                       Транспортни услуги
                     </span>
                   </Link>
                 </li>
                 <li className="cursor-default">
-                  <Link href="#pricing">
+                  <Link href="/loading-and-unloading-activity">
                     <span className="pb-1 border-b cursor-pointer border-border">
-                      Товарно-разтоварна дейност
+                      Хамалски услуги и товаро-разтоварни
                     </span>
                   </Link>
                 </li>
                 <li className="cursor-default">
-                  <Link href="#pricing">
+                  <Link href="/moving-cash-registers-pianos-showcases">
                     <span className="pb-1 border-b cursor-pointer border-border">
                       Преместване на каси, пиана, витрини
                     </span>
@@ -174,12 +174,20 @@ export default function Footer() {
                 <div className="ml-1 border-l border-border">
                   <ul className="pl-4 leading-8">
                     <li className="flex items-center">
-                      <FiPhoneCall />
-                      <span className="pl-1">+359 89 506 3670</span>
+                      <a href="tel:+359895063670">
+                        <section className="flex-center">
+                          <FiPhoneCall />
+                          <span className="pl-1">+359 89 506 3670</span>
+                        </section>
+                      </a>
                     </li>
                     <li className="flex items-center">
-                      <HiOutlineMail />
-                      <span className="pl-1">movexbulgaria@gmail.com</span>
+                      <a href="mailto:movexbulgaria@gmail.com">
+                        <section className="flex-center">
+                          <HiOutlineMail />
+                          <span className="pl-1">movexbulgaria@gmail.com</span>
+                        </section>
+                      </a>
                     </li>
                     <li className="flex items-center">
                       <RiGlobalLine /> <span className="pl-1">movex.bg</span>

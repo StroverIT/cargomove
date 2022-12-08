@@ -8,7 +8,10 @@ export default function CleaningOfApartmentsAndHouses() {
     <div className="min-h-screen mt-40 ">
       <section className="container font-sans">
         <section className="flex-center">
-          <Title title="Изхвърляне на строителни отпадъци" size="text-3xl" />
+          <Title
+            title="Хамалски услуги и товаро-разтоварни дейности"
+            size="text-3xl"
+          />
         </section>
         {/* Извозване на строителни отпадъци в чували до сметище
           Първокласно обслужване на всички наши клиенти за извозване на отпадъци
@@ -18,7 +21,7 @@ export default function CleaningOfApartmentsAndHouses() {
         Достъпни цени и много специални оферти за количества и редовни клиенти
         
         По-евтина алтернативна на извозването на отпадъци с контейнери */}
-        <section>
+        <section className="lg:px-56">
           <h3 className="mt-2 text-xl font-medium">Какво предлагаме:</h3>
           <ul className="ml-5 list-disc">
             <li>Извозване на строителните отпадъци в чували до сметище. </li>

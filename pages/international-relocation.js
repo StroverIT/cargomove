@@ -11,7 +11,7 @@ export default function InternationalRelocation() {
           <Title title="Международно преместване" size="text-3xl" />
         </section>
         {/* Преместване на дома и/или офиса в друга държава. */}
-        <section className="font-sans">
+        <section className="font-sans lg:px-56">
           {/* <h3 className="text-xl font-medium">Какво предлагаме:</h3> */}
           <section className="text-center flex-center">
             <p className="lg:max-w-lg">
@@ -23,9 +23,10 @@ export default function InternationalRelocation() {
             Кога е нужно професионално международно преместване ?
           </h3>
           <p className="mt-1 lg:max-w-3xl">
-              Когато решите да преместите имуществото си във всяка страна от ЕС. 
-            Спестяваме Ви време и намаляваме главоболието с опаковането и подреждането. 
-            Когато желаете собственосста Ви да пристигне навреме с гарантирано качество. 
+            Когато решите да преместите имуществото си във всяка страна от ЕС.
+            Спестяваме Ви време и намаляваме главоболието с опаковането и
+            подреждането. Когато желаете собственосста Ви да пристигне навреме с
+            гарантирано качество.
           </p>
           <h3 className="mt-2 text-xl font-medium">Какво предлагаме:</h3>
           <p className="mt-1 lg:max-w-3xl">

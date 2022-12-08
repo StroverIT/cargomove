@@ -33,7 +33,7 @@ const data = [
   },
   // cleaning-of-apartments-and-houses
   {
-    title: "Товарно-разтоварна дейност",
+    title: "Хамалски услуги и товаро-разтоварни дейности",
     image: "icons8-cleaning-64.png",
     link: "loading-and-unloading-activity",
     // link: "disposal-of-construction-waste",
@@ -46,9 +46,9 @@ const data = [
   //   _id: "zdzxc1231",
   // },
   {
-    title: "Преместване на каси, пиана, витрини",
+    title: "Преместване на пиана, каси, витрини",
     image: "icons8-cleaning-64.png",
-    link:"moving-cash-registers-pianos-showcases",
+    link: "moving-cash-registers-pianos-showcases",
     // link: "cleaning-basements-and-attics",
     _id: "xZczx1231",
   },
@@ -97,7 +97,7 @@ function Service({ title, index, image, link }) {
               <Image src={`/icons/${image}`} alt="test" layout="fill" />
             </div>
           </section>
-          <h3 className="pt-2 text-xl italic">{title}</h3>
+          <h3 className="pt-2 text-xl italic font-semibold">{title}</h3>
         </section>
       </div>
     </Link>
