@@ -41,7 +41,7 @@ export default function HeroSection() {
                 </p> */}
 
                 <p className="max-w-sm mt-1 font-sans lg:mt-6 max-lg:max-w-xs lg:text-3xl text-white-50">
-                  Плавният преход е нашата специалност.
+                  Вашият товар е наша отговорност
                 </p>
                 <div className="mt-8 lg:mt-9">
                   <a

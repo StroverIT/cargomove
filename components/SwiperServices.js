@@ -57,7 +57,7 @@ export default function SwiperServices({
         {home && (
           <SwiperSlide>
             <SwiperSlideFn
-              icon="icons8-relocation-64.png"
+              icon="house.png"
               title="Преместване на дома"
               link="home-moving"
             />
@@ -67,7 +67,7 @@ export default function SwiperServices({
         {office && (
           <SwiperSlide>
             <SwiperSlideFn
-              icon="icons8-relocation-64.png"
+              icon="office.png"
               title="Преместване на офиса"
               link="office-moving"
             />
@@ -77,7 +77,7 @@ export default function SwiperServices({
         {international && (
           <SwiperSlide>
             <SwiperSlideFn
-              icon="icons8-disposal-64.png"
+              icon="europe.png"
               title="Международно преместване"
               link="international-relocation"
             />
@@ -88,7 +88,7 @@ export default function SwiperServices({
           <SwiperSlide>
             <SwiperSlideFn
               icon="icons8-disposal-64.png"
-              title="Изхвърляне и извозване на стари мебели"
+              title="Транспортни услуги"
               link="disposal-of-old-furniture"
             />
           </SwiperSlide>
@@ -97,9 +97,9 @@ export default function SwiperServices({
         {construction && (
           <SwiperSlide>
             <SwiperSlideFn
-              icon="icons8-cleaning-64.png"
-              title="Хамалски услуги и товаро-разтоварни дейности"
-              link="disposal-of-construction-waste"
+              icon="moving.png"
+              title="Товаро-разтоварни дейности"
+              link="loading-and-unloading-activity"
             />
           </SwiperSlide>
         )}
@@ -107,9 +107,9 @@ export default function SwiperServices({
         {basement && (
           <SwiperSlide>
             <SwiperSlideFn
-              icon="icons8-cleaning-64.png"
-              title="Преместване на пиана, каси, витрини"
-              link="cleaning-basements-and-attics"
+              icon="cargo-mover.png"
+              title="Преместване на пиана"
+              link="moving-cash-registers-pianos-showcases"
             />
           </SwiperSlide>
         )}
