@@ -1,4 +1,5 @@
 import Image from "next/legacy/image";
+import Link from "next/link";
 import React from "react";
 import Title from "../Title";
 
@@ -14,24 +15,16 @@ export default function Pricing() {
             <div className="grid md:grid-cols-2  shadow-lg">
               <div className="p-5 md:p-16 border-y border-orange-150 max-md:order-2">
                 <h3 className="max-md:text-center text-2xl md:text-2xl mb-4">
-                  Хамалски и товаро-разтоварни
+                  Хамалски услуги и товаро-разтоварни дейности
                 </h3>
                 <ul className="flex flex-col max-w-xl text-lg gap-y-2 list-disc	 ml-10">
                   <li>Цени от 20 лв на час.</li>
-                  <li>При повикване извън София - по договаряне</li>
+                  <li>При повикване на хамали извън София - по договаряне</li>
                   <li>
                     За тежки предмети над 100кг. по договаряне. (каси, витрини,
-                    пиана, камини, камъни и прочие.)
+                    пиана, камини, камъни и други)
                   </li>
                 </ul>
-                <section className="flex-center mt-5">
-                  <a
-                    href=""
-                    className="text-white bg-orange-150 px-5 py-2 rounded-md font-semibold "
-                  >
-                    Виж повече
-                  </a>
-                </section>
               </div>
               <div className="flex-center bg-orange-150 ">
                 <div className="relative w-20 h-20 md:w-56 md:h-56">
@@ -59,14 +52,6 @@ export default function Pricing() {
                     договаряне.
                   </li>
                 </ul>
-                <section className="flex-center mt-5">
-                  <a
-                    href=""
-                    className="text-white bg-orange-150 px-5 py-2 rounded-md font-semibold "
-                  >
-                    Виж повече
-                  </a>
-                </section>
               </div>
               <div className="flex-center bg-orange-300 ">
                 <div className="relative w-20 h-20 md:w-56 md:h-56">
@@ -89,13 +74,14 @@ export default function Pricing() {
             </ul>
           </section>
         </section>
+
         <div className="py-10 flex-center">
-          <a
-            href="tel:+359895063670"
-            className="py-4 text-2xl font-semibold text-white uppercase rounded-lg px-14 bg-orange"
+          <Link
+            href="/pricing"
+            className="py-3 text-lg font-semibold text-white uppercase rounded-lg px-10 bg-orange"
           >
-            позвъни сега
-          </a>
+            Виж повече
+          </Link>
         </div>
       </section>
     </section>

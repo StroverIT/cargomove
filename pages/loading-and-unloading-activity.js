@@ -8,10 +8,7 @@ export default function CleaningOfApartmentsAndHouses() {
     <div className="min-h-screen mt-40 ">
       <section className="container font-sans">
         <section className="flex-center">
-          <Title
-            title="Хамалски услуги и товаро-разтоварни дейности"
-            size="text-3xl"
-          />
+          <Title title="Товаро-разтоварни дейности" size="text-3xl" />
         </section>
         {/* Извозване на строителни отпадъци в чували до сметище
           Първокласно обслужване на всички наши клиенти за извозване на отпадъци

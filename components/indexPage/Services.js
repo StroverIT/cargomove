@@ -6,20 +6,23 @@ import Title from "../Title";
 const data = [
   {
     title: "Преместване на дома",
-    image: "icons8-relocation-64.png",
-    link: "home-moving",
+    image: "house.png",
+    link: "house",
+    p: `Предлагаме качествени и достъпни професионални услуги по преместване на дома
+    за София и страната.
+    `,
     _id: "xzcz12341",
   },
   {
     title: "Преместване на офиса",
-    image: "icons8-relocation-64.png",
+    image: "office.png",
     link: "office-moving",
-
+    p: `Корпоративни решения за вашия бизнес. Доверете се на професионалистите по преместване. Бързо и лесно`,
     _id: "21asfdasd",
   },
   {
     title: "Международно преместване",
-    image: "icons8-disposal-64.png",
+    image: "europe.png",
     link: "international-relocation",
 
     _id: "1231",
@@ -33,8 +36,8 @@ const data = [
   },
   // cleaning-of-apartments-and-houses
   {
-    title: "Хамалски услуги и товаро-разтоварни дейности",
-    image: "icons8-cleaning-64.png",
+    title: "Товаро-разтоварни дейности",
+    image: "moving.png",
     link: "loading-and-unloading-activity",
     // link: "disposal-of-construction-waste",
     _id: "asfacxzv12",
@@ -46,8 +49,8 @@ const data = [
   //   _id: "zdzxc1231",
   // },
   {
-    title: "Преместване на пиана, каси, витрини",
-    image: "icons8-cleaning-64.png",
+    title: "Преместване на пиана",
+    image: "cargo-mover.png",
     link: "moving-cash-registers-pianos-showcases",
     // link: "cleaning-basements-and-attics",
     _id: "xZczx1231",
@@ -69,6 +72,7 @@ export default function Services() {
                 index={index}
                 image={service.image}
                 link={service.link}
+                p={service.p}
               />
             );
           })}
@@ -86,18 +90,24 @@ export default function Services() {
   );
 }
 
-function Service({ title, index, image, link }) {
+function Service({ title, index, image, link, p }) {
   return (
     <Link href={`/${link}`} scroll={false}>
       <div className="transition-all bg-white shadow-lg cursor-pointer text-dark hover:shadow-lg hover:scale-110 rounded-xl">
-        <section className="h-40 px-5 pt-4">
+        <section className="h-48 px-5 pt-4">
           <section className="flex justify-between">
             <h5 className="text-4xl text-orange">0{index + 1}</h5>
             <div className="relative w-10 h-10">
               <Image src={`/icons/${image}`} alt="test" layout="fill" />
             </div>
           </section>
-          <h3 className="pt-2 text-xl italic font-semibold">{title}</h3>
+          <h3
+            className="pt-2 text-xl 
+           font-medium"
+          >
+            {title}
+          </h3>
+          <p className="mt-1 font-sans ">{p}</p>
         </section>
       </div>
     </Link>
