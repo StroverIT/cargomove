@@ -40,7 +40,7 @@ export default function Footer() {
 
   return (
     <footer className={`bg-dark   pt-2 z-10 w-full`}>
-      <section className={` pb-10`}>
+      <section className={` pb-14`}>
         <section className="flex flex-col-reverse xl:grid xl:grid-cols-[30%70%]  container text-white gap-x-28">
           <section>
             <h5 className="mt-5 mb-3 font-semibold uppercase ">
@@ -90,23 +90,52 @@ export default function Footer() {
             </div>
           </section>
 
-          <section className="grid-cols-[20%40%40%] justify-center xl:grid ">
+          <section className="grid-cols-[40%30%20%] justify-center xl:grid ">
             <section>
               <h5 className="mt-5 text-lg font-semibold">Услуги</h5>
               <ul className={`list-disc  ${colors.markers} leading-8 ml-4`}>
                 <li className="cursor-default">
-                  <a href="#pricing">
+                  <Link href="#pricing">
                     <span className="pb-1 border-b cursor-pointer border-border">
-                      Транспортни
+                      Преместване на дома
                     </span>
-                  </a>
+                  </Link>
+                </li>
+
+                <li className="cursor-default">
+                  <Link href="#pricing">
+                    <span className="pb-1 border-b cursor-pointer border-border">
+                      Преместване на офиси
+                    </span>
+                  </Link>
                 </li>
                 <li className="cursor-default">
-                  <a href="#pricing">
+                  <Link href="#pricing">
                     <span className="pb-1 border-b cursor-pointer border-border">
-                      Хамалски
+                      Международно преместване
                     </span>
-                  </a>
+                  </Link>
+                </li>
+                <li className="cursor-default">
+                  <Link href="#pricing">
+                    <span className="pb-1 border-b cursor-pointer border-border">
+                      Транспортни услуги
+                    </span>
+                  </Link>
+                </li>
+                <li className="cursor-default">
+                  <Link href="#pricing">
+                    <span className="pb-1 border-b cursor-pointer border-border">
+                      Товарно-разтоварна дейност
+                    </span>
+                  </Link>
+                </li>
+                <li className="cursor-default">
+                  <Link href="#pricing">
+                    <span className="pb-1 border-b cursor-pointer border-border">
+                      Преместване на каси, пиана, витрини
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </section>
