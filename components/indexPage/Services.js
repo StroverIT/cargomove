@@ -3,63 +3,8 @@ import Link from "next/link";
 import React from "react";
 import Title from "../Title";
 
-const data = [
-  {
-    title: "Преместване на дома",
-    image: "house.png",
-    link: "home-moving",
-    p: `Предлагаме качествени и достъпни професионални услуги по преместване на дома
-    за София и страната.
-    `,
-    _id: "xzcz12341",
-  },
-  {
-    title: "Преместване на офиса",
-    image: "office.png",
-    link: "office-moving",
-    p: `Корпоративни решения за вашия бизнес. Доверете се на професионалистите по преместване.`,
-    _id: "21asfdasd",
-  },
-  {
-    title: "Международно преместване",
-    image: "europe.png",
-    link: "international-relocation",
-    p: `Преместване на офиса и дома в чужбина.
-    От врата до врата.`,
-    _id: "1231",
-  },
-  {
-    title: "Транспортни услуги",
-    image: "icons8-disposal-64.png",
-    link: "transport-services",
-    p: `Транспортни услуги за страната и ЕС.`,
-    // link: "disposal-of-old-furniture",
-    _id: "1231sada",
-  },
-  // cleaning-of-apartments-and-houses
-  {
-    title: "Товаро-разтоварни дейности",
-    image: "moving.png",
-    link: "loading-and-unloading-activity",
-    p: `Претоварване на тирове и контейнери.`,
-    // link: "disposal-of-construction-waste",
-    _id: "asfacxzv12",
-  },
+import { data } from "../data/services";
 
-  // {
-  //   title: "Кърти, чисти, извозва",
-  //   image: "icons8-drill-64.png",
-  //   _id: "zdzxc1231",
-  // },
-  {
-    title: "Преместване на пиана",
-    image: "cargo-mover.png",
-    link: "moving-cash-registers-pianos-showcases",
-    p: "Няма нужда да се притеснявате за вашите клавиши, в сигурни ръце са!",
-    // link: "cleaning-basements-and-attics",
-    _id: "xZczx1231",
-  },
-];
 export default function Services() {
   return (
     <div className="mt-10 lg:mt-20 bg-gray-550" id="services">

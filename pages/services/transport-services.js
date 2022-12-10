@@ -1,7 +1,7 @@
 import React from "react";
-import ContactUs from "../components/indexPage/ContactUs";
-import SwiperServices from "../components/SwiperServices";
-import Title from "../components/Title";
+import ContactUs from "../../components/indexPage/ContactUs";
+import SwiperServices from "../../components/SwiperServices";
+import Title from "../../components/Title";
 
 export default function DisposalOfOldFurniture() {
   return (
@@ -53,7 +53,7 @@ export default function DisposalOfOldFurniture() {
         <Title title="Вижте и другите ни услуги" size="text-4xl" />
       </section>
       <section className="">
-        <SwiperServices oldFurniture={false} />
+        <SwiperServices service="transport" />
       </section>
     </div>
   );

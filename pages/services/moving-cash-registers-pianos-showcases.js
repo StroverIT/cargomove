@@ -1,7 +1,7 @@
 import React from "react";
-import ContactUs from "../components/indexPage/ContactUs";
-import SwiperServices from "../components/SwiperServices";
-import Title from "../components/Title";
+import ContactUs from "../../components/indexPage/ContactUs";
+import SwiperServices from "../../components/SwiperServices";
+import Title from "../../components/Title";
 
 export default function CleaningBasementsAndAttics() {
   return (
@@ -12,7 +12,7 @@ export default function CleaningBasementsAndAttics() {
         </section>
         <section>
           <section className="lg:px-56">
-            <h3 className="mt-1 font-semibold text-lg">
+            <h3 className="mt-1 text-lg font-semibold">
               Какво трябва да знаете при преместване на пианo и защо не трябва
               да го правите сами?
             </h3>
@@ -27,7 +27,7 @@ export default function CleaningBasementsAndAttics() {
               средство освен, ако не искате да го повредите.
             </p>
 
-            <h3 className="mt-1 font-semibold text-lg">
+            <h3 className="mt-1 text-lg font-semibold">
               Какво е необходимо за преместване на пиано?
             </h3>
             <ul>
@@ -45,7 +45,7 @@ export default function CleaningBasementsAndAttics() {
               това, Вие готови ли сте да поемете риска?
             </p>
 
-            <h3 className="mt-1 font-semibold text-lg">
+            <h3 className="mt-1 text-lg font-semibold">
               Защо да изберете нашата професионална услуга по преместване на
               пиано?
             </h3>
@@ -76,7 +76,7 @@ export default function CleaningBasementsAndAttics() {
         <Title title="Вижте и другите ни услуги" size="text-4xl" />
       </section>
       <section className="">
-        <SwiperServices basement={false} />
+        <SwiperServices service="piano" />
       </section>
     </section>
   );

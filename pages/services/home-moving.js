@@ -1,12 +1,13 @@
 import React from "react";
-import ContactUs from "../components/indexPage/ContactUs";
-import SwiperServices from "../components/SwiperServices";
-import Title from "../components/Title";
+import ContactUs from "../../components/indexPage/ContactUs";
+import SwiperServices from "../../components/SwiperServices";
+import Title from "../../components/Title";
+import { listAllExceptOne } from "../../utils/services";
 
 export default function HomeMoving() {
   return (
     <section className="min-h-screen mt-40 ">
-      <section className="container  font-sans">
+      <section className="container font-sans">
         <section className="flex-center">
           <Title title="Преместване на дома" size="text-4xl" />
         </section>
@@ -26,7 +27,7 @@ export default function HomeMoving() {
               вниманеие към детайлите, така че Вие да останете доволни.
             </p>
 
-            <h3 className="text-lg font-semibold mt-1">
+            <h3 className="mt-1 text-lg font-semibold">
               Какво е необходимo за преместване на дома?
             </h3>
             <ul>
@@ -37,7 +38,7 @@ export default function HomeMoving() {
               <li>- Професионален опит</li>
             </ul>
 
-            <h3 className="text-lg font-semibold mt-1">
+            <h3 className="mt-1 text-lg font-semibold">
               Как да улесним процеса? - Ето как:
             </h3>
             <p>
@@ -70,7 +71,7 @@ export default function HomeMoving() {
         <Title title="Вижте и другите ни услуги" size="text-4xl" />
       </section>
       <section className="">
-        <SwiperServices home={false} />
+        <SwiperServices service="house" />
       </section>
     </section>
   );

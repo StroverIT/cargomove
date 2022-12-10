@@ -1,7 +1,7 @@
 import React from "react";
-import ContactUs from "../components/indexPage/ContactUs";
-import SwiperServices from "../components/SwiperServices";
-import Title from "../components/Title";
+import ContactUs from "../../components/indexPage/ContactUs";
+import SwiperServices from "../../components/SwiperServices";
+import Title from "../../components/Title";
 
 export default function OfficeMoving() {
   return (
@@ -45,7 +45,7 @@ export default function OfficeMoving() {
         <Title title="Вижте и другите ни услуги" size="text-4xl" />
       </section>
       <section className="">
-        <SwiperServices office={false} />
+        <SwiperServices service="office" />
       </section>
     </section>
   );

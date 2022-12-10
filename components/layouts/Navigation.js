@@ -11,32 +11,7 @@ import Logo from "../Logo";
 import { BiRightArrow } from "react-icons/bi";
 import { TbBus } from "react-icons/tb";
 import { HiX } from "react-icons/hi";
-const lists = [
-  {
-    text: "Преместване на дома",
-    link: "home-moving",
-  },
-  {
-    text: "Преместване на офиса",
-    link: "office-moving",
-  },
-  {
-    text: "Международно преместване",
-    link: "international-relocation",
-  },
-  {
-    text: "Транспортни услуги",
-    link: "transport-services",
-  },
-  {
-    text: "Товарно-разтоварна дейност",
-    link: "loading-and-unloading-activity",
-  },
-  {
-    text: "Преместване на каси, пиана, витрини",
-    link: "moving-cash-registers-pianos-showcases",
-  },
-];
+import { data } from "../data/services";
 // transition: {
 //   type: "spring",
 //   duration: 1,
@@ -193,7 +168,7 @@ export default function Navigation() {
                     >
                       <div className="absolute top-0 w-[26.5rem] h-10  -left-16"></div>
                       <ul className="absolute flex-col  py-4 pl-10 list-disc w-[26.5rem] rounded-md bg-orange-150 top-10 -left-16 flex  shadow-2xl">
-                        {lists.map((list, i) => {
+                        {data.map((list, i) => {
                           return (
                             <Link href={list.link} key={i}>
                               <motion.li
@@ -218,7 +193,7 @@ export default function Navigation() {
                                 custom={i}
                                 className="px-2 py-2 transition-colors cursor-pointer hover:bg-white hover:text-orange-150"
                               >
-                                {list.text}
+                                {list.title}
                               </motion.li>
                             </Link>
                           );
@@ -377,7 +352,7 @@ export default function Navigation() {
                       <HiX />
                     </section>
                     <ul className="flex-col p-10 text-sm ">
-                      {lists.map((list, i) => {
+                      {data.map((list, i) => {
                         return (
                           <Link href={list.link} key={i}>
                             <motion.li
@@ -401,7 +376,7 @@ export default function Navigation() {
                               custom={i}
                               className="py-2 pl-2 transition-colors cursor-pointer hover:bg-white hover:text-orange-150"
                             >
-                              {list.text}
+                              {list.title}
                             </motion.li>
                           </Link>
                         );

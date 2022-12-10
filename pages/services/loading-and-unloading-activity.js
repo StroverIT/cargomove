@@ -1,7 +1,7 @@
 import React from "react";
-import ContactUs from "../components/indexPage/ContactUs";
-import SwiperServices from "../components/SwiperServices";
-import Title from "../components/Title";
+import ContactUs from "../../components/indexPage/ContactUs";
+import SwiperServices from "../../components/SwiperServices";
+import Title from "../../components/Title";
 
 export default function CleaningOfApartmentsAndHouses() {
   return (
@@ -51,7 +51,7 @@ export default function CleaningOfApartmentsAndHouses() {
         <Title title="Вижте и другите ни услуги" size="text-4xl" />
       </section>
       <section className="">
-        <SwiperServices construction={false} />
+        <SwiperServices service="loading" />
       </section>
     </div>
   );

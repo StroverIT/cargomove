@@ -11,14 +11,11 @@ import { HiOfficeBuilding } from "react-icons/hi";
 import Image from "next/legacy/image";
 import Link from "next/link";
 
-export default function SwiperServices({
-  home = true,
-  office = true,
-  international = true,
-  oldFurniture = true,
-  construction = true,
-  basement = true,
-}) {
+import { listAllExceptOne } from "../utils/services";
+
+export default function SwiperServices({ service }) {
+  const listService = listAllExceptOne(service);
+
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
@@ -32,6 +29,7 @@ export default function SwiperServices({
       );
     },
   };
+
   return (
     <>
       <Swiper
@@ -54,65 +52,17 @@ export default function SwiperServices({
         modules={[Pagination]}
         className="h-full pt-5 bg-white border max-lg:border-x cursor-grab border-gray rounded-b-xl mySwiper"
       >
-        {home && (
-          <SwiperSlide>
-            <SwiperSlideFn
-              icon="house.png"
-              title="Преместване на дома"
-              link="home-moving"
-            />
-          </SwiperSlide>
-        )}
-
-        {office && (
-          <SwiperSlide>
-            <SwiperSlideFn
-              icon="office.png"
-              title="Преместване на офиса"
-              link="office-moving"
-            />
-          </SwiperSlide>
-        )}
-
-        {international && (
-          <SwiperSlide>
-            <SwiperSlideFn
-              icon="europe.png"
-              title="Международно преместване"
-              link="international-relocation"
-            />
-          </SwiperSlide>
-        )}
-
-        {oldFurniture && (
-          <SwiperSlide>
-            <SwiperSlideFn
-              icon="icons8-disposal-64.png"
-              title="Транспортни услуги"
-              link="transport-services"
-            />
-          </SwiperSlide>
-        )}
-
-        {construction && (
-          <SwiperSlide>
-            <SwiperSlideFn
-              icon="moving.png"
-              title="Товаро-разтоварни дейности"
-              link="loading-and-unloading-activity"
-            />
-          </SwiperSlide>
-        )}
-
-        {basement && (
-          <SwiperSlide>
-            <SwiperSlideFn
-              icon="cargo-mover.png"
-              title="Преместване на пиана"
-              link="moving-cash-registers-pianos-showcases"
-            />
-          </SwiperSlide>
-        )}
+        {listService.map((service) => {
+          return (
+            <SwiperSlide key={service._id}>
+              <SwiperSlideFn
+                icon={service.image}
+                title={service.title}
+                link={service.link}
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );
