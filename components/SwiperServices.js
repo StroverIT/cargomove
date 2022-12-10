@@ -89,7 +89,7 @@ export default function SwiperServices({
             <SwiperSlideFn
               icon="icons8-disposal-64.png"
               title="Транспортни услуги"
-              link="disposal-of-old-furniture"
+              link="transport-services"
             />
           </SwiperSlide>
         )}

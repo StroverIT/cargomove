@@ -7,7 +7,7 @@ const data = [
   {
     title: "Преместване на дома",
     image: "house.png",
-    link: "house",
+    link: "home-moving",
     p: `Предлагаме качествени и достъпни професионални услуги по преместване на дома
     за София и страната.
     `,
@@ -105,12 +105,7 @@ function Service({ title, index, image, link, p }) {
               <Image src={`/icons/${image}`} alt="test" layout="fill" />
             </div>
           </section>
-          <h3
-            className="pt-2 text-xl 
-           font-medium"
-          >
-            {title}
-          </h3>
+          <h3 className="pt-2 text-xl font-medium">{title}</h3>
           <p className="mt-1 font-sans ">{p}</p>
         </section>
       </div>
