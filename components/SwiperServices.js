@@ -69,7 +69,7 @@ export default function SwiperServices({ service }) {
 }
 function SwiperSlideFn({ icon, title, p, isBorder = true, link }) {
   return (
-    <Link href={`/${link}`}>
+    <Link href={`${link}`}>
       <section className="relative flex flex-col h-64 p-5 pb-24 flex-center">
         <div className="relative w-16 h-16 mb-2">
           <Image
