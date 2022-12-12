@@ -138,3 +138,10 @@ html::-webkit-scrollbar-thumb {
 .swiper-pagination-fraction {
   bottom: 40px !important;
 }
+.grecaptcha-badge {
+  display: none !important;
+  z-index: -10 !important;
+}
+#rc-anchor-alert {
+  display: none !important;
+}
