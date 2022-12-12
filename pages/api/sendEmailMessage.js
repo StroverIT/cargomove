@@ -27,8 +27,8 @@ async function handler(req, res) {
         .status(201)
         .json({ message: "Успешно изпратихе вашето съобщение!" });
     } catch (e) {
-      console.log(e);
-      res.json({ error: e.message });
+      // console.log(e);
+      // res.json({ error: e.message });
     }
   }
 }
