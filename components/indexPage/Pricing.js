@@ -5,19 +5,19 @@ import Title from "../Title";
 
 export default function Pricing() {
   return (
-    <section className="relative pt-10  mt-10 font-sans bg-white" id="pricing">
-      <section className=" ">
-        <div className="flex-center mt-5">
+    <section className="relative pt-10 mt-10 font-sans bg-white" id="pricing">
+      <section className="">
+        <div className="mt-5 flex-center">
           <Title title="Нашите цени" size="text-5xl md:text-6xl" />
         </div>
-        <section className="grid    lg:gap-10 mt-10 lg:mt-20">
+        <section className="grid mt-10 lg:gap-10 lg:mt-20">
           <section className="">
-            <div className="grid md:grid-cols-2  shadow-lg">
+            <div className="grid shadow-lg md:grid-cols-2">
               <div className="p-5 md:p-16 border-y border-orange-150 max-md:order-2">
-                <h3 className="max-md:text-center text-2xl md:text-2xl mb-4">
+                <h3 className="mb-4 text-2xl max-md:text-center md:text-2xl">
                   Хамалски услуги и товаро-разтоварни дейности
                 </h3>
-                <ul className="flex flex-col max-w-xl text-lg gap-y-2 list-disc	 ml-10">
+                <ul className="flex flex-col max-w-xl ml-10 text-lg list-disc gap-y-2">
                   <li>Цени от 20 лв на час.</li>
                   <li>При повикване на хамали извън София - по договаряне</li>
                   <li>
@@ -36,12 +36,12 @@ export default function Pricing() {
                 </div>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 shadow-lg">
-              <div className="p-5 md:p-16  border-b border-orange-150 max-md:order-2">
-                <h3 className=" max-md:text-center text-2xl mb-4">
+            <div className="grid shadow-lg md:grid-cols-2">
+              <div className="p-5 border-b md:p-16 border-orange-150 max-md:order-2">
+                <h3 className="mb-4 text-2xl  max-md:text-center">
                   Транспортни услуги
                 </h3>
-                <ul className="flex flex-col max-w-xl text-lg gap-y-2 list-disc	 ml-10 ">
+                <ul className="flex flex-col max-w-xl ml-10 text-lg list-disc gap-y-2 ">
                   <li> Камион до 3.5 т 30лв/ч -35лв/ч</li>
                   <li>
                     Kамион 19куб.м 35лв/ч Транспорт с камион до 16куб 30лв
@@ -53,7 +53,7 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div>
-              <div className="flex-center bg-orange-300 ">
+              <div className="bg-orange-300 flex-center ">
                 <div className="relative w-20 h-20 md:w-56 md:h-56">
                   <Image
                     src="/icons/delivery-truck (1).png"
@@ -78,7 +78,8 @@ export default function Pricing() {
         <div className="py-10 flex-center">
           <Link
             href="/pricing"
-            className="py-3 text-lg font-semibold text-white uppercase rounded-lg px-10 bg-orange"
+            className="px-10 py-3 text-lg font-semibold text-white uppercase rounded-lg bg-orange"
+            scroll={false}
           >
             Виж повече
           </Link>

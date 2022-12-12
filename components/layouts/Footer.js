@@ -8,6 +8,9 @@ import { HiOutlineMail } from "react-icons/hi";
 import { RiGlobalLine } from "react-icons/ri";
 import newsletterSend from "../../fetches/newsletterSend";
 import { toastError, toastSuccess } from "../../libs/Notifications";
+
+import { data } from "../data/services";
+
 export default function Footer() {
   const router = useRouter();
 
@@ -94,49 +97,17 @@ export default function Footer() {
             <section>
               <h5 className="mt-5 text-lg font-semibold">Услуги</h5>
               <ul className={`list-disc  ${colors.markers} leading-8 ml-4`}>
-                <li className="cursor-default">
-                  <Link href="/home-moving">
-                    <span className="pb-1 border-b cursor-pointer border-border">
-                      Преместване на дома
-                    </span>
-                  </Link>
-                </li>
-
-                <li className="cursor-default">
-                  <Link href="/office-moving">
-                    <span className="pb-1 border-b cursor-pointer border-border">
-                      Преместване на офиси
-                    </span>
-                  </Link>
-                </li>
-                <li className="cursor-default">
-                  <Link href="/international-relocation">
-                    <span className="pb-1 border-b cursor-pointer border-border">
-                      Международно преместване
-                    </span>
-                  </Link>
-                </li>
-                <li className="cursor-default">
-                  <Link href="/transport-services">
-                    <span className="pb-1 border-b cursor-pointer border-border">
-                      Транспортни услуги
-                    </span>
-                  </Link>
-                </li>
-                <li className="cursor-default">
-                  <Link href="/loading-and-unloading-activity">
-                    <span className="pb-1 border-b cursor-pointer border-border">
-                      Хамалски услуги и товаро-разтоварни
-                    </span>
-                  </Link>
-                </li>
-                <li className="cursor-default">
-                  <Link href="/moving-cash-registers-pianos-showcases">
-                    <span className="pb-1 border-b cursor-pointer border-border">
-                      Преместване на каси, пиана, витрини
-                    </span>
-                  </Link>
-                </li>
+                {data.map((link) => {
+                  return (
+                    <li className="cursor-default" key={link._id}>
+                      <Link href={link.link} scroll={false}>
+                        <span className="pb-1 border-b cursor-pointer border-border">
+                          {link.title}
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </section>
             <section>

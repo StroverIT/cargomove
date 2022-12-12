@@ -126,7 +126,9 @@ export default function Navigation() {
           <section className="">
             <ul className="flex items-center justify-center text-sm gap-x-10">
               <li>
-                <Link href="/">Начало</Link>
+                <Link href="/" scroll={false}>
+                  Начало
+                </Link>
               </li>
 
               <li
@@ -170,7 +172,7 @@ export default function Navigation() {
                       <ul className="absolute flex-col  py-4 pl-10 list-disc w-[26.5rem] rounded-md bg-orange-150 top-10 -left-16 flex  shadow-2xl">
                         {data.map((list, i) => {
                           return (
-                            <Link href={list.link} key={i}>
+                            <Link href={list.link} key={i} scroll={false}>
                               <motion.li
                                 variants={{
                                   hidden: (i) => ({
@@ -211,7 +213,9 @@ export default function Navigation() {
               )}
               {pathname != "/" && (
                 <li>
-                  <Link href="/pricing">Цени</Link>
+                  <Link href="/pricing" scroll={false}>
+                    Цени
+                  </Link>
                 </li>
               )}
               {pathname == "/" && (
@@ -281,7 +285,9 @@ export default function Navigation() {
                 <section className="w-screen h-screen flex-center">
                   <ul className="flex flex-col items-center justify-center text-2xl gap-y-6">
                     <li onClick={handleNav.bind({}, "#index")}>
-                      <Link href="/">Начало</Link>
+                      <Link href="/" scroll={false}>
+                        Начало
+                      </Link>
                     </li>
 
                     <li
@@ -354,7 +360,7 @@ export default function Navigation() {
                     <ul className="flex-col p-10 text-sm ">
                       {data.map((list, i) => {
                         return (
-                          <Link href={list.link} key={i}>
+                          <Link href={list.link} key={i} scroll={false}>
                             <motion.li
                               variants={{
                                 hidden: (i) => ({
