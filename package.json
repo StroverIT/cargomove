@@ -23,6 +23,7 @@
     "react-icons": "^4.6.0",
     "react-intersection-observer": "^9.4.1",
     "react-toastify": "^9.1.1",
+    "sharp": "^0.31.2",
     "swiper": "^8.4.5"
   },
   "devDependencies": {
