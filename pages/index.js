@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Movex - Транспортни и хамалски услуги</title>
+        <title>Хамалски и транспортни услуги за гр. София, страната и ЕС</title>
         <meta
           name="description"
           content="Movex Bulgaria предлага професионални услуги в сферата на транспорта и
