@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,6 +17,7 @@
     "hamburger-react": "^2.5.0",
     "mongoose": "^6.7.3",
     "next": "13.0.3",
+    "next-sitemap": "^3.1.32",
     "nodemailer": "^6.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
