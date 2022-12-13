@@ -52,8 +52,8 @@ export default function InternationalRelocation() {
             В настоящия момент &quot;Movex Bulgaria&quot; предлага услугите си
             за преместване във всяка една държава от Европейския съюз –{" "}
             <span className="">
-              Австрия, Франция, Италия, Германия, Испания, Румъния,Холандия,
-              Гърция и др.
+              Австрия, Франция, Италия, Германия, Румъния, Холандия, Гърция и
+              др.
             </span>
           </p>
           <p className="mt-1 lg:max-w-5xl">
@@ -62,7 +62,8 @@ export default function InternationalRelocation() {
             повече информация се свържете с нас.
           </p>
           <p className="mt-10 font-medium text-center">
-            Ако имате запитвания, с радост ще отговорим на всички Ваши въпроси.
+            Ако имате запитвания, с радост ще отговорим на всички вашите
+            въпроси.
           </p>
         </section>
         <section className="my-14 lg:mx-36">
