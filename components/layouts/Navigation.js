@@ -131,37 +131,11 @@ export default function Navigation() {
                 </Link>
               </li>
 
-              {pathname == "/" && (
-                <li>
-                  <a href="#pricing">Цени</a>
-                </li>
-              )}
-              {pathname != "/" && (
-                <li>
-                  <Link href="/pricing" scroll={false}>
-                    Цени
-                  </Link>
-                </li>
-              )}
-              {pathname == "/" && (
-                <li>
-                  <a href="#faq">Въпроси</a>
-                </li>
-              )}
-              {pathname != "/aboutUs" && (
-                <li>
-                  <Link href="/aboutUs" scroll={false}>
-                    За нас
-                  </Link>
-                </li>
-              )}
-              {pathname == "/aboutUs" && (
-                <li>
-                  <a href="#" scroll={false}>
-                    За нас
-                  </a>
-                </li>
-              )}
+              <li>
+                <Link href="/pricing" scroll={false}>
+                  Цени
+                </Link>
+              </li>
               <li
                 className=" group"
                 onMouseEnter={(e) => setServicePcState(true)}
@@ -236,6 +210,26 @@ export default function Navigation() {
                   )}
                 </AnimatePresence>
               </li>
+              {pathname == "/" && (
+                <li>
+                  <a href="#faq">Въпроси</a>
+                </li>
+              )}
+              {pathname != "/aboutUs" && (
+                <li>
+                  <Link href="/aboutUs" scroll={false}>
+                    За нас
+                  </Link>
+                </li>
+              )}
+              {pathname == "/aboutUs" && (
+                <li>
+                  <a href="#" scroll={false}>
+                    За нас
+                  </a>
+                </li>
+              )}
+
               <li className="px-5 py-2 rounded-sm bg-orange">
                 <a href="tel:+359895063670">позвъни сега </a>
               </li>
@@ -303,23 +297,17 @@ export default function Navigation() {
                       </div>
                     </li>
 
-                    {pathname == "/" && (
-                      <li onClick={handleNav.bind({}, "#pricing")}>
-                        <a href="#">Цени</a>
-                      </li>
-                    )}
+                    <li>
+                      <Link href="/pricing" scroll={false}>
+                        Цени
+                      </Link>
+                    </li>
                     {pathname == "/" && (
                       <li onClick={handleNav.bind({}, "#faq")}>
                         <a href="#">Въпроси</a>
                       </li>
                     )}
-                    {pathname != "/" && (
-                      <li>
-                        <Link href="/pricing" scroll={false}>
-                          Цени
-                        </Link>
-                      </li>
-                    )}
+
                     <li>
                       <Link href="/aboutUs" scroll={false}>
                         За нас
