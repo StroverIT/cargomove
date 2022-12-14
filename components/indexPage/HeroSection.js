@@ -1,38 +1,29 @@
 import React, { useContext, useEffect, useState } from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useScroll, motion } from "framer-motion";
 
 import { globalContext } from "../globalContext";
 
 export default function HeroSection() {
   const { heroRef } = useContext(globalContext);
+
   return (
     <div className="" ref={heroRef} id="index">
-      <div className="fixed top-0 left-0 h-[90vh] bg-white w-screen -z-20 "></div>
+      <div className="fixed top-0 left-0 h-[90vh] bg-white w-screen -z-20"></div>
 
-      <div>
-        <div className="h-screen lg:h-[87vh] relative lg:rounded-b-[10rem] paralax overflow-hidden ">
-          <div
-            className="w-screen -z-20 "
-            style={{ clipPath: "inset(0 0 0 0)" }}
-          >
-            <div className="relative hidden h-screen lg:block">
-              <Image
-                src="/bgImage2.jpg"
-                fill
-                onLoadingComplete={() => setImgStyle(true)}
-                alt="Транспорт и хамалски услуги в гр. София, страната и чужбина"
-                className={`object-cover `}
-              />
-            </div>
+      <div className="">
+        <div className="h-screen lg:h-[87vh] relative lg:rounded-b-[10rem] overflow-hidden">
+          <div className="top-0 left-0 w-screen -z-20">
+            <div className="relative z-10 w-full h-screen pl-20  	 bg-[url('/bgImage2.jpg')] lg:rounded-b-[10rem] paralax hidden lg:block"></div>
             <div className="fixed -z-10 ">
               <div className="relative w-screen h-screen">
                 <Image
                   src="/bgImage2.jpg"
-                  fill
+                  layout="fill"
                   alt="bg image"
-                  className="object-cover lg:hidden paralax"
+                  objectFit="cover"
+                  className="bg-right lg:hidden paralax"
                 />
               </div>
             </div>
