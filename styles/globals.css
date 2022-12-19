@@ -145,3 +145,10 @@ html::-webkit-scrollbar-thumb {
 #rc-anchor-alert {
   display: none !important;
 }
+
+.card__preview-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

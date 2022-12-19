@@ -229,7 +229,11 @@ export default function Navigation() {
                   </a>
                 </li>
               )}
-
+              <li>
+                <Link href="/blog" scroll={false}>
+                  БЛОГ
+                </Link>
+              </li>
               <li className="px-5 py-2 rounded-sm bg-orange">
                 <a href="tel:+359895063670">позвъни сега </a>
               </li>
@@ -311,6 +315,11 @@ export default function Navigation() {
                     <li>
                       <Link href="/aboutUs" scroll={false}>
                         За нас
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/blog" scroll={false}>
+                        БЛОГ
                       </Link>
                     </li>
                   </ul>

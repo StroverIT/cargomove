@@ -55,6 +55,9 @@ const customColors = {
   },
   grayBg: "#f0f0f0",
   transparent: "transparent",
+  blog: {
+    DEFAULT: "rgb(241, 241, 241)",
+  },
 };
 
 module.exports = {
