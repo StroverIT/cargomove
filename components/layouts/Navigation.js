@@ -125,12 +125,18 @@ export default function Navigation() {
           </div> */}
           <section className="">
             <ul className="flex items-center justify-center text-sm gap-x-10">
-              <li>
-                <Link href="/" scroll={false}>
-                  Начало
-                </Link>
-              </li>
-
+              {pathname != "/" && (
+                <li>
+                  <Link href="/" scroll={false}>
+                    Начало
+                  </Link>
+                </li>
+              )}
+              {pathname == "/" && (
+                <li>
+                  <a href="#">Начало</a>
+                </li>
+              )}
               <li>
                 <Link href="/pricing" scroll={false}>
                   Цени
