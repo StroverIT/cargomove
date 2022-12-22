@@ -39,7 +39,7 @@ function Box({ children, link }) {
       <div className="container md:px-6 ">
         <Link href={`/blog/${link}`}>
           <h3 className="py-4 font-sans text-2xl font-semibold transition-colors hover:text-orange">
-            4 съвета за преместване и опаковане
+            5 съвета за преместване и опаковане
           </h3>
         </Link>
       </div>

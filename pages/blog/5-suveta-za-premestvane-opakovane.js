@@ -7,13 +7,13 @@ const SuvetaZaPremestvaneOpakovane = () => {
   return (
     <>
       <Head>
-        <title>4 съвета за преместване и опаковане</title>
+        <title>5 съвета за преместване и опаковане</title>
       </Head>
       <main className="mt-40 mb-14">
         <section className="container">
           <div className="flex-center">
             <Title
-              title="4 съвета за преместване и опаковане"
+              title="5 съвета за преместване и опаковане"
               size="text-3xl"
             />
           </div>
