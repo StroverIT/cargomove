@@ -168,9 +168,11 @@ export default function Navigation() {
                       variants={{
                         initialState: {
                           y: "-100vh",
+                          zIndex: -10,
                         },
                         animateState: {
                           y: 0,
+                          zIndex: 0,
                         },
                         exitState: {
                           y: "-100vh",
