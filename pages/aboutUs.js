@@ -111,7 +111,7 @@ export default function AboutUs() {
               />
             </div>
           </div>
-          <div className="p-10 border-b border-orange-100 flex-center max-md:order-6">
+          {/* <div className="p-10 border-b border-orange-100 flex-center max-md:order-6">
             <div className="flex-col flex-center">
               <Title title="Нашата история" size="text-3xl" />
               <p className="max-w-md mt-2 text-sm text-center">
@@ -138,7 +138,7 @@ export default function AboutUs() {
                 alt="професионални услуги услуги"
               />
             </div>
-          </div>
+          </div> */}
         </section>
 
         <section className="flex-col py-16 flex-center ">
