@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
+import { FaViber } from "react-icons/fa";
 import InputIcons from "../form/Icons";
 
 import Input from "../form/Input";
@@ -195,6 +196,16 @@ export default function ContactUs({
                 <section className="flex-center">
                   <div className="text-xl ">
                     <FiPhoneCall />
+                  </div>
+                  <div className="pl-1">{number}</div>
+                </section>
+              </a>
+            </div>
+            <div className="flex items-center">
+              <a href="viber://chat?number=+359895063670">
+                <section className="flex-center">
+                  <div className="text-xl ">
+                    <FaViber />
                   </div>
                   <div className="pl-1">{number}</div>
                 </section>

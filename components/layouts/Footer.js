@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { AiOutlineCopyright } from "react-icons/ai";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { FaViber } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiGlobalLine } from "react-icons/ri";
@@ -153,6 +154,16 @@ export default function Footer() {
                       </a>
                     </li>
                     <li className="flex items-center">
+                      <a href="viber://chat?number=+359895063670">
+                        <section className="flex-center ">
+                          <span className="text-lg">
+                            <FaViber />
+                          </span>
+                          <span className="pl-1">+359 89 506 3670</span>
+                        </section>
+                      </a>
+                    </li>
+                    <li className="flex items-center">
                       <a href="mailto:movexbulgaria@gmail.com">
                         <section className="flex-center">
                           <HiOutlineMail />
@@ -160,6 +171,7 @@ export default function Footer() {
                         </section>
                       </a>
                     </li>
+
                     <li className="flex items-center">
                       <RiGlobalLine /> <span className="pl-1">movex.bg</span>
                     </li>
