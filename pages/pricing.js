@@ -64,7 +64,7 @@ export default function CleaningOfApartmentsAndHouses() {
               <ul className="ml-5 list-disc">
                 <li>Цена за Работник на час от 20 лв. </li>
                 <li>В цената не е включено качване</li>
-                <li>на тежки предмети нат 100 кг.</li>
+                <li>на тежки предмети над 100 кг.</li>
                 <li>Качване над 2-ри етаж се таксува допълнително</li>
                 <li>Минимално заплащане от 2часа</li>
               </ul>
