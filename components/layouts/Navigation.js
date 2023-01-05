@@ -115,9 +115,13 @@ export default function Navigation() {
         </div>
       </section> */}
       <section className="container items-center justify-between hidden lg:flex">
-        <div className="w-56 h-16">
-          {/* <Logo /> */}
-          logo
+        <div className="relative w-40 h-24 ">
+          <Image
+            src="/test.png"
+            alt="logo"
+            layout="fill"
+            className="object-contain"
+          />
         </div>
         <section className="flex items-center justify-center gap-x-5">
           {/* <div>
@@ -182,7 +186,7 @@ export default function Navigation() {
                       className="relative flex flex-col w-full h-full "
                     >
                       <div className="absolute top-0 w-[26.5rem] h-10  -left-16"></div>
-                      <ul className="absolute flex-col  py-4 pl-10 list-disc w-[26.5rem] rounded-md bg-orange-150 top-10 -left-16 flex  shadow-2xl">
+                      <ul className="absolute flex-col  py-4 pl-10 list-disc w-[26.5rem] rounded-md bg-orange-100 top-10 -left-16 flex  shadow-2xl">
                         {data.map((list, i) => {
                           return (
                             <Link href={list.link} key={i} scroll={false}>
@@ -358,7 +362,7 @@ export default function Navigation() {
                 }}
                 className="fixed top-0 left-0 z-[999] flex flex-col w-full h-screen"
               >
-                <section className="w-full h-screen flex-center bg-orange-150">
+                <section className="w-full h-screen bg-orange-100 flex-center">
                   <section className="container relative">
                     <section
                       className="absolute right-0 text-xl bg-white rounded-md top-5 text-orange-150"

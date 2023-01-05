@@ -152,3 +152,6 @@ html::-webkit-scrollbar-thumb {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.testing {
+  filter: invert(1);
+}
