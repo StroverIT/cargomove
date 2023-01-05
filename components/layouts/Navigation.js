@@ -115,17 +115,17 @@ export default function Navigation() {
         </div>
       </section> */}
       <section className="container relative items-center justify-between hidden lg:flex">
-        <div className="absolute -left-10">
-          <div className="relative h-96 w-96 ">
+        <div className="absolute select-none -left-10">
+          <div className="relative w-64 h-64 select-none">
             <Image
-              src="/LOGOv2-01.svg"
+              src="/LOGOv3-01.svg"
               alt="logo"
               layout="fill"
-              className="object-contain"
+              className="object-contain select-none"
             />
           </div>
         </div>
-        <div className="relative invisible w-64 h-28">test</div>
+        <div className="relative invisible w-64 h-20">test</div>
         <section className="flex items-center justify-center gap-x-5">
           {/* <div>
             <Hamburger toggle={setMenuOpen} toggled={menuOpen} size={20} />
