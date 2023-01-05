@@ -45,53 +45,57 @@ export default function Footer() {
   return (
     <footer className={`bg-dark   pt-2 z-10 w-full`}>
       <section className={` pb-14`}>
-        <section className="flex flex-col-reverse xl:grid xl:grid-cols-[30%70%]  container text-white gap-x-28">
-          <section>
-            <h5 className="mt-5 mb-3 font-semibold uppercase ">
-              Абонирай се за нашите оферти
-            </h5>
-            <input
-              type="text"
-              className="w-full px-2 py-5 text-sm text-black border-none rounded-sm h-7 placeholder:text-dark text-dark"
-              placeholder="Email"
-              value={input}
-              onChange={handler}
-            />
-            <div className="mt-2 flex-center">
-              <button
-                className={`bg-blue w-full py-1 rounded-sm flex-center`}
-                onClick={newsLetterHandler}
-              >
-                {isLoading ? <div className="loader"></div> : "Абонирай ме!"}
-              </button>
-            </div>
-            <h5 className="mt-8 font-semibold uppercase">Социални мрежи</h5>
-            <div className="flex mt-2 gap-x-5">
-              <a
-                href="https://www.facebook.com/movexbulgaria"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="transition-transform cursor-pointer flex-center hover:scale-125 hover:text-primaryBlue-450">
-                  <div className="text-2xl">
-                    <BsFacebook />
+        <section className="flex flex-col-reverse 2xl:grid xl:grid-cols-[30%70%]  container text-white  3xl:gap-x-28">
+          <section className="flex flex-col xl:items-center xl:justify-center xl:flex-row gap-x-10 2xl:flex-col 2xl:items-start">
+            <section className="w-full xl:w-96">
+              <h5 className="mt-5 mb-3 font-semibold uppercase ">
+                Абонирай се за нашите оферти
+              </h5>
+              <input
+                type="text"
+                className="w-full px-2 py-5 text-sm text-black border-none rounded-sm h-7 placeholder:text-dark text-dark"
+                placeholder="Email"
+                value={input}
+                onChange={handler}
+              />
+              <div className="mt-2 flex-center">
+                <button
+                  className={`bg-blue w-full py-1 rounded-sm flex-center`}
+                  onClick={newsLetterHandler}
+                >
+                  {isLoading ? <div className="loader"></div> : "Абонирай ме!"}
+                </button>
+              </div>
+            </section>
+            <section>
+              <h5 className="mt-8 font-semibold uppercase">Социални мрежи</h5>
+              <div className="flex mt-2 gap-x-5">
+                <a
+                  href="https://www.facebook.com/movexbulgaria"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="transition-transform cursor-pointer flex-center hover:scale-125 hover:text-primaryBlue-450">
+                    <div className="text-2xl">
+                      <BsFacebook />
+                    </div>
+                    {/* <div className="pl-2">Facebook</div> */}
                   </div>
-                  {/* <div className="pl-2">Facebook</div> */}
-                </div>
-              </a>
-              <a
-                href="https://www.instagram.com/movexbulgaria/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="transition-all cursor-pointer flex-center hover:scale-125 hover:text-primaryBlue-450">
-                  <div className="text-2xl">
-                    <BsInstagram />
+                </a>
+                <a
+                  href="https://www.instagram.com/movexbulgaria/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="transition-all cursor-pointer flex-center hover:scale-125 hover:text-primaryBlue-450">
+                    <div className="text-2xl">
+                      <BsInstagram />
+                    </div>
+                    {/* <div className="pl-2">Instagram</div> */}
                   </div>
-                  {/* <div className="pl-2">Instagram</div> */}
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
+            </section>
           </section>
 
           <section className="grid-cols-[40%30%20%] justify-center xl:grid ">

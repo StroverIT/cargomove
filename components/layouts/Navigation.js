@@ -115,7 +115,7 @@ export default function Navigation() {
         </div>
       </section> */}
       <section className="container relative items-center justify-between hidden lg:flex">
-        <div className="absolute select-none -left-10">
+        <div className="absolute select-none 2xl:-left-10">
           <div className="relative select-none w-72 h-72">
             <Image
               src="/LOGOv3-01.svg"
