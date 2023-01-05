@@ -48,7 +48,7 @@ export default function AboutUs() {
               </p>
             </div>
           </div>
-          <div className="py-5 bg-orange-100 flex-center md:py-10 max-md:order-1">
+          <div className="py-5 bg-blue-100 flex-center md:py-10 max-md:order-1">
             <div className="relative w-20 h-20 md:h-44 md:w-44 ">
               <Image
                 src="/about-us/professional-services.png"
@@ -102,7 +102,7 @@ export default function AboutUs() {
               </ol>
             </div>
           </div>
-          <div className="py-5 flex-center bg-orange md:py-10 max-md:order-3">
+          <div className="py-5 flex-center bg-blue md:py-10 max-md:order-3">
             <div className="relative w-20 h-20 md:h-44 md:w-44 ">
               <Image
                 src="/about-us/respect.png"
@@ -130,7 +130,7 @@ export default function AboutUs() {
               </p>
             </div>
           </div>
-          <div className="py-5 bg-orange-100 lg:order-1 flex-center md:py-10 max-md:order-5">
+          <div className="py-5 bg-blue-100 lg:order-1 flex-center md:py-10 max-md:order-5">
             <div className="relative w-20 h-20 md:h-44 md:w-44">
               <Image
                 src="/about-us/business.png"
@@ -188,8 +188,8 @@ export default function AboutUs() {
         <section className="pb-20">
           <ContactUs
             color="border-orange"
-            btnColor="bg-orange"
-            bgColor="bg-orange-50"
+            btnColor="bg-blue"
+            bgColor="bg-blue-50"
             number="+359 89 506 3670"
             scrollBarThumb="scrollbar-thumb-primaryBlue-150"
             scrollBarTrack="scrollbar-track-primaryBlue-500"

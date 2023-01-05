@@ -56,8 +56,8 @@ export default function HomeMoving() {
           <section className="lg:mx-36 my-14">
             <ContactUs
               color="border-orange"
-              btnColor="bg-orange"
-              bgColor="bg-orange-50"
+              btnColor="bg-blue"
+              bgColor="bg-blue-50"
               number="+359 89 506 3670"
               scrollBarThumb="scrollbar-thumb-primaryBlue-150"
               scrollBarTrack="scrollbar-track-primaryBlue-500"

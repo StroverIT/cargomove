@@ -29,7 +29,7 @@ export default function Services() {
         <div className="mt-10 flex-center">
           <a
             href="tel:+359895063670"
-            className="py-4 text-lg font-semibold text-white uppercase rounded-lg px-14 bg-orange"
+            className="py-4 text-lg font-semibold text-white uppercase rounded-lg px-14 bg-blue"
           >
             позвъни сега
           </a>

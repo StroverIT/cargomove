@@ -26,7 +26,7 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div>
-              <div className="flex-center bg-orange-150 ">
+              <div className="flex-center bg-blue-150 ">
                 <div className="relative w-20 h-20 md:w-56 md:h-56">
                   <Image
                     src="/icons/moving.png"
@@ -53,7 +53,7 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-orange-300 flex-center ">
+              <div className="bg-blue-300 flex-center ">
                 <div className="relative w-20 h-20 md:w-56 md:h-56">
                   <Image
                     src="/icons/delivery-truck (1).png"
@@ -78,7 +78,7 @@ export default function Pricing() {
         <div className="py-10 flex-center">
           <Link
             href="/pricing"
-            className="px-10 py-3 text-lg font-semibold text-white uppercase rounded-lg bg-orange"
+            className="px-10 py-3 text-lg font-semibold text-white uppercase rounded-lg bg-blue"
             scroll={false}
           >
             Виж повече

@@ -59,7 +59,7 @@ export default function Footer() {
             />
             <div className="mt-2 flex-center">
               <button
-                className={`bg-orange w-full py-1 rounded-sm flex-center`}
+                className={`bg-blue w-full py-1 rounded-sm flex-center`}
                 onClick={newsLetterHandler}
               >
                 {isLoading ? <div className="loader"></div> : "Абонирай ме!"}

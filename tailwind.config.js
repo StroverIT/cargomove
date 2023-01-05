@@ -30,8 +30,7 @@ const customColors = {
     50: "hsl(0, 0%, 95%)",
   },
   "white-lighter-trans": "hsl(0, 0%, 100%, 30%)",
-  blue: "hsl(203, 76%, 48%)",
-  orange: {
+  blue: {
     DEFAULT: "#0077b6",
     100: "#00b4d8",
     150: "#90e0ef",

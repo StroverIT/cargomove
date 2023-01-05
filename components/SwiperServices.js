@@ -22,7 +22,7 @@ export default function SwiperServices({ service }) {
       return (
         '<span class="' +
         className +
-        " text-lg bg-orange rounded-full text-white py-2 px-4 lg:mr-10 " +
+        " text-lg bg-blue rounded-full text-white py-2 px-4 lg:mr-10 " +
         '">' +
         (index + 1) +
         "</span>"

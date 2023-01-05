@@ -6,7 +6,7 @@ export default function Title({
   title,
   size,
 
-  lineColor = "bg-orange-100",
+  lineColor = "bg-blue-100",
 }) {
   return (
     <div className="">
