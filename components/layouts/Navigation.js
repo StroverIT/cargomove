@@ -210,7 +210,7 @@ export default function Navigation() {
                                 initial="hidden"
                                 animate="visible"
                                 custom={i}
-                                className="px-2 py-2 transition-colors cursor-pointer hover:bg-white hover:text-orange-150"
+                                className="px-2 py-2 transition-colors cursor-pointer hover:bg-white hover:text-blue-150"
                               >
                                 {list.title}
                               </motion.li>
@@ -372,7 +372,7 @@ export default function Navigation() {
                 <section className="w-full h-screen bg-blue-100 flex-center">
                   <section className="container relative">
                     <section
-                      className="absolute right-0 text-xl bg-white rounded-md top-5 text-orange-150"
+                      className="absolute right-0 text-xl bg-white rounded-md top-5 text-blue-150"
                       onClick={() => setServicePcState(false)}
                     >
                       <HiX />
@@ -400,7 +400,7 @@ export default function Navigation() {
                               initial="hidden"
                               animate="visible"
                               custom={i}
-                              className="py-2 pl-2 transition-colors cursor-pointer hover:bg-white hover:text-orange-150"
+                              className="py-2 pl-2 transition-colors cursor-pointer hover:bg-white hover:text-blue-150"
                             >
                               {list.title}
                             </motion.li>
