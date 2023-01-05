@@ -55,7 +55,7 @@ export default function HomeMoving() {
           {/* Тука може да се сложи снимка!!!!! */}
           <section className="lg:mx-36 my-14">
             <ContactUs
-              color="border-orange"
+              color="border-blue"
               btnColor="bg-blue"
               bgColor="bg-blue-50"
               number="+359 89 506 3670"

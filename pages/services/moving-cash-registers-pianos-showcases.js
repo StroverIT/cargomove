@@ -61,7 +61,7 @@ export default function CleaningBasementsAndAttics() {
         </section>
         <section className="my-14 lg:mx-36">
           <ContactUs
-            color="border-orange"
+            color="border-blue"
             btnColor="bg-blue"
             bgColor="bg-blue-50"
             number="+359 89 506 3670"

@@ -13,7 +13,7 @@ export default function Pricing() {
         <section className="grid mt-10 lg:gap-10 lg:mt-20">
           <section className="">
             <div className="grid shadow-lg md:grid-cols-2">
-              <div className="p-5 md:p-16 border-y border-orange-150 max-md:order-2">
+              <div className="p-5 md:p-16 border-y border-blue-150 max-md:order-2">
                 <h3 className="mb-4 text-2xl max-md:text-center md:text-2xl">
                   Хамалски услуги и товаро-разтоварни дейности
                 </h3>
@@ -37,7 +37,7 @@ export default function Pricing() {
               </div>
             </div>
             <div className="grid shadow-lg md:grid-cols-2">
-              <div className="p-5 border-b md:p-16 border-orange-150 max-md:order-2">
+              <div className="p-5 border-b md:p-16 border-blue-150 max-md:order-2">
                 <h3 className="mb-4 text-2xl  max-md:text-center">
                   Транспортни услуги
                 </h3>

@@ -45,7 +45,7 @@ export default function OfficeMoving() {
         {/* <p>ненужни вещи изхвърляне</p> */}
         <section className="my-14 lg:mx-36">
           <ContactUs
-            color="border-orange"
+            color="border-blue"
             btnColor="bg-blue"
             bgColor="bg-blue-50"
             number="+359 89 506 3670"

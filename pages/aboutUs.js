@@ -34,7 +34,7 @@ export default function AboutUs() {
           </p>
         </div>
         <section className="grid mt-20 lg:grid-cols-2 ">
-          <div className="p-10 border-orange-100 border-y flex-center max-md:order-2">
+          <div className="p-10 border-blue-100 border-y flex-center max-md:order-2">
             <div className="flex-col flex-center">
               <Title title="Визия" size="text-3xl" />
               <p className="mt-2 text-sm text-center md:max-w-sm ">
@@ -57,7 +57,7 @@ export default function AboutUs() {
               />
             </div>
           </div>
-          <div className="p-10 border-b border-orange-100 flex-center max-md:order-4">
+          <div className="p-10 border-b border-blue-100 flex-center max-md:order-4">
             <div className="flex-col flex-center">
               <Title title="Ценности:" size="text-3xl" />
               <ol className="flex flex-col max-w-md gap-2 mt-2 text-sm list-decimal">
@@ -111,7 +111,7 @@ export default function AboutUs() {
               />
             </div>
           </div>
-          {/* <div className="p-10 border-b border-orange-100 flex-center max-md:order-6">
+          {/* <div className="p-10 border-b border-blue-100 flex-center max-md:order-6">
             <div className="flex-col flex-center">
               <Title title="Нашата история" size="text-3xl" />
               <p className="max-w-md mt-2 text-sm text-center">
@@ -187,7 +187,7 @@ export default function AboutUs() {
         </section>
         <section className="pb-20">
           <ContactUs
-            color="border-orange"
+            color="border-blue"
             btnColor="bg-blue"
             bgColor="bg-blue-50"
             number="+359 89 506 3670"

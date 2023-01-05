@@ -54,7 +54,7 @@ function Question({ title, text, isBorder = true, index }) {
   return (
     <motion.section
       layout
-      className={`p-7 ${isBorder ? "border-b-2 border-orange-200" : ""} `}
+      className={`p-7 ${isBorder ? "border-b-2 border-blue-200" : ""} `}
     >
       <motion.div
         layout

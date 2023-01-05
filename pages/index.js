@@ -31,7 +31,7 @@ export default function Home() {
           <FaQ />
           <section className="pb-20 mt-10 lg:mt-20">
             <ContactUs
-              color="border-orange"
+              color="border-blue"
               btnColor="bg-blue"
               bgColor="bg-blue-50"
               number="+359 89 506 3670"
