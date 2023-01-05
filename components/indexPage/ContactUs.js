@@ -207,7 +207,7 @@ export default function ContactUs({
                   <div className="text-xl ">
                     <FaViber />
                   </div>
-                  <div className="pl-1">{number}</div>
+                  <div className="pl-1">Пишете ни!</div>
                 </section>
               </a>
             </div>
