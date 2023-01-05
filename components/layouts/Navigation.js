@@ -117,7 +117,7 @@ export default function Navigation() {
       <section className="container items-center justify-between hidden lg:flex">
         <div className="relative w-40 h-24 ">
           <Image
-            src="/test.png"
+            src="/LOGODODO-01.svg"
             alt="logo"
             layout="fill"
             className="object-contain"
@@ -254,7 +254,14 @@ export default function Navigation() {
         </section>
       </section>
       <section className="container justify-between flex-center lg:hidden ">
-        <div className="relative h-10 w-96">{/* <Logo /> */}Logo</div>
+        <div className="relative w-24 h-16 ">
+          <Image
+            src="/LOGODODO-01.svg"
+            alt="logo"
+            layout="fill"
+            className="object-contain"
+          />
+        </div>
         <section className="flex items-center justify-center gap-x-5 ">
           <div className="flex gap-x-2">
             <a
