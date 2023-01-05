@@ -254,12 +254,14 @@ export default function Navigation() {
       </section>
       <section className="container justify-between flex-center lg:hidden ">
         <div className="relative w-16 h-16 ">
-          <Image
-            src="/LOGODODO-01.svg"
-            alt="logo"
-            layout="fill"
-            className="object-contain"
-          />
+          <Link href="/">
+            <Image
+              src="/LOGODODO-01.svg"
+              alt="logo"
+              layout="fill"
+              className="object-contain"
+            />
+          </Link>
         </div>
         <section className="flex items-center justify-center gap-x-5 ">
           <div className="flex gap-x-2">
