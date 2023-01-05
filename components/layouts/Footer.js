@@ -159,7 +159,7 @@ export default function Footer() {
                           <span className="text-lg">
                             <FaViber />
                           </span>
-                          <span className="pl-1">+359 89 506 3670</span>
+                          <span className="pl-1">Пишете ни!</span>
                         </section>
                       </a>
                     </li>
