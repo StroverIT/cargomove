@@ -23,7 +23,7 @@ const Index = () => {
               size="text-3xl"
             />
           </div>
-          <section className="grid mt-5 lg:grid-cols-2">
+          <section className="grid mt-5 lg:grid-cols-2 place-items-center">
             {blogData.map((data) => {
               return (
                 <Box
