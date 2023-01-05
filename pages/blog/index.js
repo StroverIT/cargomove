@@ -8,6 +8,7 @@ import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import { ImClock } from "react-icons/im";
 
+import { blogData } from "../../components/data/blog";
 const Index = () => {
   return (
     <>
@@ -23,7 +24,18 @@ const Index = () => {
             />
           </div>
           <section className="grid mt-5 lg:grid-cols-2">
-            <Box link="5-suveta-za-premestvane-opakovane" />
+            {blogData.map((data) => {
+              return (
+                <Box
+                  link={data.link}
+                  imgUrl={data.imgUrl}
+                  key={data._id}
+                  paragraph={data.paragraph}
+                  title={data.title}
+                  date={data.date}
+                />
+              );
+            })}
           </section>
         </section>
       </main>
@@ -33,32 +45,26 @@ const Index = () => {
 
 export default Index;
 
-function Box({ children, link }) {
+function Box({ children, link, imgUrl, title, paragraph, date }) {
   return (
     <div className="flex flex-col justify-center max-w-lg bg-white rounded-md shadow-xl">
       <div className="container md:px-6 ">
         <Link href={`/blog/${link}`}>
           <h3 className="py-4 font-sans text-2xl font-semibold transition-colors hover:text-blue">
-            5 съвета за преместване и опаковане
+            {title}
           </h3>
         </Link>
       </div>
       <div className="relative w-full h-56 md:h-96">
         <Image
-          src="/blog/moving-packing.jpg"
-          alt="5 съвета за преместване и опаковане"
+          src={`/blog/${imgUrl}`}
+          alt={title}
           fill
           className="object-contain"
         />
       </div>
       <div className="px-8 max-sm:pt-5">
-        <p className="mb-2 card__preview-text">
-          Да опаковаш и преместиш жилището си не е от най-хубавите и комфортни
-          изживявания, но в даден момент почти всеки човек се сблъсква с този
-          казус. Затова ще ви разясним 5 съвета при преместване и опаковане, за
-          да си спестите време, пари, главоболие и да се насладите на един лесен
-          и успешен процес по преместване без стрес.
-        </p>
+        <p className="mb-2 card__preview-text">{paragraph}</p>
       </div>
       <div className="px-8 pb-8">
         <Link href={`/blog/${link}`}>
@@ -74,7 +80,7 @@ function Box({ children, link }) {
         <div className="">
           <ImClock />
         </div>
-        <div className="pl-1 text-sm">12/17/2022</div>
+        <div className="pl-1 text-sm">{date}</div>
       </div>
     </div>
   );
