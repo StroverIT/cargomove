@@ -38,7 +38,7 @@ function Box({ children, link }) {
     <div className="flex flex-col justify-center max-w-lg bg-white rounded-md shadow-xl">
       <div className="container md:px-6 ">
         <Link href={`/blog/${link}`}>
-          <h3 className="py-4 font-sans text-2xl font-semibold transition-colors hover:text-orange">
+          <h3 className="py-4 font-sans text-2xl font-semibold transition-colors hover:text-blue">
             5 съвета за преместване и опаковане
           </h3>
         </Link>
@@ -62,7 +62,7 @@ function Box({ children, link }) {
       </div>
       <div className="px-8 pb-8">
         <Link href={`/blog/${link}`}>
-          <span className="flex items-center py-2 font-semibold rounded-md text-orange hover:underline">
+          <span className="flex items-center py-2 font-semibold rounded-md text-blue hover:underline">
             Продължи четенето
             <span className="pt-[0.1rem] pl-1 ">
               <BsArrowRight />
@@ -70,7 +70,7 @@ function Box({ children, link }) {
           </span>
         </Link>
       </div>
-      <div className="flex items-center px-8 py-6 font-semibold bg-gray-100 text-orange">
+      <div className="flex items-center px-8 py-6 font-semibold bg-gray-100 text-blue">
         <div className="">
           <ImClock />
         </div>
