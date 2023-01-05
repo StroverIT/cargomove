@@ -254,7 +254,7 @@ export default function Navigation() {
         </section>
       </section>
       <section className="container justify-between flex-center lg:hidden ">
-        <div className="relative w-24 h-16 ">
+        <div className="relative w-16 h-16 ">
           <Image
             src="/LOGODODO-01.svg"
             alt="logo"
