@@ -82,7 +82,7 @@ export default function Navigation() {
     <nav
       className={`${
         isOnMain ? "bg-dark box3" : "bg-dark-50 box2"
-      } fixed top-0 left-0 z-50 w-full text-white py-6 uppercase font-medium box2`}
+      } fixed top-0 left-0 z-50 w-full text-white py-6 uppercase font-medium box2 transition-colors`}
     >
       {/* <section className="w-full h-10 bg-white text-dark">
         <div className="container h-full flex-center gap-x-10">
@@ -116,7 +116,7 @@ export default function Navigation() {
       </section> */}
       <section className="container relative items-center justify-between hidden lg:flex">
         <div className="absolute select-none -left-10">
-          <div className="relative w-64 h-64 select-none">
+          <div className="relative select-none w-72 h-72">
             <Image
               src="/LOGOv3-01.svg"
               alt="logo"
