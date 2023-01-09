@@ -17,9 +17,9 @@ export default function DisposalOfOldFurniture() {
             изхвърлят боклука си направо в мазето. */}
         <section className="lg:px-56">
           <section className="text-center flex-center">
-            <p className="mt-2 text-xl lg:max-w-3xl">
+            <h2 className="mt-2 text-xl lg:max-w-3xl">
               Ефективни и ефикасни решения създадени за вас и вашата доставка
-            </p>
+            </h2>
           </section>
 
           <p className="mt-4 lg:max-w-3xl">

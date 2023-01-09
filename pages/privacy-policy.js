@@ -6,10 +6,12 @@ import { links } from "../components/otherPagesNav/privacyAndPolicyData";
 export default function PrivacyPolicy() {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <section className="container text-black mt-36">
         <div>
-          <h2 className="text-2xl font-semibold">Политика за поверителност</h2>
+          <h1 className="text-2xl font-semibold">Политика за поверителност</h1>
           <p className="font-medium">
             Последна актуализация на 12 ноември 2022 г
           </p>
@@ -43,9 +45,9 @@ export default function PrivacyPolicy() {
           </section>
           <section className="">
             <div>
-              <h3 className="text-lg font-semibold">
+              <h2 className="text-lg font-semibold">
                 ОБОБЩЕНИЕ НА КЛЮЧОВИТЕ МОМЕНТИ
-              </h3>
+              </h2>
               <p className="my-4 italic font-semibold">
                 Това резюме предоставя ключови точки от нашето съобщение за
                 поверителност, но можете да научите повече подробности за всяка
@@ -219,9 +221,9 @@ export default function PrivacyPolicy() {
           </section>
           {/* Първа точка */}
           <section className="mt-10" id="pointOne">
-            <h3 className="text-xl font-semibold">
+            <h4 className="text-xl font-semibold">
               1. КАКВА ИНФОРМАЦИЯ СЪБИРАМЕ?
-            </h3>
+            </h4>
             <h5 className="mt-5 font-semibold">
               Лична информация, която ни разкривате
             </h5>
@@ -427,20 +429,22 @@ export default function PrivacyPolicy() {
                 обработваме вашата лична информация за някои от описаните цели,
                 за да:
               </li>
-              <ul className="flex flex-col mt-4 ml-10 list-disc gap-y-4">
-                <li>
-                  Изпращайте на потребителите информация за специални оферти и
-                  отстъпки за нашите продукти и услуги
-                </li>
-                <li>
-                  Разработваме и показваме персонализирано и подходящо рекламно
-                  съдържание за нашите потребители
-                </li>
-                <li>
-                  Разберете как нашите потребители използват нашите продукти и
-                  услуги, за да можем да подобрим потребителското изживяване
-                </li>
-              </ul>
+              <li>
+                <ul className="flex flex-col mt-4 ml-10 list-disc gap-y-4">
+                  <li>
+                    Изпращайте на потребителите информация за специални оферти и
+                    отстъпки за нашите продукти и услуги
+                  </li>
+                  <li>
+                    Разработваме и показваме персонализирано и подходящо
+                    рекламно съдържание за нашите потребители
+                  </li>
+                  <li>
+                    Разберете как нашите потребители използват нашите продукти и
+                    услуги, за да можем да подобрим потребителското изживяване
+                  </li>
+                </ul>
+              </li>
               <li>
                 Законови задължения. Можем да обработваме вашата информация,
                 когато смятаме, че е необходимо за спазване на нашите законови
@@ -696,9 +700,9 @@ export default function PrivacyPolicy() {
               администрирането и използването на вашия акаунт, за да отговорим
               на заявки за услуги или за други немаркетингови цели.
             </p>
-            <h5 className="mt-4 font-semibold text-md">
+            <h3 className="mt-4 font-semibold text-md">
               Информация за профила
-            </h5>
+            </h3>
             <p className="mt-4">
               Ако по всяко време искате да прегледате или промените информацията
               в акаунта си или да прекратите акаунта си, можете:

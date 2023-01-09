@@ -12,7 +12,7 @@ export default function CleaningOfApartmentsAndHouses() {
         </section>
 
         <section className="lg:px-56">
-          <h3 className="mt-2 text-xl font-medium">Какво предлагаме:</h3>
+          <h2 className="mt-2 text-xl font-medium">Какво предлагаме:</h2>
           <p>
             Процесът по товарене и разтоварване на стока може да бъде трудоемка
             и рискована задача. Ние &quot;Мувекс България&quot;, предоставяме
@@ -24,8 +24,8 @@ export default function CleaningOfApartmentsAndHouses() {
             същевременно ще ускори процеса по натоварване или разтоварване,
             спестявайки вашето неудобство и време.
           </p>
-          <h3 className="mt-2 text-xl font-medium">Как работи:</h3>
 
+          <h2 className="mt-2 text-xl font-medium">Как работи:</h2>
           <p>
             Ако сте наели камион, очаквате доставка на стока, ще пристигне
             тир/контейнер. Не искате или не можете да се справите изцяло сами с

@@ -62,7 +62,7 @@ export default function AboutUs() {
               <Title title="Ценности:" size="text-3xl" />
               <ol className="flex flex-col max-w-md gap-2 mt-2 text-sm list-decimal">
                 <li>
-                  <h3 className="text-lg">Отговорност:</h3>
+                  <h2 className="text-lg">Отговорност:</h2>
                   <p>
                     Поемаме отговорност за нашите действия и тяхното
                     въздействие, държим да изградим доверие и надеждност за
@@ -71,7 +71,7 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li>
-                  <h3 className="text-lg">Почтеност: / Честност:</h3>
+                  <h2 className="text-lg">Почтеност: / Честност:</h2>
                   <p>
                     Нашата основа на доверието и надеждността. Високо ценим
                     честността и прозрачността във всички бизнес сделки, така
@@ -80,7 +80,7 @@ export default function AboutUs() {
                   </p>
                 </li>
                 <li>
-                  <h3 className="text-lg">Сътрудничество:</h3>
+                  <h2 className="text-lg">Сътрудничество:</h2>
                   <p>
                     Нашият ключ към успеха в „Мувекс България“. Вярваме, че
                     работата в екип и споделянето на идеи води към по-добри
@@ -91,7 +91,7 @@ export default function AboutUs() {
                 </li>
 
                 <li>
-                  <h3 className="text-lg">Иновативност:</h3>
+                  <h2 className="text-lg">Иновативност:</h2>
                   <p>
                     Насърчаване на нашата креативност и непрекъснато
                     усъвършенстване е начинът и движещата сила към основата на
@@ -156,7 +156,7 @@ export default function AboutUs() {
                   className="object-contain rounded-full "
                 />
               </div>
-              <h3 className="mt-3 text-xl text-center">Денислав Цветков</h3>
+              <h2 className="mt-3 text-xl text-center">Денислав Цветков</h2>
               <p>Управител</p>
             </div>
             <div className="flex-col flex-center">
@@ -168,19 +168,19 @@ export default function AboutUs() {
                   className="rounded-full bg-blend"
                 />
               </div>
-              <h3 className="mt-3 text-xl text-center">Йоана Стайкова</h3>
+              <h2 className="mt-3 text-xl text-center">Йоана Стайкова</h2>
               <p>Hr консултант</p>
             </div>
             <div className="flex-col flex-center">
               <div className="relative transition-all border-2 rounded-full cursor-pointer w-36 h-36 hover:scale-110 border-primaryBlue-100 ">
                 <Image
-                  src="/hrisi2_durt_crop.jpg"
+                  src="/personal/test_v3.jpg"
                   alt="growth for you and your company"
                   layout="fill"
-                  className="rounded-full bg-blend"
+                  className="object-contain rounded-full bg-[#afafaf]"
                 />
               </div>
-              <h3 className="mt-3 text-xl text-center">Емил Златинов</h3>
+              <h2 className="mt-3 text-xl text-center">Емил Златинов</h2>
               <p>Ит съпорт</p>
             </div>
           </section>

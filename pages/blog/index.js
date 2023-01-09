@@ -23,7 +23,7 @@ const Index = () => {
               size="text-3xl"
             />
           </div>
-          <section className="grid mt-5 lg:grid-cols-2 gap-y-10 place-items-center">
+          <section className="grid mt-5 lg:grid-cols-2 gap-y-10 gap-x-5 max-lg:place-items-center xl:place-items-center grid-auto-rows">
             {blogData.map((data) => {
               return (
                 <Box
@@ -50,9 +50,9 @@ function Box({ children, link, imgUrl, title, paragraph, date }) {
     <div className="flex flex-col justify-center max-w-lg bg-white rounded-md shadow-xl">
       <div className="container md:px-6 ">
         <Link href={`/blog/${link}`}>
-          <h3 className="py-4 font-sans text-2xl font-semibold transition-colors hover:text-blue">
+          <h2 className="py-4 font-sans text-2xl font-semibold text-center transition-colors hover:text-blue">
             {title}
-          </h3>
+          </h2>
         </Link>
       </div>
       <div className="relative w-full h-56 md:h-96">
@@ -76,7 +76,7 @@ function Box({ children, link, imgUrl, title, paragraph, date }) {
           </span>
         </Link>
       </div>
-      <div className="flex items-center px-8 py-6 font-semibold bg-gray-100 text-blue">
+      <div className="flex items-center px-8 py-6 mt-auto font-semibold bg-gray-100 text-blue">
         <div className="">
           <ImClock />
         </div>

@@ -17,6 +17,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: "Montserrat", sans-serif;
+  font-display: optional;
 }
 html {
   scroll-behavior: smooth;
@@ -160,4 +161,8 @@ html::-webkit-scrollbar-thumb {
   float: left;
   clip-path: circle(30% at 30% 50%);
   shape-outside: circle(30% at 30% 50%);
+}
+
+.color {
+  color: #089ea3;
 }

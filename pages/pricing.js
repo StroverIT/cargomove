@@ -25,9 +25,9 @@ export default function CleaningOfApartmentsAndHouses() {
           <h2 className="mt-2 text-2xl font-medium text-center">
             Как се образуват нашите цени за хамалски услуги?
           </h2>
-          <h3 className="mt-2 text-xl font-medium">
+          <h2 className="mt-2 text-xl font-medium">
             Фиксирана цена на хамалски услуги:
-          </h3>
+          </h2>
           <p>
             Ние от Мувекс България можем да Ви предложим опция - фиксирана цена,
             след извършване на безплатен оглед от нашият екип. По време на
@@ -53,9 +53,9 @@ export default function CleaningOfApartmentsAndHouses() {
             преместване от етаж на етаж и прочие.
           </p>
 
-          <h3 className="mt-2 text-2xl font-medium text-center">
+          <h2 className="mt-2 text-2xl font-medium text-center">
             Часова ценова листа
-          </h3>
+          </h2>
           <section className="">
             <section>
               <h3 className="mt-2 text-xl font-medium">
@@ -70,9 +70,9 @@ export default function CleaningOfApartmentsAndHouses() {
               </ul>
             </section>
             <section>
-              <h3 className="mt-2 text-xl font-medium">
+              <h2 className="mt-2 text-xl font-medium">
                 Цени на транспортни услуги
-              </h3>
+              </h2>
               <ul className="ml-5 list-disc">
                 <li>
                   Цена за престой + транспортиране в рамките на града от 30лв/ч
@@ -85,9 +85,9 @@ export default function CleaningOfApartmentsAndHouses() {
               </ul>
             </section>
             <section>
-              <h3 className="mt-2 text-xl font-medium">
+              <h2 className="mt-2 text-xl font-medium">
                 Цена за тежки предмети
-              </h3>
+              </h2>
               <p className="max-w-md">
                 Предмети от естеството на каси, витрини, пиана, котлета, камини,
                 генератори, сървъри и други тежки предмети

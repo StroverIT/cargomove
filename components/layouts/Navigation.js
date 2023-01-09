@@ -57,7 +57,8 @@ export default function Navigation() {
 
     if (footerRef.current) {
       const footer = footerRef.current;
-      const footerDistance = footer.offsetTop - 550;
+      const screenHeight = screen.height;
+      const footerDistance = footer.offsetTop - screenHeight;
 
       if (scrollData <= footerDistance) {
         setSecondNavTelephone(true);
@@ -115,9 +116,14 @@ export default function Navigation() {
               позвъни
             </a> */}
 
-            <div className="relative z-20">
-              <Hamburger toggle={setMenuOpen} toggled={menuOpen} size={30} />
-            </div>
+            <button className="relative z-20" aria-label="Navigation menu">
+              <Hamburger
+                toggle={setMenuOpen}
+                toggled={menuOpen}
+                size={30}
+                label="Hamburger menu"
+              />
+            </button>
           </div>
           <AnimatePresence mode="wait">
             {menuOpen && (
@@ -285,18 +291,27 @@ export default function Navigation() {
           >
             <div className="flex items-center justify-between py-4 text-2xl max-sm:px-10 text-blue-250 sm:container">
               <div>
-                <a href="tel:+359895063670">
+                <a
+                  href="tel:+359895063670"
+                  aria-label="Button for calling on telehone"
+                >
                   <FiPhoneCall />
                 </a>
               </div>
 
               <div>
-                <a href="mailto:movexbulgaria@gmail.com">
+                <a
+                  href="mailto:movexbulgaria@gmail.com"
+                  aria-label="Button for writting on email"
+                >
                   <HiOutlineMail />
                 </a>
               </div>
               <div>
-                <a href="viber://chat?number=+359895063670">
+                <a
+                  href="viber://chat?number=+359895063670"
+                  aria-label="Button for calling on viber"
+                >
                   <FaViber />
                 </a>
               </div>

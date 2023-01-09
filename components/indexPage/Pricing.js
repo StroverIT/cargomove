@@ -14,9 +14,9 @@ export default function Pricing() {
           <section className="">
             <div className="grid shadow-lg md:grid-cols-2">
               <div className="p-5 md:p-16 border-y border-blue-150 max-md:order-2">
-                <h3 className="mb-4 text-2xl max-md:text-center md:text-2xl">
+                <h2 className="mb-4 text-2xl max-md:text-center md:text-2xl">
                   Хамалски услуги и товаро-разтоварни дейности
-                </h3>
+                </h2>
                 <ul className="flex flex-col max-w-xl ml-10 text-lg list-disc gap-y-2">
                   <li>Цени от 20 лв на час.</li>
                   <li>При повикване на хамали извън София - по договаряне</li>
@@ -38,9 +38,9 @@ export default function Pricing() {
             </div>
             <div className="grid shadow-lg md:grid-cols-2">
               <div className="p-5 border-b md:p-16 border-blue-150 max-md:order-2">
-                <h3 className="mb-4 text-2xl  max-md:text-center">
+                <h2 className="mb-4 text-2xl max-md:text-center">
                   Транспортни услуги
-                </h3>
+                </h2>
                 <ul className="flex flex-col max-w-xl ml-10 text-lg list-disc gap-y-2 ">
                   <li> Камион до 3.5 т 30лв/ч -35лв/ч</li>
                   <li>

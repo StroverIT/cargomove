@@ -14,11 +14,12 @@ export default function Title({
 
       <div className="mt-2 flex-center">
         <div className={`h-1 w-full ${lineColor}`}></div>
-        <div className="relative h-10 px-3 mx-2 text-xl w-14">
+        <div className="relative h-10 px-3 mx-2 text-xl w-14 ">
           <Image
             src="/icons/ezgif.com-gif-maker.gif"
             alt="moving truck"
             layout="fill"
+            className="object-contain"
           />
           {/* <FiTruck /> */}
         </div>

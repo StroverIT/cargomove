@@ -24,7 +24,7 @@ export default function InternationalRelocation() {
             гаранция и надеждност. Абсолютен приоритет на „Мувекс България“ е да
             опази целостта на вашия багаж.{" "}
           </p>
-          <h3 className="mt-4 text-xl font-medium">Как протича процеса?</h3>
+          <h2 className="mt-4 text-xl font-medium">Как протича процеса?</h2>
 
           <p className="mt-1 lg:max-w-5xl">
             Необходима е консултация преди преместване.
@@ -34,7 +34,7 @@ export default function InternationalRelocation() {
             преместване, запознаваме се с предметите, които трябва да преместим
             и услугите, от които се нуждаете.
           </p>
-          <h3 className="mt-4 text-xl font-medium">Управление.</h3>
+          <h2 className="mt-4 text-xl font-medium">Управление.</h2>
           <p className="mt-1 lg:max-w-5xl">
             Вашият мениджър извършил огледа, ще координира логистиката по
             преместване, ще съдейства за необходимата документация, ще

@@ -26,25 +26,27 @@ const OpakovaneNaChypliviPredmeti = () => {
                   имат риск за целостта им. Затова сме ви приготвили няколко
                   съвета за опаковане на чупливи предмети…
                 </p>
-                <div className="relative w-full h-56 ">
+                <div className="relative w-full h-44 ">
                   <Image
                     src="/blog/fragileInside.webp"
                     alt="5 съвета за преместване и опаковане"
                     fill
-                    className="rounded-md"
+                    className="object-contain rounded-md"
                   />
                 </div>
               </section>
 
-              <div className="relative -ml-6 w-96 h-96 image-circle">
+              <div className="relative mb-2 -ml-14 w-96 h-96 image-circle ">
                 <Image
                   src="/blog/buble-wrap.webp"
                   alt="buble wrap"
                   fill
-                  className=" image-circle"
+                  className="object-contain image-circle "
                 />
               </div>
-              <section className="mt-5">
+              <section className="">
+                <h2 className="text-lg font-semibold">Материали</h2>
+
                 <p className="pb-5 shape-circle">
                   Използвайте правилните опаковъчни материали, за да защитите
                   вашите чупливи предмети. Най добрите опции включват аерофолио

@@ -62,12 +62,12 @@ function Question({ title, text, isBorder = true, index }) {
         className="cursor-pointer"
       >
         <motion.div layout className="flex items-center justify-between">
-          <motion.h4
+          <motion.h2
             layout
             className="font-semibold uppercase text-md lg:text-lg"
           >
             {title}
-          </motion.h4>
+          </motion.h2>
           <motion.div
             layout
             animate={isOpen ? "open" : "closed"}
@@ -95,7 +95,7 @@ function Question({ title, text, isBorder = true, index }) {
                 exit={{
                   opacity: 0,
                 }}
-                className="mt-1 font-sans max-lg:text-sm whitespace-pre-line"
+                className="mt-1 font-sans whitespace-pre-line max-lg:text-sm"
               >
                 {text}
               </motion.p>

@@ -77,7 +77,7 @@ function SwiperSlideFn({ icon, title, p, isBorder = true }) {
         />
       </div>
       <section className="pl-2">
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <h2 className="text-lg font-semibold">{title}</h2>
         <p className="max-w-xs text-sm text-gray-250">{p}</p>
       </section>
       {isBorder && (

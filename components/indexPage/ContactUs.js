@@ -119,13 +119,13 @@ export default function ContactUs({
           className={`grid lg:grid-cols-2 py-14 lg:py-32  w-full px-5 xl:px-28  bg-white-20`}
         >
           <section className="">
-            <h4>
+            <h3>
               <span
                 className={`border-b-4 ${color} pb-1 text-2xl font-semibold rounded-sm `}
               >
                 Свържи се с нас!
               </span>
-            </h4>
+            </h3>
 
             <form
               action=""

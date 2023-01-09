@@ -33,7 +33,7 @@ const SuvetaZaPremestvaneOpakovane = () => {
                     src="/blog/moving-packing_inside.jpg"
                     alt="5 съвета за преместване и опаковане"
                     fill
-                    className="rounded-md"
+                    className="object-contain rounded-md"
                   />
                 </div>
               </section>

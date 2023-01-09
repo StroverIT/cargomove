@@ -12,10 +12,10 @@ export default function CleaningBasementsAndAttics() {
         </section>
         <section>
           <section className="lg:px-56">
-            <h3 className="mt-1 text-lg font-semibold">
+            <h2 className="mt-1 text-lg font-semibold">
               Какво трябва да знаете при преместване на пианo и защо не трябва
               да го правите сами?
-            </h3>
+            </h2>
 
             <p>
               Преди да сте решили окончателно да преместите пианото си сами,
@@ -27,9 +27,9 @@ export default function CleaningBasementsAndAttics() {
               средство освен, ако не искате да го повредите.
             </p>
 
-            <h3 className="mt-1 text-lg font-semibold">
+            <h2 className="mt-1 text-lg font-semibold">
               Какво е необходимо за преместване на пиано?
-            </h3>
+            </h2>
             <ul>
               <li>- Професионална количка</li>
               <li>- Специализирани ленти за вдигане на тежести</li>
@@ -45,10 +45,10 @@ export default function CleaningBasementsAndAttics() {
               това, Вие готови ли сте да поемете риска?
             </p>
 
-            <h3 className="mt-1 text-lg font-semibold">
+            <h2 className="mt-1 text-lg font-semibold">
               Защо да изберете нашата професионална услуга по преместване на
               пиано?
-            </h3>
+            </h2>
 
             <p>
               Ние от Мувекс България искаме Вие да се чувствате комфортно и

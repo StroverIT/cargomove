@@ -27,9 +27,9 @@ export default function HomeMoving() {
               вниманеие към детайлите, така че Вие да останете доволни.
             </p>
 
-            <h3 className="mt-1 text-lg font-semibold">
+            <h2 className="mt-1 text-lg font-semibold">
               Какво е необходимo за преместване на дома?
-            </h3>
+            </h2>
             <ul>
               <li>- Бус/камион с или без падащ борд/платформа</li>
               <li>- Специализирани ленти за вдигане на тежести</li>
@@ -38,9 +38,9 @@ export default function HomeMoving() {
               <li>- Професионален опит</li>
             </ul>
 
-            <h3 className="mt-1 text-lg font-semibold">
+            <h2 className="mt-1 text-lg font-semibold">
               Как да улесним процеса? - Ето как:
-            </h3>
+            </h2>
             <p>
               Препоръчително е да се свържете предварително няколко дни преди
               самата дата на преместване с нашия екип с цел оптимизиране на

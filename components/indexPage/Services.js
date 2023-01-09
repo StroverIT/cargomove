@@ -45,12 +45,12 @@ function Service({ title, index, image, link, p }) {
       <div className="transition-all bg-white shadow-lg cursor-pointer text-dark hover:shadow-lg hover:scale-110 rounded-xl">
         <section className="h-48 px-5 pt-4">
           <section className="flex justify-between">
-            <h5 className="text-4xl text-blue">0{index + 1}</h5>
+            <div className="text-4xl text-blue">0{index + 1}</div>
             <div className="relative w-10 h-10">
               <Image src={`/icons/${image}`} alt="test" layout="fill" />
             </div>
           </section>
-          <h3 className="pt-2 text-xl font-medium">{title}</h3>
+          <h2 className="pt-2 text-xl font-medium">{title}</h2>
           <p className="mt-1 font-sans ">{p}</p>
         </section>
       </div>

@@ -49,9 +49,9 @@ export default function Footer() {
         <section className="flex flex-col-reverse 2xl:grid xl:grid-cols-[30%70%]  container text-white  3xl:gap-x-28">
           <section className="flex flex-col xl:items-center xl:justify-center xl:flex-row gap-x-10 2xl:flex-col 2xl:items-start">
             <section className="w-full xl:w-96">
-              <h5 className="mt-5 mb-3 font-semibold uppercase ">
+              <h3 className="mt-5 mb-3 font-semibold uppercase ">
                 Абонирай се за нашите оферти
-              </h5>
+              </h3>
               <input
                 type="text"
                 className="w-full px-2 py-5 text-sm text-black border-none rounded-sm h-7 placeholder:text-dark text-dark"
@@ -69,12 +69,13 @@ export default function Footer() {
               </div>
             </section>
             <section>
-              <h5 className="mt-8 font-semibold uppercase">Социални мрежи</h5>
+              <h4 className="mt-8 font-semibold uppercase">Социални мрежи</h4>
               <div className="flex mt-2 gap-x-5">
                 <a
                   href="https://www.facebook.com/movexbulgaria"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Button for facebook social media"
                 >
                   <div className="transition-transform cursor-pointer flex-center hover:scale-125 hover:text-primaryBlue-450">
                     <div className="text-2xl">
@@ -87,6 +88,7 @@ export default function Footer() {
                   href="https://www.instagram.com/movexbulgaria/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Button for instagram social media"
                 >
                   <div className="transition-all cursor-pointer flex-center hover:scale-125 hover:text-primaryBlue-450">
                     <div className="text-2xl">
