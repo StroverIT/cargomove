@@ -29,7 +29,7 @@ export default function SmallInfo() {
             slidesPerView: 2.95,
           },
         }}
-        className="h-full pt-5 bg-white border-b  max-lg:border-x cursor-grab border-gray rounded-b-xl mySwiper"
+        className="h-full pt-5 bg-white border-b max-lg:border-x cursor-grab border-gray rounded-b-xl mySwiper"
       >
         <SwiperSlide>
           <SwiperSlideFn
@@ -67,7 +67,7 @@ export default function SmallInfo() {
 }
 function SwiperSlideFn({ icon, title, p, isBorder = true }) {
   return (
-    <section className="relative flex h-32 p-5 flex-center">
+    <section className="relative flex h-32 p-5 select-none flex-center">
       <div className="relative w-10 h-10">
         <Image
           src={`/icons/${icon}`}
