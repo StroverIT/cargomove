@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { AiOutlineCopyright } from "react-icons/ai";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaViber } from "react-icons/fa";
@@ -11,9 +11,10 @@ import newsletterSend from "../../fetches/newsletterSend";
 import { toastError, toastSuccess } from "../../libs/Notifications";
 
 import { data } from "../data/services";
+import { globalContext } from "../globalContext";
 
 export default function Footer() {
-  const router = useRouter();
+  const { footerRef } = useContext(globalContext);
 
   const [input, setInputs] = useState("");
   const [isLoading, setLoading] = useState(false);
@@ -43,7 +44,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className={`bg-dark   pt-2 z-10 w-full`}>
+    <footer className={`bg-dark   pt-2 z-10 w-full`} ref={footerRef}>
       <section className={` pb-14`}>
         <section className="flex flex-col-reverse 2xl:grid xl:grid-cols-[30%70%]  container text-white  3xl:gap-x-28">
           <section className="flex flex-col xl:items-center xl:justify-center xl:flex-row gap-x-10 2xl:flex-col 2xl:items-start">

@@ -8,6 +8,8 @@ import { useRouter } from "next/router";
 export default function Layout({ children }) {
   const router = useRouter();
   const heroRef = useRef(null);
+  const footerRef = useRef(null);
+
   const [scrollData, setScrollData] = useState(0);
 
   const handleScroll = (event) => {
@@ -20,9 +22,10 @@ export default function Layout({ children }) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
-    <globalContext.Provider value={{ heroRef, scrollData }}>
-      <motion.div className="flex flex-col justify-between h-screen">
+    <globalContext.Provider value={{ heroRef, scrollData, footerRef }}>
+      <div className="flex flex-col justify-between h-screen">
         <Navigation />
         <AnimatePresence
           mode="wait"
@@ -60,7 +63,7 @@ export default function Layout({ children }) {
         </AnimatePresence>
 
         <Footer />
-      </motion.div>
+      </div>
     </globalContext.Provider>
   );
 }
