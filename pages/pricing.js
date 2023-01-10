@@ -86,13 +86,13 @@ export default function CleaningOfApartmentsAndHouses() {
             </section>
             <section>
               <h2 className="mt-2 text-xl font-medium">
-                Цена за тежки предмети
+                Цени за тежки предмети
               </h2>
               <p className="max-w-md">
                 Предмети от естеството на каси, витрини, пиана, котлета, камини,
                 генератори, сървъри и други тежки предмети
               </p>
-              <p>Цени по договаряне</p>
+              <p>Цена по договаряне</p>
             </section>
           </section>
           {/* <ul className="ml-5 list-disc">
