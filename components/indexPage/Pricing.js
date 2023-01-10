@@ -81,7 +81,7 @@ export default function Pricing() {
             className="px-10 py-3 text-lg font-semibold text-white uppercase rounded-lg bg-blue"
             scroll={false}
           >
-            Виж повече
+            Виж цени
           </Link>
         </div>
       </section>
