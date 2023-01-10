@@ -130,14 +130,14 @@ export default function Footer() {
                 </li>
 
                 <li className="cursor-default">
-                  <Link href="/terms-and-conditions" scroll={false}>
+                  <Link href="/legal/terms-and-conditions" scroll={false}>
                     <span className="pb-1 border-b cursor-pointer border-border">
                       Условия за ползване
                     </span>
                   </Link>
                 </li>
                 <li className="cursor-default">
-                  <Link href="/privacy-policy" scroll={false}>
+                  <Link href="/legal/privacy-policy" scroll={false}>
                     <span className="pb-1 border-b cursor-pointer border-border">
                       Защита на лични данни
                     </span>
