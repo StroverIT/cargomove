@@ -67,8 +67,10 @@ export default function Pricing() {
         </section>
         <section className="mt-10 lg:mt-10">
           <section className="sticky text-center flex-center top-56">
-            <ul className="flex flex-col italic gap-y-2">
-              <li> Безплатен оглед в рамките на гр. София</li>
+            <ul className="flex flex-col italic gap-y-2 text-md">
+              <li className="text-green">
+                Безплатен оглед в рамките на гр. София
+              </li>
               <li> Минимално време на ангажираност 2ч.</li>
               <li>Монтаж / демонтаж, Опаковане и др по договаряне</li>
             </ul>
