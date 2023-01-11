@@ -20,32 +20,48 @@ const ContactUs = () => {
           <div className="pl-5 border-r border-gray-600">
             <h1 className="pb-4 text-2xl font-semibold">Контакти</h1>
             <ul className="pr-4">
-              <li className="flex items-center py-4 gap-x-2">
-                <div className="text-2xl text-blue">
-                  <FiPhoneCall />
-                </div>
-                <div className="pl-2">
-                  <h2 className="font-medium">Телефон</h2>
-                  <p>+359 89 506 3670</p>
-                </div>
+              <li className="">
+                <a
+                  href="tel:+359895063670"
+                  className="flex items-center py-4 gap-x-2"
+                >
+                  <div className="text-2xl text-blue">
+                    <FiPhoneCall />
+                  </div>
+                  <div className="pl-2">
+                    <h2 className="font-medium">Телефон</h2>
+                    <p>+359 89 506 3670</p>
+                  </div>
+                </a>
               </li>
-              <li className="flex items-center py-4 border-gray-600 gap-x-2 border-y">
-                <div className="text-2xl text-blue">
-                  <FaViber />
-                </div>
-                <div className="pl-2">
-                  <h2 className="font-medium">Viber</h2>
-                  <p>+359 89 506 3670</p>
-                </div>
+
+              <li>
+                <a
+                  href="viber://chat?number=+359895063670"
+                  className="flex items-center py-4 gap-x-2"
+                >
+                  <div className="text-2xl text-blue">
+                    <FaViber />
+                  </div>
+                  <div className="pl-2">
+                    <h2 className="font-medium">Viber</h2>
+                    <p>+359 89 506 3670</p>
+                  </div>
+                </a>
               </li>
-              <li className="flex items-center py-4 gap-x-2">
-                <div className="text-3xl text-blue">
-                  <HiOutlineMail />
-                </div>
-                <div className="pl-2">
-                  <h2 className="font-medium">И-мейл</h2>
-                  <p>movexbulgaria@gmail.com</p>
-                </div>
+              <li>
+                <a
+                  href="mailto:movexbulgaria@gmail.com"
+                  className="flex items-center py-4 gap-x-2"
+                >
+                  <div className="text-3xl text-blue">
+                    <HiOutlineMail />
+                  </div>
+                  <div className="pl-2">
+                    <h2 className="font-medium">И-мейл</h2>
+                    <p>movexbulgaria@gmail.com</p>
+                  </div>
+                </a>
               </li>
             </ul>
           </div>
