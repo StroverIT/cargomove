@@ -13,7 +13,11 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Хамалски и транспортни услуги - БЛОГ</title>
+        <title>Movex Bulgaria - Блог - Хубаво е да знаете</title>
+        <meta
+          name="description"
+          content="Разберете какъв тип хора ще пренасят вашите ценни вещи или ще изчистват къщата Ви. Нашите ценности и визия за хамалските и транспортните услуги."
+        />
       </Head>
       <main className="min-h-screen pt-40 pb-20 bg-blog">
         <section className="container">
@@ -56,12 +60,14 @@ function Box({ children, link, imgUrl, title, paragraph, date }) {
         </Link>
       </div>
       <div className="relative w-full h-56 md:h-96">
-        <Image
-          src={`/blog/${imgUrl}`}
-          alt={title}
-          fill
-          className="object-contain"
-        />
+        <Link href={`/blog/${link}`}>
+          <Image
+            src={`/blog/${imgUrl}`}
+            alt={title}
+            fill
+            className="object-contain"
+          />
+        </Link>
       </div>
       <div className="px-8 max-sm:pt-5">
         <p className="mb-2 card__preview-text">{paragraph}</p>

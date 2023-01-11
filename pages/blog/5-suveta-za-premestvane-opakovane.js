@@ -7,7 +7,11 @@ const SuvetaZaPremestvaneOpakovane = () => {
   return (
     <>
       <Head>
-        <title>5 съвета за преместване и опаковане</title>
+        <title>Movex - 5 съвета за преместване и опаковане</title>
+        <meta
+          name="description"
+          content={`"Направи го сам" - Съвите и трикове за преместването в нов апартамент или офис. Написали сме 5 важнни стъпки, чрез които и сами може да го направите`}
+        />
       </Head>
       <main className="mt-40 mb-14">
         <section className="container">
