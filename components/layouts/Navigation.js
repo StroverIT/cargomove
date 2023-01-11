@@ -95,7 +95,7 @@ export default function Navigation() {
         data={data}
       />
       <section className="container relative justify-between flex-center lg:hidden">
-        <div className="absolute w-48 h-48 ">
+        <div className="absolute w-48 h-20 ">
           <Link href="/">
             <Image
               src="/LOGOv3-01.svg"

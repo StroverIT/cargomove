@@ -8,7 +8,7 @@ const PcVersion = ({ pathname, servicePcState, setServicePcState, data }) => {
   return (
     <section className="container relative items-center justify-between hidden lg:flex">
       <div className="absolute select-none ">
-        <div className="relative select-none w-72 h-72">
+        <div className="relative select-none h-28 w-72">
           <Image
             src="/LOGOv3-01.svg"
             alt="logo"
