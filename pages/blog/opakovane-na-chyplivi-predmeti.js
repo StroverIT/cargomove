@@ -10,16 +10,13 @@ const OpakovaneNaChypliviPredmeti = () => {
         <title>Movex - Опаковане на чупливи предмети</title>
         <meta
           name="description"
-          content={`"Направи го сам" - Съвите и трикове за преместването в нов апартамент или офис. Написали сме 5 важнни стъпки, чрез които и сами може да го направите`}
+          content={`"Направи го сам" - Съвети и трикове как да опаковате правилно вещите си, при преместване. Какви материали да използвате.`}
         />
       </Head>
       <main className="mt-40 mb-14">
         <section className="container">
           <div className="flex-center">
-            <Title
-              title="5 съвета за преместване и опаковане"
-              size="text-3xl"
-            />
+            <Title title="Опаковане на чупливи предмети" size="text-3xl" />
           </div>
           <section className="flex-col mt-5 flex-center">
             <section className="max-w-3xl">
