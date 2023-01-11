@@ -6,11 +6,6 @@ import { HiOutlineMail } from "react-icons/hi";
 import ContactWithBox from "../components/indexPage/ContactWithBox";
 
 const ContactUs = () => {
-  const [inputs, setInputs] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
   return (
     <>
       <Head>
