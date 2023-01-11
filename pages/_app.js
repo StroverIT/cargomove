@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="icon" href="/LOGODODO-01.svg" />
-
+        <link rel="apple-touch-icon" href="/LOGODODO-01.svg" />
         <meta
           property="og:title"
           content="Movex Bulgaria | Услуги в сферата на пренасянето и транспорта в гр. София, страната и ЕС"
