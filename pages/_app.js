@@ -6,13 +6,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Хамалски и транспортни услуги за гр. София, страната и ЕС</title>
         <link rel="icon" href="/LOGODODO-01.svg" />
 
-        <meta
-          name="description"
-          content="Movex Bulgaria | Услуги в сферата на пренасянето и транспорта в гр. София, страната и ЕС"
-        />
         <meta
           property="og:title"
           content="Movex Bulgaria | Услуги в сферата на пренасянето и транспорта в гр. София, страната и ЕС"
