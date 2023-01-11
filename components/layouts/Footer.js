@@ -135,7 +135,13 @@ export default function Footer() {
                     </span>
                   </Link>
                 </li>
-
+                <li className="cursor-default">
+                  <Link href="/contactUs" scroll={false}>
+                    <span className="pb-1 border-b cursor-pointer border-border">
+                      Контакти
+                    </span>
+                  </Link>
+                </li>
                 <li className="cursor-default">
                   <Link href="/legal/terms-and-conditions" scroll={false}>
                     <span className="pb-1 border-b cursor-pointer border-border">
