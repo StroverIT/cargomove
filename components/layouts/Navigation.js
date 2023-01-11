@@ -94,6 +94,7 @@ export default function Navigation() {
         setServicePcState={setServicePcState}
         data={data}
       />
+      {/* MOBILE VERSION */}
       <section className="container relative justify-between flex-center lg:hidden">
         <div className="absolute w-48 h-20 ">
           <Link href="/">
