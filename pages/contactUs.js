@@ -16,7 +16,7 @@ const ContactUs = () => {
         />
       </Head>
       <main className="container mt-40 rounded-md shadow-lg">
-        <div className="grid grid-cols-[27%75%] container py-10">
+        <div className="xl:grid grid-cols-[27%75%] container py-10">
           <div className="pl-5 border-r border-gray-600">
             <h1 className="pb-4 text-2xl font-semibold">Контакти</h1>
             <ul className="pr-4">
@@ -49,7 +49,7 @@ const ContactUs = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="max-xl:mt-4 xl:px-10">
             <h1 className="pb-4 pl-5 text-2xl font-semibold">Пишете ни</h1>
             <ContactWithBox btnColor="bg-blue" />
           </div>
