@@ -48,7 +48,7 @@ const customColors = {
     400: "#eee",
     500: "grey",
     550: "#f8f9fc",
-
+    600: "#f4f4fc",
     bord: "#dfdfdf",
     darker: "hsl(0, 0%, 50%)",
   },
