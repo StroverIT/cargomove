@@ -21,7 +21,7 @@ const ContactUs = () => {
             <h1 className="pb-4 text-2xl font-semibold">Контакти</h1>
             <ul className="pr-4">
               <li className="flex items-center py-4 gap-x-2">
-                <div className="text-2xl">
+                <div className="text-2xl text-blue">
                   <FiPhoneCall />
                 </div>
                 <div className="pl-2">
@@ -30,7 +30,7 @@ const ContactUs = () => {
                 </div>
               </li>
               <li className="flex items-center py-4 border-gray-600 gap-x-2 border-y">
-                <div className="text-2xl">
+                <div className="text-2xl text-blue">
                   <FaViber />
                 </div>
                 <div className="pl-2">
@@ -39,7 +39,7 @@ const ContactUs = () => {
                 </div>
               </li>
               <li className="flex items-center py-4 gap-x-2">
-                <div className="text-3xl">
+                <div className="text-3xl text-blue">
                   <HiOutlineMail />
                 </div>
                 <div className="pl-2">
