@@ -9,12 +9,16 @@ export default function HomeMoving() {
   return (
     <>
       <Head>
-        <title>Movex - Преместване на дома - Какво е необходимо?</title>
+        <title>Movex - Професионално преместване на дома </title>
+        <meta
+          name="description"
+          content="Ние се гирижим за вашите вещи, сякаш са наши. Безпроблемно преместване. Професионално преместване на дома. Преместване на мебели, лични вещи, битова техника и още много."
+        />
       </Head>
       <section className="min-h-screen mt-40 ">
         <section className="container font-sans">
           <section className="flex-center">
-            <Title title="Преместване на дома" size="text-4xl" />
+            <Title title="Преместване на дома " size="text-4xl" />
           </section>
           <section className="mt-2">
             {/* <h3 className="text-xl font-medium">Какво предлагаме:</h3> */}

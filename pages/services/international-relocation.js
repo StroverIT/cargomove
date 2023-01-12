@@ -11,7 +11,7 @@ export default function InternationalRelocation() {
         <title>Movex Bulgaria - Международно преместване </title>
         <meta
           name="description"
-          content={`Хамалски, товаро-разтоварни и транспортни услуги. Вижте как се образуват нашите цени. Имаме както фиксирани, така и цени на часова ставка.`}
+          content={`Movex Bulgaria - международно преместване на домове и офиси за държави в ЕС. Осигурени хамали и транспорт   .Поискай оферта!.`}
         />
       </Head>
       <section className="min-h-screen mt-40 ">
