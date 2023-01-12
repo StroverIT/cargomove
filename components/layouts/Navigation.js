@@ -86,16 +86,17 @@ export default function Navigation() {
     <nav
       className={`${
         isOnMain ? "bg-dark box3" : "bg-dark-50 box2"
-      } fixed top-0 left-0 z-50 w-full text-white py-6 uppercase font-medium box2 transition-colors`}
+      } fixed top-0 left-0 z-50 w-full text-white  uppercase font-medium box2 transition-colors`}
     >
       <PcVersion
         pathname={pathname}
         servicePcState={servicePcState}
         setServicePcState={setServicePcState}
         data={data}
+        isOnMain={isOnMain}
       />
       {/* MOBILE VERSION */}
-      <section className="container relative justify-between flex-center lg:hidden">
+      <section className="container relative justify-between py-6 flex-center lg:hidden">
         <div className="absolute w-48 h-20 ">
           <Link href="/">
             <Image
