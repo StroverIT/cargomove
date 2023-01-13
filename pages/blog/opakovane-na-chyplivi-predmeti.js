@@ -37,7 +37,7 @@ const OpakovaneNaChypliviPredmeti = () => {
                 </div>
               </section>
 
-              <div className="relative mb-2 -ml-14 w-96 h-96 image-circle ">
+              <div className="relative mb-2 -ml-14 w-96 h-96 image-circle float-left ">
                 <Image
                   src="/blog/buble-wrap.webp"
                   alt="buble wrap"

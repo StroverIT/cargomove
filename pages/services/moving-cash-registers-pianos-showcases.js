@@ -26,7 +26,7 @@ export default function CleaningBasementsAndAttics() {
             <section className="lg:px-56">
               <h2 className="mt-1 text-lg font-semibold">
                 Какво трябва да знаете при преместване на пианo и защо не трябва
-                да го правите сами?
+                да го правите сами.
               </h2>
               <p>
                 Преди да сте решили окончателно да преместите пианото си сами,
