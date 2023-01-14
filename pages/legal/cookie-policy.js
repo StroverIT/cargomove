@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       <Head>
         <title>Movex Bulgaria - Политика за бисквитките</title>
 
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, nofollow" />
         <meta
           name="description"
           content="Политика на бисквитките ни. Запознайте се как ние използваме и обработваме предоставени данните. За контакти - movexbulgaria@gmail.com"
