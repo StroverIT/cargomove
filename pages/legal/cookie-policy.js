@@ -1,8 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import Navigation from "../../components/otherPagesNav/Navigation";
 
-import { links } from "../../components/otherPagesNav/cookiePolicy";
 import Link from "next/link";
 import { BsBoxArrowInLeft } from "react-icons/bs";
 
@@ -18,8 +16,7 @@ export default function PrivacyPolicy() {
           content="Политика на бисквитките ни. Запознайте се как ние използваме и обработваме предоставени данните. За контакти - movexbulgaria@gmail.com"
         />
       </Head>
-      <Navigation links={links} />
-      <section className="container text-black mt-36">
+      <section className="container text-black mt-48">
         <div>
           <div className="text-sm mb-10 flex items-center">
             <div className="mr-1 text-lg">
@@ -39,15 +36,15 @@ export default function PrivacyPolicy() {
         </div>
         <section className="mt-10 mb-20">
           <p>
-            Тази Политика за поверителност описва политиките на Movex, дружество
-            2, София 1582, България, имейл: movexbulgaria@gmail.com, телефон:
-            +359 87 6237725 относно събирането, използването и разкриването на
-            вашата информация, която събираме, когато използвате нашия уебсайт (
-            https://movex.bg ). (услугата). Чрез достъпа до или използването на
-            Услугата вие се съгласявате със събирането, използването и
-            разкриването на вашата информация в съответствие с тази Политика за
-            поверителност. Ако не сте съгласни със същото, моля, не влизайте и
-            не използвайте Услугата.
+            Тази Политика за поверителност описва политиките на Movex LTD,
+            имейл: movexbulgaria@gmail.com, телефон: +359 89 506 3670 относно
+            събирането, използването и разкриването на вашата информация, която
+            събираме, когато използвате нашия уебсайт ( https://movex.bg ).
+            (услугата). Чрез достъпа до или използването на Услугата вие се
+            съгласявате със събирането, използването и разкриването на вашата
+            информация в съответствие с тази Политика за поверителност. Ако не
+            сте съгласни със същото, моля, не влизайте и не използвайте
+            Услугата.
           </p>
           <p className="mt-4">
             Можем да променим тази Политика за поверителност по всяко време без
