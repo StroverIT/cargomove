@@ -5,7 +5,7 @@ module.exports = {
   exclude: [
     "/legal/terms-and-conditions",
     "/legal/privacy-policy",
-    // "/legal/cookie-policy",
+    "/legal/cookie-policy",
   ],
   // ...other options
 };
