@@ -2,7 +2,24 @@ import "../styles/globals.css";
 import Layout from "../components/layouts/Layout";
 import { ToastContainer } from "react-toastify";
 import Head from "next/head";
+import { useEffect, useState } from "react";
+import Cookie from "../components/banners/Cookie";
 function MyApp({ Component, pageProps }) {
+  const [isCookie, setIsCookie] = useState(false);
+
+  useEffect(() => {
+    const isFound = localStorage.getItem("iknowyou");
+
+    if (!isFound) {
+      setTimeout(() => {
+        setIsCookie(true);
+      }, 5000);
+    }
+  }, []);
+  const cookieHandler = () => {
+    localStorage.setItem("iknowyou", "true");
+    setIsCookie(false);
+  };
   return (
     <>
       <Head>
@@ -26,6 +43,8 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preload" />
       </Head>
+      <Cookie setIsCookie={cookieHandler} isCookie={isCookie} />
+
       <Layout>
         <Component {...pageProps} />
       </Layout>
