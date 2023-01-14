@@ -55,13 +55,16 @@ const PcVersion = ({
                 onMouseEnter={(e) => setServicePcState(true)}
                 onMouseLeave={(e) => setServicePcState(false)}
               >
-                <div className="cursor-pointer flex-center">
+                <div className="cursor-pointer flex-center relative">
                   <span className="">Услуги</span>
                   <span
                     className={`pl-1 group-hover:rotate-90 transition-transform text-lg`}
                   >
                     <TbBus />
                   </span>
+                  {servicePcState && (
+                    <div className="absolute top-5 w-[26.5rem] h-16  z-100 -left-16"></div>
+                  )}
                 </div>
                 <AnimatePresence mode="wait">
                   {servicePcState && (
@@ -91,7 +94,6 @@ const PcVersion = ({
                       }}
                       className="relative flex flex-col w-full h-full "
                     >
-                      <div className="absolute top-0 w-[26.5rem] h-16  z-100 -left-16"></div>
                       <ul className="absolute flex-col  py-4 pl-10 list-disc w-[26.5rem] rounded-md bg-blue-100 top-14 -left-16 flex  shadow-2xl">
                         {data.map((list, i) => {
                           return (
