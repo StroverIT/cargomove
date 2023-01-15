@@ -110,7 +110,7 @@ export default function DisposalOfOldFurniture() {
               <Image
                 src="/pages-images/transport-service/first.jpg"
                 fill
-                alt="test"
+                alt="Нашата фирма предлага висококачествени Транспортни услуги за безопасно и ефективно преместване на вашия дом или офис"
                 className=""
               />
             </div>
