@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 // Icons
 import { HiOfficeBuilding } from "react-icons/hi";
 import Image from "next/legacy/image";
@@ -33,6 +33,12 @@ export default function SwiperServices({ service }) {
   return (
     <>
       <Swiper
+        loop={true}
+        loopFillGroupWithBlank={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         slidesPerView={3}
         spaceBetween={30}
         breakpoints={{
@@ -49,7 +55,7 @@ export default function SwiperServices({ service }) {
           },
         }}
         pagination={pagination}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="h-full pt-5 bg-white border max-lg:border-x cursor-grab border-gray rounded-b-xl mySwiper"
       >
         {listService.map((service) => {
