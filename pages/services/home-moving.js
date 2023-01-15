@@ -209,19 +209,19 @@ export default function HomeMoving() {
               </section>
             </section>
             {/* Тука може да се сложи снимка!!!!! */}
-            <section className="lg:mx-36 my-14">
-              <ContactUs
-                color="border-blue"
-                btnColor="bg-blue"
-                bgColor="bg-blue-50"
-                number="+359 89 506 3670"
-                scrollBarThumb="scrollbar-thumb-primaryBlue-150"
-                scrollBarTrack="scrollbar-track-primaryBlue-500"
-                typePage="Web"
-                mx="md:mx-10"
-              />
-            </section>
           </section>
+        </section>
+        <section className="lg:mx-36 my-14">
+          <ContactUs
+            color="border-blue"
+            btnColor="bg-blue"
+            bgColor="bg-blue-50"
+            number="+359 89 506 3670"
+            scrollBarThumb="scrollbar-thumb-primaryBlue-150"
+            scrollBarTrack="scrollbar-track-primaryBlue-500"
+            typePage="Web"
+            mx="md:mx-10"
+          />
         </section>
         <section className="mt-20 font-sans flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />

@@ -67,18 +67,18 @@ export default function CleaningBasementsAndAttics() {
               </p>
             </section>
           </section>
-          <section className="my-14 lg:mx-36">
-            <ContactUs
-              color="border-blue"
-              btnColor="bg-blue"
-              bgColor="bg-blue-50"
-              number="+359 89 506 3670"
-              scrollBarThumb="scrollbar-thumb-primaryBlue-150"
-              scrollBarTrack="scrollbar-track-primaryBlue-500"
-              typePage="Web"
-              mx="md:mx-10"
-            />
-          </section>
+        </section>
+        <section className="my-14 lg:mx-36">
+          <ContactUs
+            color="border-blue"
+            btnColor="bg-blue"
+            bgColor="bg-blue-50"
+            number="+359 89 506 3670"
+            scrollBarThumb="scrollbar-thumb-primaryBlue-150"
+            scrollBarTrack="scrollbar-track-primaryBlue-500"
+            typePage="Web"
+            mx="md:mx-10"
+          />
         </section>
         <section className="mt-20 font-sans flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />
