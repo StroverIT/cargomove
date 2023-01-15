@@ -7,6 +7,8 @@ import HeroSection from "../components/indexPage/HeroSection";
 import Pricing from "../components/indexPage/Pricing";
 import Services from "../components/indexPage/Services";
 import SmallInfo from "../components/indexPage/SmallInfo";
+import SwiperServices from "../components/SwiperServices";
+import Title from "../components/Title";
 
 export default function Home() {
   return (
@@ -40,6 +42,10 @@ export default function Home() {
               typePage="Web"
             />
           </section>
+        </section>
+
+        <section className="">
+          <SwiperServices service="office" />
         </section>
       </main>
     </div>
