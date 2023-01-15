@@ -28,10 +28,12 @@ const customColors = {
     20: "hsl(0, 0%, 99%)",
 
     50: "hsl(0, 0%, 95%)",
+    100: "hsl(0, 0%, 100%, 60%)",
   },
   "white-lighter-trans": "hsl(0, 0%, 100%, 30%)",
   blue: {
     DEFAULT: "#0077b6",
+
     100: "#00b4d8",
     150: "#90e0ef",
     200: "#29C5F6",
