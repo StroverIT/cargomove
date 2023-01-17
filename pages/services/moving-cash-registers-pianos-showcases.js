@@ -13,6 +13,11 @@ export default function CleaningBasementsAndAttics() {
           name="description"
           content={`Movex Bulgaria предлага услугата "Преместване на пиана, каси, витрини". Няма нужда да се притеснявате за вашите клавиши, в сигурни ръце са!`}
         />
+        <meta
+          property="og:title"
+          content="Преместване на пиана, каси, витрини"
+        />
+        <meta property="og:description" content="" />
       </Head>
       <section className="min-h-screen mt-40 ">
         <section className="container font-sans">

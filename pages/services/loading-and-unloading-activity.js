@@ -13,6 +13,8 @@ export default function CleaningOfApartmentsAndHouses() {
           name="description"
           content={` Товаро-разтоварване на тирове и контейнери в складови бази и много други .Разтоварване, приемане за съхранение в открити площи или складове.`}
         />
+        <meta property="og:title" content="Товаро-разтоварни дейности" />
+        <meta property="og:description" content="" />
       </Head>
       <div className="min-h-screen mt-40 ">
         <section className="container font-sans">

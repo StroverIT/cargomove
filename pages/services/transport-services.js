@@ -14,6 +14,8 @@ export default function DisposalOfOldFurniture() {
           name="description"
           content={`Транспортни услуги | Транспортни услуги в София с товарен бус със/без падащ борд | Винаги на точното място, в точното време ☎️ +359 89 506 3670 `}
         />
+        <meta property="og:title" content="Транспортни услуги" />
+        <meta property="og:description" content="" />
       </Head>
       <div className="min-h-screen mt-40">
         <section className="container font-sans">

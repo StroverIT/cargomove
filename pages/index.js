@@ -27,7 +27,7 @@ export default function Home() {
           property="og:title"
           content="Хамалски и транспортни услуги за София, България"
         />
-        <meta property="og:description" content="тест" />
+        <meta property="og:description" content="" />
 
         <meta property="og:url" content="https://movex.bg/" />
         <meta name="robots" content="index, follow" />
