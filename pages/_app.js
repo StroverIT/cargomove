@@ -25,7 +25,14 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/LOGODODO-01.svg" />
         <link rel="apple-touch-icon" href="/LOGODODO-01.svg" />
-
+        <meta
+          property="og:image"
+          content="https://www.linkpicture.com/q/Неозаглавен-1440-t-1440-пиксела.png"
+        />
+        <meta
+          name="thumbnail"
+          content="https://www.linkpicture.com/q/Неозаглавен-1440-t-1440-пиксела.png"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preload" />
       </Head>
