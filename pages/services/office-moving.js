@@ -12,7 +12,7 @@ export default function OfficeMoving() {
   return (
     <>
       <Head>
-        <title>Преместване на офис</title>
+        <title>Преместване на офис | Оглед и планиране</title>
         <meta
           name="description"
           content={`Преместване на офис | Бизнес пренасяне на вещи, мебели | Опаковане, демонтаж и монтаж  ☎️ +359 89 506 3670 `}
