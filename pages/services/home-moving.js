@@ -17,16 +17,6 @@ export default function HomeMoving() {
         />
         <meta property="og:title" content="Професионално преместване на дома" />
         <meta property="og:description" content=" " />
-        <meta
-          property="og:image"
-          content="https://www.linkpicture.com/q/Неозаглавен-1440-t-1440-пиксела.png"
-        />
-        <meta
-          name="thumbnail"
-          content="https://www.linkpicture.com/q/Неозаглавен-1440-t-1440-пиксела.png"
-        />
-        <meta property="og:url" content="https://movex.bg/" />
-        <meta name="robots" content="index, follow" />
       </Head>
       <section className="min-h-screen mt-40 ">
         <section className="container font-sans">
@@ -85,7 +75,7 @@ export default function HomeMoving() {
                   за преместване на дома.
                 </p>
                 <p>
-                  Нашият екип от професионалисти може да Вии помогне да се
+                  Нашият екип от професионалисти може да Ви помогне да се
                   справите с всички аспекти на преместването на дома, като
                   опаковка, пренос, монтаж и демонтаж на мебели и други вещи.
                 </p>
