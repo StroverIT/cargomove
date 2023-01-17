@@ -79,10 +79,7 @@ export default function OfficeMoving() {
 
             <section className="container mt-4 lg:px-56">
               <div className="flex-center">
-                <Title
-                  title="Процеса и какво предлагаме за преместване на офис"
-                  size="text-2xl"
-                />
+                <Title title="Какво е необходимо" size="text-2xl" />
               </div>
 
               <h2 className="mt-2 text-lg font-semibold">Оглед</h2>
@@ -109,6 +106,9 @@ export default function OfficeMoving() {
                 офиси, съчетана с професионализъм, ще опрости процедурата по
                 преместване.
               </p>
+              <div className="flex-center mt-4">
+                <Title title="Какво предлагаме" size="text-2xl" />
+              </div>
               <h2 className="mt-2 text-lg font-semibold">
                 Екип от професионалисти
               </h2>
