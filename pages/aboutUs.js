@@ -13,6 +13,8 @@ export default function AboutUs() {
           name="description"
           content="Разберете какъв тип хора ще пренасят вашите ценни вещи. Нашите ценности и визия за хамалските и транспортните услуги."
         />
+        <meta property="og:title" content="За нас и нашата визия и ценности" />
+        <meta property="og:description" content="" />
       </Head>
       <section className="mt-20">
         <div className="fixed -z-10">

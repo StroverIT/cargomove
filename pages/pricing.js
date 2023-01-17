@@ -8,11 +8,13 @@ export default function CleaningOfApartmentsAndHouses() {
   return (
     <>
       <Head>
-        <title>Хамалски и транспортни услуги - Цени</title>
+        <title>Ценоразпис на нашите услуги</title>
         <meta
           name="description"
           content={`Хамалски, товаро-разтоварни и транспортни услуги. Вижте как се образуват нашите цени. Имаме както фиксирани, така и цени на часова ставка.`}
         />
+        <meta property="og:title" content="Ценоразпис на нашите услуги" />
+        <meta property="og:description" content="" />
       </Head>
       <div className="min-h-screen mt-40 ">
         <section className="container font-sans">

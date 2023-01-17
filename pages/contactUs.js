@@ -14,6 +14,8 @@ const ContactUs = () => {
           name="description"
           content="Контакти с нас. Винаги готови да отговорим на вашите въпроси. Може да се свържете с нас чрез телефон, и-мейл, viber, messenger и instagram "
         />
+        <meta property="og:title" content="Контакти - Свържи се с нас" />
+        <meta property="og:description" content="" />
       </Head>
       <main className="container mt-40 rounded-md shadow-lg">
         <div className="xl:grid grid-cols-[27%75%] container py-10">
