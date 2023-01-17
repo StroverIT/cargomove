@@ -15,6 +15,18 @@ export default function HomeMoving() {
           name="description"
           content="Ние се гирижим за вашите вещи, сякаш са наши. Безпроблемно преместване. Професионално преместване на дома. Преместване на мебели, лични вещи, битова техника и още много."
         />
+        <meta property="og:title" content="Професионално преместване на дома" />
+        <meta property="og:description" content=" " />
+        <meta
+          property="og:image"
+          content="https://www.linkpicture.com/q/Неозаглавен-1440-t-1440-пиксела.png"
+        />
+        <meta
+          name="thumbnail"
+          content="https://www.linkpicture.com/q/Неозаглавен-1440-t-1440-пиксела.png"
+        />
+        <meta property="og:url" content="https://movex.bg/" />
+        <meta name="robots" content="index, follow" />
       </Head>
       <section className="min-h-screen mt-40 ">
         <section className="container font-sans">
