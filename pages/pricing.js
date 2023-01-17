@@ -8,7 +8,7 @@ export default function CleaningOfApartmentsAndHouses() {
   return (
     <>
       <Head>
-        <title>Ценоразпис на нашите услуги</title>
+        <title>Цени за хамалски услуги - София</title>
         <meta
           name="description"
           content={`Хамалски, товаро-разтоварни и транспортни услуги. Вижте как се образуват нашите цени. Имаме както фиксирани, така и цени на часова ставка.`}
