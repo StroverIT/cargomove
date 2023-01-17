@@ -8,10 +8,10 @@ export default function AboutUs() {
   return (
     <>
       <Head>
-        <title>Movex Bulgaria - За нас и нашата визия и ценности</title>
+        <title>За нас и нашата визия и ценности</title>
         <meta
           name="description"
-          content="Movex Bulgaria - Разберете какъв тип хора ще пренасят вашите ценни вещи. Нашите ценности и визия за хамалските и транспортните услуги."
+          content="Разберете какъв тип хора ще пренасят вашите ценни вещи. Нашите ценности и визия за хамалските и транспортните услуги."
         />
       </Head>
       <section className="mt-20">

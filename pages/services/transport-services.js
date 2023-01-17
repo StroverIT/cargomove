@@ -9,10 +9,10 @@ export default function DisposalOfOldFurniture() {
   return (
     <>
       <Head>
-        <title>Movex Bulgaria - Транспортни услуги</title>
+        <title>Транспортни услуги</title>
         <meta
           name="description"
-          content={`Movex Bulgaria предлага услугата "Транспортни услуги" | Транспортни услуги в София с товарен бус със/без падащ борд | Винаги на точното място, в точното време ☎️ +359 89 506 3670 `}
+          content={`Транспортни услуги | Транспортни услуги в София с товарен бус със/без падащ борд | Винаги на точното място, в точното време ☎️ +359 89 506 3670 `}
         />
       </Head>
       <div className="min-h-screen mt-40">

@@ -8,10 +8,10 @@ export default function InternationalRelocation() {
   return (
     <>
       <Head>
-        <title>Movex Bulgaria - Международно преместване </title>
+        <title>Международно преместване </title>
         <meta
           name="description"
-          content={`Movex Bulgaria - международно преместване на домове и офиси за държави в ЕС. Осигурени хамали и транспорт   .Поискай оферта!.`}
+          content={`Международно преместване на домове и офиси за държави в ЕС. Осигурени хамали и транспорт   .Поискай оферта!.`}
         />
       </Head>
       <section className="min-h-screen mt-40 ">

@@ -8,7 +8,7 @@ export default function CleaningBasementsAndAttics() {
   return (
     <>
       <Head>
-        <title>Movex Bulgaria - Преместване на пиана, каси, витрини</title>
+        <title>Преместване на пиана, каси, витрини</title>
         <meta
           name="description"
           content={`Movex Bulgaria предлага услугата "Преместване на пиана, каси, витрини". Няма нужда да се притеснявате за вашите клавиши, в сигурни ръце са!`}

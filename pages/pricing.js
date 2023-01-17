@@ -8,7 +8,7 @@ export default function CleaningOfApartmentsAndHouses() {
   return (
     <>
       <Head>
-        <title>Movex - Хамалски и транспортни услуги - Цени</title>
+        <title>Хамалски и транспортни услуги - Цени</title>
         <meta
           name="description"
           content={`Хамалски, товаро-разтоварни и транспортни услуги. Вижте как се образуват нашите цени. Имаме както фиксирани, така и цени на часова ставка.`}

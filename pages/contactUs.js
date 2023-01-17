@@ -9,10 +9,10 @@ const ContactUs = () => {
   return (
     <>
       <Head>
-        <title>Movex - Контакти - Свържи се с нас </title>
+        <title>Контакти - Свържи се с нас </title>
         <meta
           name="description"
-          content="Movex - Контакти с нас. Винаги готови да отговорим на вашите въпроси. Може да се свържете с нас чрез телефон, и-мейл, viber, messenger и instagram "
+          content="Контакти с нас. Винаги готови да отговорим на вашите въпроси. Може да се свържете с нас чрез телефон, и-мейл, viber, messenger и instagram "
         />
       </Head>
       <main className="container mt-40 rounded-md shadow-lg">
