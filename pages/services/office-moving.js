@@ -126,22 +126,23 @@ export default function OfficeMoving() {
                 сглобяването до транспортирането в новия офис. Насладете се на
                 предстоящия ви преход без допълнителен стрес.
               </p>
+              <section className="my-14 ">
+                <ContactUs
+                  color="border-blue"
+                  btnColor="bg-blue"
+                  bgColor="bg-blue-50"
+                  number="+359 89 506 3670"
+                  scrollBarThumb="scrollbar-thumb-primaryBlue-150"
+                  scrollBarTrack="scrollbar-track-primaryBlue-500"
+                  mx="md:mx-10"
+                />
+              </section>
             </section>
           </section>
+
           {/* <p>ненужни вещи изхвърляне</p> */}
         </section>
-        <section className="my-14 lg:mx-36">
-          <ContactUs
-            color="border-blue"
-            btnColor="bg-blue"
-            bgColor="bg-blue-50"
-            number="+359 89 506 3670"
-            scrollBarThumb="scrollbar-thumb-primaryBlue-150"
-            scrollBarTrack="scrollbar-track-primaryBlue-500"
-            typePage="Web"
-            mx="md:mx-10"
-          />
-        </section>
+
         <section className="mt-20 font-sans flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />
         </section>
