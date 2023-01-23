@@ -21,7 +21,6 @@ export default function Home() {
           хамалските услуги, като това включва преместване на дома и офиса, международно преместване, транспортни услуги,
           товаро-разтоварни дейности и преместване на пиана."
         />
-        <link rel="canonical" href="https://movex.bg/" />
         {/* Important tags for social media */}
         <meta
           property="og:title"
