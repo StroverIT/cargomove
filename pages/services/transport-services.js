@@ -111,7 +111,7 @@ export default function DisposalOfOldFurniture() {
             </div>
           </div>
         </section>
-        <section className="my-14 lg:px-56 container">
+        <section className="my-14 lg:px-40 container">
           <ContactUs
             color="border-blue"
             btnColor="bg-blue"
