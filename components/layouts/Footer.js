@@ -208,7 +208,7 @@ export default function Footer() {
         <div className="flex sm:pl-1">
           <div className="flex-center">
             <AiOutlineCopyright />
-            2022 Movex.
+            2023 Movex.
           </div>
           <div className="pl-1">Всички права запазени.</div>
         </div>
