@@ -7,10 +7,10 @@ export default function Pricing() {
   return (
     <section className="relative pt-10 mt-10 font-sans bg-white" id="pricing">
       <section className="">
-        <div className="mt-5 flex-center">
-          <Title title="ЦЕНИ" size="text-5xl md:text-6xl" />
+        <div className=" flex-center">
+          <Title title="Цени" size="text-5xl md:text-5xl" />
         </div>
-        <section className="grid mt-10 lg:gap-10 lg:mt-20">
+        <section className="grid mt-10 lg:gap-10 lg:mt-6">
           <section className="">
             <div className="grid shadow-lg md:grid-cols-2">
               <div className="p-5 md:p-16 border-y border-blue-150 max-md:order-2">
