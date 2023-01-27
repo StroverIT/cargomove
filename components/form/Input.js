@@ -16,7 +16,7 @@ const Input = ({
         <InputIcons iconType={iconType} />
       </div>
       <input
-        className="w-full px-6 py-2 leading-tight placeholder-transparent bg-transparent border-b appearance-none placeholder:pl-10 peer text-gray-darker focus:outline-none focus:shadow-outline"
+        className="w-full px-6 py-2 leading-tight placeholder-transparent bg-transparent border-b appearance-none placeholder:pl-10 peer  focus:outline-none focus:shadow-outline"
         id={id}
         type={type}
         placeholder={placeholder}
