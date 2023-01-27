@@ -116,7 +116,7 @@ export default function ContactUs({
         id="contactUs"
       >
         <section
-          className={`grid lg:grid-cols-2 py-14 lg:py-32  w-full px-5 xl:px-28  bg-white-20`}
+          className={`grid lg:grid-cols-2 py-14 lg:py-20  w-full px-5 xl:px-20  bg-white-20`}
         >
           <section className="">
             <h3>
@@ -129,7 +129,7 @@ export default function ContactUs({
 
             <form
               action=""
-              className="flex flex-col mt-6 "
+              className="flex flex-col mt-10 "
               onSubmit={submitHandler}
             >
               <ReCAPTCHA
@@ -152,13 +152,13 @@ export default function ContactUs({
                 onChange={handler}
                 iconType="email"
               />
-              <div className="relative lg:mb-5">
+              <div className="relative lg:mb-3">
                 <div className="absolute left-0 z-10 top-2.5 text-lg">
                   <InputIcons iconType="message" />
                 </div>
                 {/* className="w-full h-2 px-4 pt-2 bg-transparent border-b border-white scrollbar scrollbar-thumb-pink-100 scrollbar-track-pink-200 focus:outline-none" */}
                 <textarea
-                  className={`w-full h-10 px-6 py-2 leading-tight placeholder-transparent bg-transparent border-b appearance-none placeholder:pl-10 peer text-gray-darker focus:outline-none focus:shadow-outline scrollbar ${scrollBarThumb} ${scrollBarTrack}`}
+                  className={`w-full h-24 px-6 py-2 leading-tight placeholder-transparent bg-transparent border-b appearance-none placeholder:pl-10 peer  focus:outline-none focus:shadow-outline scrollbar ${scrollBarThumb} ${scrollBarTrack}`}
                   id="message"
                   placeholder="Вашият коментар"
                   name="message"
@@ -166,14 +166,14 @@ export default function ContactUs({
                   onChange={handler}
                 />
                 <label
-                  className="absolute   -top-3.5 left-0 block mb-2 text-sm  text-gray-darker peer-placeholder-shown:text-base peer-placeholder-shown:px-6  peer-placeholder-shown:top-1.5 transition-all duration-300"
+                  className="absolute  z-10 -top-3.5 left-0 block mb-2 text-sm  text-gray-darker peer-placeholder-shown:text-base peer-placeholder-shown:px-6  peer-placeholder-shown:top-1.5 transition-all duration-300"
                   htmlFor="comment"
                 >
                   Вашият коментар
                 </label>
               </div>
               <button
-                className={`${btnColor} px-10 py-1 mt-4 flex-center text-white`}
+                className={`${btnColor} px-10 py-1  flex-center text-white`}
                 type="submit"
               >
                 {isLoading ? <div className="loader"></div> : "Изпрати"}
@@ -187,7 +187,7 @@ export default function ContactUs({
                   <div className="text-2xl ">
                     <HiOutlineMail />
                   </div>
-                  <div className="pl-1">movexbulgaria@gmail.com</div>
+                  <div className="pl-1 ">movexbulgaria@gmail.com</div>
                 </section>
               </a>
             </div>
@@ -197,7 +197,7 @@ export default function ContactUs({
                   <div className="text-xl ">
                     <FiPhoneCall />
                   </div>
-                  <div className="pl-1">{number}</div>
+                  <div className="pl-1 ">{number}</div>
                 </section>
               </a>
             </div>
@@ -207,7 +207,7 @@ export default function ContactUs({
                   <div className="text-xl ">
                     <FaViber />
                   </div>
-                  <div className="pl-1">Пишете ни</div>
+                  <div className="pl-1 ">Пишете ни</div>
                 </section>
               </a>
             </div>
