@@ -26,8 +26,8 @@ export default function OfficeMoving() {
       <section className="min-h-screen mt-40 ">
         <section className="font-sans ">
           <section className="">
-            <section className="lg:px-[29rem]">
-              <section className="container rounded-lg bg-white lg:px-14 py-10">
+            <section className="lg:px-56 2xl:px-96">
+              <section className="container rounded-lg bg-white px-5 sm:px-14 py-10">
                 <div className="flex-center">
                   <Title title="Преместване на офис" size="text-3xl" />
                 </div>
