@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import { BsCheckLg } from "react-icons/bs";
 import ContactUs from "../../components/indexPage/ContactUs";
 import SwiperServices from "../../components/SwiperServices";
 import Title from "../../components/Title";
@@ -142,28 +143,58 @@ export default function HomeMoving() {
                 <h2 className="mt-1 text-xl font-semibold">
                   Нашите услуги по преместване на дома:
                 </h2>
-                <p className="mt-2">
-                  <span className="font-semibold">-Транспорт:</span> Разполагаме
-                  с надеждни камиони за преместване и висококачествено
-                  оборудване, за да осигурим лесно и безопасно транспортиране.
-                  -Опаковане и разопаковане: Ще се погрижим да опаковаме
-                  внимателно и сигурно вашите вещи с висококачествени опаковъчни
-                  материали, за да гарантираме защита по време на преместването
-                  и транспортирането.
-                  <br />
-                  <span className="font-semibold">
-                    -Товарене и разтоварване:
-                  </span>{" "}
-                  Нашите експерти по преместване ще натоварят и укрепят
-                  внимателно вашия багаж. При разтоварване хамалите ще внесат и
-                  поставят вещите в съответните стаи.
-                  <br />
-                  <span className="font-semibold">
+                <section className="mt-2">
+                  <div className="mb-2">
+                    <h3 className="font-semibold flex items-center">
+                      <span className="pr-1 text-green">
+                        <BsCheckLg />
+                      </span>
+                      Транспорт:
+                    </h3>
+                    <p>
+                      Разполагаме с надеждни камиони за преместване и
+                      висококачествено оборудване, за да осигурим лесно и
+                      безопасно транспортиране.
+                    </p>
+                  </div>
+                  <div className="mb-2">
+                    <h3 className="font-semibold flex items-center">
+                      <span className="pr-1 text-green">
+                        <BsCheckLg />
+                      </span>
+                      Опаковане и разопаковане:
+                    </h3>
+                    <p>
+                      Ще се погрижим да опаковаме внимателно и сигурно вашите
+                      вещи с висококачествени опаковъчни материали, за да
+                      гарантираме защита по време на преместването и
+                      транспортирането.
+                    </p>
+                  </div>
+                  <div className="mb-2">
+                    <h3 className="font-semibold flex items-center">
+                      <span className="pr-1 text-green">
+                        <BsCheckLg />
+                      </span>
+                      Товарене и разтоварване:
+                    </h3>
+                    <p>
+                      Нашите експерти по преместване ще натоварят и укрепят
+                      внимателно вашия багаж. При разтоварване хамалите ще
+                      внесат и поставят вещите в съответните стаи.
+                    </p>
+                  </div>
+                  <h3 className="font-semibold flex items-center ">
+                    <span className="pr-1 text-green">
+                      <BsCheckLg />
+                    </span>
                     Разглобяване и сглобяване:
-                  </span>{" "}
-                  Предлагаме допълнителна услуга по разглобяване и сглобяване на
-                  вашите мебели.
-                </p>
+                  </h3>
+                  <p>
+                    Предлагаме допълнителна услуга по разглобяване и сглобяване
+                    на вашите мебели.
+                  </p>
+                </section>
               </section>
             </section>
             {/* Тука може да се сложи снимка!!!!! */}
