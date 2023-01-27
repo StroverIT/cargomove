@@ -190,7 +190,7 @@ export default function OfficeMoving() {
               <SwiperGallery data={officeMovingImages} link="office-moving/" />
             </section> */}
 
-            <section className="my-14 lg:px-56 container">
+            <section className="my-14 lg:px-36 container">
               <ContactUs
                 color="border-blue"
                 btnColor="bg-blue"
