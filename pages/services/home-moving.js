@@ -70,6 +70,7 @@ export default function HomeMoving() {
                   тежестта от раменете ви.
                 </p>
               </section>
+
               <section>
                 <h2 className="mt-1 text-lg font-semibold">
                   Избор на най-добра оферта
@@ -84,16 +85,35 @@ export default function HomeMoving() {
                   преместване.
                 </p>
               </section>
-              <section className="mt-6">
-                <h2 className="mt-1 text-xl font-semibold">Опаковане</h2>
-                <p>
+              <div className="relative mb-2 mr-10   md:w-[30rem] w-44 h-56 md:h-56 image-circle  float-left md:float-right mt-10 md:-mr-64 ">
+                <Image
+                  src="/blog/buble-wrap.webp"
+                  alt="Професионално преместване на дома - нашият екип гарантира комфортна и безопасна преместване на вашите вещи"
+                  fill
+                  className="  image-circle "
+                />
+              </div>
+              <section className="mt-12 md:mt-20 md:ml-10 md:-mr-28">
+                <h2 className="mt-1 text-xl md:text-right font-semibold">
+                  Опаковане
+                </h2>
+                <p className="md:text-right">
                   Мувекс България ще осигури всички нужни за преместване
                   опаковъчни материали, като паралелно с това се погрижи за
                   надеждното опаковане на вещите, така че да минимализира
                   максимално риска от нарушаване на целостта им.
                 </p>
               </section>
-              <section className="mt-4">
+
+              <div className="relative mb-2  md:w-96 w-44 h-44 md:h-96 image-circle  float-left  mr-10">
+                <Image
+                  src="/pages-images/home-moving/sprinter.webp"
+                  alt="Професионално преместване на дома - нашият екип гарантира комфортна и безопасна преместване на вашите вещи"
+                  fill
+                  className="  image-circle  testing"
+                />
+              </div>
+              <section className="mt-10 md:mt-20">
                 <h2 className="mt-1 text-xl font-semibold">
                   Товарене и превоз
                 </h2>
@@ -105,7 +125,7 @@ export default function HomeMoving() {
                   според последователността на разтоварване.
                 </p>
               </section>
-              <section className="mt-4">
+              <section className="">
                 <h2 className="mt-1 text-xl font-semibold">
                   Как се отличават нашите услуги
                 </h2>
