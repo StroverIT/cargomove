@@ -10,7 +10,7 @@ export default function Services() {
     <div className="mt-10 lg:mt-20 bg-gray-550" id="services">
       <section className="container py-10">
         <div className="mb-16 text-center flex-center">
-          <Title title="Какво предлагаме?" size="text-4xl lg:text-5xl" />
+          <Title title="Какво предлагаме" size="text-4xl lg:text-5xl" />
         </div>
         <section className="grid gap-10 lg:grid-cols-3">
           {data.map((service, index) => {

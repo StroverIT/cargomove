@@ -8,7 +8,7 @@ export default function Pricing() {
     <section className="relative pt-10 mt-10 font-sans bg-white" id="pricing">
       <section className="">
         <div className="mt-5 flex-center">
-          <Title title="Нашите цени" size="text-5xl md:text-6xl" />
+          <Title title="ЦЕНИ" size="text-5xl md:text-6xl" />
         </div>
         <section className="grid mt-10 lg:gap-10 lg:mt-20">
           <section className="">
