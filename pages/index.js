@@ -1,14 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
-import { useRef } from "react";
 import ContactUs from "../components/indexPage/ContactUs";
 import FaQ from "../components/indexPage/FaQ";
 import HeroSection from "../components/indexPage/HeroSection";
+import OurBlog from "../components/indexPage/OurBlog";
 import Pricing from "../components/indexPage/Pricing";
 import Services from "../components/indexPage/Services";
 import SmallInfo from "../components/indexPage/SmallInfo";
 import SwiperServices from "../components/SwiperServices";
-import Title from "../components/Title";
 
 export default function Home() {
   return (
@@ -38,6 +36,8 @@ export default function Home() {
           <SmallInfo />
           <Services />
           <Pricing />
+          <OurBlog />
+
           <FaQ />
           <section className="pb-20 mt-10 lg:mt-20">
             <ContactUs
