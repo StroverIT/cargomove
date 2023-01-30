@@ -86,9 +86,9 @@ export default function CleaningBasementsAndAttics() {
           </section>
         </section>
 
-        <section className="mt-20 font-sans flex-center">
+        {/* <section className="mt-20 font-sans flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />
-        </section>
+        </section> */}
         <section className="">
           <SwiperServices service="piano" />
         </section>

@@ -123,11 +123,11 @@ export default function DisposalOfOldFurniture() {
             mx="md:mx-10"
           />
         </section>
-        <section className="mt-20 font-sans  bg-white py-10">
+        {/* <section className="mt-20 font-sans  bg-white py-10">
           <div className="flex-center container">
             <Title title="Вижте и другите ни услуги" size="text-4xl" />
           </div>
-        </section>
+        </section> */}
         <section className="">
           <SwiperServices service="transport" />
         </section>
