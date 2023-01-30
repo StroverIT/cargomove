@@ -241,9 +241,9 @@ export default function HomeMoving() {
             />
           </div>
         </div>
-        <section className="mt-20 font-sans flex-center bg-white py-10">
+        {/* <section className="mt-20 font-sans flex-center bg-white py-10">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />
-        </section>
+        </section> */}
         <section className="">
           <SwiperServices service="house" />
         </section>
