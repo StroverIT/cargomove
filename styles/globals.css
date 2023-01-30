@@ -154,7 +154,7 @@ html::-webkit-scrollbar-thumb {
   overflow: hidden;
 }
 .testing {
-  filter: invert(1);
+  background-position: 400px 200px;
 }
 
 .image-circle {
