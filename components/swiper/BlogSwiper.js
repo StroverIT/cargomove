@@ -46,6 +46,7 @@ export default function BlogSwiper({ data }) {
           return (
             <SwiperSlide className="py-10" key={data._id}>
               <Blog
+                link={data.link}
                 imgUrl={data.imgUrl}
                 paragraph={data.paragraph}
                 title={data.title}
