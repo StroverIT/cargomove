@@ -53,7 +53,7 @@ export default function Home() {
         </section>
 
         <section className="">
-          <SwiperServices service="office" />
+          <SwiperServices />
         </section>
       </main>
     </div>
