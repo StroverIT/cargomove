@@ -212,7 +212,7 @@ export default function Footer() {
           </div>
           <div className="pl-1">Всички права запазени.</div>
         </div>
-        <div className="text-sm text-center lg:absolute right-10">
+        {/* <div className="text-sm text-center lg:absolute right-10">
           Изработен от -{" "}
           <a
             className="underline"
@@ -222,7 +222,7 @@ export default function Footer() {
           >
             Strover
           </a>
-        </div>
+        </div> */}
       </section>
     </footer>
   );
