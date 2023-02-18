@@ -17,7 +17,7 @@ export default function Title({
         <div className="relative h-10 px-3 mx-2 text-xl w-14 ">
           <Image
             src="/icons/ezgif.com-gif-maker.gif"
-            alt="moving truck"
+            alt="Хамалски услуги Movex"
             layout="fill"
             className="object-contain"
           />
