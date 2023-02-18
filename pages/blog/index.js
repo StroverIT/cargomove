@@ -24,6 +24,7 @@ const Index = () => {
               return (
                 <Blog
                   imgUrl={data.imgUrl}
+                  link={data.link}
                   key={data._id}
                   paragraph={data.paragraph}
                   title={data.title}
