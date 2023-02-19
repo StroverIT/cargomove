@@ -16,7 +16,7 @@ export default function OfficeMoving() {
         <title>Преместване на офис | Оглед и планиране</title>
         <meta
           name="description"
-          content={`Преместване на офис | Бизнес пренасяне на вещи, мебели | Опаковане, монтаж и демонтаж ☎️ +359 89 506 3670 `}
+          content={`Професионални услуги по преместване на дома, висококачествени опаковъчни материали и консумативи, монтаж – демонтаж. Качество и достъпност!`}
         />
 
         <meta property="og:title" content="Професионално преместване на дома" />
@@ -27,7 +27,7 @@ export default function OfficeMoving() {
         <section className="font-sans ">
           <section className="">
             <section className="lg:px-56 3xl:px-[30rem]">
-              <section className="container rounded-lg bg-white px-5 md:px-14 py-10">
+              <section className="container px-5 py-10 bg-white rounded-lg md:px-14">
                 <div className="flex-center">
                   <Title title="Преместване на офис" size="text-3xl" />
                 </div>
@@ -113,9 +113,9 @@ export default function OfficeMoving() {
                 <h2 className="mt-2 text-lg font-semibold">
                   Нашите услуги по преместване на офис включват:
                 </h2>
-                <ul className="flex flex-col gap-y-2 mt-2">
+                <ul className="flex flex-col mt-2 gap-y-2">
                   <li>
-                    <h3 className="font-semibold flex items-center">
+                    <h3 className="flex items-center font-semibold">
                       <span className="pr-1 text-green">
                         <BsCheckLg />
                       </span>
@@ -126,7 +126,7 @@ export default function OfficeMoving() {
                     въпроси относно преместването на офиса.
                   </li>
                   <li>
-                    <h3 className="font-semibold flex items-center">
+                    <h3 className="flex items-center font-semibold">
                       <span className="pr-1 text-green">
                         <BsCheckLg />
                       </span>
@@ -138,7 +138,7 @@ export default function OfficeMoving() {
                     натоварване.
                   </li>
                   <li>
-                    <h3 className="font-semibold flex items-center">
+                    <h3 className="flex items-center font-semibold">
                       <span className="pr-1 text-green">
                         <BsCheckLg />
                       </span>
@@ -149,7 +149,7 @@ export default function OfficeMoving() {
                     шкафове за документи, етажерки и други.
                   </li>
                   <li>
-                    <h3 className="font-semibold flex items-center">
+                    <h3 className="flex items-center font-semibold">
                       <span className="pr-1 text-green">
                         <BsCheckLg />
                       </span>
@@ -160,7 +160,7 @@ export default function OfficeMoving() {
                     ефективност при преместване.{" "}
                   </li>
                   <li>
-                    <h3 className="font-semibold flex items-center">
+                    <h3 className="flex items-center font-semibold">
                       <span className="pr-1 text-green">
                         <BsCheckLg />
                       </span>
@@ -171,8 +171,8 @@ export default function OfficeMoving() {
                     оборудване и мебели.
                   </li>
                 </ul>
-                <div className="-z-20 fixed top-0 left-0">
-                  <div className="relative h-screen w-screen">
+                <div className="fixed top-0 left-0 -z-20">
+                  <div className="relative w-screen h-screen">
                     <Image
                       src="/pages-images/office-moving/.jpg"
                       fill
@@ -190,7 +190,7 @@ export default function OfficeMoving() {
               <SwiperGallery data={officeMovingImages} link="office-moving/" />
             </section> */}
 
-            <section className="my-14 lg:px-36 container">
+            <section className="container my-14 lg:px-36">
               <ContactUs
                 color="border-blue"
                 btnColor="bg-blue"
@@ -206,8 +206,8 @@ export default function OfficeMoving() {
 
           {/* <p>ненужни вещи изхвърляне</p> */}
         </section>
-        <div className="-z-20 fixed top-0 left-0">
-          <div className="relative h-screen w-screen">
+        <div className="fixed top-0 left-0 -z-20">
+          <div className="relative w-screen h-screen">
             <Image
               src="/pages-images/office-moving/background.webp"
               fill
@@ -216,7 +216,7 @@ export default function OfficeMoving() {
             />
           </div>
         </div>
-        {/* <section className="mt-20 font-sans flex-center bg-white py-10">
+        {/* <section className="py-10 mt-20 font-sans bg-white flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />
         </section> */}
         <section className="">

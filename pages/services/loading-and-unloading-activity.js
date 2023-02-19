@@ -11,9 +11,12 @@ export default function CleaningOfApartmentsAndHouses() {
         <title>Товаро-разтоварни дейности</title>
         <meta
           name="description"
-          content={` Товаро-разтоварване на тирове и контейнери в складови бази и много други .Разтоварване, приемане за съхранение в открити площи или складове.`}
+          content={` Товаро-разтоварни услуги за тирове, контейнери и други. Приемане, разтоварване и подреждане на стоката в складови бази. Претоварване на стока от тир в тир.`}
         />
-        <meta property="og:title" content="Товаро-разтоварни дейности" />
+        <meta
+          property="og:title"
+          content="Товаро-разтоварна дейност и хамалски услуги за София и областта."
+        />
         <meta property="og:description" content="" />
       </Head>
       <div className="min-h-screen mt-40 ">

@@ -12,9 +12,12 @@ export default function DisposalOfOldFurniture() {
         <title>Транспортни услуги</title>
         <meta
           name="description"
-          content={`Транспортни услуги | Транспортни услуги в София с товарен бус със/без падащ борд | Винаги на точното място, в точното време ☎️ +359 89 506 3670 `}
+          content={`Професионални транспортни и товарни услуги на достъпни цени. Бусове и камиони за вашия товарен транспорт. Транспортна линия: София - Троян - В. Търново – Варна и обратно. `}
         />
-        <meta property="og:title" content="Транспортни услуги" />
+        <meta
+          property="og:title"
+          content="Транспортни и товарни услуги в София и страната."
+        />
         <meta property="og:description" content="" />
       </Head>
       <div className="min-h-screen mt-40">
@@ -25,7 +28,7 @@ export default function DisposalOfOldFurniture() {
               изхвърлите. Понякога, за съжаление, някои недобросъвестни съседи
               изхвърлят боклука си направо в мазето. */}
           <section className="lg:px-56 ">
-            <section className="bg-white p-10 rounded-md">
+            <section className="p-10 bg-white rounded-md">
               <section className="flex-center">
                 <Title title="Транспортни услуги" size="text-3xl" />
               </section>
@@ -100,8 +103,8 @@ export default function DisposalOfOldFurniture() {
               </section>
             </section>
           </section>
-          <div className="-z-20 fixed top-0 left-0">
-            <div className="relative h-screen w-screen">
+          <div className="fixed top-0 left-0 -z-20">
+            <div className="relative w-screen h-screen">
               <Image
                 src="/pages-images/transport-service/first.jpg"
                 fill
@@ -111,7 +114,7 @@ export default function DisposalOfOldFurniture() {
             </div>
           </div>
         </section>
-        <section className="my-14 lg:px-40 container">
+        <section className="container my-14 lg:px-40">
           <ContactUs
             color="border-blue"
             btnColor="bg-blue"
@@ -123,8 +126,8 @@ export default function DisposalOfOldFurniture() {
             mx="md:mx-10"
           />
         </section>
-        {/* <section className="mt-20 font-sans  bg-white py-10">
-          <div className="flex-center container">
+        {/* <section className="py-10 mt-20 font-sans bg-white">
+          <div className="container flex-center">
             <Title title="Вижте и другите ни услуги" size="text-4xl" />
           </div>
         </section> */}

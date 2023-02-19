@@ -14,25 +14,25 @@ export default function HomeMoving() {
         <title>Професионално преместване на дома </title>
         <meta
           name="description"
-          content="Ние се гирижим за вашите вещи, сякаш са наши. Безпроблемно преместване. Професионално преместване на дома. Преместване на мебели, лични вещи, битова техника и още много."
+          content="Професионални услуги по преместване на дома, висококачествени опаковъчни материали и консумативи, монтаж – демонтаж. Качество и достъпност!"
         />
         <meta property="og:title" content="Професионално преместване на дома" />
         <meta property="og:description" content=" " />
       </Head>
       <section className="min-h-screen mt-40 ">
         <section className=" lg:px-56 3xl:px-[30rem]">
-          <section className=" container rounded-lg bg-white px-5 md:px-14 py-10">
+          <section className="container px-5 py-10 bg-white rounded-lg  md:px-14">
             <div className="flex-center">
               <Title title="Преместване на дома " size="text-4xl" />
             </div>
-            <section className="mt-2 container">
+            <section className="container mt-2">
               {/* <h3 className="text-xl font-medium">Какво предлагаме:</h3> */}
               <section className="">
                 <section>
                   <h2 className="mt-1 text-lg font-semibold">
                     Професионални услуги за преместване на дома
                   </h2>
-                  <div className="relative mb-2 -ml-5 md:w-96 w-44 h-44 md:h-96 image-circle  float-left ">
+                  <div className="relative float-left mb-2 -ml-5 md:w-96 w-44 h-44 md:h-96 image-circle ">
                     <Image
                       src="/pages-images/home-moving/firstPhoto.webp"
                       alt="Професионално преместване на дома - нашият екип гарантира комфортна и безопасна преместване на вашите вещи"
@@ -89,11 +89,11 @@ export default function HomeMoving() {
                     src="/blog/buble-wrap.webp"
                     alt="Професионално преместване на дома - нашият екип гарантира комфортна и безопасна преместване на вашите вещи"
                     fill
-                    className="  image-circle "
+                    className=" image-circle"
                   />
                 </div>
                 <section className="mt-12 md:mt-20 md:ml-10 md:-mr-28">
-                  <h2 className="mt-1 text-xl md:text-right font-semibold">
+                  <h2 className="mt-1 text-xl font-semibold md:text-right">
                     Опаковане
                   </h2>
                   <p className="md:text-right">
@@ -103,12 +103,12 @@ export default function HomeMoving() {
                     максимално риска от нарушаване на целостта им.
                   </p>
                 </section>
-                <div className="relative mb-2  md:w-96 w-44 h-44 md:h-96 image-circle  float-left  mr-10">
+                <div className="relative float-left mb-2 mr-10 md:w-96 w-44 h-44 md:h-96 image-circle">
                   <Image
                     src="/pages-images/home-moving/sprinter.webp"
                     alt="Професионално преместване на дома - нашият екип гарантира комфортна и безопасна преместване на вашите вещи"
                     fill
-                    className="  image-circle  testing"
+                    className=" image-circle testing"
                   />
                 </div>
                 <section className="mt-10 md:mt-20">
@@ -164,7 +164,7 @@ export default function HomeMoving() {
                   </h2>
                   <section className="mt-2">
                     <div className="mb-2">
-                      <h3 className="font-semibold flex items-center">
+                      <h3 className="flex items-center font-semibold">
                         <span className="pr-1 text-green">
                           <BsCheckLg />
                         </span>
@@ -177,7 +177,7 @@ export default function HomeMoving() {
                       </p>
                     </div>
                     <div className="mb-2">
-                      <h3 className="font-semibold flex items-center">
+                      <h3 className="flex items-center font-semibold">
                         <span className="pr-1 text-green">
                           <BsCheckLg />
                         </span>
@@ -191,7 +191,7 @@ export default function HomeMoving() {
                       </p>
                     </div>
                     <div className="mb-2">
-                      <h3 className="font-semibold flex items-center">
+                      <h3 className="flex items-center font-semibold">
                         <span className="pr-1 text-green">
                           <BsCheckLg />
                         </span>
@@ -203,7 +203,7 @@ export default function HomeMoving() {
                         внесат и поставят вещите в съответните стаи.
                       </p>
                     </div>
-                    <h3 className="font-semibold flex items-center ">
+                    <h3 className="flex items-center font-semibold ">
                       <span className="pr-1 text-green">
                         <BsCheckLg />
                       </span>
@@ -220,7 +220,7 @@ export default function HomeMoving() {
             </section>
           </section>
         </section>
-        <section className="my-14 lg:px-36 container">
+        <section className="container my-14 lg:px-36">
           <ContactUs
             color="border-blue"
             btnColor="bg-blue"
@@ -231,8 +231,8 @@ export default function HomeMoving() {
             mx="md:mx-10"
           />
         </section>
-        <div className="-z-20 fixed top-0 left-0">
-          <div className="relative h-screen w-screen">
+        <div className="fixed top-0 left-0 -z-20">
+          <div className="relative w-screen h-screen">
             <Image
               src="/pages-images/home-moving/background.jpg"
               fill
@@ -241,7 +241,7 @@ export default function HomeMoving() {
             />
           </div>
         </div>
-        {/* <section className="mt-20 font-sans flex-center bg-white py-10">
+        {/* <section className="py-10 mt-20 font-sans bg-white flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />
         </section> */}
         <section className="">

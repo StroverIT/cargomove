@@ -11,9 +11,12 @@ export default function InternationalRelocation() {
         <title>Международно преместване </title>
         <meta
           name="description"
-          content={`Международно преместване на домове и офиси за държави в ЕС. Осигурени хамали и транспорт   .Поискай оферта!.`}
+          content={`Международно преместване на дома и офиса в ЕС. Висококачествено координиране и управление, професионално обучен екип. Вземи своята оферта!`}
         />
-        <meta property="og:title" content="Професионално преместване на дома" />
+        <meta
+          property="og:title"
+          content="Професионално международно преместване"
+        />
         <meta property="og:description" content="" />
       </Head>
       <section className="min-h-screen mt-40 ">
