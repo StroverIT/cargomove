@@ -8,14 +8,14 @@ export default function InternationalRelocation() {
   return (
     <>
       <Head>
-        <title>Международно преместване </title>
+        <title>Международно преместване – Мувекс България ЕООД </title>
         <meta
           name="description"
           content={`Международно преместване на дома и офиса в ЕС. Висококачествено координиране и управление, професионално обучен екип. Вземи своята оферта!`}
         />
         <meta
           property="og:title"
-          content="Професионално международно преместване"
+          content="Международно преместване – Мувекс България ЕООД"
         />
         <meta property="og:description" content="" />
       </Head>
