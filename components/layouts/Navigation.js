@@ -100,7 +100,7 @@ export default function Navigation() {
         <div className="absolute w-48 h-20 ">
           <Link href="/">
             <Image
-              src="/logo.svg"
+              src="/logo copy.svg"
               alt="logo"
               layout="fill"
               className="object-contain"
