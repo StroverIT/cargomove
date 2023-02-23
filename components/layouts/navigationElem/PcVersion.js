@@ -19,7 +19,7 @@ const PcVersion = ({
         <div className="absolute select-none ">
           <div className="relative select-none h-28 w-72">
             <Image
-              src="/LOGOv3-01.svg"
+              src="/logo.svg"
               alt="logo"
               layout="fill"
               className="object-contain select-none"
@@ -55,7 +55,7 @@ const PcVersion = ({
                 onMouseEnter={(e) => setServicePcState(true)}
                 onMouseLeave={(e) => setServicePcState(false)}
               >
-                <div className="cursor-pointer flex-center relative">
+                <div className="relative cursor-pointer flex-center">
                   <span className="">Услуги</span>
                   <span
                     className={`pl-1 group-hover:rotate-90 transition-transform text-lg`}
