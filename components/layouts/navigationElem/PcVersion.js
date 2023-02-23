@@ -19,7 +19,7 @@ const PcVersion = ({
         <div className="absolute select-none ">
           <div className="relative select-none h-28 w-72">
             <Image
-              src="/logo.svg"
+              src="/logo copy.svg"
               alt="logo"
               layout="fill"
               className="object-contain select-none"
