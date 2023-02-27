@@ -97,10 +97,10 @@ export default function Navigation() {
       />
       {/* MOBILE VERSION */}
       <section className="container relative justify-between py-6 flex-center lg:hidden">
-        <div className="absolute w-48 h-20 ">
+        <div className="absolute h-20 w-72 ">
           <Link href="/">
             <Image
-              src="/logo copy.svg"
+              src="/logoNew.svg"
               alt="logo"
               layout="fill"
               className="object-contain"

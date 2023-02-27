@@ -17,9 +17,9 @@ const PcVersion = ({
     >
       <section className="container relative items-center justify-between hidden h-full lg:flex">
         <div className="absolute select-none ">
-          <div className="relative select-none h-28 w-72">
+          <div className="relative select-none h-28 w-96">
             <Image
-              src="/logo copy.svg"
+              src="/logoNew.svg"
               alt="logo"
               layout="fill"
               className="object-contain select-none"
