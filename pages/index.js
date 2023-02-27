@@ -15,7 +15,7 @@ export default function Home() {
         <title>Хамалски и транспортни услуги за гр. София, страната и ЕС</title>
         <meta
           name="description"
-          content="Movex Bulgaria предлага професионални услуги в сферата на транспорта и
+          content="cargomove Bulgaria предлага професионални услуги в сферата на транспорта и
           хамалските услуги, като това включва преместване на дома и офиса, международно преместване, транспортни услуги,
           товаро-разтоварни дейности и преместване на пиана."
         />
@@ -35,7 +35,7 @@ export default function Home() {
            Свържете се с нас днес, за да насрочите вашето преместване без стрес!"
         />
 
-        <meta property="og:url" content="https://movex.bg/" />
+        <meta property="og:url" content="https://cargomove.bg/" />
         <meta name="robots" content="index, follow" />
       </Head>
 

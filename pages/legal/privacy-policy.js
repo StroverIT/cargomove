@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
     <>
       <Head>
         <meta name="robots" content="index, follow" />
-        <title>Movex Buglaria - Политика на лични данни</title>
+        <title>cargomove Buglaria - Политика на лични данни</title>
         <meta
           name="description"
           content={`Нашата политика за поверителност. Видове данни и как тя бива използвана в нашият уеб сайт. Последно актуализирана на 11 януари 2023 г.`}
@@ -90,8 +90,8 @@ export default function PrivacyPolicy() {
             (например продължителността на посещение на страница).
           </li>
           <li>
-            <span className="font-semibold">Сайтът</span> се отнася за Movex,
-            достъпен от https://movex.bg
+            <span className="font-semibold">Сайтът</span> се отнася за
+            cargomove, достъпен от https://cargomove.bg
           </li>
           <li>
             <span className="font-semibold">Вие</span> означава физическото
@@ -193,12 +193,12 @@ export default function PrivacyPolicy() {
           Необходими / Основни бисквитки
         </h3>
         <p className="mt-2">Тип: Сесийни бисквитки</p>
-        <p className="mt-2">Администрира се от: Movex</p>
+        <p className="mt-2">Администрира се от: cargomove</p>
         <h3 className="mt-4 text-lg font-semibold">
           Политика за бисквитки / Бисквитки за приемане на известия
         </h3>
         <p className="mt-2">Тип: Постоянни бисквитки</p>
-        <p className="mt-2">Администрира се от: Movex</p>
+        <p className="mt-2">Администрира се от: cargomove</p>
         <p className="mt-2">
           Цел: Тези бисквитки идентифицират дали потребителите са приели
           използването на бисквитки на уебсайта.
@@ -207,7 +207,7 @@ export default function PrivacyPolicy() {
           Бисквитки за функционалност
         </h3>
         <p className="mt-2">Тип: Сесийни бисквитки</p>
-        <p className="mt-2">Администрира се от: Movex</p>
+        <p className="mt-2">Администрира се от: cargomove</p>
         <p className="mt-2">
           Цел: Тези бисквитки ни позволяват да запомним изборите, които правите,
           когато използвате уебсайта, като например запомняне на вашите данни за
@@ -494,7 +494,7 @@ export default function PrivacyPolicy() {
           свържете с нас:
         </p>
         <ul className="flex flex-col mt-4 ml-10 list-disc gap-y-5">
-          <li>И-мейл: movexbulgaria@gmail.com</li>
+          <li>И-мейл: cargomovebg@gmail.com</li>
 
           <li>На телефон: +359 89 506 3670</li>
         </ul>

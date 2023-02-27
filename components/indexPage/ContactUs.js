@@ -182,12 +182,12 @@ export default function ContactUs({
           </section>
           <section className="flex flex-col mx-auto space-y-3 mt-7 focus:border-transparent">
             <div className="flex items-center">
-              <a href="mailto:movexbulgaria@gmail.com">
+              <a href="mailto:cargomovebg@gmail.com">
                 <section className="flex-center">
                   <div className="text-2xl ">
                     <HiOutlineMail />
                   </div>
-                  <div className="pl-1 ">movexbulgaria@gmail.com</div>
+                  <div className="pl-1 ">cargomovebg@gmail.com</div>
                 </section>
               </a>
             </div>

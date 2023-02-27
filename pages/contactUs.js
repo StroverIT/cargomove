@@ -61,7 +61,7 @@ const ContactUs = () => {
               </li>
               <li>
                 <a
-                  href="mailto:movexbulgaria@gmail.com"
+                  href="mailto:cargomovebg@gmail.com"
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-3xl text-blue">
@@ -69,7 +69,7 @@ const ContactUs = () => {
                   </div>
                   <div className="pl-2">
                     <h2 className="font-medium">И-мейл</h2>
-                    <p>movexbulgaria@gmail.com</p>
+                    <p>cargomovebg@gmail.com</p>
                   </div>
                 </a>
               </li>

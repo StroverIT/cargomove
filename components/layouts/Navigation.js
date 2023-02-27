@@ -303,7 +303,7 @@ export default function Navigation() {
 
               <div>
                 <a
-                  href="mailto:movexbulgaria@gmail.com"
+                  href="mailto:cargomovebg@gmail.com"
                   aria-label="Button for writting on email"
                 >
                   <HiOutlineMail />
