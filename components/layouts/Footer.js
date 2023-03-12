@@ -14,6 +14,8 @@ import { data } from "../data/services";
 import { globalContext } from "../globalContext";
 
 export default function Footer() {
+  const router = useRouter();
+
   const { footerRef } = useContext(globalContext);
 
   const [input, setInputs] = useState("");
@@ -39,7 +41,7 @@ export default function Footer() {
     if (data.error) {
       toastError(data.error);
     }
-
+    router.push(router.asPath, undefined, { scroll: false });
     setLoading(false);
   };
 
