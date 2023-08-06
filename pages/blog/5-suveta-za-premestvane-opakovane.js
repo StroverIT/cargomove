@@ -7,7 +7,7 @@ const SuvetaZaPremestvaneOpakovane = () => {
   return (
     <>
       <Head>
-        <title>cargomove - 5 съвета за преместване и опаковане</title>
+        <title> 5 съвета за преместване и опаковане</title>
         <meta
           name="description"
           content={`

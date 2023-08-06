@@ -8,7 +8,7 @@ export default function InternationalRelocation() {
   return (
     <>
       <Head>
-        <title>Международно преместване – CargoMove ЕООД </title>
+        <title>Международно преместване на дома и офиса</title>
         <meta
           name="description"
           content={`Международно преместване на дома и офиса в ЕС. Висококачествено координиране и управление, професионално обучен екип. Вземи своята оферта!`}
