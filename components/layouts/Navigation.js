@@ -1,22 +1,24 @@
 import React, { useContext, useEffect, useState } from "react";
+
+import { Twirl as Hamburger } from "hamburger-react";
+import { globalContext } from "../globalContext";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import Image from "next/legacy/image";
+import { data } from "../data/services";
+import PcVersion from "./navigationElem/PcVersion";
+
+import { FiPhoneCall } from "react-icons/fi";
+import { HiOutlineMail, HiX } from "react-icons/hi";
+import { TbBus } from "react-icons/tb";
+import { BsTelephoneForward } from "react-icons/bs";
 import {
   FaFacebook,
   FaInstagram,
   FaLocationArrow,
   FaViber,
 } from "react-icons/fa";
-import { Twirl as Hamburger } from "hamburger-react";
-import { BsTelephoneForward } from "react-icons/bs";
-import { globalContext } from "../globalContext";
-import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Image from "next/legacy/image";
-import { TbBus } from "react-icons/tb";
-import { HiOutlineMail, HiX } from "react-icons/hi";
-import { data } from "../data/services";
-import PcVersion from "./navigationElem/PcVersion";
-import { FiPhoneCall } from "react-icons/fi";
 
 export default function Navigation() {
   const router = useRouter();

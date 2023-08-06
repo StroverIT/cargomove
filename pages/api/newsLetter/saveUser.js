@@ -10,6 +10,7 @@ async function handler(req, res) {
       const { email } = req.body;
 
       const isFound = await Newsletter.findOne({ email });
+
       if (isFound) return res.json({ error: "Вече сте се абонирали!" });
 
       await Newsletter.create({ email });

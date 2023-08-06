@@ -8,7 +8,6 @@ export default async function newsLetterSend(data) {
   };
 
   const res = await fetch("/api/newsLetter/saveUser", options);
-  console.log(res);
 
   return res.json();
 }

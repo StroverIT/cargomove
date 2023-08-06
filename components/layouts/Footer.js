@@ -34,6 +34,7 @@ export default function Footer() {
     setLoading(true);
 
     const data = await newsletterSend({ email: input });
+
     if (data.message) {
       setInputs("");
       toastSuccess(data.message);
@@ -41,7 +42,9 @@ export default function Footer() {
     if (data.error) {
       toastError(data.error);
     }
+
     router.push(router.asPath, undefined, { scroll: false });
+
     setLoading(false);
   };
 
