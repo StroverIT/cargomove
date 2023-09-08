@@ -77,7 +77,7 @@ export default function Footer() {
               <h4 className="mt-8 font-semibold uppercase">Социални мрежи</h4>
               <div className="flex mt-2 gap-x-5">
                 <a
-                  href="https://www.facebook.com/cargomovebulgaria"
+                  href="https://www.facebook.com/cargomovebg"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Button for facebook social media"
@@ -90,7 +90,7 @@ export default function Footer() {
                   </div>
                 </a>
                 <a
-                  href="https://www.instagram.com/cargomovebulgaria/"
+                  href="https://www.instagram.com/cargomoveds"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Button for instagram social media"
