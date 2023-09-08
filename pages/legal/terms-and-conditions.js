@@ -9,7 +9,7 @@ export default function TermsAndConditions() {
     <>
       <Head>
         <meta name="robots" content="index, follow" />
-        <title>cargomove Bulgaria - Условия за ползване</title>
+        <title>Условия за ползване</title>
         <meta
           name="description"
           content="Условия за ползване на сайта. Какви са нашите условия за да се възползвате максимално от нашата платформа, при въззражения може да ни пишете на и-мейл cargomovebg@gmail.com"

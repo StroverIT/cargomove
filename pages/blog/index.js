@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>cargomove Bulgaria - Блог - Хубаво е да знаете</title>
+        <title>Блог - Хубаво е да знаете</title>
         <meta
           name="description"
           content="Разберете какъв тип хора ще пренасят вашите ценни вещи или ще изчистват къщата Ви. 
@@ -18,7 +18,7 @@ const Index = () => {
       <main className="min-h-screen pt-40 pb-20 bg-blog">
         <section className="container mt-10">
           <div className="flex-center">
-            <Title title="cargomove Bulgaria - Блог" size="text-4xl" />
+            <Title title="Нашият блог" size="text-4xl" />
           </div>
           <section className="grid mt-5 lg:grid-cols-2 gap-y-10 gap-x-5 max-lg:place-items-center xl:place-items-center grid-auto-rows">
             {blogData.map((data) => {
