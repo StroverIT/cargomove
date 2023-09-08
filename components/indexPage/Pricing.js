@@ -42,7 +42,7 @@ export default function Pricing() {
                   Транспортни услуги
                 </h2>
                 <ul className="flex flex-col max-w-xl ml-10 text-lg list-disc gap-y-2 ">
-                  <li>Камион 20м3 до 3.5 тона от 35лв/ч </li>
+                  <li>Камион с падащ борд 20м3 до 3.5 тона от 35лв/ч </li>
                   <li>Камион до 3.5 тона 30лв/ч -35лв/ч</li>
                   <li>
                     Kамион 19куб.м 35лв/ч Транспорт с камион до 16куб 30лв
