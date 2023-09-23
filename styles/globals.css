@@ -73,7 +73,7 @@ html::-webkit-scrollbar-thumb {
 
 .paralax {
   background-attachment: fixed;
-  /* background-position: center; */
+  background-position: 0% 30%;
   background-repeat: no-repeat;
   background-size: cover;
 }

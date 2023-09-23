@@ -17,14 +17,7 @@ const PcVersion = ({
     >
       <section className="container relative items-center justify-between hidden h-full lg:flex">
         <div className="absolute select-none ">
-          <div className="relative select-none h-28 w-96">
-            <Image
-              src="/logoNew.svg"
-              alt="logo"
-              layout="fill"
-              className="object-contain select-none"
-            />
-          </div>
+          Евентуално, ако има лого или ще създам
         </div>
         <div className="relative invisible w-64 h-20">test</div>
         <section className="flex items-center justify-center gap-x-5">
@@ -57,11 +50,11 @@ const PcVersion = ({
               >
                 <div className="relative cursor-pointer flex-center">
                   <span className="">Услуги</span>
-                  <span
+                  {/* <span
                     className={`pl-1 group-hover:rotate-90 transition-transform text-lg`}
                   >
                     <TbBus />
-                  </span>
+                  </span> */}
                   {servicePcState && (
                     <div className="absolute top-5 w-[26.5rem] h-16  z-100 -left-16"></div>
                   )}
@@ -143,12 +136,12 @@ const PcVersion = ({
                   </a>
                 </li>
               )}
-              <li>
+              {/* <li>
                 <Link href="/blog" scroll={false}>
                   БЛОГ
                 </Link>
-              </li>
-              <li className="px-5 py-2 rounded-sm bg-blue">
+              </li> */}
+              <li className="px-5 py-2 rounded-sm bg-[#d97706]">
                 <a href="tel:+359895063670">позвъни сега </a>
               </li>
             </ul>

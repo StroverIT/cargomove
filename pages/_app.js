@@ -23,8 +23,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/LOGODODO-01.svg" />
-        <link rel="apple-touch-icon" href="/LOGODODO-01.svg" />
+        {/* <link rel="icon" href="/LOGODODO-01.svg" /> */}
+        {/* <link rel="apple-touch-icon" href="/LOGODODO-01.svg" /> */}
         <meta
           property="og:image"
           content="https://www.linkpicture.com/q/Неозаглавен-1440-t-1440-пиксела.png"
