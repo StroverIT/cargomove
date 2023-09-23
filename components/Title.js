@@ -6,7 +6,7 @@ export default function Title({
   title,
   size,
 
-  lineColor = "bg-blue-100",
+  lineColor = "bg-[#d97706]",
 }) {
   return (
     <div className="">
@@ -16,7 +16,7 @@ export default function Title({
         <div className={`h-1 w-full ${lineColor}`}></div>
         <div className="relative h-10 px-3 mx-2 text-xl w-14 ">
           <Image
-            src="/icons/ezgif.com-gif-maker.gif"
+            src="/icons/home.gif"
             alt="Хамалски услуги временно"
             layout="fill"
             className="object-contain"

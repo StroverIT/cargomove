@@ -26,7 +26,7 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div>
-              <div className="flex-center bg-blue-150 ">
+              <div className="flex-center bg-[#d97706] ">
                 <div className="relative w-20 h-20 md:w-56 md:h-56">
                   <Image
                     src="/icons/moving.png"
@@ -54,7 +54,7 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-blue-300 flex-center ">
+              <div className="bg-[#d97706] flex-center ">
                 <div className="relative w-20 h-20 md:w-56 md:h-56">
                   <Image
                     src="/icons/delivery-truck (1).png"

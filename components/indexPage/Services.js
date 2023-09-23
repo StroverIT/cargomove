@@ -29,7 +29,7 @@ export default function Services() {
         <div className="mt-10 flex-center">
           <a
             href="tel:+359 временно"
-            className="py-4 text-lg font-semibold text-white uppercase rounded-lg px-14 bg-blue"
+            className="py-4 text-lg font-semibold text-white uppercase rounded-lg px-14 bg-[#d97706]"
           >
             позвъни сега
           </a>
@@ -45,7 +45,7 @@ function Service({ title, index, image, link, p }) {
       <div className="h-full pb-5 transition-all bg-white shadow-lg cursor-pointer text-dark hover:shadow-lg hover:scale-110 rounded-xl">
         <section className="px-5 pt-4 ">
           <section className="flex justify-between">
-            <div className="text-4xl text-blue">0{index + 1}</div>
+            <div className="text-4xl text-[#d97706]">0{index + 1}</div>
             {/* <div className="relative w-10 h-10">
               <Image src={`/icons/${image}`} alt="test" layout="fill" />
             </div> */}

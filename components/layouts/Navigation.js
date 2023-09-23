@@ -174,11 +174,11 @@ export default function Navigation() {
                       </div>
                     </li>
 
-                    <li>
+                    {/* <li>
                       <Link href="/pricing" scroll={false}>
                         Цени
                       </Link>
-                    </li>
+                    </li> */}
                     {pathname == "/" && (
                       <li onClick={handleNav.bind({}, "#faq")}>
                         <a href="#">Въпроси</a>
@@ -190,11 +190,11 @@ export default function Navigation() {
                         За нас
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/blog" scroll={false}>
                         БЛОГ
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </section>
               </motion.section>

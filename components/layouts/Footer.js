@@ -126,13 +126,13 @@ export default function Footer() {
             <section>
               <h5 className="mt-5 text-lg font-semibold">За временно</h5>
               <ul className={`list-disc ${colors.markers} pb-1 leading-8 ml-4`}>
-                <li className="cursor-default">
+                {/* <li className="cursor-default">
                   <Link href="/blog" scroll={false}>
                     <span className="pb-1 border-b cursor-pointer border-border">
                       Блог
                     </span>
                   </Link>
-                </li>
+                </li> */}
                 <li className="cursor-default">
                   <Link href="/aboutUs" scroll={false}>
                     <span className="pb-1 border-b cursor-pointer border-border">

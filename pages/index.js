@@ -50,8 +50,8 @@ export default function Home() {
           {/* <FaQ /> */}
           <section className="pb-20 mt-10 lg:mt-20">
             <ContactUs
-              color="border-blue"
-              btnColor="bg-blue"
+              color="border-[#d97706]"
+              btnColor="bg-[#d97706]"
               bgColor="bg-blue-50"
               number="+359 временно"
               scrollBarThumb="scrollbar-thumb-primaryBlue-150"

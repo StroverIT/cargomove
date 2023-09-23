@@ -38,11 +38,11 @@ const PcVersion = ({
                   <a href="#">Начало</a>
                 </li>
               )}
-              <li>
+              {/* <li>
                 <Link href="/pricing" scroll={false}>
                   Цени
                 </Link>
-              </li>
+              </li> */}
               <li
                 className=" group"
                 onMouseEnter={(e) => setServicePcState(true)}
