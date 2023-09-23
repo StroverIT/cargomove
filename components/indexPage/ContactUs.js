@@ -112,7 +112,7 @@ export default function ContactUs({
       <motion.section
         ref={box}
         animate={boxAnim}
-        className={`flex-center border-8 ${color} max-3xl:container  border border-l-8 ${mx} shadow-lg`}
+        className={`flex-center border-8 border-[#d97706] max-3xl:container  border border-l-8 ${mx} shadow-lg`}
         id="contactUs"
       >
         <section
@@ -121,7 +121,7 @@ export default function ContactUs({
           <section className="">
             <h3>
               <span
-                className={`border-b-4 ${color} pb-1 text-2xl font-semibold rounded-sm `}
+                className={`border-b-4 border-[#d97706] pb-1 text-2xl font-semibold rounded-sm `}
               >
                 Свържи се с нас!
               </span>
@@ -173,7 +173,7 @@ export default function ContactUs({
                 </label>
               </div>
               <button
-                className={`${btnColor} px-10 py-1  flex-center text-white`}
+                className={`bg-[#d97706] px-10 py-1  flex-center text-white`}
                 type="submit"
               >
                 {isLoading ? <div className="loader"></div> : "Изпрати"}

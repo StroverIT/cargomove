@@ -2,7 +2,7 @@ export const data = [
   {
     title: "Изграждане на покрив",
     image: "house.png",
-    link: "/services/home-moving",
+    link: "/services/bulding-a-roof",
     p: `Нашите специалисти са опитни в изграждането на красиви и издръжливи покриви.
     `,
     _id: "house",
@@ -10,7 +10,7 @@ export const data = [
   {
     title: "Хидроизолации",
     image: "office.png",
-    link: "/services/office-moving",
+    link: "/services/waterproofing",
     p: ` Предлагаме висококачествени решения за хидроизолация, които предпазват вашия покрив от влага и нежелани протичания. 
     `,
     // Независимо дали става въпрос за плосък покрив или скатен покрив, ние сме тук, за да гарантираме вашата защита.
@@ -19,14 +19,14 @@ export const data = [
   {
     title: "Изграждане на Метални/Дървени Конструкции",
     image: "europe.png",
-    link: "/services/international-relocation",
+    link: "/services/construction-of-metal-wooden-structures",
     p: ` Предоставяме услуги по изграждане на метални и дървени конструкции за вашия покрив.`,
     _id: "international",
   },
   {
     title: "Изграждане и монтаж на улуци",
     image: "moving.png",
-    link: "/services/loading-and-unloading-activity",
+    link: "/services/construction-and-installation-of-streets",
     p: `Изграждането и монтажът на улуци са важни процеси при строителството или ремонта на сгради.`,
     // link: "/disposal-of-construction-waste",
     _id: "loading",
@@ -34,7 +34,7 @@ export const data = [
   {
     title: "Довършителни Работи",
     image: "icons8-disposal-64.png",
-    link: "/services/transport-services",
+    link: "/services/finishing-works",
     p: `Извършваме довършителни работи, които придават завършен вид на вашия покрив, включително боядисване, облицовки и други детайли, които правят покрива ви изключителен.`,
     // link: "/disposal-of-old-furniture",
     _id: "transport",
@@ -50,7 +50,7 @@ export const data = [
   {
     title: "Изграждане на план за покривна конструкция.",
     image: "cargo-mover.png",
-    link: "/services/moving-cash-registers-pianos-showcases",
+    link: "/services/building-a-roof-structure-plan",
     p: "Нашите инженери създават индивидуални планове за структурата на покрива, които отчитат вашите специфични изисквания и изгодност.",
     // link: "/cleaning-basements-and-attics",
     _id: "piano",
