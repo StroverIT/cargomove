@@ -16,8 +16,15 @@ const PcVersion = ({
       className={` hidden lg:flex py-6 ${isOnMain ? "bg-dark" : "bg-dark-50"}`}
     >
       <section className="container relative items-center justify-between hidden h-full lg:flex">
-        <div className="absolute select-none ">
-          Евентуално, ако има лого или ще създам
+      <div className="absolute select-none ">
+          <div className="relative w-48 h-48 select-none">
+            <Image
+              src="/logo2.svg"
+              alt="logo"
+              layout="fill"
+              className="object-contain select-none"
+            />
+          </div>
         </div>
         <div className="relative invisible w-64 h-20">test</div>
         <section className="flex items-center justify-center gap-x-5">
