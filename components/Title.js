@@ -17,7 +17,7 @@ export default function Title({
         <div className="relative h-10 px-3 mx-2 text-xl w-14 ">
           <Image
             src="/icons/home.gif"
-            alt="Хамалски услуги временно"
+            alt="Временно"
             layout="fill"
             className="object-contain"
           />
