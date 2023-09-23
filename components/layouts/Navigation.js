@@ -223,10 +223,10 @@ export default function Navigation() {
                 }}
                 className="fixed top-0 left-0 z-[999] flex flex-col w-full h-screen"
               >
-                <section className="w-full h-screen bg-blue-100 flex-center">
+                <section className="w-full h-screen bg-[#d97706] flex-center">
                   <section className="container relative">
                     <section
-                      className="absolute right-0 text-xl bg-white rounded-md top-5 text-blue-150"
+                      className="absolute right-0 text-xl bg-white rounded-md top-5 text-[#d97706]"
                       onClick={() => setServicePcState(false)}
                     >
                       <HiX />
@@ -293,7 +293,7 @@ export default function Navigation() {
             }}
             className="fixed bottom-0 w-full bg-dark lg:hidden"
           >
-            <div className="flex items-center justify-between py-4 text-2xl max-sm:px-10 text-blue-250 sm:container">
+            <div className="flex items-center justify-between py-4 text-2xl max-sm:px-10 text-[#d97706] sm:container">
               <div>
                 <a
                   href="tel:+359 временно"

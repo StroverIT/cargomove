@@ -87,7 +87,7 @@ const PcVersion = ({
                       }}
                       className="relative flex flex-col w-full h-full "
                     >
-                      <ul className="absolute flex-col  py-4 pl-10 list-disc w-[26.5rem] rounded-md bg-blue-100 top-14 -left-16 flex  shadow-2xl">
+                      <ul className="absolute flex-col  py-4 pl-10 list-disc w-[26.5rem] rounded-md bg-[#d97706] top-14 -left-16 flex  shadow-2xl">
                         {data.map((list, i) => {
                           return (
                             <Link href={list.link} key={i} scroll={false}>
