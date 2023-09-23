@@ -214,7 +214,7 @@ export default function Footer() {
         <div className="flex sm:pl-1">
           <div className="flex-center">
             <AiOutlineCopyright />
-            2023 временно.
+            2023 РАЙБИЛДИНГ 76.
           </div>
           <div className="pl-1">Всички права запазени.</div>
         </div>
