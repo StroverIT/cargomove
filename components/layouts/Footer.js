@@ -77,7 +77,7 @@ export default function Footer() {
               <h4 className="mt-8 font-semibold uppercase">Социални мрежи</h4>
               <div className="flex mt-2 gap-x-5">
                 <a
-                  href="https://www.facebook.com/временноbg"
+                  href="https://www.facebook.com/profile.php?id=100070003034864"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Button for facebook social media"
@@ -86,10 +86,10 @@ export default function Footer() {
                     <div className="text-2xl">
                       <BsFacebook />
                     </div>
-                    {/* <div className="pl-2">Facebook</div> */}
+                   
                   </div>
                 </a>
-                <a
+                {/* <a
                   href="https://www.instagram.com/временноds"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -99,9 +99,9 @@ export default function Footer() {
                     <div className="text-2xl">
                       <BsInstagram />
                     </div>
-                    {/* <div className="pl-2">Instagram</div> */}
+                  
                   </div>
-                </a>
+                </a> */}
               </div>
             </section>
           </section>
@@ -171,15 +171,15 @@ export default function Footer() {
                 <div className="ml-1 border-l border-border">
                   <ul className="pl-4 leading-8">
                     <li className="flex items-center">
-                      <a href="tel:+359 временно">
+                      <a href="tel:+359893909594">
                         <section className="flex-center">
                           <FiPhoneCall />
-                          <span className="pl-1">+359 89 506 3670</span>
+                          <span className="pl-1">+359 89 390 9594</span>
                         </section>
                       </a>
                     </li>
                     <li className="flex items-center">
-                      <a href="viber://chat?number=+359 временно">
+                      <a href="viber://chat?number=%2B+359893909594">
                         <section className="flex-center ">
                           <span className="text-lg">
                             <FaViber />
@@ -189,17 +189,17 @@ export default function Footer() {
                       </a>
                     </li>
                     <li className="flex items-center">
-                      <a href="mailto:временноbg@gmail.com">
+                      <a href="mailto:Pokrividoverie74@gmail.com">
                         <section className="flex-center">
                           <HiOutlineMail />
-                          <span className="pl-1">временноbg@gmail.com</span>
+                          <span className="pl-1">Pokrividoverie74@gmail.com</span>
                         </section>
                       </a>
                     </li>
 
                     <li className="flex items-center">
                       <RiGlobalLine />{" "}
-                      <span className="pl-1">временно.bg</span>
+                      <span className="pl-1">remontiraipokrivi.bg</span>
                     </li>
                   </ul>
                 </div>
