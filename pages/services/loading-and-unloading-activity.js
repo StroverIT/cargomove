@@ -30,7 +30,7 @@ export default function CleaningOfApartmentsAndHouses() {
             <h2 className="mt-2 text-xl font-medium">Какво предлагаме:</h2>
             <p>
               Процесът по товарене и разтоварване на стока може да бъде
-              трудоемка и рискована задача. Ние &quot;CargoMove&quot;,
+              трудоемка и рискована задача. Ние &quot;временно&quot;,
               предоставяме услугата за товарене и разтоварване на стоки, като
               имаме за цел да спестим вашето неудобство от
               товаро-разтоварването. Този вид услуга е подходяща, когато Вие
@@ -57,7 +57,7 @@ export default function CleaningOfApartmentsAndHouses() {
               color="border-blue"
               btnColor="bg-blue"
               bgColor="bg-blue-50"
-              number="+359 89 506 3670"
+              number="+359 временно"
               scrollBarThumb="scrollbar-thumb-primaryBlue-150"
               scrollBarTrack="scrollbar-track-primaryBlue-500"
               typePage="Web"

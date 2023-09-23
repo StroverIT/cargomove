@@ -35,7 +35,7 @@ export default function Home() {
            Свържете се с нас днес, за да насрочите вашето преместване без стрес!"
         />
 
-        <meta property="og:url" content="https://cargomove.bg/" />
+        <meta property="og:url" content="https://временно.bg/" />
         <meta name="robots" content="index, follow" />
       </Head>
 
@@ -44,16 +44,16 @@ export default function Home() {
         <section className="bg-gray-550 ">
           <SmallInfo />
           <Services />
-          <Pricing />
-          <OurBlog />
+          {/* <Pricing /> */}
+          {/* <OurBlog /> */}
 
-          <FaQ />
+          {/* <FaQ /> */}
           <section className="pb-20 mt-10 lg:mt-20">
             <ContactUs
               color="border-blue"
               btnColor="bg-blue"
               bgColor="bg-blue-50"
-              number="+359 89 506 3670"
+              number="+359 временно"
               scrollBarThumb="scrollbar-thumb-primaryBlue-150"
               scrollBarTrack="scrollbar-track-primaryBlue-500"
               typePage="Web"

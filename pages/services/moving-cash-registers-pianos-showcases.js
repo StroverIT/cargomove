@@ -64,7 +64,7 @@ export default function CleaningBasementsAndAttics() {
                 пиано?
               </h2>
               <p>
-                Ние от CargoMove искаме Вие да се чувствате комфортно и уверени,
+                Ние от временно искаме Вие да се чувствате комфортно и уверени,
                 че вашето пиано ще бъде добре опаковано, преместено правилно и
                 сигурно натоварено и защитено по време на транспорта. Нашата цел
                 е да задоволим вашите желания и изисквания. Позволете ни да
@@ -77,7 +77,7 @@ export default function CleaningBasementsAndAttics() {
               color="border-blue"
               btnColor="bg-blue"
               bgColor="bg-blue-50"
-              number="+359 89 506 3670"
+              number="+359 временно"
               scrollBarThumb="scrollbar-thumb-primaryBlue-150"
               scrollBarTrack="scrollbar-track-primaryBlue-500"
               typePage="Web"

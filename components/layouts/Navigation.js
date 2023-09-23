@@ -114,7 +114,7 @@ export default function Navigation() {
         <section className="flex items-center justify-center gap-x-5 ">
           <div className="flex gap-x-2">
             {/* <a
-              href="tel:+359895063670"
+              href="tel:+359 временно"
               className="h-8 px-4 mt-2 text-sm rounded-sm bg-blue flex-center "
             >
               позвъни
@@ -296,7 +296,7 @@ export default function Navigation() {
             <div className="flex items-center justify-between py-4 text-2xl max-sm:px-10 text-blue-250 sm:container">
               <div>
                 <a
-                  href="tel:+359895063670"
+                  href="tel:+359 временно"
                   aria-label="Button for calling on telehone"
                 >
                   <FiPhoneCall />
@@ -305,7 +305,7 @@ export default function Navigation() {
 
               <div>
                 <a
-                  href="mailto:cargomovebg@gmail.com"
+                  href="mailto:временноbg@gmail.com"
                   aria-label="Button for writting on email"
                 >
                   <HiOutlineMail />
@@ -313,7 +313,7 @@ export default function Navigation() {
               </div>
               <div>
                 <a
-                  href="viber://chat?number=+359895063670"
+                  href="viber://chat?number=+359 временно"
                   aria-label="Button for calling on viber"
                 >
                   <FaViber />

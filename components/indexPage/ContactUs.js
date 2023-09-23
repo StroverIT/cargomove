@@ -182,17 +182,17 @@ export default function ContactUs({
           </section>
           <section className="flex flex-col mx-auto space-y-3 mt-7 focus:border-transparent">
             <div className="flex items-center">
-              <a href="mailto:cargomovebg@gmail.com">
+              <a href="mailto:временно@gmail.com">
                 <section className="flex-center">
                   <div className="text-2xl ">
                     <HiOutlineMail />
                   </div>
-                  <div className="pl-1 ">cargomovebg@gmail.com</div>
+                  <div className="pl-1 ">временно@gmail.com</div>
                 </section>
               </a>
             </div>
             <div className="flex items-center">
-              <a href="tel:+359895063670">
+              <a href="tel:+временно">
                 <section className="flex-center">
                   <div className="text-xl ">
                     <FiPhoneCall />
@@ -202,7 +202,7 @@ export default function ContactUs({
               </a>
             </div>
             <div className="flex items-center">
-              <a href="viber://chat?number=%2B359895063670">
+              <a href="viber://chat?number=%2Bвременно">
                 <section className="flex-center">
                   <div className="text-xl ">
                     <FaViber />

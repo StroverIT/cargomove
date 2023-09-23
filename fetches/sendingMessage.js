@@ -1,7 +1,7 @@
 export default async function sendMesage(inputs) {
   // Message for sending
   const messageData = {
-    title: `Ново съобщение от www.cargomove.bg`,
+    title: `Ново съобщение от www.временно.bg`,
     email: inputs.email,
     description: inputs.message,
     fullName: inputs.name,

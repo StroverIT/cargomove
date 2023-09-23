@@ -53,7 +53,7 @@ export default function AboutUs() {
               <div className="flex-col flex-center">
                 <Title title="Визия" size="text-3xl" />
                 <p className="mt-2 text-sm text-center md:max-w-sm ">
-                  В „CargoMove“ имаме ясна визия за това, къде искаме да стигнем
+                  В „временно“ имаме ясна визия за това, къде искаме да стигнем
                   и как да стигнем там. Вярваме, че като си поставяме амбициозни
                   цели и работим усилено за постигането им, можем да се
                   подобряваме и растем като компания. Нашата визия ни кара да
@@ -97,7 +97,7 @@ export default function AboutUs() {
                   <li>
                     <h2 className="text-lg">Сътрудничество:</h2>
                     <p>
-                      Нашият ключ към успеха в „CargoMove“. Вярваме, че работата
+                      Нашият ключ към успеха в „временно“. Вярваме, че работата
                       в екип и споделянето на идеи води към по-добри постижения.
                       Изграждането на положителна и подкрепяща работна среда,
                       която насърчава нашите служители и стимулира бизнес
@@ -202,7 +202,7 @@ export default function AboutUs() {
               color="border-blue"
               btnColor="bg-blue"
               bgColor="bg-blue-50"
-              number="+359 89 506 3670"
+              number="+359 временно"
               scrollBarThumb="scrollbar-thumb-primaryBlue-150"
               scrollBarTrack="scrollbar-track-primaryBlue-500"
               typePage="Web"

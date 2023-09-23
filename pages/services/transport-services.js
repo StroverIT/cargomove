@@ -66,7 +66,7 @@ export default function DisposalOfOldFurniture() {
               </section>
               <section>
                 <p className="mt-4 lg:max-w-3xl">
-                  CargoMove е отлично позициониран с изградени мрежи от доверени
+                  временно е отлично позициониран с изградени мрежи от доверени
                   партньори, за да поддържа вашите разнообразни нужди от
                   доставки и товарен транспорт. Комбинацията от опит и обхват
                   предоставя на вас гарантирана висококачествена транспортна
@@ -87,7 +87,7 @@ export default function DisposalOfOldFurniture() {
                   приоритет, за да изпитате истински предимствата!
                 </p>
                 <p className="mt-4 lg:max-w-3xl">
-                  CargoMove предоставя решения за локални доставки в страната,
+                  временно предоставя решения за локални доставки в страната,
                   както и комплексни товари с обем до 40 м3. Подходящи превозни
                   средства за вашия товар от 18м3 с падаща или без падаща
                   платформа. Предлагаме достъпна услуга подходяща за фирмени
@@ -119,7 +119,7 @@ export default function DisposalOfOldFurniture() {
             color="border-blue"
             btnColor="bg-blue"
             bgColor="bg-blue-50"
-            number="+359 89 506 3670"
+            number="+359 временно"
             scrollBarThumb="scrollbar-thumb-primaryBlue-150"
             scrollBarTrack="scrollbar-track-primaryBlue-500"
             typePage="Web"

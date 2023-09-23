@@ -7,7 +7,7 @@ const OpakovaneNaChypliviPredmeti = () => {
   return (
     <>
       <Head>
-        <title>cargomove - Опаковане на чупливи предмети</title>
+        <title>временно - Опаковане на чупливи предмети</title>
         <meta
           name="description"
           content={`Опаковането на чупливи предмети може да бъде трудна задача, но страницата ни в блога е тук, за да Ви помогне!

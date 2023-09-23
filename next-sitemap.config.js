@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://cargomove.bg",
+  siteUrl: "https://временно.bg",
   generateRobotsTxt: true, // (optional)
   exclude: [
     "/legal/terms-and-conditions",

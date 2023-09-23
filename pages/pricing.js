@@ -49,7 +49,7 @@ export default function CleaningOfApartmentsAndHouses() {
               Фиксирана цена на хамалски услуги:
             </h2>
             <p>
-              Ние от CargoMove можем да Ви предложим опция - фиксирана цена,
+              Ние от временно можем да Ви предложим опция - фиксирана цена,
               след извършване на безплатен оглед от нашият екип. По време на
               огледа екипа се запознава с особеностите на вашия обект, като
               размерите на стълбищата, асансьорите, разстоянието от входа до
@@ -134,7 +134,7 @@ export default function CleaningOfApartmentsAndHouses() {
               color="border-blue"
               btnColor="bg-blue"
               bgColor="bg-blue-50"
-              number="+359 89 506 3670"
+              number="+359 временно"
               scrollBarThumb="scrollbar-thumb-primaryBlue-150"
               scrollBarTrack="scrollbar-track-primaryBlue-500"
               typePage="Web"

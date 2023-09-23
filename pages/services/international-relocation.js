@@ -15,7 +15,7 @@ export default function InternationalRelocation() {
         />
         <meta
           property="og:title"
-          content="Международно преместване – CargoMove ЕООД"
+          content="Международно преместване – временно ЕООД"
         />
         <meta property="og:description" content="" />
       </Head>
@@ -28,14 +28,14 @@ export default function InternationalRelocation() {
           <section className="font-sans lg:px-56">
             {/* <h3 className="text-xl font-medium">Какво предлагаме:</h3> */}
             <p className="mt-1 lg:max-w-5xl">
-              Ние от CargoMove се стремим към предоставянето на висококачествено
+              Ние от временно се стремим към предоставянето на висококачествено
               координиране и управление на международни премествания и
               транспорт. Работим усърдно с широка аудитория от договорени
               доставчици на транспортни услуги, доказани и отговарящи на всички
               стандарти и изисквания в ЕС. Това от друга страна позволява на нас
               да бъдем гъвкави, за да отговорим на вашите нужди и изисквания. По
               този начин ще осигурим на вас качество и достъпност, гаранция и
-              надеждност. Абсолютен приоритет на „CargoMove“ е да опази целостта
+              надеждност. Абсолютен приоритет на „временно“ е да опази целостта
               на вашия багаж.{" "}
             </p>
             <h2 className="mt-4 text-xl font-medium">Как протича процеса?</h2>
@@ -66,7 +66,7 @@ export default function InternationalRelocation() {
               color="border-blue"
               btnColor="bg-blue"
               bgColor="bg-blue-50"
-              number="+359 89 506 3670"
+              number="+359 временно"
               scrollBarThumb="scrollbar-thumb-primaryBlue-150"
               scrollBarTrack="scrollbar-track-primaryBlue-500"
               typePage="Web"

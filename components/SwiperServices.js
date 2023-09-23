@@ -77,14 +77,14 @@ function SwiperSlideFn({ icon, title, p, isBorder = true, link }) {
   return (
     <Link href={`${link}`} scroll={false}>
       <section className="relative flex flex-col h-64 p-5 pb-24 flex-center">
-        <div className="relative w-16 h-16 mb-2">
+        {/* <div className="relative w-16 h-16 mb-2">
           <Image
             src={`/icons/${icon}`}
             alt="quality"
             layout="fill"
             className="object-contain"
           />
-        </div>
+        </div> */}
         <section className="pl-2">
           <h2 className="text-xl font-semibold">{title}</h2>
           <p className="max-w-xs text-sm text-gray-250">{p}</p>

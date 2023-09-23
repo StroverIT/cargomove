@@ -142,7 +142,7 @@ const PcVersion = ({
                 </Link>
               </li> */}
               <li className="px-5 py-2 rounded-sm bg-[#d97706]">
-                <a href="tel:+359895063670">позвъни сега </a>
+                <a href="tel:+359 временно">позвъни сега </a>
               </li>
             </ul>
           </section>

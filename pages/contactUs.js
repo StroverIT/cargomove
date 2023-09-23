@@ -32,7 +32,7 @@ const ContactUs = () => {
             <ul className="pr-4">
               <li className="">
                 <a
-                  href="tel:+359895063670"
+                  href="tel:+359 временно"
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-2xl text-blue">
@@ -47,7 +47,7 @@ const ContactUs = () => {
 
               <li>
                 <a
-                  href="viber://chat?number=+359895063670"
+                  href="viber://chat?number=+359 временно"
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-2xl text-blue">
@@ -61,7 +61,7 @@ const ContactUs = () => {
               </li>
               <li>
                 <a
-                  href="mailto:cargomovebg@gmail.com"
+                  href="mailto:временноbg@gmail.com"
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-3xl text-blue">
@@ -69,7 +69,7 @@ const ContactUs = () => {
                   </div>
                   <div className="pl-2">
                     <h2 className="font-medium">И-мейл</h2>
-                    <p>cargomovebg@gmail.com</p>
+                    <p>временноbg@gmail.com</p>
                   </div>
                 </a>
               </li>
