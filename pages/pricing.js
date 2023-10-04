@@ -3,6 +3,7 @@ import React from "react";
 import ContactUs from "../components/indexPage/ContactUs";
 import SwiperServices from "../components/SwiperServices";
 import Title from "../components/Title";
+import Prices from "../components/Prices";
 
 export default function CleaningOfApartmentsAndHouses() {
   return (
@@ -72,48 +73,44 @@ export default function CleaningOfApartmentsAndHouses() {
               е идеален вариант при преместване на дребна покъщина, офис
               размествания, преместване от етаж на етаж и прочие.
             </p>
-            <h2 className="mt-2 text-2xl font-medium text-center">
+            <h2 className="mt-12 mb-10 text-3xl font-medium text-center">
               Часова ценова листа
             </h2>
-            <section className="">
-              <section>
-                <h3 className="mt-2 text-xl font-medium">
-                  Цени на хамалски услуги
-                </h3>
-                <ul className="ml-5 list-disc">
-                  <li>Цена за Работник на час от 20 лв. </li>
-                  <li>
-                    В цената не е включено качване на тежки предмети над 100 кг.
-                  </li>
-                  <li>Качване над 2-ри етаж се таксува допълнително</li>
-                  <li>Минимално заплащане от 2 часа</li>
-                </ul>
-              </section>
-              <section>
-                <h2 className="mt-2 text-xl font-medium">
-                  Цени на транспортни услуги
-                </h2>
-                <ul className="ml-5 list-disc">
-                  <li>
-                    Цена за престой + транспортиране в рамките на града от
-                    30лв/ч
-                  </li>
-                  <li>Цена от 0.99лв на километър при по дълги разстояния.</li>
-                  <li>Качване над 2-ри етаж се таксува допълнително</li>
-                  <li>Минимално заплащане от 2 часа</li>
-                  <li> Транспорта се заплаща в двете посоки</li>
-                </ul>
-              </section>
-              <section>
-                <h2 className="mt-2 text-xl font-medium">
-                  Цени за тежки предмети
-                </h2>
-                <p className="max-w-md">
-                  Предмети от естеството на каси, витрини, пиана, котлета,
-                  камини, генератори, сървъри и други тежки предмети
-                </p>
-                <p>Цена по договаряне</p>
-              </section>
+            <section className="flex flex-wrap justify-center gap-10">
+              <Prices
+                title={"Цени на хамалски услуги"}
+                price="20"
+                per="час"
+                list={[
+                  "Цена е за Работник на час ",
+                  "В цената не е включено качване на тежки предмети над 100 кг.",
+                  "Качване над 2-ри етаж се таксува допълнително",
+                  "Минимално заплащане от 2 часа",
+                ]}
+              />
+              <Prices
+                title={"Цени на транспортни услуги"}
+                price="30"
+                per="час"
+                list={[
+                  "Цена за престой + транспортиране в рамките на града от 30лв/ч",
+                  "Цена от 0.99лв на километър при по дълги разстояния.",
+                  "Качване над 2-ри етаж се таксува допълнително",
+                  "Минимално заплащане от 2 часа",
+                  "Транспорта се заплаща в двете посоки",
+                ]}
+              />
+              <Prices
+                title={"Цени за тежки предмети"}
+                isCustomPrice="Цена по договаряне"
+                list={[
+                  "Предмети от естеството на каси, витрини, пиана, котлета, камини, генератори, сървъри и други тежки предмети",
+                  "Цена от 0.99лв на километър при по дълги разстояния.",
+                  "Качване над 2-ри етаж се таксува допълнително",
+                  "Минимално заплащане от 2 часа",
+                  "Транспорта се заплаща в двете посоки",
+                ]}
+              />
             </section>
             {/* <ul className="ml-5 list-disc">
               <li>Извозване на строителните отпадъци в чували до сметище. </li>
