@@ -50,7 +50,7 @@ export default function CleaningOfApartmentsAndHouses() {
               Фиксирана цена на хамалски услуги:
             </h2>
             <p>
-              Ние от CargoMove можем да Ви предложим опция - фиксирана цена,
+              Ние от Карго Муув можем да Ви предложим опция - фиксирана цена,
               след извършване на безплатен оглед от нашият екип. По време на
               огледа екипа се запознава с особеностите на вашия обект, като
               размерите на стълбищата, асансьорите, разстоянието от входа до
@@ -79,7 +79,7 @@ export default function CleaningOfApartmentsAndHouses() {
             <section className="flex flex-wrap justify-center gap-10">
               <Prices
                 title={"Цени на хамалски услуги"}
-                price="20"
+                price="25"
                 per="час"
                 list={[
                   "Цена е за Работник на час ",
