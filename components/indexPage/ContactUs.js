@@ -14,6 +14,7 @@ import sendMesage from "../../fetches/sendingMessage";
 import Script from "next/script";
 
 import ReCAPTCHA from "react-google-recaptcha";
+import { handler } from "../../utils/forms";
 const inputsInit = {
   name: "",
   email: "",
@@ -35,12 +36,7 @@ export default function ContactUs({
   const [box, boxView] = useInView();
   const boxAnim = useAnimation();
 
-  const handler = (e) => {
-    setInputs((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
-  };
+ 
   const recaptchaRef = useRef(null);
   // border-pink
   // bg-pink-50
@@ -142,14 +138,14 @@ export default function ContactUs({
                 placeholder="Вашето име"
                 id="name"
                 val={inputs.name}
-                onChange={handler}
+                onChange={(e)=> handler(e, setInputs) }
                 iconType="name"
               />
               <Input
                 placeholder="Вашият и-мейл"
                 id="email"
                 val={inputs.email}
-                onChange={handler}
+                onChange={(e)=> handler(e, setInputs) }
                 iconType="email"
               />
               <div className="relative lg:mb-3">
@@ -163,7 +159,7 @@ export default function ContactUs({
                   placeholder="Вашият коментар"
                   name="message"
                   value={inputs.message}
-                  onChange={handler}
+                  onChange={(e)=> handler(e, setInputs) }
                 />
                 <label
                   className="absolute  z-10 -top-3.5 left-0 block mb-2 text-sm  text-gray-darker peer-placeholder-shown:text-base peer-placeholder-shown:px-6  peer-placeholder-shown:top-1.5 transition-all duration-300"

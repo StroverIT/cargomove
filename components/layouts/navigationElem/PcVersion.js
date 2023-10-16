@@ -55,7 +55,7 @@ const PcVersion = ({
                 onMouseEnter={(e) => setServicePcState(true)}
                 onMouseLeave={(e) => setServicePcState(false)}
               >
-                <div className="relative cursor-pointer flex-center">
+                <span className="relative cursor-pointer flex-center">
                   <span className="">Услуги</span>
                   <span
                     className={`pl-1 group-hover:rotate-90 transition-transform text-lg`}
@@ -65,7 +65,7 @@ const PcVersion = ({
                   {servicePcState && (
                     <div className="absolute top-5 w-[26.5rem] h-16  z-100 -left-16"></div>
                   )}
-                </div>
+                </span>
                 <AnimatePresence mode="wait">
                   {servicePcState && (
                     <motion.div
