@@ -24,7 +24,7 @@ export default function Index() {
       email: inputs.email,
       password: inputs.password,
     });
-  
+    
     if (status.url) {
     
       router.push("/admin/dashboard");

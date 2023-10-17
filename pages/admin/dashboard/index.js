@@ -2,9 +2,11 @@ import React from "react";
 
 import { getSession } from "next-auth/react";
 
-
 import PageContainer from "../../../components/pages/admin/dashboard/PageContainer";
 
+// Mongodb
+import User from "../../../db/models/User";
+import { connectMongo } from "../../../db/connectDb";
 
 const imageDataList = {
   gallery: {
@@ -21,24 +23,20 @@ const imageDataList = {
 };
 export default function Index() {
   return (
-
     <section className="mt-40">
       <section className="container grid grid-cols-3 gap-6 mt-5 ">
         <PageContainer
           icon="undefined"
-
           text="Галери"
           link="gallery/main"
           imageData={imageDataList.gallery}
         />{" "}
         <PageContainer
           icon="undefined"
-
           text="Блог"
           link="blog/main"
           imageData={imageDataList.blog}
         />
-        
       </section>
     </section>
   );
@@ -46,9 +44,14 @@ export default function Index() {
 
 export async function getServerSideProps(context) {
   const { query } = context;
+  
   const session = await getSession({ req: context.req });
 
-  if (!session) {
+  await connectMongo();
+  
+  const user = await User.findOne({ email: session.user.email });
+  
+  if (user?.role != "admin" || !user || !session) {
     return {
       redirect: {
         destination: "/admin",

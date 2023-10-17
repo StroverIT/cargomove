@@ -4,6 +4,9 @@ import Head from "next/head";
 import Image from "next/image";
 import ZoomImage from "../../../../components/ZoomImage";
 import { HiX } from "react-icons/hi";
+import User from "../../../../db/models/User";
+import { getSession } from "next-auth/react";
+import { connectMongo } from "../../../../db/connectDb";
 
 export default function Main() {
   const [isLoading, setLoading] = useState(false);
@@ -114,4 +117,27 @@ export default function Main() {
       </Layout>
     </>
   );
+}
+
+
+export async function getServerSideProps(context) {
+  const { query } = context;
+  
+  const session = await getSession({ req: context.req });
+
+  await connectMongo();
+  
+  const user = await User.findOne({ email: session.user.email });
+  
+  if (user?.role != "admin" || !user || !session) {
+    return {
+      redirect: {
+        destination: "/admin",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session, query },
+  };
 }
