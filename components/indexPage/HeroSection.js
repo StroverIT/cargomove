@@ -40,8 +40,8 @@ export default function HeroSection() {
                   спомени
                 </p> */}
 
-                <p className="max-w-sm mt-1 font-sans lg:mt-2 max-lg:max-w-xs lg:text-2xl text-white-50">
-                  Вашият товар е наша отговорност
+                <p className="max-w-2xl mt-1 font-sans lg:mt-2 max-lg:max-w-md lg:text-2xl text-white-50">
+                Персонализирани решения за вашия бизнес и лични нужди. Хамалски услуги създадени за вашия комфорт.
                 </p>
                 <div className="mt-8 lg:mt-9">
                   <a

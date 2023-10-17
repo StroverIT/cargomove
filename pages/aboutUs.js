@@ -158,33 +158,33 @@ export default function AboutUs() {
             <div className="flex-center">
               <Title title="ЕКИПЪТ" size="text-4xl" />
             </div>
-            <section className="grid mt-16 md:grid-cols-3 gap-x-20 gap-y-10">
+            <section className="flex items-center mt-16 flex-center gap-x-20 gap-y-10">
               <div className="flex-col flex-center">
-                <div className="relative transition-all border-2 rounded-full cursor-pointer w-36 h-36 hover:scale-110 border-primaryBlue-100 ">
-                  {/* <Image
-                    src="/djulia.jpg"
+                <div className="relative w-64 h-64 transition-all border-2 rounded-full cursor-pointer hover:scale-110 border-primaryBlue-100 ">
+                  <Image
+                    src="/personal/dodo.jpg"
                     alt="growth for you and your company"
                     layout="fill"
-                    className="object-contain rounded-full "
-                  /> */}
+                    className="object-cover rounded-full "
+                  />
                 </div>
                 <h2 className="mt-3 text-xl text-center">Денислав Цветков</h2>
                 <p>Управител</p>
               </div>
-              <div className="flex-col flex-center">
-                <div className="relative transition-all border-2 rounded-full cursor-pointer w-36 h-36 hover:scale-110 border-primaryBlue-100 ">
+              {/* <div className="flex-col flex-center"> */}
+                {/* <div className="relative transition-all border-2 rounded-full cursor-pointer w-36 h-36 hover:scale-110 border-primaryBlue-100 "> */}
                   {/* <Image
                     src="/hrisi2_durt_crop.jpg"
                     alt="growth for you and your company"
                     layout="fill"
                     className="rounded-full bg-blend"
                   /> */}
-                </div>
-                <h2 className="mt-3 text-xl text-center">Йоана Стайкова</h2>
-                <p>Hr консултант</p>
-              </div>
+                {/* </div> */}
+                {/* <h2 className="mt-3 text-xl text-center">Йоана Стайкова</h2> */}
+                {/* <p>Hr консултант</p> */}
+              {/* </div> */}
               <div className="flex-col flex-center">
-                <div className="relative transition-all border-2 rounded-full cursor-pointer w-36 h-36 hover:scale-110 border-primaryBlue-100 ">
+                <div className="relative w-64 h-64 transition-all border-2 rounded-full cursor-pointer hover:scale-110 border-primaryBlue-100 ">
                   <Image
                     src="/personal/test_v3.jpg"
                     alt="growth for you and your company"
