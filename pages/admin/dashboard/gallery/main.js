@@ -7,10 +7,13 @@ import { HiX } from "react-icons/hi";
 import User from "../../../../db/models/User";
 import { getSession } from "next-auth/react";
 import { connectMongo } from "../../../../db/connectDb";
+import Input from "../../../../components/form/Input";
 
 export default function Main() {
   const [isLoading, setLoading] = useState(false);
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState([
+    // {files, alt: ""}
+  ]);
   const [imagePreview, setImagePreview] = useState(null);
 
   useEffect(() => {
@@ -25,10 +28,12 @@ export default function Main() {
   const submitHandler = async () => {
     const formData = new FormData();
 
-    images.forEach((image,i)=>{
-      formData.append("media", image)
-    })
-    
+    images.forEach((image, i) => {
+
+      formData.append("media", image.files);
+      formData.append("alt", image.alt)
+    });
+
     const res = await fetch(`/api/gallery/create`, {
       method: "POST",
       body: formData,
@@ -37,15 +42,36 @@ export default function Main() {
   };
 
   const changeHandler = (e) => {
-    let files = [...e.target.files];
+    let files = [...e.target.files].map(img=> {
+      return {
+        files: img
+      }
+    });
     setImages(files);
   };
-  const handleClose = (e)=>{
-    const target = e.target
-    if(target.id == "close" || target.nodeName == "svg" || target.nodeName == "path"){
-      setImagePreview(null)
+  const handleClose = (e) => {
+    const target = e.target;
+    if (
+      target.id == "close" ||
+      target.nodeName == "svg" ||
+      target.nodeName == "path"
+    ) {
+      setImagePreview(null);
     }
-  }
+  };
+  const changeAltHandler = (e, index) => {
+    const value = e.target.value;
+
+    setImages(
+      images.map((image, imgI) => {
+        if (imgI == index) {
+          return { ...image, alt: value };
+        }
+        return image;
+      })
+    );
+  };
+  
   return (
     <>
       <Head>
@@ -76,19 +102,27 @@ export default function Main() {
             {isLoading ? <div className="loader"></div> : "Изпрати"}
           </button>
         </section>
-        <article className="flex flex-wrap gap-x-10">
-          {images.map((data) => {
+        <article className="flex flex-wrap p-10 gap-x-10">
+          {images.map((data, i) => {
             return (
-              <div
-                key={data.name}
-                className="relative cursor-pointer w-96 h-96"
-                onClick={() => setImagePreview(data)}
-              >
-                <Image
-                  alt="none"
-                  fill={true}
-                  src={URL.createObjectURL(data)}
-                  className="object-contain"
+              <div key={data.name}>
+                <div
+                  className="relative cursor-pointer w-96 h-96"
+                  onClick={() => setImagePreview(data.files)}
+                >
+                  <Image
+                    alt="none"
+                    fill={true}
+                    src={URL.createObjectURL(data.files)}
+                    className="object-contain"
+                  />
+                </div>
+                <Input
+                  placeholder="Описание"
+                  id="alt"
+                  val={data.alt}
+                  onChange={(e)=> changeAltHandler(e, i)}
+                  iconType="message"
                 />
               </div>
             );
@@ -96,8 +130,12 @@ export default function Main() {
         </article>
 
         {imagePreview && (
-          <div className="absolute top-0 left-0 w-screen h-screen bg-dark-50/50" >
-            <div class="relative h-screen w-screen" id="close" onClick={handleClose}>
+          <div className="fixed top-0 left-0 w-screen h-screen bg-dark-50/50">
+            <div
+              class="relative h-screen w-screen"
+              id="close"
+              onClick={handleClose}
+            >
               <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
                 {/* <Image
                   alt="none"
@@ -105,8 +143,14 @@ export default function Main() {
                   src={URL.createObjectURL(imagePreview)}
                   className="object-contain"
                 /> */}
-                <div className="relative mt-40 bg-white/10" >
-              <div className="absolute top-0 right-0 text-4xl text-secondary " id="close" onClick={handleClose}><HiX/></div>
+                <div className="relative mt-40 bg-white/10">
+                  <div
+                    className="absolute top-0 right-0 text-4xl text-secondary "
+                    id="close"
+                    onClick={handleClose}
+                  >
+                    <HiX />
+                  </div>
 
                   <ZoomImage image={URL.createObjectURL(imagePreview)} />
                 </div>
@@ -119,16 +163,15 @@ export default function Main() {
   );
 }
 
-
 export async function getServerSideProps(context) {
   const { query } = context;
-  
+
   const session = await getSession({ req: context.req });
 
   await connectMongo();
-  
+
   const user = await User.findOne({ email: session.user.email });
-  
+
   if (user?.role != "admin" || !user || !session) {
     return {
       redirect: {

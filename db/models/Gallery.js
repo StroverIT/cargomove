@@ -5,6 +5,7 @@ const gallerySchema = new Schema({
  
   imageUrl: String,
   imageName: String,
+  alt: String,
   createdAt: {
     type: Date,
     default: function () {
