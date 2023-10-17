@@ -76,7 +76,7 @@ export default function CleaningOfApartmentsAndHouses() {
             <h2 className="mt-12 mb-10 text-3xl font-medium text-center">
               Часова ценова листа
             </h2>
-            <section className="grid grid-cols-3 gap-40">
+            <section className="grid justify-center gap-y-10 lg:grid-cols-2 xl:gap-40 xl:grid-cols-3">
               <Prices
                 title={"Цени на хамалски услуги"}
                 price="25"
