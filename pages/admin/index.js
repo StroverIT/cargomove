@@ -34,8 +34,8 @@ export default function Index() {
   }
   return (
     <section className="mt-40 ">
-      <article className="container flex-col p-40 my-24 flex-center">
-        <div className="p-16 rounded-md shadow-xl">
+      <article className="container flex-col my-24 lg:p-40 flex-center">
+        <div className="w-full p-5 rounded-md shadow-xl lg:p-16">
           <h2 className="mb-2 text-2xl font-semibold">Log in</h2>
           <div className="mt-10">
             <Input
