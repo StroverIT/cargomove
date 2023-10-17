@@ -29,23 +29,21 @@ export default function Main() {
     const formData = new FormData();
 
     images.forEach((image, i) => {
-
       formData.append("media", image.files);
-      formData.append("alt", image.alt)
+      formData.append("alt", image.alt);
     });
 
     const res = await fetch(`/api/gallery/create`, {
       method: "POST",
       body: formData,
     });
-    console.log(res);
   };
 
   const changeHandler = (e) => {
-    let files = [...e.target.files].map(img=> {
+    let files = [...e.target.files].map((img) => {
       return {
-        files: img
-      }
+        files: img,
+      };
     });
     setImages(files);
   };
@@ -71,7 +69,7 @@ export default function Main() {
       })
     );
   };
-  
+
   return (
     <>
       <Head>
@@ -117,20 +115,26 @@ export default function Main() {
                     className="object-contain"
                   />
                 </div>
-                <Input
-                  placeholder="Описание"
-                  id="alt"
-                  val={data.alt}
-                  onChange={(e)=> changeAltHandler(e, i)}
-                  iconType="message"
-                />
+
+                <label
+                  htmlFor={`message-${i}`}
+                  class="block mb-2 text-sm font-medium text-[#111827] dark:text-white"
+                >
+                  Описание
+                </label>
+                <textarea
+                  id={`message-${i}`}
+                  rows="4"
+                  class="block p-2.5 w-full text-sm text-[#111827] bg-[#f9fafb] rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  onChange={(e) => changeAltHandler(e, i)}
+                ></textarea>
               </div>
             );
           })}
         </article>
 
         {imagePreview && (
-          <div className="fixed top-0 left-0 w-screen h-screen bg-dark-50/50">
+          <div className="fixed top-0 left-0 w-screen h-screen bg-dark-50/50 z-[9999]">
             <div
               class="relative h-screen w-screen"
               id="close"
