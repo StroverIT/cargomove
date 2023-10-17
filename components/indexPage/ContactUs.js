@@ -15,6 +15,7 @@ import Script from "next/script";
 
 import ReCAPTCHA from "react-google-recaptcha";
 import { handler } from "../../utils/forms";
+import { BsWhatsapp } from "react-icons/bs";
 const inputsInit = {
   name: "",
   email: "",
@@ -168,34 +169,44 @@ export default function ContactUs({
               </button>
             </form>
           </section>
-          <section className="flex flex-col mx-auto space-y-3 mt-7 focus:border-transparent">
+          <section className="flex flex-col mx-auto space-y-7 mt-7 focus:border-transparent">
             <div className="flex items-center">
               <a href="mailto:cargomovebg@gmail.com">
                 <section className="flex-center">
-                  <div className="text-2xl ">
+                  <div className="text-3xl ">
                     <HiOutlineMail />
                   </div>
-                  <div className="pl-1 ">cargomovebg@gmail.com</div>
+                  <div className="pl-1 text-lg">cargomovebg@gmail.com</div>
                 </section>
               </a>
             </div>
             <div className="flex items-center">
               <a href="tel:+359895063670">
                 <section className="flex-center">
-                  <div className="text-xl ">
+                  <div className="text-2xl ">
                     <FiPhoneCall />
                   </div>
-                  <div className="pl-1 ">{number}</div>
+                  <div className="pl-1 text-lg">{number}</div>
                 </section>
               </a>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center text-[#7f6bf4] font-semibold">
               <a href="viber://chat?number=%2B359895063670">
                 <section className="flex-center">
-                  <div className="text-xl ">
+                  <div className="text-3xl ">
                     <FaViber />
                   </div>
-                  <div className="pl-1 ">Пишете ни</div>
+                  <div className="pl-1 text-lg">Viber</div>
+                </section>
+              </a>
+            </div>
+            <div className="flex items-center text-[#25d366] font-semibold">
+              <a href="https://api.whatsapp.com/send?phone=359895063670">
+                <section className="flex-center">
+                  <div className="text-3xl ">
+                    <BsWhatsapp />
+                  </div>
+                  <div className="pl-1 text-lg ">Whatsapp</div>
                 </section>
               </a>
             </div>

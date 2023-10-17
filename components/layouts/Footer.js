@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useContext, useState } from "react";
 import { AiOutlineCopyright } from "react-icons/ai";
-import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { FaViber } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
@@ -178,16 +178,7 @@ export default function Footer() {
                         </section>
                       </a>
                     </li>
-                    <li className="flex items-center">
-                      <a href="viber://chat?number=+359895063670">
-                        <section className="flex-center ">
-                          <span className="text-lg">
-                            <FaViber />
-                          </span>
-                          <span className="pl-1">Пишете ни</span>
-                        </section>
-                      </a>
-                    </li>
+                  
                     <li className="flex items-center">
                       <a href="mailto:cargomovebg@gmail.com">
                         <section className="flex-center">
@@ -200,6 +191,26 @@ export default function Footer() {
                     <li className="flex items-center">
                       <RiGlobalLine />{" "}
                       <span className="pl-1">cargomove.bg</span>
+                    </li>
+                    <li className="flex items-center text-[#7f6bf4] font-semibold">
+                      <a href="viber://chat?number=+359895063670">
+                        <section className="flex-center ">
+                          <span className="text-lg">
+                            <FaViber />
+                          </span>
+                          <span className="pl-1">Viber</span>
+                        </section>
+                      </a>
+                    </li>
+                    <li className="flex items-center text-[#25d366] font-semibold">
+                      <a href="https://api.whatsapp.com/send?phone=359895063670">
+                        <section className="flex-center ">
+                          <span className="text-lg">
+                            <BsWhatsapp />
+                          </span>
+                          <span className="pl-1">Whatsapp</span>
+                        </section>
+                      </a>
                     </li>
                   </ul>
                 </div>
