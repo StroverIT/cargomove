@@ -22,13 +22,13 @@ export default function InternationalRelocation() {
       <section className="min-h-screen mt-40 ">
         <section className="container">
           <section className="font-sans flex-center">
-            <Title title="Международно преместване" size="text-3xl" />
+            <Title title="Международно преместване за ЕС" size="text-3xl" />
           </section>
           {/* Преместване на дома и/или офиса в друга държава. */}
           <section className="font-sans lg:px-56">
             {/* <h3 className="text-xl font-medium">Какво предлагаме:</h3> */}
             <p className="mt-1 lg:max-w-5xl">
-              Ние от CargoMove се стремим към предоставянето на висококачествено
+              Стремим се към предоставянето на висококачествено
               координиране и управление на международни премествания и
               транспорт. Работим усърдно с широка аудитория от договорени
               доставчици на транспортни услуги, доказани и отговарящи на всички
