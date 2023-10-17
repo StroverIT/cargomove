@@ -195,6 +195,11 @@ export default function Navigation() {
                         БЛОГ
                       </Link>
                     </li>
+                     <li>
+                      <Link href="/gallery" scroll={false}>
+                        Галерия
+                      </Link>
+                    </li>
                   </ul>
                 </section>
               </motion.section>

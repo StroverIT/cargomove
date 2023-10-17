@@ -50,6 +50,7 @@ const PcVersion = ({
                   Цени
                 </Link>
               </li>
+             
               <li
                 className=" group"
                 onMouseEnter={(e) => setServicePcState(true)}
@@ -128,6 +129,11 @@ const PcVersion = ({
                     </motion.div>
                   )}
                 </AnimatePresence>
+              </li>
+              <li>
+                <Link href="/gallery" scroll={false}>
+                  Галерия
+                </Link>
               </li>
               {pathname != "/aboutUs" && (
                 <li>
