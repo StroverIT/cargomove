@@ -30,8 +30,8 @@ export default function CleaningOfApartmentsAndHouses() {
         <section className="container font-sans">
           <section className="flex-center">
             <Title
-              title="Цени на хамалски услуги и хамали за София"
-              size="text-3xl"
+              title="Цени на хамалски услуги за София"
+              size="text-4xl"
             />
           </section>
           {/* Извозване на строителни отпадъци в чували до сметище
@@ -42,11 +42,11 @@ export default function CleaningOfApartmentsAndHouses() {
           Достъпни цени и много специални оферти за количества и редовни клиенти
       
           По-евтина алтернативна на извозването на отпадъци с контейнери */}
-          <section className="lg:px-56">
+          <section className="lg:px-24">
             <h2 className="mt-2 text-2xl font-medium text-center">
               Как се образуват нашите цени за хамалски услуги?
             </h2>
-            <h2 className="mt-2 text-xl font-medium">
+            <h2 className="mt-10 text-xl font-medium">
               Фиксирана цена на хамалски услуги:
             </h2>
             <p>
@@ -76,7 +76,7 @@ export default function CleaningOfApartmentsAndHouses() {
             <h2 className="mt-12 mb-10 text-3xl font-medium text-center">
               Часова ценова листа
             </h2>
-            <section className="flex flex-wrap justify-center gap-10">
+            <section className="grid grid-cols-3 gap-40">
               <Prices
                 title={"Цени на хамалски услуги"}
                 price="25"

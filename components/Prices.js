@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Prices({ title, price, per, list, isCustomPrice }) {
   return (
-    <article className="flex flex-col justify-between p-4 border rounded-md w-80 border-primary-100 hover:shadow-lg">
+    <article className="flex flex-col justify-between p-10 border rounded-md w-80 border-primary-100 hover:shadow-lg">
       <div>
         <div class="flex-center flex-col text-center">
           <h3 className="mt-2 text-2xl font-medium ">{title}</h3>
