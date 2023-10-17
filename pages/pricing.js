@@ -12,7 +12,7 @@ export default function CleaningOfApartmentsAndHouses() {
         <title>Цени за хамалски услуги - София</title>
         <meta
           name="description"
-          content={`Хамалски, товаро-разтоварни и транспортни услуги. Вижте как се образуват нашите цени. Имаме както фиксирани, така и цени на часова ставка.`}
+          content={`Цени на хамалски услуги и хамали за София. Вижте как се образуват нашите цени. Имаме както фиксирани, така и цени на часова ставка.`}
         />
         <meta property="og:title" content="Ценоразпис на нашите услуги" />
         <meta
@@ -30,7 +30,7 @@ export default function CleaningOfApartmentsAndHouses() {
         <section className="container font-sans">
           <section className="flex-center">
             <Title
-              title="Хамалски, товаро-разтоварни и транспортни услуги"
+              title="Цени на хамалски услуги и хамали за София"
               size="text-3xl"
             />
           </section>
