@@ -24,7 +24,7 @@ const imageDataList = {
 export default function Index() {
   return (
     <section className="mt-40">
-      <section className="container grid grid-cols-3 gap-6 mt-5 ">
+      <section className="container grid gap-6 my-5 lg:grid-cols-3 lg:mt-10 gap-y-10">
         <PageContainer
           icon="undefined"
           text="Галери"
