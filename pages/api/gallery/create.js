@@ -1,13 +1,11 @@
 import {
   parseForm,
-  FormidableError,
-} from "../../../lib/createProduct/parse-form";
-// Inner functions
-import imageGetSanitizer from "../../../lib/createProduct/imageGetSanitizer";
-import articlesFormater from "../../../lib/createProduct/articlesFormater";
+  // FormidableError,
+} from "../../../libs/parseForm";
+
 // Mongoose
 import { connectMongo } from "../../../db/connectDb";
-import Product from "../../../db/models/Product";
+import Gallery from "../../../db/models/Gallery";
 import User from "../../../db/models/User"; 
 
 // Token
@@ -28,8 +26,8 @@ const handler = async (
   }
   // Just after the "Method Not Allowed" code
   try {
-    let { fields, files } = await parseForm(req);
     await connectMongo();
+
 
     const token = await getToken({ req, secret });
     if (!token) {
@@ -49,45 +47,44 @@ const handler = async (
         error: "Нямате такива права!",
       };
     }
-    const sectionImg = files.media || null;
+    // const {pathFile} = req.body
 
-    let articleImg = [];
-    let itemImg = [];
+    const pathFile = "gallery"
 
-    // if (sectionImg) {
-    //   fields.imageUrl = sectionImg.newFilename;
-    // }
-    if (files.article) {
-      articleImg = imageGetSanitizer(files.article);
-    }
-    // if (files.item) {
-    //   itemImg = imageGetSanitizer(files.item);
-    // }
+    let { fields, files } = await parseForm(req);
 
+    const formattedImgData = []
+    files?.media.forEach((file)=>{
+      formattedImgData.push({
+        imageName: file?.newFilename,
+        imageUrl: `/uploads/${pathFile}/${file?.newFilename}`
+      })
+    })
+
+    await Gallery.insertMany(formattedImgData)
+ 
+  
     // Articles set image
-    let formatedFields = articlesFormater(fields, articleImg);
 
-    await Product.create(formatedFields);
-    let data = {
-      message: "Успешно създадена секция",
-      error: null,
-      data: "Nqmna brat",
-    };
+    const data = {neshto: true}
+   
 
     res.status(200).json(data);
   } catch (e) {
+    console.log(e);
     if (e.error) {
       return res.status(400).json(e.error);
     }
-    if (e instanceof FormidableError) {
+    // if (e instanceof FormidableError) {
       res.status(e.httpCode || 400).json({ data: null, error: e.message });
-    } else {
-      console.error(e);
-      res.status(500).json({
-        data: null,
-        error: "Сървърни проблеми, обадете се на телефон: 0876237725",
-      });
-    }
+    // }
+    // else {
+    //   console.error(e);
+    //   res.status(500).json({
+    //     data: null,
+    //     error: "Сървърни проблеми, обадете се на телефон: 0876237725",
+    //   });
+    // }
   }
 };
 

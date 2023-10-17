@@ -22,40 +22,13 @@ export default function Main() {
   const submitHandler = async () => {
     const formData = new FormData();
 
-    Object.entries(sectionState).forEach((section) => {
-      let [key, value] = section;
-
-      // If is article
-      if (Array.isArray(value)) {
-        // Map through the article
-        let article = value.map((article) => {
-          // If image append to formData as file
-          if (article.imageUrl) {
-            formData.append("article", article.imageUrl);
-            article.imageUrl = article.imageUrl?.name;
-          }
-          article.items = article.items.map((item) => {
-            if (item.img) {
-              formData.append("item", item.img);
-              item.img = item.img?.originalname;
-            }
-            return item;
-          });
-          return article;
-        });
-        value = JSON.stringify(article);
-      }
-      if (key.includes("image")) {
-        formData.append("media", value);
-        value = value?.name;
-        return;
-      }
-
-      formData.append(key, value);
-    });
+    images.forEach((image,i)=>{
+      formData.append("media", image)
+    })
+    
     const res = await fetch(`/api/gallery/create`, {
       method: "POST",
-      body: data,
+      body: formData,
     });
     console.log(res);
   };
