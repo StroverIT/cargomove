@@ -12,6 +12,7 @@ import { toastError, toastSuccess } from "../../libs/Notifications";
 
 import { data } from "../data/services";
 import { globalContext } from "../globalContext";
+import Image from "next/image";
 
 export default function Footer() {
   const router = useRouter();
@@ -75,15 +76,16 @@ export default function Footer() {
             </section>
             <section>
               <h4 className="mt-8 font-semibold uppercase">Социални мрежи</h4>
-              <div className="flex mt-2 gap-x-5">
+              <div className="flex mt-2 gap-x-5 ">
                 <a
                   href="https://www.facebook.com/cargomovebg"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Button for facebook social media"
+                  className="text-[#4267B2]"
                 >
                   <div className="transition-transform cursor-pointer flex-center hover:scale-125 hover:text-primaryBlue-450">
-                    <div className="text-2xl">
+                    <div className="text-4xl">
                       <BsFacebook />
                     </div>
                     {/* <div className="pl-2">Facebook</div> */}
@@ -96,8 +98,8 @@ export default function Footer() {
                   aria-label="Button for instagram social media"
                 >
                   <div className="transition-all cursor-pointer flex-center hover:scale-125 hover:text-primaryBlue-450">
-                    <div className="text-2xl">
-                      <BsInstagram />
+                    <div className="relative w-9 h-9">
+                     <Image src="/icons/instagram.png" alt="cargomove instagram" fill={true}/>
                     </div>
                     {/* <div className="pl-2">Instagram</div> */}
                   </div>
