@@ -98,7 +98,7 @@ export async function getServerSideProps(context) {
 
   const session = await getSession({ req: context.req });
   const gallery = await GalleryModel.find({});
-  const user = await User.findOne({ email: session.user.email });
+  const user = await User.findOne({ email: session?.user?.email });
 
   return {
     props: {
