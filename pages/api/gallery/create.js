@@ -70,12 +70,17 @@ const handler = async (
   
     // Articles set image
 
-    const data = {neshto: true}
+    const data = {message: "Успешно добавихте снимката"}
    
 
     res.status(200).json(data);
   } catch (e) {
-    console.log(e);
+
+    if(e){
+      res.json({
+        error: "Проблеми със нещо си"
+      })
+    }
     if (e.error) {
       return res.status(400).json(e.error);
     }

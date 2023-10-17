@@ -8,6 +8,7 @@ import User from "../../../../db/models/User";
 import { getSession } from "next-auth/react";
 import { connectMongo } from "../../../../db/connectDb";
 import Input from "../../../../components/form/Input";
+import { toastError, toastSuccess } from "../../../../libs/Notifications";
 
 export default function Main() {
   const [isLoading, setLoading] = useState(false);
@@ -26,6 +27,7 @@ export default function Main() {
     }
   }, [imagePreview]);
   const submitHandler = async () => {
+    setLoading(true)
     const formData = new FormData();
 
     images.forEach((image, i) => {
@@ -37,6 +39,15 @@ export default function Main() {
       method: "POST",
       body: formData,
     });
+    const data = await res.json()
+    if(data.message){
+      toastSuccess(data.message)
+    }
+    if(data.error){
+      toastError(data.error)
+    }
+    setLoading(false)
+
   };
 
   const changeHandler = (e) => {
