@@ -130,11 +130,13 @@ const PcVersion = ({
                   )}
                 </AnimatePresence>
               </li>
+
               <li>
                 <Link href="/gallery" scroll={false}>
                   Галерия
                 </Link>
               </li>
+              
               {pathname != "/aboutUs" && (
                 <li>
                   <Link href="/aboutUs" scroll={false}>

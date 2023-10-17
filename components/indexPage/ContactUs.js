@@ -40,25 +40,26 @@ export default function ContactUs({
   const recaptchaRef = useRef(null);
   // border-pink
   // bg-pink-50
+  // const submitHandler = async (e) => {
+  //   e.preventDefault();
+  //   recaptchaRef.current.execute();
+  // };
   const submitHandler = async (e) => {
-    e.preventDefault();
-    recaptchaRef.current.execute();
-  };
-  const onReCAPTCHAChange = async (captchaCode) => {
+
+    e.preventDefault()
     // If the reCAPTCHA code is null or undefined indicating that
     // the reCAPTCHA was expired then return early
-    if (!captchaCode) {
-      return;
-    }
+    // if (!captchaCode) {
+    //   return;
+    // }
     try {
-      const response = await fetch("/api/register", {
-        method: "POST",
-        body: JSON.stringify({ captcha: captchaCode }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      if (response.ok) {
+      // const response = await fetch("/api/register", {
+      //   method: "POST",
+      //   body: JSON.stringify({ captcha: captchaCode }),
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // });
         // If the response is ok than show the success alert
         console.log("Email registered successfully");
         setLoading(true);
@@ -79,19 +80,10 @@ export default function ContactUs({
         }
 
         setLoading(false);
-      } else {
-        // Else throw an error with the message returned
-        // from the API
-        const error = await response.json();
-        throw new Error(error.message);
-      }
+    
     } catch (error) {
       console.log(error?.message || "Something went wrong");
-    } finally {
-      // Reset the reCAPTCHA when the request has failed or succeeeded
-      // so that it can be executed again if user submits another email.
-      recaptchaRef.current.reset();
-    }
+    } 
   };
   useEffect(() => {
     if (boxView) boxAnim.start("animate");
@@ -100,11 +92,11 @@ export default function ContactUs({
 
   return (
     <>
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         id="my-script"
         src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-      ></Script>
+      ></Script> */}
       <motion.section
         ref={box}
         animate={boxAnim}
@@ -128,12 +120,12 @@ export default function ContactUs({
               className="flex flex-col mt-10 "
               onSubmit={submitHandler}
             >
-              <ReCAPTCHA
+              {/* <ReCAPTCHA
                 ref={recaptchaRef}
                 size="invisible"
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                 onChange={onReCAPTCHAChange}
-              />
+              /> */}
               <Input
                 placeholder="Вашето име"
                 id="name"
