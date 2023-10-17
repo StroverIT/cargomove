@@ -76,6 +76,7 @@ html::-webkit-scrollbar-thumb {
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left center;
 }
 .box {
   background: #ffffff;
