@@ -7,6 +7,7 @@ import { getSession } from "next-auth/react";
 import User from "../db/models/User";
 import { HiX } from "react-icons/hi";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Gallery({ gallery, user }) {
   const router = useRouter();
@@ -33,57 +34,62 @@ export default function Gallery({ gallery, user }) {
   };
 
   return (
-    <section className="container mt-40">
-      <h3 className="text-3xl">Нашата галерия</h3>
+    <>
+      <Head>
+        <title>Галерия - Професионален Транспорт и Услуги за Преместване</title>
 
-      <section className="flex flex-wrap mt-10">
-        {gallery.map((image, i) => {
-          return (
-            <article  key={image._id}>
-              <article
-               
-                className="relative flex flex-col items-center justify-center h-[400px] w-[400px]"
-              >
-                <Image
-                  src={image.imageUrl}
-                  alt={image.alt}
-                  fill={true}
-                  className="object-contain"
-                />
-                {user.role == "admin" && (
-                  <div className="absolute top-0 right-0">
-                    <div
-                      className="absolute top-0 right-0 text-4xl text-secondary "
-                      id="close"
-                      onClick={() => deleteImageHandler(image._id)}
-                    >
-                      <HiX />
+        <meta
+          name="description"
+          content="Разгледайте нашата галерия с изображения, посветена на професионалния транспорт и услугите за преместване. Вижте нашите най-нови проекти, фотографии на превозни средства и успешни миграции. Доверете се на нашите експерти, когато става въпрос за безпроблемно и сигурно преместване на вашите стоки и имущество."
+        />
+      </Head>
+      <section className="container mt-40">
+        <h3 className="text-3xl">Нашата галерия</h3>
+        <section className="flex flex-wrap mt-10">
+          {gallery.map((image, i) => {
+            return (
+              <article key={image._id}>
+                <article className="relative flex flex-col items-center justify-center h-[400px] w-[400px]">
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.alt}
+                    fill={true}
+                    className="object-contain"
+                  />
+                  {user.role == "admin" && (
+                    <div className="absolute top-0 right-0">
+                      <div
+                        className="absolute top-0 right-0 text-4xl text-secondary "
+                        id="close"
+                        onClick={() => deleteImageHandler(image._id)}
+                      >
+                        <HiX />
+                      </div>
                     </div>
-                  </div>
-                )}
-              
-              </article>
-              {user.role == "admin" && (
-                <article>
-                  <label
-                    htmlFor={`message-${i}`}
-                    class="block mb-2 text-sm font-medium text-[#111827] dark:text-white"
-                  >
-                    Описание
-                  </label>
-                  <textarea
-                    id={`message-${i}`}
-                    rows="4"
-                    defaultValue={image.alt}
-                    class="block p-2.5 w-full text-sm text-[#111827] bg-[#f9fafb] rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  ></textarea>
+                  )}
                 </article>
-              )}
-            </article>
-          );
-        })}
+                {user.role == "admin" && (
+                  <article>
+                    <label
+                      htmlFor={`message-${i}`}
+                      class="block mb-2 text-sm font-medium text-[#111827] dark:text-white"
+                    >
+                      Описание
+                    </label>
+                    <textarea
+                      id={`message-${i}`}
+                      rows="4"
+                      defaultValue={image.alt}
+                      class="block p-2.5 w-full text-sm text-[#111827] bg-[#f9fafb] rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    ></textarea>
+                  </article>
+                )}
+              </article>
+            );
+          })}
+        </section>
       </section>
-    </section>
+    </>
   );
 }
 
