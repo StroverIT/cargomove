@@ -60,11 +60,11 @@ const sideMenuLinks = [
 ];
 const Layout = ({ children }) => {
   return (
-    <section className="min-h-screen mt-36">
-      <section className="flex space-x-10 ">
+    <section className="flex w-full min-h-screen mt-36">
+      <section className="flex w-full min-h-screen space-x-10 max-lg:flex-col">
         <SideMenu links={sideMenuLinks} />
 
-        <section className="mt-7">{children}</section>
+        <section className="lg:w-full mt-7">{children}</section>
       </section>
     </section>
   );
