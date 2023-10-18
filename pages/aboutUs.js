@@ -158,7 +158,7 @@ export default function AboutUs() {
             <div className="flex-center">
               <Title title="ЕКИПЪТ" size="text-4xl" />
             </div>
-            <section className="flex items-center mt-16 flex-center gap-x-20 gap-y-10">
+            <section className="flex items-center mt-16 max-lg:flex-col flex-center gap-x-20 gap-y-10">
               <div className="flex-col flex-center">
                 <div className="relative w-64 h-64 transition-all border-2 rounded-full cursor-pointer hover:scale-110 border-primaryBlue-100 ">
                   <Image
