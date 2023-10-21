@@ -28,7 +28,7 @@ export async function getServerSideProps(context) {
 
   await connectMongo();
   
-  const user = await User.findOne({ email: session.user.email });
+  const user = await User.findOne({ email: session?.user?.email });
   
   if (user?.role != "admin" || !user || !session) {
     return {
