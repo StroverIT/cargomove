@@ -34,7 +34,7 @@ export default function Index() {
         <PageContainer
           icon="undefined"
           text="Блог"
-          link="blog/main"
+          link="blog/create"
           imageData={imageDataList.blog}
         />
       </section>
