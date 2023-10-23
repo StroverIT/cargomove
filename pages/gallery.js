@@ -17,19 +17,22 @@ export default function Gallery({ gallery, user }) {
   };
 
   const deleteImageHandler = async (_id) => {
-    const res = await fetch("/api/gallery/delete", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        imageId: _id,
-      }),
-    });
-    const data = await res.json();
+    if (confirm("Желаете ли да изтриете снимката?")) {
+      const res = await fetch("/api/gallery/delete", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          imageId: _id,
+        }),
+      });
 
-    if (data.message) {
-      refreshData();
+      const data = await res.json();
+
+      if (data.message) {
+        refreshData();
+      }
     }
   };
 
