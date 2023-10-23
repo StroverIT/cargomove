@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import Blog from "../indexPage/Blog";
 
-export default function BlogSwiper({ data }) {
+export default function BlogSwiper({ data, blogDataDB}) {
   return (
     <>
       <Swiper
@@ -42,6 +42,19 @@ export default function BlogSwiper({ data }) {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
+          {blogDataDB?.map((data) => {
+          return (
+            <SwiperSlide className="py-10" key={data._id}>
+              <Blog
+                link={data._id}
+                imgUrl={data.imageData?.url}
+                paragraph={data.blogData?.html}
+                title={data.title}
+                date={data.createdAt}
+              />
+            </SwiperSlide>
+          );
+        })}
         {data.map((data) => {
           return (
             <SwiperSlide className="py-10" key={data._id}>
@@ -55,6 +68,7 @@ export default function BlogSwiper({ data }) {
             </SwiperSlide>
           );
         })}
+       
       </Swiper>
     </>
   );
