@@ -9,6 +9,7 @@ import { getSession } from "next-auth/react";
 import { connectMongo } from "../../../../db/connectDb";
 import Input from "../../../../components/form/Input";
 import { toastError, toastSuccess } from "../../../../libs/Notifications";
+import ImageUpload from "../../../../components/form/ImageUpload";
 
 export default function Main() {
   const [isLoading, setLoading] = useState(false);
@@ -88,19 +89,8 @@ export default function Main() {
       </Head>
       <Layout>
         <section className="">
-          <label
-            class="block mb-2 text-sm font-medium text-[#111827] dark:text-white"
-            for="file_input"
-          >
-            Upload file
-          </label>
-          <input
-            class="block w-full text-sm text-[#111827] border border-[#d1d5db] rounded-lg cursor-pointer bg-[#f9fafb] dark:text-[#9ca3af] focus:outline-none dark:bg-[#374151] dark:border-[#4b5563] dark:placeholder-[#9ca3af]"
-            id="file_input"
-            name="image"
-            type="file"
-            multiple
-            onChange={changeHandler}
+          <ImageUpload 
+          onChange={changeHandler}
           />
 
           <button
