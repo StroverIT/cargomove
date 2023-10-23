@@ -36,7 +36,7 @@ export default function Gallery({ gallery, user }) {
   return (
     <>
       <Head>
-        <title>Галерия - Професионален Транспорт и Услуги за Преместване</title>
+        <title>Галерия - Карго Муув</title>
 
         <meta
           name="description"
