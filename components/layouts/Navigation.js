@@ -12,10 +12,9 @@ import PcVersion from "./navigationElem/PcVersion";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail, HiX } from "react-icons/hi";
 import { TbBus } from "react-icons/tb";
-import {
-
-  FaViber,
-} from "react-icons/fa";
+import { FaViber } from "react-icons/fa";
+import DropDownMobile from "./navigationElem/DropDownMobile";
+import { data as aboutUsData } from "../data/aboutUsNav";
 
 export default function Navigation() {
   const router = useRouter();
@@ -24,6 +23,7 @@ export default function Navigation() {
   const pathname = router.pathname;
   const [menuOpen, setMenuOpen] = useState(false);
   const [isOnMain, setIsOnMain] = useState(false);
+
   const [servicePcState, setServicePcState] = useState(false);
   const [aboutUsState, setAboutUsState] = useState(false);
 
@@ -185,19 +185,22 @@ export default function Navigation() {
                       </li>
                     )}
 
-                    <li>
-                      <Link href="/aboutUs" scroll={false}>
-                        За нас
-                      </Link>
+                    <li
+                      className=" group"
+                      onClick={(e) => setAboutUsState(true)}
+                    >
+                      <div className="cursor-pointer flex-center">
+                        <span className="">За нас</span>
+                        <span
+                          className={`pl-1 group-hover:rotate-90 transition-transform text-lg`}
+                        >
+                          <TbBus />
+                        </span>
+                      </div>
                     </li>
                     <li>
                       <Link href="/blog" scroll={false}>
                         БЛОГ
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/gallery" scroll={false}>
-                        Галерия
                       </Link>
                     </li>
                   </ul>
@@ -205,73 +208,16 @@ export default function Navigation() {
               </motion.section>
             )}
           </AnimatePresence>
-          <AnimatePresence mode="wait">
-            {servicePcState && (
-              <motion.div
-                initial="initialState"
-                animate="animateState"
-                exit="exitState"
-                transition={{
-                  duration: 0.5,
-                  type: "spring",
-                }}
-                variants={{
-                  initialState: {
-                    y: "-100vh",
-                  },
-                  animateState: {
-                    y: 0,
-                  },
-                  exitState: {
-                    y: "-100vh",
-                  },
-                }}
-                className="fixed top-0 left-0 z-[999] flex flex-col w-full h-screen"
-              >
-                <section className="w-full h-screen bg-blue-100 flex-center">
-                  <section className="container relative">
-                    <section
-                      className="absolute right-0 text-xl bg-white rounded-md top-5 text-blue-150"
-                      onClick={() => setServicePcState(false)}
-                    >
-                      <HiX />
-                    </section>
-                    <ul className="flex-col p-10 text-sm ">
-                      {data.map((list, i) => {
-                        return (
-                          <Link href={list.link} key={i} scroll={false}>
-                            <motion.li
-                              variants={{
-                                hidden: (i) => ({
-                                  opacity: 0,
-                                  y: -50 * i,
-                                  zIndex: -10,
-                                }),
-                                visible: (i) => ({
-                                  opacity: 1,
-                                  y: 0,
-                                  zIndex: 0,
-                                  transition: {
-                                    delay: i * 0.05,
-                                  },
-                                }),
-                              }}
-                              initial="hidden"
-                              animate="visible"
-                              custom={i}
-                              className="py-2 pl-2 transition-colors cursor-pointer hover:bg-white hover:text-blue-150"
-                            >
-                              {list.title}
-                            </motion.li>
-                          </Link>
-                        );
-                      })}
-                    </ul>
-                  </section>
-                </section>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <DropDownMobile
+            links={data}
+            state={servicePcState}
+            setState={setServicePcState}
+          />
+          <DropDownMobile
+            links={aboutUsData}
+            state={aboutUsState}
+            setState={setAboutUsState}
+          />
         </section>
       </section>
       <AnimatePresence mode="wait">
