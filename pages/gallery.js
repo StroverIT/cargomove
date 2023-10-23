@@ -56,7 +56,7 @@ export default function Gallery({ gallery, user }) {
                     fill={true}
                     className="object-contain"
                   />
-                  {user.role == "admin" && (
+                  {user?.role == "admin" && (
                     <div className="absolute top-0 right-0">
                       <div
                         className="absolute top-0 right-0 text-4xl text-secondary "
@@ -68,7 +68,7 @@ export default function Gallery({ gallery, user }) {
                     </div>
                   )}
                 </article>
-                {user.role == "admin" && (
+                {user?.role == "admin" && (
                   <article>
                     <label
                       htmlFor={`message-${i}`}
@@ -80,7 +80,7 @@ export default function Gallery({ gallery, user }) {
                       id={`message-${i}`}
                       rows="4"
                       defaultValue={image.alt}
-                      class="block p-2.5 w-full text-sm text-[#111827] bg-[#f9fafb] rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="block p-2.5 w-full text-sm text-[#111827] bg-[#f9fafb] rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     ></textarea>
                   </article>
                 )}
