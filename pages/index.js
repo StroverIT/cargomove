@@ -1,4 +1,7 @@
 import Head from "next/head";
+
+
+// Components
 import ContactUs from "../components/indexPage/ContactUs";
 import FaQ from "../components/indexPage/FaQ";
 import HeroSection from "../components/indexPage/HeroSection";
@@ -8,7 +11,11 @@ import Services from "../components/indexPage/Services";
 import SmallInfo from "../components/indexPage/SmallInfo";
 import SwiperServices from "../components/SwiperServices";
 
-export default function Home() {
+// DB
+import Blog from "../db/models/Blog";
+import { connectMongo } from "../db/connectDb";
+
+export default function Home({blogDataDB}) {
   return (
     <div>
       <Head>
@@ -45,7 +52,7 @@ export default function Home() {
           <SmallInfo />
           <Services />
           <Pricing />
-          <OurBlog />
+          <OurBlog blogDataDB={blogDataDB}/>
 
           <FaQ />
           <section className="pb-20 mt-10 lg:mt-20">
@@ -67,4 +74,31 @@ export default function Home() {
       </main>
     </div>
   );
+}
+
+
+export async function getServerSideProps() {
+
+
+  await connectMongo(); 
+  let blogDataDB = await Blog.find({}).lean()
+
+  if (blogDataDB) {
+    blogDataDB = blogDataDB.map((data) => {
+      const date = data.createdAt;
+      const day = date.getDate();
+      const month = date.getMonth() + 1;
+      const year = date.getFullYear();
+
+      const newDate = `${day}/${month}/${year}`;
+
+      return {
+        ...data,
+        createdAt: newDate,
+      };
+    });
+  }
+  return {
+    props: { blogDataDB: JSON.parse(JSON.stringify(blogDataDB)) },
+  };
 }
