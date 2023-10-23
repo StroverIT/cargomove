@@ -12,11 +12,8 @@ import PcVersion from "./navigationElem/PcVersion";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail, HiX } from "react-icons/hi";
 import { TbBus } from "react-icons/tb";
-import { BsTelephoneForward } from "react-icons/bs";
 import {
-  FaFacebook,
-  FaInstagram,
-  FaLocationArrow,
+
   FaViber,
 } from "react-icons/fa";
 
@@ -28,6 +25,7 @@ export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isOnMain, setIsOnMain] = useState(false);
   const [servicePcState, setServicePcState] = useState(false);
+  const [aboutUsState, setAboutUsState] = useState(false);
 
   const [secondNavTelephone, setSecondNavTelephone] = useState(true);
 
@@ -96,6 +94,8 @@ export default function Navigation() {
         setServicePcState={setServicePcState}
         data={data}
         isOnMain={isOnMain}
+        aboutUsState={aboutUsState}
+        setAboutUsState={setAboutUsState}
       />
       {/* MOBILE VERSION */}
       <section className="container relative justify-between py-6 flex-center lg:hidden">
@@ -195,7 +195,7 @@ export default function Navigation() {
                         БЛОГ
                       </Link>
                     </li>
-                     <li>
+                    <li>
                       <Link href="/gallery" scroll={false}>
                         Галерия
                       </Link>
