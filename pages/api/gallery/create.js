@@ -51,11 +51,12 @@ const handler = async (
 
     const pathFile = "gallery"
 
-    let { fields, files } = await parseForm(req);
+    let { fields, files } = await parseForm(req, pathFile);
 
     let {alt} = fields
 
     const formattedImgData = []
+
     files?.media.forEach((file, i)=>{
       
       formattedImgData.push({
