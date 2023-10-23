@@ -16,7 +16,7 @@ function Blog({ children, link, imgUrl, title, paragraph, date }) {
       <div className="relative w-full h-56 md:h-96">
         <Link href={`/blog/${link}`}>
           <Image
-            src={`/blog/${imgUrl}`}
+            src={`${imgUrl[0] != "/" ? `/blog/${imgUrl}` : imgUrl}`}
             alt={title}
             fill
             className="object-contain"
@@ -24,7 +24,7 @@ function Blog({ children, link, imgUrl, title, paragraph, date }) {
         </Link>
       </div>
       <div className="px-8 max-sm:pt-5">
-        <p className="mb-2 card__preview-text">{paragraph}</p>
+        <div className="mb-2 card__preview-text" dangerouslySetInnerHTML={{__html: paragraph}}/>
       </div>
       <div className="px-8 pb-8">
         <Link href={`/blog/${link}`}>
