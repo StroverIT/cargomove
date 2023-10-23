@@ -3,14 +3,14 @@ import Title from "../Title";
 import { blogData } from "../../components/data/blog";
 import BlogSwiper from "../swiper/BlogSwiper";
 
-const OurBlog = () => {
+const OurBlog = ({blogDataDB}) => {
   return (
     <section className="my-20 ">
-      <div className="flex-center flex-col">
+      <div className="flex-col flex-center">
         <Title title="Нашият блог" size="text-4xl" />
       </div>
-      <section className="mt-10 container ">
-        <BlogSwiper data={blogData} />
+      <section className="container mt-10 ">
+        <BlogSwiper data={blogData} blogDataDB={blogDataDB}/>
       </section>
     </section>
   );
