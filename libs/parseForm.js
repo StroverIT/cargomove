@@ -6,11 +6,11 @@ import { mkdir, stat } from "fs/promises";
 
 // export const FormidableError = formidable.errors.FormidableError;
 
-export const parseForm = async (req) => {
+export const parseForm = async (req, pathFile) => {
   return await new Promise(async (resolve, reject) => {
     const uploadDir = join(
       process.env.ROOT_DIR || process.cwd(),
-      `/public/uploads/gallery`
+      `/public/uploads/${pathFile}`
     );
 
     try {
