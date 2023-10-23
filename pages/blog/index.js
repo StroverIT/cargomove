@@ -1,10 +1,18 @@
 import Head from "next/head";
 import React from "react";
+
+// Data
+import { blogData } from "../../components/data/blog";
+
+// Components
+import Blog from "../../components/indexPage/Blog";
 import Title from "../../components/Title";
 
-import { blogData } from "../../components/data/blog";
-import Blog from "../../components/indexPage/Blog";
-const Index = () => {
+// DB
+import { connectMongo } from "../../db/connectDb";
+import BlogDB from "../../db/models/Blog";
+
+const Index = ({ blogDataDB }) => {
   return (
     <>
       <Head>
@@ -21,6 +29,18 @@ const Index = () => {
             <Title title="Нашият блог" size="text-4xl" />
           </div>
           <section className="grid mt-5 lg:grid-cols-2 gap-y-10 gap-x-5 max-lg:place-items-center xl:place-items-center grid-auto-rows">
+            {blogDataDB?.map((data) => {
+              return (
+                <Blog
+                  imgUrl={data.imageData?.url}
+                  link={data._id}
+                  key={data._id}
+                  paragraph={data.blogData?.html}
+                  title={data.title}
+                  date={data.createdAt}
+                />
+              );
+            })}
             {blogData.map((data) => {
               return (
                 <Blog
@@ -41,3 +61,27 @@ const Index = () => {
 };
 
 export default Index;
+
+export async function getServerSideProps() {
+  await connectMongo();
+  
+  let blogDataDB = await BlogDB.find({}).lean();
+  if (blogDataDB) {
+    blogDataDB = blogDataDB.map((data) => {
+      const date = data.createdAt;
+      const day = date.getDate();
+      const month = date.getMonth() + 1;
+      const year = date.getFullYear();
+
+      const newDate = `${day}/${month}/${year}`;
+
+      return {
+        ...data,
+        createdAt: newDate,
+      };
+    });
+  }
+  return {
+    props: { blogDataDB: JSON.parse(JSON.stringify(blogDataDB)) },
+  };
+}
