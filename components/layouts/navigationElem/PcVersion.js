@@ -7,7 +7,8 @@ import DropDown from "./DropDown";
 
 import { data as aboutUsData } from "../../data/aboutUsNav";
 
-const PcVersion = ({
+const 
+PcVersion = ({
   pathname,
   servicePcState,
   setServicePcState,
@@ -64,13 +65,7 @@ const PcVersion = ({
                 title="За нас"
                 links={aboutUsData}
               />
-              {pathname == "/aboutUs" && (
-                <li>
-                  <a href="#" scroll={false}>
-                    За нас
-                  </a>
-                </li>
-              )}
+              
               <li>
                 <Link href="/blog" scroll={false}>
                   БЛОГ
