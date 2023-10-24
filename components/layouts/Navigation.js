@@ -66,13 +66,17 @@ export default function Navigation() {
     }
   }, [scrollData]);
   useEffect(() => {
+
     setMenuOpen(false);
     if (pathname != "/") {
       setIsOnMain(true);
     } else {
       setIsOnMain(false);
     }
+    
+    // Drop down menus
     setServicePcState(false);
+    setAboutUsState(false)
   }, [router]);
   useEffect(() => {
     const body = document.querySelector("body");
