@@ -48,7 +48,7 @@ export default function Gallery({ gallery, user }) {
       </Head>
       <section className="container mt-40">
         <h3 className="text-3xl">Нашата галерия</h3>
-        <section className="flex flex-wrap mt-10">
+        <section className="flex flex-wrap items-center justify-center mt-10">
           {gallery.map((image, i) => {
             return (
               <article key={image._id}>
