@@ -52,7 +52,7 @@ export default function Gallery({ gallery, user }) {
           {gallery.map((image, i) => {
             return (
               <article key={image._id}>
-                <article className="relative flex flex-col items-center justify-center h-[400px] w-[400px]">
+                <article className="relative flex flex-col items-center justify-center h-[300px] w-[300px]">
                   <Image
                     src={image.imageUrl}
                     alt={image.alt}
