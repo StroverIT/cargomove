@@ -15,6 +15,7 @@ import { TbBus } from "react-icons/tb";
 import { FaViber } from "react-icons/fa";
 import DropDownMobile from "./navigationElem/DropDownMobile";
 import { data as aboutUsData } from "../data/aboutUsNav";
+import SocialIcons from "./navigationElem/SocialIcons";
 
 export default function Navigation() {
   const router = useRouter();
@@ -92,6 +93,8 @@ export default function Navigation() {
         isOnMain ? "bg-dark box3" : "bg-dark-50 box2"
       } fixed top-0 left-0 z-50 w-full text-white  uppercase font-medium box2 transition-colors`}
     >
+        <SocialIcons/>
+
       <PcVersion
         pathname={pathname}
         servicePcState={servicePcState}
