@@ -67,7 +67,11 @@ export default function Gallery({ gallery, user }) {
       }
     }
   };
-
+  const setReoder = (data)=>{
+    if(user?.role == "admin"){
+      setItems(data)
+    }
+  }
   return (
     <>
       <Head>
@@ -93,7 +97,7 @@ export default function Gallery({ gallery, user }) {
         <section className="">
           <Reorder.Group
             axis="y"
-            onReorder={setItems}
+            onReorder={setReoder}
             values={items}
             className="flex flex-wrap items-center justify-center mt-10 gap-x-10"
           >
