@@ -8,6 +8,8 @@ import Head from "next/head";
 import { Reorder } from "framer-motion";
 import Item from "../components/admin/gallery/view/components/Items";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import { HiX } from "react-icons/hi";
 
 export default function Gallery({ gallery, user }) {
   const router = useRouter();
@@ -67,11 +69,11 @@ export default function Gallery({ gallery, user }) {
       }
     }
   };
-  const setReoder = (data)=>{
-    if(user?.role == "admin"){
-      setItems(data)
+  const setReoder = (data) => {
+    if (user?.role == "admin") {
+      setItems(data);
     }
-  }
+  };
   return (
     <>
       <Head>
@@ -94,26 +96,52 @@ export default function Gallery({ gallery, user }) {
             </button>
           </div>
         )}
-        <section className="">
-          <Reorder.Group
-            axis="y"
-            onReorder={setReoder}
-            values={items}
-            className="flex flex-wrap items-center justify-center mt-10 gap-x-10"
-          >
-            {items?.map((image, i) => {
-              return (
-                <Item
-                  image={image}
+        {user?.role == "admin" && (
+            <Reorder.Group
+              axis="y"
+              onReorder={setReoder}
+              values={items}
+              className="flex flex-wrap items-center justify-center mt-10 gap-x-10"
+            >
+              {items?.map((image, i) => {
+                return (
+                  <Item
+                    image={image}
+                    key={image._id}
+                    user={user}
+                    i={i}
+                    deleteImageHandler={deleteImageHandler}
+                  />
+                );
+              })}
+            </Reorder.Group>
+        )}
+        {user?.role != "admin" && (
+            <section
+              axis="y"
+              onReorder={setReoder}
+              values={items}
+              className="flex flex-wrap items-center justify-center mt-10 gap-x-10"
+            >
+              {items?.map((image, i) => {
+                return (
+                  <article className="relative flex flex-col items-center justify-center h-[300px] w-[300px]"
+                  
                   key={image._id}
-                  user={user}
-                  i={i}
-                  deleteImageHandler={deleteImageHandler}
-                />
-              );
-            })}
-          </Reorder.Group>
-        </section>
+                  
+                  >
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.alt}
+                    fill={true}
+                    className="object-contain"
+                  />
+                 
+                </article>
+                );
+              })}
+          </section>
+        )}
       </section>
     </>
   );
@@ -127,11 +155,10 @@ export async function getServerSideProps(context) {
   const user = await User.findOne({ email: session?.user?.email });
 
   const sortedGallery = gallery.sort((item1, item2) => {
-
-    if(item1.order == undefined){
-      return -1
+    if (item1.order == undefined) {
+      return -1;
     }
-      return item1.order - item2.order;
+    return item1.order - item2.order;
   });
   return {
     props: {
