@@ -1,20 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { connectMongo } from "../db/connectDb";
 import GalleryModel from "../db/models/Gallery";
-import Image from "next/image";
 import { getSession } from "next-auth/react";
 import User from "../db/models/User";
-import { HiX } from "react-icons/hi";
-import { useRouter } from "next/router";
 import Head from "next/head";
+import { Reorder } from "framer-motion";
+import Item from "../components/admin/gallery/view/components/Items";
+import { useRouter } from "next/router";
 
 export default function Gallery({ gallery, user }) {
   const router = useRouter();
 
+  const [items, setItems] = useState(gallery);
+
   const refreshData = () => {
-    router.replace(router.asPath);
+    router.replace(
+      {
+        pathname: router.asPath,
+      },
+      undefined,
+      { scroll: false }
+    );
   };
+
+  useEffect(() => {
+    setItems(gallery);
+  }, [gallery]);
 
   const deleteImageHandler = async (_id) => {
     if (confirm("Желаете ли да изтриете снимката?")) {
@@ -25,6 +37,26 @@ export default function Gallery({ gallery, user }) {
         },
         body: JSON.stringify({
           imageId: _id,
+        }),
+      });
+
+      const data = await res.json();
+      if (data.message) {
+        refreshData();
+      }
+    }
+  };
+  const reoderImages = async () => {
+    if (confirm("Желаете ли да смените местата на снимката?")) {
+      const filterOnlyIds = items.map((item) => item._id);
+
+      const res = await fetch("/api/gallery/changeOrder", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          items: filterOnlyIds,
         }),
       });
 
@@ -46,50 +78,37 @@ export default function Gallery({ gallery, user }) {
           content="Разгледайте нашата галерия с изображения, посветена на професионалния транспорт и услугите за преместване. Вижте нашите най-нови проекти, фотографии на превозни средства и успешни миграции. Доверете се на нашите експерти, когато става въпрос за безпроблемно и сигурно преместване на вашите стоки и имущество."
         />
       </Head>
-      <section className="container mt-40">
+      <section className="container mt-40 mb-10">
         <h3 className="text-3xl">Нашата галерия</h3>
-        <section className="flex flex-wrap items-center justify-center mt-10">
-          {gallery.map((image, i) => {
-            return (
-              <article key={image._id}>
-                <article className="relative flex flex-col items-center justify-center h-[300px] w-[300px]">
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.alt}
-                    fill={true}
-                    className="object-contain"
-                  />
-                  {user?.role == "admin" && (
-                    <div className="absolute top-0 right-0">
-                      <div
-                        className="absolute top-0 right-0 text-4xl text-secondary "
-                        id="close"
-                        onClick={() => deleteImageHandler(image._id)}
-                      >
-                        <HiX />
-                      </div>
-                    </div>
-                  )}
-                </article>
-                {user?.role == "admin" && (
-                  <article>
-                    <label
-                      htmlFor={`message-${i}`}
-                      class="block mb-2 text-sm font-medium text-[#111827] dark:text-white"
-                    >
-                      Описание
-                    </label>
-                    <textarea
-                      id={`message-${i}`}
-                      rows="4"
-                      defaultValue={image.alt}
-                      className="block p-2.5 w-full text-sm text-[#111827] bg-[#f9fafb] rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    ></textarea>
-                  </article>
-                )}
-              </article>
-            );
-          })}
+        {user?.role == "admin" && (
+          <div className="fixed top-[160px] right-12 z-50 ">
+            <button
+              className="px-10 py-2 text-white rounded-lg bg-primary-500"
+              onClick={reoderImages}
+            >
+              Смени местата на снимките
+            </button>
+          </div>
+        )}
+        <section className="">
+          <Reorder.Group
+            axis="y"
+            onReorder={setItems}
+            values={items}
+            className="flex flex-wrap items-center justify-center mt-10 gap-x-10"
+          >
+            {items?.map((image, i) => {
+              return (
+                <Item
+                  image={image}
+                  key={image._id}
+                  user={user}
+                  i={i}
+                  deleteImageHandler={deleteImageHandler}
+                />
+              );
+            })}
+          </Reorder.Group>
         </section>
       </section>
     </>
@@ -103,9 +122,16 @@ export async function getServerSideProps(context) {
   const gallery = await GalleryModel.find({});
   const user = await User.findOne({ email: session?.user?.email });
 
+  const sortedGallery = gallery.sort((item1, item2) => {
+
+    if(item1.order == undefined){
+      return -1
+    }
+      return item1.order - item2.order;
+  });
   return {
     props: {
-      gallery: JSON.parse(JSON.stringify(gallery)),
+      gallery: JSON.parse(JSON.stringify(sortedGallery)),
       user: JSON.parse(JSON.stringify(user)),
     },
   };
