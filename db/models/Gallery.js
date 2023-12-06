@@ -12,6 +12,7 @@ const gallerySchema = new Schema({
       return Date.now();
     },
   },
+  order: Number,
 });
 
 const Gallery = models.Gallery || model("Gallery", gallerySchema);
