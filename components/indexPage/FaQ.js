@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import Title from "../Title";
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { AiOutlinePlus } from "react-icons/ai";
-import { questionData } from "../data/questions";
-import Image from "next/legacy/image";
 
-export default function FaQ() {
+export default function FaQ({data}) {
   return (
     <AnimateSharedLayout>
       <motion.section
@@ -18,7 +16,7 @@ export default function FaQ() {
         </motion.div>
 
         <motion.section layout className="md:mt-4">
-          {questionData.map((question, index) => {
+          {data?.map((question, index) => {
             return (
               <Question
                 key={question._id}
