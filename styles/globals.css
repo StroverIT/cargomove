@@ -62,11 +62,11 @@ html::-webkit-scrollbar-thumb {
     rgba(0, 0, 0, 0.0578606442577031) 90%,
     rgba(0, 0, 0, 0) 100%
   ); */
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.48923319327731096) 59%,
+    rgb(18, 17, 17) 0%,
+    rgba(0, 0, 0, 0.48923319327731096) 40%,
     rgba(0, 0, 0, 0) 100%
   );
 }
@@ -165,4 +165,13 @@ html::-webkit-scrollbar-thumb {
 
 .color {
   color: #0077b6;
+}
+.bg-blur {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(30px);
+
+}
+.bg-blur-1{
+  backdrop-filter: blur(30px);
+
 }
