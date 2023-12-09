@@ -17,13 +17,14 @@ PcVersion = ({
   aboutUsState,
   setAboutUsState,
 }) => {
+  // ${isOnMain ? "bg-dark" : "bg-dark-50"}
   return (
     <section
-      className={` hidden lg:flex py-6 ${isOnMain ? "bg-dark" : "bg-dark-50"}`}
+      className={` hidden lg:flex py-2 bg-blur mx-14 xl:mx-36 mt-2 rounded-2xl `}
     >
       <section className="container relative items-center justify-between hidden h-full lg:flex">
         <div className="absolute select-none ">
-          <div className="relative select-none h-28 w-96">
+          <div className="relative h-20 select-none w-[22rem]">
             <Image
               src="/logoNew.svg"
               alt="logo"
@@ -38,7 +39,7 @@ PcVersion = ({
           <Hamburger toggle={setMenuOpen} toggled={menuOpen} size={20} />
         </div> */}
           <section className="">
-            <ul className="flex items-center justify-center text-sm gap-x-10">
+            <ul className="flex items-center justify-center text-xs gap-x-10">
               {pathname != "/" && (
                 <li>
                   <Link href="/" scroll={false}>
