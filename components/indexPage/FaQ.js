@@ -3,7 +3,7 @@ import Title from "../Title";
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { AiOutlinePlus } from "react-icons/ai";
 
-export default function FaQ({data}) {
+export default function FaQ({ data }) {
   return (
     <AnimateSharedLayout>
       <motion.section
@@ -17,7 +17,9 @@ export default function FaQ({data}) {
 
         <motion.section layout className="md:mt-4">
           {data?.map((question, index) => {
-            return (
+            return question.type == "heading" ? (
+              <Heading key={question._id} text={question.text} />
+            ) : (
               <Question
                 key={question._id}
                 title={question.title}
@@ -60,12 +62,12 @@ function Question({ title, text, isBorder = true, index }) {
         className="cursor-pointer"
       >
         <motion.div layout className="flex items-center justify-between">
-          <motion.h2
+          <motion.h3
             layout
             className="font-semibold uppercase text-md lg:text-lg"
           >
             {title}
-          </motion.h2>
+          </motion.h3>
           <motion.div
             layout
             animate={isOpen ? "open" : "closed"}
@@ -103,4 +105,7 @@ function Question({ title, text, isBorder = true, index }) {
       </motion.div>
     </motion.section>
   );
+}
+function Heading({ text }) {
+  return <h2 className="pb-4 mt-12 text-2xl font-semibold border-primary-500">{text}</h2>;
 }

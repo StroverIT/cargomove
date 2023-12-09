@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
+// Components
 import FaQ from '../components/indexPage/FaQ'
-
+// Data
+import {questionData} from "../components/faq/data"
 export default function Faq() {
   return (
     <>
@@ -25,7 +27,7 @@ export default function Faq() {
       </Head>
         <main className='min-h-screen mt-40'>
 
-          <FaQ />
+          <FaQ data={questionData} />
 
         </main>
     </>
