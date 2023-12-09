@@ -14,6 +14,8 @@ import SwiperServices from "../components/SwiperServices";
 // DB
 import Blog from "../db/models/Blog";
 import { connectMongo } from "../db/connectDb";
+// Data
+import { questionData } from "../components/data/questions";
 
 export default function Home({blogDataDB}) {
   return (
@@ -54,7 +56,8 @@ export default function Home({blogDataDB}) {
           <Pricing />
           <OurBlog blogDataDB={blogDataDB}/>
 
-          <FaQ />
+          <FaQ data={questionData} />
+          
           <section className="pb-20 mt-10 lg:mt-20">
             <ContactUs
               color="border-blue"
