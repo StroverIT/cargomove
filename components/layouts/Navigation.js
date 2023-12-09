@@ -191,7 +191,7 @@ export default function Navigation() {
                         onClick={(e) => setAboutUsState(true)}
                       >
                         <div className="cursor-pointer flex-center">
-                          <span className="">За нас</span>
+                          <span className="">Ресурси</span>
                           <span
                             className={`pl-1 group-hover:rotate-90 transition-transform text-lg`}
                           >

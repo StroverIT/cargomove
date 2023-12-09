@@ -63,7 +63,7 @@ PcVersion = ({
               <DropDown
                 state={aboutUsState}
                 setState={setAboutUsState}
-                title="За нас"
+                title="Ресурси"
                 links={aboutUsData}
               />
               
