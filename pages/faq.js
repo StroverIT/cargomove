@@ -30,7 +30,8 @@ export default function Faq() {
           data={questionData}
           title={"Въпроси и отговори"}
           titleSize={"text-2xl"}
-          headingSize="text-md"
+          headingSize="text-lg"
+          subHeadingSize="text-sm"
         />
       </main>
     </>

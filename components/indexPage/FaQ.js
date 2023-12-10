@@ -7,7 +7,8 @@ export default function FaQ({
   data,
   title = "Често задавани въпроси",
   titleSize = "text-xl lg:text-5xl",
-  headingSize ="text-md lg:text-lg",
+  headingSize = "text-md lg:text-lg",
+  subHeadingSize = "text-lg",
 }) {
   return (
     <AnimateSharedLayout>
@@ -23,10 +24,14 @@ export default function FaQ({
         <motion.section layout className="md:mt-4">
           {data?.map((question, index) => {
             return question.type == "heading" ? (
-              <Heading key={question._id} text={question.text} />
+              <Heading
+                key={question._id}
+                text={question.text}
+                headingSize={headingSize}
+              />
             ) : (
               <Question
-              headinSize={headingSize}
+                subHeadingSize={subHeadingSize}
                 key={question._id}
                 title={question.title}
                 text={question.text}
@@ -54,7 +59,7 @@ const iconVariants = {
     },
   },
 };
-function Question({ title, text, isBorder = true, index, headingSize }) {
+function Question({ title, text, isBorder = true, index, subHeadingSize }) {
   const [isOpen, setOpen] = useState(index == 0 ? true : false);
 
   return (
@@ -70,7 +75,7 @@ function Question({ title, text, isBorder = true, index, headingSize }) {
         <motion.div layout className="flex items-center justify-between">
           <motion.h3
             layout
-            className={`font-semibold uppercase ${headingSize}`}
+            className={`font-semibold uppercase ${subHeadingSize}`}
           >
             {title}
           </motion.h3>
@@ -112,9 +117,11 @@ function Question({ title, text, isBorder = true, index, headingSize }) {
     </motion.section>
   );
 }
-function Heading({ text }) {
+function Heading({ text, headingSize }) {
   return (
-    <h2 className="pb-4 mt-12 text-xl font-semibold border-primary-500">
+    <h2
+      className={`pb-4 mt-12  ${headingSize} font-semibold border-primary-500`}
+    >
       {text}
     </h2>
   );
