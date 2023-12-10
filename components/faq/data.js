@@ -45,7 +45,7 @@ export const questionData = [
     _id: "12c3245Esadfr3vc22562",
   },
   {
-    text: "ЦЕНООБРАЗУВАНЕ",
+    text: "Ценообразуване",
     type: "heading",
     _id: "sadaa211Osnovniцзж1321",
   },
@@ -89,7 +89,7 @@ export const questionData = [
     _id: "cz32c4x2xc243",
   },
   {
-    text: "ЗАЩИТА И ЗАСТРАХОВКА",
+    text: "Защита и застраховка",
     type: "heading",
     _id: "sadaa211Osnovni",
   },
@@ -127,7 +127,7 @@ export const questionData = [
     _id: "zxczc45v!xcvx#dvsgs12321$",
   },
   {
-    text: "ПО ВРЕМЕ НА ПРЕМЕСТВАНЕТО И СЛЕД",
+    text: "По време на преместването и след",
     type: "heading",
     _id: "asdasdx4x14211x1x1212x312x",
   },
@@ -206,7 +206,8 @@ export const questionData = [
     _id: "zxczc45v!zx12%%^#@czz$zvz2$zxc23%@",
   },
   {
-    text: "ОБШИ ВЪПРОСИ И ОТГОВОРИ",
+
+    text: "Общи въпроси и отговори",
     type: "heading",
     _id: "zcxzxc@#fdvds12312",
   },
