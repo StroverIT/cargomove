@@ -25,7 +25,7 @@ export default function Faq() {
           Свържете се с нас днес, за да научите повече и да започнете пътуването си за преместване."
         />
       </Head>
-      <main className="min-h-screen mt-40">
+      <main className="min-h-screen mt-40 lg:mx-[25rem]">
         <FaQ
           data={questionData}
           title={"Въпроси и отговори"}
