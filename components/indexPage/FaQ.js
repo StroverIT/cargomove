@@ -3,7 +3,12 @@ import Title from "../Title";
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { AiOutlinePlus } from "react-icons/ai";
 
-export default function FaQ({ data }) {
+export default function FaQ({
+  data,
+  title = "Често задавани въпроси",
+  titleSize = "text-xl lg:text-5xl",
+  headingSize ="text-md lg:text-lg",
+}) {
   return (
     <AnimateSharedLayout>
       <motion.section
@@ -12,7 +17,7 @@ export default function FaQ({ data }) {
         id="faq"
       >
         <motion.div layout className="flex-center">
-          <Title title="Често задавани въпроси" size="text-xl lg:text-5xl" />
+          <Title title={title} size={titleSize} />
         </motion.div>
 
         <motion.section layout className="md:mt-4">
@@ -21,6 +26,7 @@ export default function FaQ({ data }) {
               <Heading key={question._id} text={question.text} />
             ) : (
               <Question
+              headinSize={headingSize}
                 key={question._id}
                 title={question.title}
                 text={question.text}
@@ -48,7 +54,7 @@ const iconVariants = {
     },
   },
 };
-function Question({ title, text, isBorder = true, index }) {
+function Question({ title, text, isBorder = true, index, headingSize }) {
   const [isOpen, setOpen] = useState(index == 0 ? true : false);
 
   return (
@@ -64,7 +70,7 @@ function Question({ title, text, isBorder = true, index }) {
         <motion.div layout className="flex items-center justify-between">
           <motion.h3
             layout
-            className="font-semibold uppercase text-md lg:text-lg"
+            className={`font-semibold uppercase ${headingSize}`}
           >
             {title}
           </motion.h3>
@@ -107,5 +113,9 @@ function Question({ title, text, isBorder = true, index }) {
   );
 }
 function Heading({ text }) {
-  return <h2 className="pb-4 mt-12 text-2xl font-semibold border-primary-500">{text}</h2>;
+  return (
+    <h2 className="pb-4 mt-12 text-xl font-semibold border-primary-500">
+      {text}
+    </h2>
+  );
 }

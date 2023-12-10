@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import React from 'react'
+import Head from "next/head";
+import React from "react";
 // Components
-import FaQ from '../components/indexPage/FaQ'
+import FaQ from "../components/indexPage/FaQ";
 // Data
-import {questionData} from "../components/faq/data"
+import { questionData } from "../components/faq/data";
 export default function Faq() {
   return (
     <>
-    <Head>
+      <Head>
         <title>Цени за хамалски услуги - София</title>
         <meta
           name="description"
@@ -25,11 +25,14 @@ export default function Faq() {
           Свържете се с нас днес, за да научите повече и да започнете пътуването си за преместване."
         />
       </Head>
-        <main className='min-h-screen mt-40'> 
-
-          <FaQ data={questionData} />
-
-        </main>
+      <main className="min-h-screen mt-40">
+        <FaQ
+          data={questionData}
+          title={"Въпроси и отговори"}
+          titleSize={"text-2xl"}
+          headingSize="text-md"
+        />
+      </main>
     </>
-  )
+  );
 }
