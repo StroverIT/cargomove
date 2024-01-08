@@ -29,7 +29,7 @@ const Index = ({ blogDataDB }) => {
             <Title title="Нашият блог" size="text-4xl" />
           </div>
           <section className="grid mt-5 lg:grid-cols-2 gap-y-10 gap-x-5 max-lg:place-items-center xl:place-items-center grid-auto-rows">
-            {blogDataDB?.map((data) => {
+            {/* {blogDataDB?.map((data) => {
               return (
                 <Blog
                   imgUrl={data.imageData?.url}
@@ -40,7 +40,7 @@ const Index = ({ blogDataDB }) => {
                   date={data.createdAt}
                 />
               );
-            })}
+            })} */}
             {blogData.map((data) => {
               return (
                 <Blog
