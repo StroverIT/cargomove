@@ -77,17 +77,17 @@ export default function InternationalRelocation() {
             </section>
           </section>
         </section>
-        {/* <div className="fixed top-0 left-0 -z-20">
+        <div className="fixed top-0 left-0 -z-20">
           <div className="relative w-screen h-screen">
             <Image
-              src="/pages-images/international-relocation/background.jpg"
+              src="/blog/truck-driver-inspecting-vehicle-trailer-tires-before-driving.jpg"
               fill
               alt="Нашата фирма предлага висококачествени Транспортни услуги за безопасно и ефективно преместване на вашия дом или офис"
               className="object-cover"
 
             />
           </div>
-        </div> */}
+        </div>
         {/* <section className="mt-20 font-sans flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />
         </section> */}
