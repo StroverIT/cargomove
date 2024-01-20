@@ -29,14 +29,17 @@ export default function SwiperGallery({ data, setCurrentImage }) {
         className="h-[90%] mySwiper2 cursor-grab bg-dark/50"
         onClick={hideGallery}
       >
+          <div className="fixed top-0 right-0 text-3xl bg-secondary"><HiX/></div>
+
         <div className="relative h-full flex-center">
           {data.map((image) => {
             return (
+              
               <div
                 key={image.img}
                 className="flex items-center justify-center h-full"
               >
-                <SwiperSlide className="flex-center">
+                <SwiperSlide className="relative flex-center">
                   <div className="relative h-full w-[60%]">
                     <Image
                       src={image.img}
@@ -45,11 +48,11 @@ export default function SwiperGallery({ data, setCurrentImage }) {
                       alt={image.alt}
                     />
                   </div>
+
                 </SwiperSlide>
               </div>
             );
           })}
-          <div className="absolute top-0 right-0">HIX</div>
         </div>
       </Swiper>
       <Swiper
