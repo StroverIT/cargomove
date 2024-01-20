@@ -121,7 +121,7 @@ export default function Gallery({ gallery, user }) {
               axis="y"
               onReorder={setReoder}
               values={items}
-              className="flex flex-wrap items-center justify-center mt-10 gap-x-10"
+              className="flex flex-wrap items-center justify-center mt-10 gap-10"
             >
               {items?.map((image, i) => {
                 return (
