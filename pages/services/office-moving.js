@@ -24,7 +24,7 @@ export default function OfficeMoving() {
       </Head>
 
       <section className="min-h-screen mt-40 ">
-        <section className="font-sans ">
+        <section className=" ">
           <section className="">
             <section className="lg:px-56 3xl:px-[30rem]">
               <section className="container px-5 py-10 bg-white rounded-lg md:px-14">
