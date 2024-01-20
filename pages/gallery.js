@@ -134,7 +134,7 @@ export default function Gallery({ gallery, user }) {
                     src={image.imageUrl}
                     alt={image.alt}
                     fill={true}
-                    className="object-contain"
+                    className="object-cover rounded-md"
                   />
                  
                 </article>

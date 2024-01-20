@@ -17,7 +17,7 @@ export default function Item({ image, user, i, deleteImageHandler}) {
             src={image.imageUrl}
             alt={image.alt}
             fill={true}
-            className="object-contain"
+            className="object-cover rounded-md"
           />
           {user?.role == "admin" && (
             <div className="absolute top-0 right-0">
