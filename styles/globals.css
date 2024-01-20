@@ -153,6 +153,10 @@ html::-webkit-scrollbar-thumb {
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  
+}
+.card__preview-text *{
+    display: inline;
 }
 .testing {
   background-position: 400px 200px;
