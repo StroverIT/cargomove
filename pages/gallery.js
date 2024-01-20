@@ -10,11 +10,14 @@ import Item from "../components/admin/gallery/view/components/Items";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { HiX } from "react-icons/hi";
+import SwiperGallery from '../components/SwiperGallery';
+import { officeMovingImages } from '../components/data/office-moving-images';
 
 export default function Gallery({ gallery, user }) {
   const router = useRouter();
 
   const [items, setItems] = useState(gallery);
+  const [currentImage, setCurrentImage] = useState(null)
 
   const refreshData = () => {
     router.replace(
@@ -128,7 +131,7 @@ export default function Gallery({ gallery, user }) {
                   <article className="relative flex flex-col items-center justify-center h-[300px] w-[300px]"
                   
                   key={image._id}
-                  
+                  onClick={()=> setCurrentImage(image.imageUrl)}
                   >
                   <Image
                     src={image.imageUrl}
@@ -142,6 +145,15 @@ export default function Gallery({ gallery, user }) {
               })}
           </section>
         )}
+        {currentImage && <section className='fixed top-0 left-0 w-screen h-screen'>
+            <SwiperGallery data={gallery.map(item=> {
+              return {
+                alt: item.alt, img: item.imageUrl
+              }
+            })}
+         
+            />
+          </section>}
       </section>
     </>
   );
