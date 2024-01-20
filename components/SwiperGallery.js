@@ -1,82 +1,80 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/free-mode";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
+import "swiper/css/thumbs";
+
+import { Navigation, Thumbs, FreeMode } from "swiper";
 // Icons
 import Image from "next/image";
-import Link from "next/link";
 import { HiX } from "react-icons/hi";
 
-export default function SwiperGallery({ data }) {
-
-  useEffect(() => {
-    const body = document.querySelector("body");
-    if (imgData) {
-      body.classList.add("overflow-hidden");
-    } else if (!imgData) {
-      body.classList.remove("overflow-hidden");
-    }
-  }, [imgData]);
+export default function SwiperGallery({ data, setCurrentImage }) {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const hideGallery = () => {
+    setCurrentImage(null);
+  };
   return (
-    <>
+    <secton className="">
       <Swiper
         navigation={true}
-        modules={[Navigation]}
+        modules={[Navigation, Thumbs]}
         spaceBetween={30}
-       
-        className="h-full flex items-center justify-center pt-5 bg-white border max-lg:border-x cursor-grab border-gray rounded-b-xl mySwiper"
+        loop={true}
+        thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null  }}
+        className="h-[90%] mySwiper2 cursor-grab bg-dark/50"
+        onClick={hideGallery}
       >
-        <div className="px-96">
+        <div className="relative h-full flex-center">
           {data.map((image) => {
             return (
-              <SwiperSlide key={image.img} onClick={() => setImgData(image.img)}>
-                <div className="relative h-56 w-96">
-                  <Image
-                    src={image.img}
-                    fill
-                    className="object-contain"
-                    alt={image.alt}
-                  />
-                </div>
-              </SwiperSlide>
+              <div
+                key={image.img}
+                className="flex items-center justify-center h-full"
+              >
+                <SwiperSlide className="flex-center">
+                  <div className="relative h-full w-[60%]">
+                    <Image
+                      src={image.img}
+                      fill
+                      className="object-contain"
+                      alt={image.alt}
+                    />
+                  </div>
+                </SwiperSlide>
+              </div>
             );
           })}
+          <div className="absolute top-0 right-0">HIX</div>
         </div>
       </Swiper>
-      
-    </>
-  );
-}
-function SwiperPopup({ data, setImgData }) {
-  return (
-    <section className="fixed top-0 left-0 z-50 w-screen h-screen">
-      <section
-        className="absolute top-0 left-0 z-10 w-screen h-screen bg-dark-50"
-        onClick={() => setImgData(null)}
-      ></section>
-
-      <section className="absolute z-50 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex-col  flex-center">
-        <section
-          className="absolute text-2xl bg-white rounded-full cursor-pointer -top-10 right-10 z-20"
-          onClick={() => setImgData(null)}
-        >
-          <HiX />
-        </section>
-        <section>
-          <div className="relative mb-2 w-96 h-96">
-            <Image
-              src={data.img}
-              alt="quality"
-              fill
-              className="object-contain"
-            />
-          </div>
-        </section>
-      </section>
-    </section>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="h-[10%] mySwiper2 cursor-grab bg-dark/50"
+      >
+        {data.map((image) => {
+          return (
+            <SwiperSlide key={image.img}>
+              <div className="relative h-full w-[90%]">
+                <Image
+                  src={image.img}
+                  fill
+                  className="object-cover"
+                  alt={image.alt}
+                />
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </secton>
   );
 }

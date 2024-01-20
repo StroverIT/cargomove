@@ -10,14 +10,23 @@ import Item from "../components/admin/gallery/view/components/Items";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { HiX } from "react-icons/hi";
-import SwiperGallery from '../components/SwiperGallery';
-import { officeMovingImages } from '../components/data/office-moving-images';
+import SwiperGallery from "../components/SwiperGallery";
+import { officeMovingImages } from "../components/data/office-moving-images";
 
 export default function Gallery({ gallery, user }) {
   const router = useRouter();
 
   const [items, setItems] = useState(gallery);
-  const [currentImage, setCurrentImage] = useState(null)
+  const [currentImage, setCurrentImage] = useState(null);
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (currentImage) {
+      body.classList.add("overflow-hidden");
+    } else if (!currentImage) {
+      body.classList.remove("overflow-hidden");
+    }
+  }, [currentImage]);
 
   const refreshData = () => {
     router.replace(
@@ -100,60 +109,63 @@ export default function Gallery({ gallery, user }) {
           </div>
         )}
         {user?.role == "admin" && (
-            <Reorder.Group
-              axis="y"
-              onReorder={setReoder}
-              values={items}
-              className="flex flex-wrap items-center justify-center mt-10 gap-x-10"
-            >
-              {items?.map((image, i) => {
-                return (
-                  <Item
-                    image={image}
-                    key={image._id}
-                    user={user}
-                    i={i}
-                    deleteImageHandler={deleteImageHandler}
-                  />
-                );
-              })}
-            </Reorder.Group>
+          <Reorder.Group
+            axis="y"
+            onReorder={setReoder}
+            values={items}
+            className="flex flex-wrap items-center justify-center mt-10 gap-x-10"
+          >
+            {items?.map((image, i) => {
+              return (
+                <Item
+                  image={image}
+                  key={image._id}
+                  user={user}
+                  i={i}
+                  deleteImageHandler={deleteImageHandler}
+                />
+              );
+            })}
+          </Reorder.Group>
         )}
         {user?.role != "admin" && (
-            <section
-              axis="y"
-              onReorder={setReoder}
-              values={items}
-              className="flex flex-wrap items-center justify-center mt-10 gap-10"
-            >
-              {items?.map((image, i) => {
-                return (
-                  <article className="relative flex flex-col items-center justify-center h-[300px] w-[300px]"
-                  
+          <section
+            axis="y"
+            onReorder={setReoder}
+            values={items}
+            className="flex flex-wrap items-center justify-center gap-10 mt-10"
+          >
+            {items?.map((image, i) => {
+              return (
+                <article
+                  className="relative flex flex-col items-center justify-center h-[300px] w-[300px]"
                   key={image._id}
-                  onClick={()=> setCurrentImage(image.imageUrl)}
-                  >
+                  onClick={() => setCurrentImage(image.imageUrl)}
+                >
                   <Image
                     src={image.imageUrl}
                     alt={image.alt}
                     fill={true}
                     className="object-cover rounded-md"
                   />
-                 
                 </article>
-                );
-              })}
+              );
+            })}
           </section>
         )}
-        {currentImage && <section className='fixed top-0 left-0 w-screen h-screen'>
-            <SwiperGallery data={gallery.map(item=> {
-              return {
-                alt: item.alt, img: item.imageUrl
-              }
-            })}
-         
+        {currentImage && (
+          <section className="fixed top-0 left-0 w-screen h-screen z-[99999]">
+            <SwiperGallery
+              data={gallery.map((item) => {
+                return {
+                  alt: item.alt,
+                  img: item.imageUrl,
+                };
+              })}
+              setCurrentImage={setCurrentImage}
             />
-          </section>}
+          </section>
+        )}
       </section>
     </>
   );
