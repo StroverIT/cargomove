@@ -3,6 +3,7 @@ import React from "react";
 import ContactUs from "../../components/indexPage/ContactUs";
 import SwiperServices from "../../components/SwiperServices";
 import Title from "../../components/Title";
+import Image from 'next/image';
 
 export default function CleaningOfApartmentsAndHouses() {
   return (
@@ -22,11 +23,12 @@ export default function CleaningOfApartmentsAndHouses() {
         <meta property="og:description" content="" />
       </Head>
       <div className="min-h-screen mt-40 ">
-        <section className="container font-sans">
+        <section className=' lg:px-56 3xl:px-[30rem]'> 
+        <section className="container px-5 py-10 bg-white rounded-lg  md:px-14">
           <section className="flex-center">
             <Title title="Товаро-разтоварни дейности" size="text-3xl" />
           </section>
-          <section className="lg:px-56">
+          <section className="">
             <h2 className="mt-2 text-xl font-medium">Какво предлагаме:</h2>
             <p>
               Процесът по товарене и разтоварване на стока може да бъде
@@ -51,8 +53,25 @@ export default function CleaningOfApartmentsAndHouses() {
               хенгер, камион и пр. Богатия опит ще осигури ефективно, успешно и
               без щети товаро-разтоварване.
             </p>
+
+         
           </section>
-          <section className="my-14 lg:mx-36">
+          
+        </section>
+        <div className="fixed top-0 left-0 -z-20">
+          <div className="relative w-screen h-screen">
+            <Image
+              src="/blog/20181024_143404.jpg"
+              fill
+              alt="Нашата фирма предлага висококачествени Транспортни услуги за безопасно и ефективно преместване на вашия дом или офис"
+              className="object-cover"
+
+            />
+          </div>
+        </div>
+       
+          </section>
+          <section className="container my-14 lg:px-36">
             <ContactUs
               color="border-blue"
               btnColor="bg-blue"
@@ -64,8 +83,6 @@ export default function CleaningOfApartmentsAndHouses() {
               mx="md:mx-10"
             />
           </section>
-        </section>
-
         {/* <section className="mt-20 font-sans flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />
         </section> */}

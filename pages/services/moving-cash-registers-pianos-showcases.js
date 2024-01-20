@@ -3,6 +3,7 @@ import React from "react";
 import ContactUs from "../../components/indexPage/ContactUs";
 import SwiperServices from "../../components/SwiperServices";
 import Title from "../../components/Title";
+import Image from 'next/image';
 
 export default function CleaningBasementsAndAttics() {
   return (
@@ -20,7 +21,8 @@ export default function CleaningBasementsAndAttics() {
         <meta property="og:description" content="" />
       </Head>
       <section className="min-h-screen mt-40 ">
-        <section className="container font-sans">
+      <section className=" lg:px-56 3xl:px-[30rem]">
+        <section className="container px-5 py-10 bg-white rounded-lg  md:px-14">
           <section className="flex-center">
             <Title
               title="Преместване на пиана, каси, витрини"
@@ -28,7 +30,7 @@ export default function CleaningBasementsAndAttics() {
             />
           </section>
           <section>
-            <section className="lg:px-56">
+            <section className="">
               <h2 className="mt-1 text-lg font-semibold">
                 Какво трябва да знаете при преместване на пианo и защо не трябва
                 да го правите сами.
@@ -72,7 +74,21 @@ export default function CleaningBasementsAndAttics() {
               </p>
             </section>
           </section>
-          <section className="my-14 lg:mx-36">
+         
+          <div className="fixed top-0 left-0 -z-20">
+          <div className="relative w-screen h-screen">
+            <Image
+              src="/blog/woman-playing-piano.jpg"
+              fill
+              alt="Нашата фирма предлага висококачествени Транспортни услуги за безопасно и ефективно преместване на вашия дом или офис"
+              className="object-cover"
+
+            />
+          </div>
+        </div>
+        </section>
+        </section>
+        <section className="container my-14 lg:px-36">
             <ContactUs
               color="border-blue"
               btnColor="bg-blue"
@@ -84,7 +100,6 @@ export default function CleaningBasementsAndAttics() {
               mx="md:mx-10"
             />
           </section>
-        </section>
 
         {/* <section className="mt-20 font-sans flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />

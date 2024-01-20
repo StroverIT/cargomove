@@ -21,7 +21,7 @@ export default function DisposalOfOldFurniture() {
         <meta property="og:description" content="" />
       </Head>
       <div className="min-h-screen mt-40">
-        <section className="container font-sans">
+        <section className="container ">
           {/* Много често се случва да пазим с години стари вещи, мебели и други
               предмети в мазето или на тавана. С годините те се натрупват и се стига
               до момента, в който се чудите как да се отървете от тях и да ги

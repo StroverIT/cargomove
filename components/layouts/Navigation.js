@@ -158,11 +158,7 @@ export default function Navigation() {
                 >
                   <section className="w-screen h-screen flex-center">
                     <ul className="flex flex-col items-center justify-center text-2xl gap-y-6">
-                      <li onClick={handleNav.bind({}, "#index")}>
-                        <Link href="/" scroll={false}>
-                          Начало
-                        </Link>
-                      </li>
+
                       <li
                         className=" group"
                         onClick={(e) => setServicePcState(true)}

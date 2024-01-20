@@ -104,6 +104,19 @@ export default function Footer() {
                     {/* <div className="pl-2">Instagram</div> */}
                   </div>
                 </a>
+                <a
+                  href="https://twitter.com/cargomovebg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Button for instagram social media"
+                >
+                  <div className="transition-all cursor-pointer flex-center hover:scale-125 hover:text-primaryBlue-450">
+                    <div className="relative w-9 h-9">
+                     <Image src="/icons/twitter.png" alt="cargomove instagram" fill={true}/>
+                    </div>
+                    {/* <div className="pl-2">Instagram</div> */}
+                  </div>
+                </a>
               </div>
             </section>
           </section>

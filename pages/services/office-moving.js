@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import ContactUs from "../../components/indexPage/ContactUs";
-import SwiperGallery from "../../components/SwiperGallery";
 import SwiperServices from "../../components/SwiperServices";
 import Title from "../../components/Title";
 
@@ -24,7 +23,7 @@ export default function OfficeMoving() {
       </Head>
 
       <section className="min-h-screen mt-40 ">
-        <section className="font-sans ">
+        <section className=" ">
           <section className="">
             <section className="lg:px-56 3xl:px-[30rem]">
               <section className="container px-5 py-10 bg-white rounded-lg md:px-14">
@@ -183,12 +182,7 @@ export default function OfficeMoving() {
                 </div>
               </section>
             </section>
-            {/* <section className="my-10">
-              <div className=" flex-center">
-                <Title title="Нашата галерия" size="text-3xl" />
-              </div>
-              <SwiperGallery data={officeMovingImages} link="office-moving/" />
-            </section> */}
+            
 
             <section className="container my-14 lg:px-36">
               <ContactUs

@@ -23,11 +23,11 @@ export default function InternationalRelocation() {
       <section className="min-h-screen mt-40 ">
         <section className="lg:px-56 3xl:px-[30rem]">
           <section className="container px-5 py-10 bg-white rounded-lg md:px-14">
-            <section className="font-sans flex-center">
+            <section className=" flex-center">
               <Title title="Международно преместване за ЕС" size="text-3xl" />
             </section>
             {/* Преместване на дома и/или офиса в друга държава. */}
-            <section className="font-sans ">
+            <section className=" ">
               {/* <h3 className="text-xl font-medium">Какво предлагаме:</h3> */}
               <p className="mt-1 ">
                 Стремим се към предоставянето на висококачествено
@@ -77,17 +77,17 @@ export default function InternationalRelocation() {
             </section>
           </section>
         </section>
-        {/* <div className="fixed top-0 left-0 -z-20">
+        <div className="fixed top-0 left-0 -z-20">
           <div className="relative w-screen h-screen">
             <Image
-              src="/pages-images/international-relocation/background.jpg"
+              src="/blog/truck-driver-inspecting-vehicle-trailer-tires-before-driving.jpg"
               fill
               alt="Нашата фирма предлага висококачествени Транспортни услуги за безопасно и ефективно преместване на вашия дом или офис"
               className="object-cover"
 
             />
           </div>
-        </div> */}
+        </div>
         {/* <section className="mt-20 font-sans flex-center">
           <Title title="Вижте и другите ни услуги" size="text-4xl" />
         </section> */}

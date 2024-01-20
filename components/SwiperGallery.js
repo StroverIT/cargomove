@@ -11,9 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiX } from "react-icons/hi";
 
-export default function SwiperGallery({ data, link }) {
-  const [imgData, setImgData] = useState(null);
-  const linkForImg = `/pages-images/${link}`;
+export default function SwiperGallery({ data }) {
 
   useEffect(() => {
     const body = document.querySelector("body");
@@ -29,34 +27,16 @@ export default function SwiperGallery({ data, link }) {
         navigation={true}
         modules={[Navigation]}
         spaceBetween={30}
-        breakpoints={{
-          // when window width is >= 640px
-          0: {
-            slidesPerView: 1,
-          },
-          640: {
-            slidesPerView: 2.5,
-          },
-          // when window width is >= 768px
-          768: {
-            slidesPerView: 2.95,
-          },
-          800: {
-            slidesPerView: 5,
-          },
-          1400: {
-            slidesPerView: 6,
-          },
-        }}
-        className="h-56 pt-5 bg-white border max-lg:border-x cursor-grab border-gray rounded-b-xl mySwiper"
+       
+        className="h-full flex items-center justify-center pt-5 bg-white border max-lg:border-x cursor-grab border-gray rounded-b-xl mySwiper"
       >
         <div className="px-96">
           {data.map((image) => {
             return (
-              <SwiperSlide key={image.img} onClick={() => setImgData(image)}>
+              <SwiperSlide key={image.img} onClick={() => setImgData(image.img)}>
                 <div className="relative h-56 w-96">
                   <Image
-                    src={`${linkForImg}${image.img}`}
+                    src={image.img}
                     fill
                     className="object-contain"
                     alt={image.alt}
@@ -67,17 +47,11 @@ export default function SwiperGallery({ data, link }) {
           })}
         </div>
       </Swiper>
-      {imgData && (
-        <SwiperPopup
-          data={imgData}
-          linkForImg={linkForImg}
-          setImgData={setImgData}
-        />
-      )}
+      
     </>
   );
 }
-function SwiperPopup({ data, linkForImg, setImgData }) {
+function SwiperPopup({ data, setImgData }) {
   return (
     <section className="fixed top-0 left-0 z-50 w-screen h-screen">
       <section
@@ -95,7 +69,7 @@ function SwiperPopup({ data, linkForImg, setImgData }) {
         <section>
           <div className="relative mb-2 w-96 h-96">
             <Image
-              src={`${linkForImg}${data.img}`}
+              src={data.img}
               alt="quality"
               fill
               className="object-contain"
