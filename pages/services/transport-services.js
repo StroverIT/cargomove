@@ -44,7 +44,7 @@ export default function DisposalOfOldFurniture() {
                     <div className="relative h-56 max-xl:w-56 flex-center">
                       <Image
                         src="/sprinter.jpg"
-                        alt="Монтаж на матраци София"
+                        alt="Спринтер Бус - Професионален Транспорт и Услуги за Преместване"
                         layout="fill"
                         objectFit="contain"
                       />
