@@ -24,7 +24,9 @@ PcVersion = ({
     >
       <section className="container relative items-center justify-between hidden h-full lg:flex">
         <div className="absolute select-none ">
-          <div className="relative h-20 select-none w-[22rem]">
+          <Link href="/" scroll={false}>
+          <div className="relative h-20 select-none w-[22rem]" >
+            
             <Image
               src="/logoNew.svg"
               alt="logo"
@@ -32,6 +34,7 @@ PcVersion = ({
               className="object-contain select-none"
             />
           </div>
+          </Link>
         </div>
         <div className="relative invisible w-64 h-20">test</div>
         <section className="flex items-center justify-center gap-x-5">
@@ -40,18 +43,8 @@ PcVersion = ({
         </div> */}
           <section className="">
             <ul className="flex items-center justify-center text-xs gap-x-10">
-              {pathname != "/" && (
-                <li>
-                  <Link href="/" scroll={false}>
-                    Начало
-                  </Link>
-                </li>
-              )}
-              {pathname == "/" && (
-                <li>
-                  <a href="#">Начало</a>
-                </li>
-              )}
+             
+             
               <li>
                 <Link href="/pricing" scroll={false}>
                   Цени
