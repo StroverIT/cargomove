@@ -24,7 +24,7 @@ function Blog({ children, link, imgUrl, title, paragraph, date }) {
         </Link>
       </div>
       <div className="px-8 max-sm:pt-5">
-        <div className="mb-2 card__preview-text" dangerouslySetInnerHTML={{__html: paragraph}}/>
+        <div className="mb-2  card__preview-text" dangerouslySetInnerHTML={{__html: paragraph}}/>
       </div>
       <div className="px-8 pb-8">
         <Link href={`/blog/${link}`}>

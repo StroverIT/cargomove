@@ -54,7 +54,7 @@ export default function Home({blogDataDB}) {
           <SmallInfo />
           <Services />
           <Pricing />
-          <OurBlog blogDataDB={[]}/>
+          <OurBlog blogDataDB={blogDataDB}/>
 
           <FaQ data={questionData} />
           
