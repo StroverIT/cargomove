@@ -186,7 +186,7 @@ export default function AboutUs() {
               <div className="flex-col flex-center">
                 <div className="relative w-64 h-64 transition-all border-2 rounded-full cursor-pointer hover:scale-110 border-primaryBlue-100 ">
                   <Image
-                    src="/personal/test_v3.jpg"
+                    src="/personal/emo.jpg"
                     alt="growth for you and your company"
                     layout="fill"
                     className="object-contain rounded-full bg-[#afafaf]"
