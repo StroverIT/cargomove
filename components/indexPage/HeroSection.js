@@ -33,8 +33,8 @@ export default function HeroSection() {
             <div className="absolute z-20 w-full text-white -translate-y-1/2 max-md:-translate-x-1/2 top-1/2 max-md:left-1/2 max-md:px-2">
               <div className="pt-20 max-md:flex-col max-md:text-center max-md:flex-center">
                
-                <h1 className="text-3xl font-semibold lg:max-w-md lg:text-4xl">
-                  ПРОФЕСИОНАЛИСТИ ПО ПРЕМЕСТВАНЕ
+                <h1 className="text-3xl font-semibold uppercase lg:max-w-md lg:text-4xl">
+                  Професионалисти по преместване
                 </h1>
 
                 <p className="max-w-2xl mt-1 font-sans lg:mt-2 max-lg:max-w-md lg:text-2xl text-white-50">
