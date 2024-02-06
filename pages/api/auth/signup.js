@@ -10,7 +10,6 @@ async function handler(req, res) {
     if (req.method === "POST") {
       //Getting email and password from body
       const { email, password, fullName } = req.query;
-      console.log(req.query)
       const errors = [];
       //Validate
       if (!email || !password) {
