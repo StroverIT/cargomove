@@ -240,7 +240,7 @@ export default function Footer() {
         <div className="flex sm:pl-1">
           <div className="flex-center">
             <AiOutlineCopyright />
-            2023 CargoMove.
+            2024 CargoMove.
           </div>
           <div className="pl-1">Всички права запазени.</div>
         </div>
