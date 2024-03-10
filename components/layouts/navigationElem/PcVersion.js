@@ -6,9 +6,9 @@ import Image from "next/legacy/image";
 import DropDown from "./DropDown";
 
 import { data as aboutUsData } from "../../data/aboutUsNav";
+import { FaPhoneAlt } from "react-icons/fa";
 
-const 
-PcVersion = ({
+const PcVersion = ({
   pathname,
   servicePcState,
   setServicePcState,
@@ -25,15 +25,14 @@ PcVersion = ({
       <section className="container relative items-center justify-between hidden h-full lg:flex">
         <div className="absolute select-none ">
           <Link href="/" scroll={false}>
-          <div className="relative h-20 select-none w-[22rem]" >
-            
-            <Image
-              src="/logoNew.svg"
-              alt="logo"
-              layout="fill"
-              className="object-contain select-none"
-            />
-          </div>
+            <div className="relative h-20 select-none w-[22rem]">
+              <Image
+                src="/logoNew.svg"
+                alt="logo"
+                layout="fill"
+                className="object-contain select-none"
+              />
+            </div>
           </Link>
         </div>
         <div className="relative invisible w-64 h-20">test</div>
@@ -43,15 +42,18 @@ PcVersion = ({
         </div> */}
           <section className="">
             <ul className="flex items-center justify-center text-xs gap-x-10">
-             
-             
               <li>
                 <Link href="/pricing" scroll={false}>
                   Цени
                 </Link>
               </li>
 
-              <DropDown title="Услуги" state={servicePcState} setState={setServicePcState} links={data} />
+              <DropDown
+                title="Услуги"
+                state={servicePcState}
+                setState={setServicePcState}
+                links={data}
+              />
 
               <DropDown
                 state={aboutUsState}
@@ -59,14 +61,22 @@ PcVersion = ({
                 title="Ресурси"
                 links={aboutUsData}
               />
-              
+
               <li>
                 <Link href="/blog" scroll={false}>
                   БЛОГ
                 </Link>
               </li>
               <li className="px-5 py-2 rounded-sm bg-blue">
-                <a href="tel:+359895063670">позвъни сега </a>
+                <Link
+                  href="tel:+359895063670"
+                  className="flex items-center font-semibold uppercase rounded-lg bg-blue"
+                >
+                  <div className="mr-2">
+                    <FaPhoneAlt />
+                  </div>
+                  <div>позвъни сега</div>
+                </Link>
               </li>
             </ul>
           </section>
