@@ -64,7 +64,7 @@ export default Index;
 
 export async function getServerSideProps() {
   await connectMongo();
-  
+
   let blogDataDB = await BlogDB.find({}).lean();
   if (blogDataDB) {
     blogDataDB = blogDataDB.map((data) => {
@@ -79,6 +79,21 @@ export async function getServerSideProps() {
         ...data,
         createdAt: newDate,
       };
+    });
+    const swapElements = (array, index1, index2) => {
+      let temp = array[index1];
+      array[index1] = array[index2];
+      array[index2] = temp;
+      array.join("/");
+    };
+
+    blogDataDB = blogDataDB.sort((a, b) => {
+      const firstDate = a.createdAt.split("/");
+      const secondDate = b.createdAt.split("/");
+
+      swapElements(firstDate, 0, 1);
+      swapElements(secondDate, 0, 1);
+      return new Date(secondDate) - new Date(firstDate);
     });
   }
   return {
