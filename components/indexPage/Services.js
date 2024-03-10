@@ -4,6 +4,7 @@ import React from "react";
 import Title from "../Title";
 
 import { data } from "../data/services";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Services() {
   return (
@@ -27,12 +28,15 @@ export default function Services() {
           })}
         </section>
         <div className="mt-10 flex-center">
-          <a
+          <Link
             href="tel:+359895063670"
-            className="py-4 text-lg font-semibold text-white uppercase rounded-lg px-14 bg-blue"
+            className="flex items-center px-10 py-3 font-semibold text-white uppercase rounded-lg lg:text-lg bg-blue"
           >
-            позвъни сега
-          </a>
+            <div className="mr-3">
+              <FaPhoneAlt />
+            </div>
+            <div>позвъни сега</div>
+          </Link>
         </div>
       </section>
     </div>

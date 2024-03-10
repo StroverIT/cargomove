@@ -1,9 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 
 import Image from "next/legacy/image";
-import { useScroll, motion } from "framer-motion";
+import { FaPhoneAlt } from "react-icons/fa";
 
 import { globalContext } from "../globalContext";
+import Link from "next/link";
 
 export default function HeroSection() {
   const { heroRef } = useContext(globalContext);
@@ -32,7 +33,6 @@ export default function HeroSection() {
             <div className="absolute bg-index h-screen w-[100vw] top-0 left-0 z-10"></div>
             <div className="absolute z-20 w-full text-white -translate-y-1/2 max-md:-translate-x-1/2 top-1/2 max-md:left-1/2 max-md:px-2">
               <div className="pt-20 max-md:flex-col max-md:text-center max-md:flex-center">
-               
                 <h1 className="text-3xl font-semibold uppercase lg:max-w-md lg:text-4xl">
                   Професионалисти по преместване
                 </h1>
@@ -41,13 +41,16 @@ export default function HeroSection() {
                   Персонализирани решения за вашия бизнес и лични нужди.
                   Хамалски услуги създадени за вашия комфорт.
                 </p>
-                <div className="mt-8 lg:mt-9">
-                  <a
+                <div className="flex mt-8 lg:mt-9">
+                  <Link
                     href="tel:+359895063670"
-                    className="px-10 py-3 font-semibold uppercase rounded-sm lg:text-lg bg-blue"
+                    className="flex items-center px-10 py-3 font-semibold uppercase rounded-lg lg:text-lg bg-blue"
                   >
-                    позвъни сега
-                  </a>
+                    <div className="mr-3">
+                      <FaPhoneAlt />
+                    </div>
+                    <div>позвъни сега</div>
+                  </Link>
                 </div>
               </div>
             </div>
