@@ -14,7 +14,7 @@ export default function Services() {
           <Title title="Какво предлагаме" size="text-4xl lg:text-5xl" />
         </div>
         <section className="grid gap-10 lg:grid-cols-3">
-          {data.map((service, index) => {
+          {data.filter(service=> !service.excludeFromHomePage).map((service, index) => {
             return (
               <Service
                 title={service.title}
