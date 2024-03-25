@@ -34,6 +34,8 @@ function MyApp({ Component, pageProps }) {
           content="https://www.linkpicture.com/q/Неозаглавен-1440-t-1440-пиксела.png"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* <script src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_PLACES_API_KEY}&libraries=places&callback=initMap`} async></script> */}
+
         <link rel="preload" />
       </Head>
       <Cookie setIsCookie={cookieHandler} isCookie={isCookie} />
