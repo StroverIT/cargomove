@@ -3,10 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { TbBus } from "react-icons/tb";
 
-import { data as links } from "../../../components/data/services";
-import { debounce } from "lodash";
-
-export default function DropDown({ state, setState, title }) {
+export default function DropDown({ state, setState, title, links }) {
   const [isSubMenuOpen, setSubMenuOpen] = useState({
     isOpen: false,
     key: null,
