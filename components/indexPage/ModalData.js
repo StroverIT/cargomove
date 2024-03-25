@@ -8,7 +8,7 @@ import FifthTabWithNoUsedBefore from "./ModalTabs/FifthTabWithNoUsedBefore";
 import Recomendations from "./ModalTabs/Recomendations";
 import FinalStage from "./ModalTabs/FinalStage";
 
-export default function ModalData() {
+export default function ModalData({ closeModalHandler }) {
   const [currentTab, setCurrentTab] = useState(1);
 
   const [inputs, setInputs] = useState({
@@ -18,10 +18,13 @@ export default function ModalData() {
     email: "",
     telephone: "",
     isOurServiceUsed: null,
+    addressDetails: "",
     recomended: null,
     recomendedName: "",
     bestTimeForContact: "asap",
   });
+  const [isSuccesfulySent, setSuccesfulySent] = useState(false);
+
   const handler = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -50,6 +53,28 @@ export default function ModalData() {
   const isAnyConditionMetForFinalTab = conditionToShowFinalTab.some(
     (condition) => condition == true
   );
+
+  const changeTabHandler = async () => {
+    if (isSuccesfulySent) {
+      closeModalHandler();
+      return;
+    }
+    if (isAnyConditionMetForFinalTab) {
+      const res = await fetch("/api/question", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(inputs),
+      });
+      const data = await res.json();
+      if (data.message) {
+        setSuccesfulySent(true);
+      }
+      return;
+    }
+    setCurrentTab(currentTab + 1);
+  };
   return (
     <div className="p-10 bg-white shadow-xl text-dark rounded-xl">
       <div className="">
@@ -81,24 +106,30 @@ export default function ModalData() {
           />
         )}
         {/* flex-wrap gap-x-10 gap-y-4 */}
-        {console.log(currentTab, inputs)}
         {isAnyConditionMetForFifthTab && (
           <FifthTab handler={handler} inputs={inputs} />
         )}
-        {isAnyConditionMetForFinalTab && (
+        {isAnyConditionMetForFinalTab && !isSuccesfulySent && (
           <FinalStage
             handlerWithName={handlerWithName}
             bestTimeForContact={inputs.bestTimeForContact}
           />
+        )}
+        {isAnyConditionMetForFinalTab && isSuccesfulySent && (
+          <div>Успешно направихте вашето запитване</div>
         )}
       </div>
 
       <button
         type="button"
         className="flex items-center px-8 py-2 mt-6 font-semibold text-white uppercase rounded-lg lg:text-lg bg-blue"
-        onClick={() => setCurrentTab(currentTab + 1)}
+        onClick={changeTabHandler}
       >
-        {isAnyConditionMetForFinalTab ? "Изпрати" : "Следващ"}
+        {isAnyConditionMetForFinalTab
+          ? isSuccesfulySent
+            ? "Към начало"
+            : "Изпрати"
+          : "Следващ"}
       </button>
     </div>
   );

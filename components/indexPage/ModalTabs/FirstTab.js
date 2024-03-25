@@ -1,11 +1,6 @@
 import React from "react";
 import { usePlacesWidget } from "react-google-autocomplete";
 
-const options = {
-  types: ["address", "geocode", "establishment"],
-  componentRestrictions: {country: 'bg'}
-
-};
 
 export default function FirstTab({ inputs, handler, handlerWithName }) {
   const { ref } = usePlacesWidget({
@@ -15,12 +10,9 @@ export default function FirstTab({ inputs, handler, handlerWithName }) {
     },
   });
   const { ref: ref2 } = usePlacesWidget({
-    language: "bg",
-
     apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_PLACES_API_KEY,
     onPlaceSelected: (place) =>
       handlerWithName("movingTo", place.formatted_address),
-    options,
   });
   return (
     <>
