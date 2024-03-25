@@ -9,7 +9,6 @@ import { FaPhoneAlt } from "react-icons/fa";
 const PcVersion = ({
   servicePcState,
   setServicePcState,
-  data,
   aboutUsState,
   setAboutUsState,
 }) => {
@@ -48,7 +47,6 @@ const PcVersion = ({
                 title="Услуги"
                 state={servicePcState}
                 setState={setServicePcState}
-                links={data}
               />
 
               <DropDown
