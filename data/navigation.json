@@ -1,0 +1,30 @@
+[{
+    "name": "преместване на дома",
+    "link": "/home-moving",
+    "title": "Професионално преместване на дома",
+    "meta_description": "Професионални услуги по преместване на дома, висококачествени опаковъчни материали и консумативи, монтаж – демонтаж. Качество и достъпност!",
+    "backgroundImageUrL": "/pages-images/home-moving/background.jpg",
+    "backgroundImageAlt": "Нашата фирма предлага висококачествени Транспортни услуги за безопасно и ефективно преместване на вашия дом или офис",
+    "htmlContent": ""
+},
+{
+    "name": "преместване на офиса",
+    "link": "/office-moving"       
+},
+{
+    "name": "международно преместване",
+    "link": "/international-relocation"       
+},
+{
+    "name": "транспортни услуги",
+    "link": "/transport-services"       
+},
+{
+    "name": "товаро-разтоварни дейности",
+    "link": "/loading-and-unloading-activity"       
+},
+{
+    "name": "преместване на пиана",
+    "link": "/moving-cash-registers-pianos-showcase"       
+}
+]
