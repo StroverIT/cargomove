@@ -4,8 +4,10 @@ import { HiX } from "react-icons/hi";
 import Link from "next/link";
 import { data as links } from "../../data/services";
 import { TbBus } from "react-icons/tb";
+import { useRouter } from "next/router";
 
 export default function DropDownMobile({ state, setState }) {
+  const router = useRouter();
   const [isSubMenuOpen, setSubMenuOpen] = useState({
     isOpen: false,
     key: null,
@@ -14,7 +16,15 @@ export default function DropDownMobile({ state, setState }) {
   useEffect(() => {
     if (!state) setSubMenuOpen({ isOpen: false, key: null });
   }, [state]);
-  
+
+  const linkHandler = (index, link, isSubMenu) => {
+    if (isSubMenu) {
+      setSubMenuOpen({ isOpen: true, key: index });
+      return;
+    }
+    router.push(link);
+  };
+
   return (
     <AnimatePresence mode="wait">
       {state && (
@@ -71,7 +81,7 @@ export default function DropDownMobile({ state, setState }) {
                         animate="visible"
                         custom={i}
                         className="flex items-center py-2 pl-2 transition-colors cursor-pointer hover:bg-white hover:text-blue-150"
-                        onClick={() => setSubMenuOpen({ isOpen: true, key: i })}
+                        onClick={() => linkHandler(i, list.link, list.subMenu)}
                       >
                         {list.title}
                         {list.subMenu && (
@@ -118,7 +128,11 @@ export default function DropDownMobile({ state, setState }) {
                                   <HiX />
                                 </section>
                                 <ul className="flex-col p-10 text-sm ">
-                                  <Link href={list.link} scroll={false} className="ml-2">
+                                  <Link
+                                    href={list.link}
+                                    scroll={false}
+                                    className="ml-2"
+                                  >
                                     {list.title}
                                   </Link>
                                   {list?.subMenu?.map((list, i) => {
