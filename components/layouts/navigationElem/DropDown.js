@@ -74,27 +74,7 @@ export default function DropDown({ state, setState, title, links }) {
                     }}
                   >
                     <Link href={list.link} scroll={false}>
-                      <motion.li
-                        variants={{
-                          hidden: (i) => ({
-                            opacity: 0,
-                            y: -50 * i,
-                            zIndex: -10,
-                          }),
-                          visible: (i) => ({
-                            opacity: 1,
-                            y: 0,
-                            zIndex: 0,
-                            transition: {
-                              delay: i * 0.05,
-                            },
-                          }),
-                        }}
-                        initial="hidden"
-                        animate="visible"
-                        custom={i}
-                        className="flex items-center px-2 group-[2]-hover:bg-white py-2 transition-colors cursor-pointer hover:bg-white hover:text-blue-150"
-                      >
+                      <motion.li className="flex items-center px-2 group-[2]-hover:bg-white py-2 transition-colors cursor-pointer hover:bg-white hover:text-blue-150">
                         {list.title}
                         {list.subMenu && (
                           <div className="ml-2 text-xl ">
@@ -114,24 +94,7 @@ export default function DropDown({ state, setState, title, links }) {
                               scroll={false}
                             >
                               <motion.li
-                                variants={{
-                                  hidden: (i) => ({
-                                    opacity: 0,
-                                    y: -50 * i,
-                                    zIndex: -10,
-                                  }),
-                                  visible: (i) => ({
-                                    opacity: 1,
-                                    y: 0,
-                                    zIndex: 0,
-                                    transition: {
-                                      delay: i * 0.05,
-                                    },
-                                  }),
-                                }}
-                                initial="hidden"
-                                animate="visible"
-                                custom={i}
+                               
                                 className="px-2 py-2 transition-colors cursor-pointer text-dark hover:bg-white hover:text-blue-150"
                               >
                                 {item.title}

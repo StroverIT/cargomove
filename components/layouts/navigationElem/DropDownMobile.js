@@ -61,24 +61,7 @@ export default function DropDownMobile({ links, state, setState }) {
                   return (
                     <div key={i}>
                       <motion.li
-                        variants={{
-                          hidden: (i) => ({
-                            opacity: 0,
-                            y: -50 * i,
-                            zIndex: -10,
-                          }),
-                          visible: (i) => ({
-                            opacity: 1,
-                            y: 0,
-                            zIndex: 0,
-                            transition: {
-                              delay: i * 0.05,
-                            },
-                          }),
-                        }}
-                        initial="hidden"
-                        animate="visible"
-                        custom={i}
+                       
                         className="flex items-center py-2 pl-2 transition-colors cursor-pointer hover:bg-white hover:text-blue-150"
                         onClick={() => linkHandler(i, list.link, list.subMenu)}
                       >
