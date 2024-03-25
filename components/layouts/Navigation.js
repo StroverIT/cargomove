@@ -6,7 +6,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/legacy/image";
-import { data } from "../data/services";
 import PcVersion from "./navigationElem/PcVersion";
 
 import { FiPhoneCall } from "react-icons/fi";
@@ -16,6 +15,7 @@ import { FaViber } from "react-icons/fa";
 import DropDownMobile from "./navigationElem/DropDownMobile";
 import { data as aboutUsData } from "../data/aboutUsNav";
 import SocialIcons from "./navigationElem/SocialIcons";
+import { data as serviceLinks } from "../../components/data/services";
 
 export default function Navigation() {
   const router = useRouter();
@@ -67,17 +67,16 @@ export default function Navigation() {
     }
   }, [scrollData]);
   useEffect(() => {
-
     setMenuOpen(false);
     if (pathname != "/") {
       setIsOnMain(true);
     } else {
       setIsOnMain(false);
     }
-    
+
     // Drop down menus
     setServicePcState(false);
-    setAboutUsState(false)
+    setAboutUsState(false);
   }, [router]);
   useEffect(() => {
     const body = document.querySelector("body");
@@ -91,13 +90,12 @@ export default function Navigation() {
     <nav
       className={` fixed top-0 left-0 z-50 w-full text-white  uppercase font-medium  transition-colors `}
     >
-        <SocialIcons/>
+      <SocialIcons />
 
       <PcVersion
         pathname={pathname}
         servicePcState={servicePcState}
         setServicePcState={setServicePcState}
-        data={data}
         isOnMain={isOnMain}
         aboutUsState={aboutUsState}
         setAboutUsState={setAboutUsState}
@@ -158,7 +156,6 @@ export default function Navigation() {
                 >
                   <section className="w-screen h-screen flex-center">
                     <ul className="flex flex-col items-center justify-center text-2xl gap-y-6">
-
                       <li
                         className=" group"
                         onClick={(e) => setServicePcState(true)}
@@ -206,9 +203,9 @@ export default function Navigation() {
               )}
             </AnimatePresence>
             <DropDownMobile
-              links={data}
               state={servicePcState}
               setState={setServicePcState}
+              links={serviceLinks}
             />
             <DropDownMobile
               links={aboutUsData}
