@@ -9,7 +9,6 @@ import ModalWrapper from "../generic/ModalWrapper";
 import ModalData from "./ModalData";
 
 export default function HeroSection() {
-  console.log(process.env.GOOGLE_MAPS_PLACES_API_KEY);
 
   const { heroRef, setNavigationOpen } = useContext(globalContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
