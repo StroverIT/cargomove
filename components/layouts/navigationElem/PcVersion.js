@@ -1,7 +1,5 @@
 import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { TbBus } from "react-icons/tb";
 import Image from "next/legacy/image";
 import DropDown from "./DropDown";
 
@@ -9,11 +7,9 @@ import { data as aboutUsData } from "../../data/aboutUsNav";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const PcVersion = ({
-  pathname,
   servicePcState,
   setServicePcState,
   data,
-  isOnMain,
   aboutUsState,
   setAboutUsState,
 }) => {
