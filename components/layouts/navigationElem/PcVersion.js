@@ -5,6 +5,7 @@ import DropDown from "./DropDown";
 
 import { data as aboutUsData } from "../../data/aboutUsNav";
 import { FaPhoneAlt } from "react-icons/fa";
+import { data as serviceLinks } from "../../../components/data/services";
 
 const PcVersion = ({
   servicePcState,
@@ -45,6 +46,7 @@ const PcVersion = ({
 
               <DropDown
                 title="Услуги"
+                links={serviceLinks}
                 state={servicePcState}
                 setState={setServicePcState}
               />
