@@ -21,7 +21,7 @@ export default function DropDown({ state, setState, links, title }) {
           <div className="absolute top-5 w-[26.5rem] h-16  z-100 -left-16"></div>
         )}
       </span>
-      <AnimatePresence mode="wait">
+      <AnimatePresence >
         {state && (
           <motion.div
             initial="initialState"
