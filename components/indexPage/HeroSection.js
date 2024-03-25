@@ -64,13 +64,13 @@ export default function HeroSection() {
                       </div>
                       <div>позвъни сега</div>
                     </Link>
-                    <button
+                    {/* <button
                       className="flex px-8 py-2 font-semibold text-white border-4 rounded-xl border-blue"
                       onClick={() => setIsModalOpen(true)}
                       type="button"
                     >
                       Направи запитване
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
