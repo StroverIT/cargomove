@@ -1,20 +1,22 @@
 import React from "react";
 // Icons
 import { HiOutlineMail, HiOutlineUserCircle, HiX } from "react-icons/hi";
-import { AiFillHeart, AiOutlineHome, AiOutlineLock, AiOutlinePlus, AiOutlinePlusCircle, AiOutlinePoweroff } from "react-icons/ai";
+import {
+  AiFillHeart,
+  AiOutlineLock,
+  AiOutlinePlusCircle,
+  AiOutlinePoweroff,
+} from "react-icons/ai";
 import { BiHomeAlt, BiPhoneCall, BiUser } from "react-icons/bi";
 import { MdOutlineSubtitles, MdStickyNote2 } from "react-icons/md";
 import { GiReturnArrow } from "react-icons/gi";
-import { BsFillBoxFill, BsFillTrashFill } from "react-icons/bs";
 import { IoIosArrowForward, IoMdSettings } from "react-icons/io";
-import { FaAddressBook } from "react-icons/fa"
-import { PiArrowCounterClockwiseBold } from "react-icons/pi"
-
-
+import { FaAddressBook, FaTools } from "react-icons/fa";
+import { PiArrowCounterClockwiseBold } from "react-icons/pi";
 
 const iconDictionary = {
   // Non filled
-  home: <BiHomeAlt/>,
+  home: <BiHomeAlt />,
   password: <AiOutlineLock />,
   email: <HiOutlineMail />,
   fullName: <HiOutlineUserCircle />,
@@ -24,7 +26,7 @@ const iconDictionary = {
   hix: <HiX />,
   rightArrow: <IoIosArrowForward />,
   counterClockWise: <PiArrowCounterClockwiseBold />,
-  user: <BiUser/>,
+  user: <BiUser />,
   // Neutral
   power: <AiOutlinePoweroff />,
   // Filled
@@ -32,15 +34,10 @@ const iconDictionary = {
   heart: <AiFillHeart />,
   address: <FaAddressBook />,
   order: <MdStickyNote2 />,
-  plusCircle: <AiOutlinePlusCircle/>,
- 
-
-
+  plusCircle: <AiOutlinePlusCircle />,
+  tools: <FaTools />,
 };
 
-
 export default function Icons({ iconType }) {
-  
-  return iconDictionary[iconType]
+  return iconDictionary[iconType];
 }
-
