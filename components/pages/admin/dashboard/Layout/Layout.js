@@ -57,14 +57,30 @@ const sideMenuLinks = [
       },
     ],
   },
+  {
+    name: "Услуги",
+    link: `${mainLink}${layoutLink}/services`,
+    icon: "undefined",
+    imageData: imageDataList.blog,
+    submenu: [
+      {
+        name: "Създай",
+        link: "/create",
+      },
+      {
+        name: "Редактирай",
+        link: "/edit",
+      },
+    ],
+  },
 ];
 const Layout = ({ children }) => {
   return (
-    <section className="flex w-full min-h-screen mt-36">
-      <section className="flex w-full min-h-screen space-x-10 max-lg:flex-col">
+    <section className="">
+      <section className="flex w-full min-h-screen max-lg:flex-col">
         <SideMenu links={sideMenuLinks} />
 
-        <section className="lg:w-full mt-7">{children}</section>
+        <section className="w-full px-10 mt-7">{children}</section>
       </section>
     </section>
   );
