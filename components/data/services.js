@@ -30,7 +30,7 @@ export const data = [
       {
         title: "Преместване на хладилници",
         image: "cargo-mover.png",
-        link: "/services/moving-sofa",
+        link: "/services/moving-refrigerator",
         p: "Няма нужда да се притеснявате за вашите клавиши, в сигурни ръце са!",
         // link: "/cleaning-basements-and-attics",
         excludeFromHomePage: true,
