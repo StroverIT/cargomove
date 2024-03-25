@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 import { globalContext } from "../globalContext";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { excludeNavigationUsingIncludes } from "../../config/navigation";
 
 export default function Layout({ children }) {
   const router = useRouter();
@@ -11,7 +12,7 @@ export default function Layout({ children }) {
   const footerRef = useRef(null);
 
   const [scrollData, setScrollData] = useState(0);
-
+  const [isNavigationOpen, setNavigationOpen] = useState(true);
   const handleScroll = (event) => {
     setScrollData(window.scrollY);
   };
@@ -24,9 +25,11 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <globalContext.Provider value={{ heroRef, scrollData, footerRef }}>
+    <globalContext.Provider value={{ heroRef, scrollData, footerRef, setNavigationOpen}}>
       <div className="flex flex-col justify-between h-screen">
-        <Navigation />
+        {!router.route.includes(excludeNavigationUsingIncludes) &&
+          isNavigationOpen && <Navigation />}
+          
         <AnimatePresence
           mode="wait"
           onExitComplete={() => {
@@ -62,7 +65,7 @@ export default function Layout({ children }) {
           </motion.div>
         </AnimatePresence>
 
-        <Footer />
+        {!router.route.includes(excludeNavigationUsingIncludes) && <Footer />}
       </div>
     </globalContext.Provider>
   );
