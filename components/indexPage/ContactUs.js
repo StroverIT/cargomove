@@ -105,7 +105,7 @@ export default function ContactUs({
         id="contactUs"
       >
         <section
-          className={`grid lg:grid-cols-2 py-14 lg:py-20  w-full px-5 xl:px-20  bg-white-20`}
+          className={`lg:grid lg:grid-cols-2 py-14 lg:py-20  w-full px-5 xl:px-20  bg-white-20`}
         >
           <section className="">
             <h3>
@@ -170,13 +170,13 @@ export default function ContactUs({
             </form>
           </section>
           <section className="flex flex-col mx-auto space-y-7 mt-7 focus:border-transparent">
-            <div className="flex items-center">
+            <div className="flex items-center ">
               <a href="mailto:cargomovebg@gmail.com">
                 <section className="flex-center">
-                  <div className="text-3xl ">
+                  <div className="text-3xl">
                     <HiOutlineMail />
                   </div>
-                  <div className="pl-1 text-lg">cargomovebg@gmail.com</div>
+                  <div className="pl-1 text-lg font-semibold max-sm:text-sm">cargomovebg@gmail.com</div>
                 </section>
               </a>
             </div>
@@ -186,7 +186,7 @@ export default function ContactUs({
                   <div className="text-2xl ">
                     <FiPhoneCall />
                   </div>
-                  <div className="pl-1 text-lg">{number}</div>
+                  <div className="pl-1 text-lg font-semibold max-sm:text-sm">{number}</div>
                 </section>
               </a>
             </div>
