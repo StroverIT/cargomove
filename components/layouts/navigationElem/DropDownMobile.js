@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { HiX } from "react-icons/hi";
 import Link from "next/link";
-import { data as links } from "../../data/services";
 import { TbBus } from "react-icons/tb";
 import { useRouter } from "next/router";
 
-export default function DropDownMobile({ state, setState }) {
+export default function DropDownMobile({ links, state, setState }) {
   const router = useRouter();
   const [isSubMenuOpen, setSubMenuOpen] = useState({
     isOpen: false,
