@@ -28,9 +28,7 @@ export default function DropDown({ state, setState, title, links }) {
         >
           <TbBus />
         </span>
-        {state && (
-          <div className="absolute top-5 w-[26.5rem] h-16  z-100 -left-16"></div>
-        )}
+       
       </span>
       <AnimatePresence mode="wait" initial={false}>
         {state && (
