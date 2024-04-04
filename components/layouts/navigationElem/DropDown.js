@@ -30,7 +30,7 @@ export default function DropDown({ state, setState, title, links }) {
         </span>
        
       </span>
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence initial={false}>
         {state && (
           <motion.div
             initial="initialState"
@@ -52,7 +52,7 @@ export default function DropDown({ state, setState, title, links }) {
                 },
               },
               exitState: {
-                y: "-100vh",
+                y: "-30vh",
                 zIndex: -10,
               },
             }}
