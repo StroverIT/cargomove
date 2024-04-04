@@ -27,15 +27,7 @@ export const data = [
         excludeFromHomePage: true,
         _id: "ааааzxczcxczxczxcsdasas",
       },
-      {
-        title: "Преместване на хладилници",
-        image: "cargo-mover.png",
-        link: "/services/moving-refrigerator",
-        p: "Няма нужда да се притеснявате за вашите клавиши, в сигурни ръце са!",
-        // link: "/cleaning-basements-and-attics",
-        excludeFromHomePage: true,
-        _id: "ааааzxczcvcxzcz2352xqxaaaz452",
-      },
+    
     ],
   },
   {
@@ -110,6 +102,15 @@ export const data = [
         // link: "/cleaning-basements-and-attics",
         excludeFromHomePage: true,
         _id: "аааа1asd",
+      },
+      {
+        title: "Преместване на хладилници",
+        image: "cargo-mover.png",
+        link: "/services/moving-refrigerator",
+        p: "Няма нужда да се притеснявате за вашите клавиши, в сигурни ръце са!",
+        // link: "/cleaning-basements-and-attics",
+        excludeFromHomePage: true,
+        _id: "ааааzxczcvcxzcz2352xqxaaaz452",
       },
     ],
   },
