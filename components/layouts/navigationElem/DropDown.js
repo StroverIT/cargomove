@@ -47,9 +47,8 @@ export default function DropDown({ state, setState, title, links }) {
               },
               animateState: {
                 y: 0,
-                transitionEnd: {
-                  zIndex: 100,
-                },
+                zIndex: 9999,
+              
               },
               exitState: {
                 y: "-30vh",
@@ -58,7 +57,7 @@ export default function DropDown({ state, setState, title, links }) {
             }}
             className="relative flex flex-col w-full h-full "
           >
-            <ul className="absolute flex-col  py-4 pl-4 w-[18rem] rounded-md bg-blue-100 top-0 -left-16 flex  shadow-2xl z-50">
+            <ul className="absolute flex-col  py-4 pl-4 w-[18rem] rounded-md bg-blue-100 top-0 -left-16 flex  shadow-2xl">
               {links.map((list, i) => {
                 return (
                   <div
